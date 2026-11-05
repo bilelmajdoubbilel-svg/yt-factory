@@ -40,5 +40,22 @@
   "host": "Drip, a living water drop",
   "ready": false,
   "gemini_fallback": false,
-  "ready_note": "Set to true only after the owner approves this channel's own host and look (stills). Until then the robot publishes nothing here."
+  "ready_note": "Set to true only after the owner approves this channel's own host and look (stills). Until then the robot publishes nothing here.",
+  "brand": {
+    "host": "Drip, a water drop in a safety-orange hard hat (pipeline/brand_art.py drip_host)",
+    "palette": {
+      "concrete": "#2E3338",
+      "pipe": "#3E8E5E",
+      "orange": "#F26B1D",
+      "water": "#7CCBEA",
+      "cream": "#FFF6E8"
+    },
+    "fonts": {
+      "display": "assets/hidden/fonts/hs-display.woff2 (Barlow Condensed 800, OFL)",
+      "mono": "assets/hidden/fonts/hs-mono.woff2 (JetBrains Mono 700, OFL)"
+    },
+    "art": "assets/hidden/art (avatar.png, banner.png)",
+    "motif": "looking into a pipe; following one drop, parcel or call through the system",
+    "tagline": "How water, power, trash, mail and 911 really work"
+  }
 }

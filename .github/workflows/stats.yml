@@ -1,0 +1,30 @@
+name: stats
+
+# Weekly numbers for Claude's Monday run (which starts at 19:23 UTC). Public numbers are printed here;
+# private ones (watch time, retention) go only to the owner's Google Drive (config/stats.json).
+on:
+  schedule:
+    - cron: "47 17 * * 1"   # Mondays 17:47 UTC
+  workflow_dispatch:
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests google-auth
+      - name: Pull channel and video numbers
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN_1: ${{ secrets.YT_REFRESH_TOKEN_1 }}
+          YT_REFRESH_TOKEN_2: ${{ secrets.YT_REFRESH_TOKEN_2 }}
+          YT_REFRESH_TOKEN_3: ${{ secrets.YT_REFRESH_TOKEN_3 }}
+          GDRIVE_SA_JSON: ${{ secrets.GDRIVE_SA_JSON }}
+        run: python pipeline/stats.py

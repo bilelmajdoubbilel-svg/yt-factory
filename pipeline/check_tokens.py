@@ -55,6 +55,14 @@ def main():
                 raise RuntimeError(f"{secret} controls '{title}' ({got}), not {name} ({want}): make the token again "
                                    f"and choose {name} on the consent screen")
             rows.append(f"OK    {name}: {secret} -> {title} ({got})")
+            # analytics scope (watch time, retention for the weekly learning loop): a warning, not a failure
+            day = __import__("datetime").date.today().isoformat()
+            a = requests.get("https://youtubeanalytics.googleapis.com/v2/reports", timeout=30,
+                             params={"ids": "channel==MINE", "startDate": day, "endDate": day, "metrics": "views"},
+                             headers={"Authorization": f"Bearer {tok}"})
+            rows.append(f"OK    {name}: analytics readable" if a.ok else
+                        f"WARN  {name}: no analytics access yet ({a.status_code}); remake {secret} with "
+                        "yt-analytics.readonly and enable the YouTube Analytics API")
         except Exception as e:  # noqa: BLE001 - report every channel, then fail once
             bad += 1
             rows.append(f"FAIL  {name}: {e}")

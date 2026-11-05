@@ -40,5 +40,22 @@
   "host": "Pin, a living map pin",
   "ready": false,
   "gemini_fallback": false,
-  "ready_note": "Set to true only after the owner approves this channel's own host and look (stills). Until then the robot publishes nothing here."
+  "ready_note": "Set to true only after the owner approves this channel's own host and look (stills). Until then the robot publishes nothing here.",
+  "brand": {
+    "host": "Pin, a living map pin with a compass needle (pipeline/brand_art.py pin_host)",
+    "palette": {
+      "parchment": "#F3E6C4",
+      "ocean": "#1F5F8B",
+      "ink": "#142B3D",
+      "coral": "#D65A3A",
+      "cream": "#FFF7E3"
+    },
+    "fonts": {
+      "display": "assets/mapminutes/fonts/mm-display.woff2 (Fraunces 800, OFL)",
+      "mono": "assets/mapminutes/fonts/mm-mono.woff2 (IBM Plex Mono 600, OFL)"
+    },
+    "art": "assets/mapminutes/art (avatar.png, banner.png)",
+    "motif": "the dotted 49th parallel and a coral route line",
+    "tagline": "The US and Canada, explained on the map"
+  }
 }

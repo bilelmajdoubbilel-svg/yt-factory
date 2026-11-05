@@ -27,12 +27,15 @@ def using():
     return None
 
 
-def access_token():
+WRITE_SCOPE = "https://www.googleapis.com/auth/drive"  # service account only: update files the owner shared as Editor
+
+
+def access_token(scope=SCOPE):
     if os.environ.get("GDRIVE_SA_JSON"):
         from google.auth.transport.requests import Request
         from google.oauth2 import service_account
         info = json.loads(os.environ["GDRIVE_SA_JSON"])
-        creds = service_account.Credentials.from_service_account_info(info, scopes=[SCOPE])
+        creds = service_account.Credentials.from_service_account_info(info, scopes=[scope])
         creds.refresh(Request())
         return creds.token
     if os.environ.get("GDRIVE_REFRESH_TOKEN"):

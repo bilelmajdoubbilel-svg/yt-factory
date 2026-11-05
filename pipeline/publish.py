@@ -156,6 +156,14 @@ def main():
                           "at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")})
             STATE.parent.mkdir(exist_ok=True)
             STATE.write_text(json.dumps(state, indent=1))
+            # scene timings, so the weekly review can tie a retention drop to the scene on screen
+            tl = ROOT / "build" / sid / "timeline.json"
+            if tl.exists():
+                t = json.loads(tl.read_text())
+                keep = {"total": t.get("total"), "scenes": [{k: s.get(k) for k in ("id", "type", "start", "duration")}
+                                                            for s in t.get("scenes", [])]}
+                (STATE.parent / "timelines").mkdir(exist_ok=True)
+                (STATE.parent / "timelines" / f"{sid}.json").write_text(json.dumps(keep, indent=1))
             print("logged", sid, vid)
 
 
