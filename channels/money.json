@@ -46,5 +46,7 @@
   "long": "15:00",
   "short": "13:00",
   "why": "US + Canada audience. Long: middle of the 2-4 pm ET window (noon on the West Coast), so it is indexed before the evening peak. Shorts: 1 pm, the strongest local hour in PostFast's 2026 Shorts data. Re-check against YouTube Studio 'When your viewers are on YouTube' after ~4 weeks."
- }
+ },
+ "ready": true,
+ "gemini_fallback": true
 }

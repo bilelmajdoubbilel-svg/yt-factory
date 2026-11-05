@@ -4,9 +4,41 @@
   "youtube_token_secret": "YT_REFRESH_TOKEN_2",
   "niche": "History told on animated maps and timelines: how borders, empires, trade routes and wars actually unfolded. Every date and figure sourced.",
   "voice": "bm_george",
-  "theme": {"bg": "#10140F", "panel": "#1A2019", "paper": "#F1ECDD", "muted": "#8C9286", "accent": "#E4572E", "gold": "#E8C547", "mint": "#5FBF8F"},
-  "music_dir": "music/history",
+  "theme": {
+    "bg": "#10140F",
+    "panel": "#1A2019",
+    "paper": "#F1ECDD",
+    "muted": "#8C9286",
+    "accent": "#E4572E",
+    "gold": "#E8C547",
+    "mint": "#5FBF8F"
+  },
+  "music_dir": "music/shared",
   "music_volume": 0.13,
   "category_id": "27",
-  "default_tags": ["history", "history explained", "maps"]
+  "default_tags": [
+    "history",
+    "history explained",
+    "maps"
+  ],
+  "youtube_channel_id": "UCxREWny8Z2nQcWlVwrQh3lg",
+  "handle": "@MapMinutes19",
+  "audio_language": "en-US",
+  "schedule": {
+    "long_days": [
+      "Wed"
+    ],
+    "long_per_week": 1,
+    "shorts_per_day": 1
+  },
+  "publish_local": {
+    "tz": "America/Toronto",
+    "long": "15:00",
+    "short": "10:00",
+    "why": "US + Canada audience. Long Wed 3 pm ET, Shorts 10 am ET (network plan 5 Nov 2026)."
+  },
+  "host": "Pin, a living map pin",
+  "ready": false,
+  "gemini_fallback": false,
+  "ready_note": "Set to true only after the owner approves this channel's own host and look (stills). Until then the robot publishes nothing here."
 }

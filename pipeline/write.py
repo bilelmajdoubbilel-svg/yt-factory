@@ -3,7 +3,9 @@
 Primary path: Claude researches and writes scripts into content/<channel>/<slug>/{long,short}.json.
 This is the fallback so the channel never stalls. Output is validated before it is used.
 
-Env: GEMINI_API_KEY, optional GEMINI_MODEL (default gemini-2.5-flash).
+Env: GEMINI_API_KEY, optional GEMINI_MODEL (tried first, then gemini-2.5-flash, then gemini-flash-latest).
+Every model is called WITH Google Search grounding; if none answers, the script fails (a red run that emails
+the owner) rather than writing numbers it cannot source.
 Usage: python write.py --channel money
 """
 import argparse
@@ -41,37 +43,53 @@ def cinematize(s):
     return s
 
 
+DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+
 def queue_add(channel, items):
-    """Append scripts to content/<channel>/queue.json: long on the next free Thursday, Shorts every 2 days."""
+    """Append scripts to content/<channel>/queue.json: the long video on the channel's next free long day
+    (channels/<id>.json schedule.long_days), Shorts one a day after it."""
     import datetime as dt
+    cfg = json.loads((ROOT / "channels" / f"{channel}.json").read_text())
+    long_days = {DAYS.index(x) for x in cfg.get("schedule", {}).get("long_days", ["Thu"])}
     qp = ROOT / "content" / channel / "queue.json"
     q = json.loads(qp.read_text()) if qp.exists() else []
     today = dt.date.today()
     last_long = max([dt.date.fromisoformat(x["date"]) for x in q if x["kind"] == "long"] or [today])
     last_short = max([dt.date.fromisoformat(x["date"]) for x in q if x["kind"] == "short"] or [today])
     d = last_long + dt.timedelta(days=1)
-    while d.weekday() != 3 or d <= today:
+    while d.weekday() not in long_days or d <= today:
         d += dt.timedelta(days=1)
-    sd = max(last_short + dt.timedelta(days=2), d + dt.timedelta(days=1))
+    sd = max(last_short + dt.timedelta(days=1), d + dt.timedelta(days=1))
     for path, kind in items:
         if kind == "long":
             q.append({"script": path, "kind": "long", "date": d.isoformat()})
         else:
             q.append({"script": path, "kind": "short", "date": sd.isoformat()})
-            sd += dt.timedelta(days=2)
-    qp.write_text(json.dumps(q, indent=1))
+            sd += dt.timedelta(days=1)
+    q.sort(key=lambda x: x["date"])
+    qp.write_text(json.dumps(q, indent=1) + "\n")
+
+
+MODELS = [m for m in dict.fromkeys([os.environ.get("GEMINI_MODEL"), "gemini-2.5-flash", "gemini-flash-latest"]) if m]
 
 
 def ask_gemini(prompt):
-    model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
-    r = requests.post(
-        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-        headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"], "Content-Type": "application/json"},
-        json={"contents": [{"role": "user", "parts": [{"text": prompt}]}],
-              "tools": [{"google_search": {}}],
-              "generationConfig": {"temperature": 0.7}},
-        timeout=240)
-    r.raise_for_status()
+    last = None
+    for model in MODELS:
+        r = requests.post(
+            f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+            headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"], "Content-Type": "application/json"},
+            json={"contents": [{"role": "user", "parts": [{"text": prompt}]}],
+                  "tools": [{"google_search": {}}],
+                  "generationConfig": {"temperature": 0.7}},
+            timeout=240)
+        if r.ok:
+            break
+        last = f"{model}: {r.status_code} {r.text[:200]}"
+        print("gemini", last, file=sys.stderr)
+    else:
+        raise RuntimeError(f"no Gemini model answered with search grounding ({last})")
     parts = r.json()["candidates"][0]["content"]["parts"]
     text = "".join(p.get("text", "") for p in parts)
     m = re.search(r"\{.*\}", text, re.S)

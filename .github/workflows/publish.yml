@@ -2,8 +2,8 @@ name: publish
 
 on:
   schedule:
-    - cron: "17 12 * * *"   # daily 12:17 UTC: render + upload whatever content/<channel>/queue.json has due today
-                            # (long videos weekly on Thursday 15:00 UTC, Shorts every 2 days 18:00 UTC)
+    - cron: "17 12 * * *"   # daily 12:17 UTC: pull the Drive inbox, then render + upload what each channel has due
+                            # tomorrow, scheduled for its slot (channels/<id>.json "publish_local", Eastern time)
   workflow_dispatch:
     inputs:
       only:
@@ -29,7 +29,37 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  inbox:
+    # Applies new scripts/updates that Claude put in the Google Drive inbox (config/inbox.json), checked first.
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests
+      - name: Pull the Drive inbox
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+        run: |
+          git config user.name "yt-factory bot"
+          git config user.email "actions@users.noreply.github.com"
+          set +e
+          python pipeline/inbox.py; rc=$?
+          git pull --rebase --autostash -q || true
+          git push || true
+          exit $rc
+
   publish:
+    needs: inbox
+    if: ${{ !cancelled() }}   # publish what is already queued even if a bundle was rejected
     runs-on: ubuntu-latest
     timeout-minutes: 180
     permissions:
@@ -37,9 +67,11 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        channel: ${{ github.event_name == 'workflow_dispatch' && fromJSON(format('["{0}"]', inputs.channel)) || fromJSON(vars.CHANNELS || '["money"]') }}
+        channel: ${{ github.event_name == 'workflow_dispatch' && fromJSON(format('["{0}"]', inputs.channel)) || fromJSON(vars.CHANNELS || '["money","history","hidden"]') }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # includes what the inbox job just committed
 
       - name: Anything due? (skips the heavy install on quiet days)
         id: check

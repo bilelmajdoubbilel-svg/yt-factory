@@ -1,0 +1,44 @@
+{
+  "id": "hidden",
+  "name": "Hidden Systems",
+  "youtube_token_secret": "YT_REFRESH_TOKEN_3",
+  "niche": "How the systems you use every day really work in the US and Canada: water, power, trash, mail, 911. Every figure sourced.",
+  "voice": "am_michael",
+  "theme": {
+    "bg": "#0B0F1A",
+    "panel": "#141A2A",
+    "paper": "#EEF1F8",
+    "muted": "#8590A6",
+    "accent": "#5B8CFF",
+    "gold": "#FFD166",
+    "mint": "#3DDBD9"
+  },
+  "music_dir": "music/shared",
+  "music_volume": 0.13,
+  "category_id": "28",
+  "default_tags": [
+    "science",
+    "space",
+    "scale comparison"
+  ],
+  "youtube_channel_id": "UCkTDWtmz8rme1LDyF0mJIgA",
+  "handle": "@HiddenSystems19",
+  "audio_language": "en-US",
+  "schedule": {
+    "long_days": [
+      "Sun"
+    ],
+    "long_per_week": 1,
+    "shorts_per_day": 1
+  },
+  "publish_local": {
+    "tz": "America/Toronto",
+    "long": "15:00",
+    "short": "20:00",
+    "why": "US + Canada audience. Long Sun 3 pm ET, Shorts 8 pm ET (network plan 5 Nov 2026)."
+  },
+  "host": "Drip, a living water drop",
+  "ready": false,
+  "gemini_fallback": false,
+  "ready_note": "Set to true only after the owner approves this channel's own host and look (stills). Until then the robot publishes nothing here."
+}

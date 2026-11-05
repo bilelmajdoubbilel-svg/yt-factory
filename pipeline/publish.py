@@ -9,6 +9,9 @@ If the queue fell behind (the first unpublished item is in the past), every unpu
 forward by the same number of days, so the spacing (weekly long, Shorts every 2 days) is kept.
 If nothing is queued for the next 7 days and GEMINI_API_KEY is set, write.py drafts a new topic.
 --check only prints "due=true|false" (for the workflow, to skip installs on quiet days).
+A channel publishes only when channels/<id>.json has "ready": true (its own host and look are approved),
+so a new channel can never go out in another channel's style. The Gemini fallback writer runs only for
+channels with "gemini_fallback": true.
 """
 import argparse
 import datetime as dt
@@ -82,15 +85,22 @@ def main():
     qpath = ROOT / "content" / a.channel / "queue.json"
     queue = json.loads(qpath.read_text()) if qpath.exists() else []
     state = json.loads(STATE.read_text()) if STATE.exists() else []
-    done = {x["id"] for x in state}
+    done = {x["id"] for x in state if x.get("channel", a.channel) == a.channel}
     today = dt.datetime.now(dt.timezone.utc).date()
     horizon = today + dt.timedelta(days=LOOKAHEAD)
+
+    if not cfg.get("ready", False) and not a.test:
+        if a.check:
+            print("due=false")
+        print(f"{a.channel}: not ready yet (\"ready\": false in channels/{a.channel}.json), nothing published", file=sys.stderr)
+        return
+    writer = bool(os.environ.get("GEMINI_API_KEY")) and cfg.get("gemini_fallback", False)
 
     if a.check:
         pend = [q for q in queue if script_id(q) not in done]
         soon = [q for q in pend if dt.date.fromisoformat(q["date"]) <= horizon]
         week = [q for q in pend if dt.date.fromisoformat(q["date"]) <= today + dt.timedelta(days=7)]
-        need_writer = not week and bool(os.environ.get("GEMINI_API_KEY"))
+        need_writer = not week and writer
         print("due=" + ("true" if soon or need_writer else "false"))
         return
 
@@ -114,7 +124,7 @@ def main():
 
     upcoming = [q for q in queue if dt.date.fromisoformat(q["date"]) <= today + dt.timedelta(days=7)
                 and json.loads((ROOT / q["script"]).read_text())["id"] not in done]
-    if not upcoming and os.environ.get("GEMINI_API_KEY"):
+    if not upcoming and writer:
         run(sys.executable, "pipeline/write.py", "--channel", a.channel)
         queue = json.loads(qpath.read_text())
 

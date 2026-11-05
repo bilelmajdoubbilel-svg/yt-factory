@@ -15,17 +15,21 @@ pipeline/worlds.py     street, foodcourt, aisle, studio, cinema, airport (multip
 HyperFrames render     HTML -> MP4, then loudness to -14 LUFS
 pipeline/thumbnail.py  brand thumbnail: Tag + receipt with one number and <=3 words
 pipeline/upload.py     YouTube Data API: scheduled publish, thumbnail, captions, chapters, sources
-pipeline/publish.py    runs daily from .github/workflows/publish.yml, publishes whatever is due
-pipeline/write.py      backup writer (Gemini free tier) when the queue runs dry; Claude is the main writer
+pipeline/publish.py    runs daily from .github/workflows/publish.yml, publishes whatever is due (only channels with "ready": true)
+pipeline/inbox.py      first step of the daily run: applies checked update bundles from the Google Drive inbox
+pipeline/check_tokens.py  weekly (.github/workflows/check-tokens.yml): each token works and controls the right channel
+pipeline/write.py      backup writer (Gemini free tier) when the Price Logic queue runs dry; Claude is the main writer
 ```
+
+Claude's scheduled sessions (weekly run every Monday + one-off design sessions) follow `RUNBOOK.md`.
 
 ## Channels
 
 | id | channel | niche | host |
 |----|---------|-------|------|
 | `money` | channel 1 "Price Logic" | why things cost what they cost, how companies make money | Tag, a living price tag (brand v3) |
-| `history` | channel 2 (to create) | history on animated maps and timelines | olive jacket, explorer hat |
-| `scale` | channel 3 (to create) | science and space by scale | teal jacket, goggles |
+| `history` | channel 2 "Map Minutes" (@MapMinutes19) | US and Canada geography and history on maps; long Wed 3 pm ET, Shorts 10 am ET | a living map pin (look in progress, "ready": false) |
+| `hidden` | channel 3 "Hidden Systems" (@HiddenSystems19) | how water, power, trash, mail and 911 work; long Sun 3 pm ET, Shorts 8 pm ET | a living water drop (look in progress, "ready": false) |
 
 ## Audio
 
@@ -51,8 +55,10 @@ the whole queue slides forward so the spacing stays the same.
 ## GitHub setup (once)
 
 Settings → Secrets and variables → Actions → New repository secret:
-`YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN_1`, `GEMINI_API_KEY`
-(later `YT_REFRESH_TOKEN_2`, `YT_REFRESH_TOKEN_3` for the new channels).
+`YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN_1` (Price Logic), `YT_REFRESH_TOKEN_2` (Map Minutes),
+`YT_REFRESH_TOKEN_3` (Hidden Systems), `GEMINI_API_KEY`, and `GDRIVE_REFRESH_TOKEN` (same OAuth client, scope
+`https://www.googleapis.com/auth/drive.readonly`, Google Drive API enabled in the Cloud project) for the Drive inbox.
+Check them any time: Actions → check-tokens → Run workflow.
 
 Test: Actions → publish → Run workflow → tick **test**: it renders the next Short and uploads it private with a
 [TEST] title. After that the robot runs every day at 12:17 UTC and uploads what `queue.json` says is due
