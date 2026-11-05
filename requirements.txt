@@ -2,4 +2,5 @@ kokoro-onnx==0.6.1
 soundfile
 numpy
 requests
+google-auth
 playwright

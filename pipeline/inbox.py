@@ -13,8 +13,9 @@ Safety rules, so a bad bundle can never break publishing:
 - every file is processed once (state/inbox.json keeps its id + checksum); a rejected bundle turns the run red once,
   so GitHub emails the owner, and is not retried until a fixed copy is uploaded.
 
-Env: GDRIVE_REFRESH_TOKEN (scope drive.readonly, same OAuth client as YouTube), YT_CLIENT_ID, YT_CLIENT_SECRET.
-Without GDRIVE_REFRESH_TOKEN it prints a note and exits 0.
+Env: GDRIVE_SA_JSON (service account key; the inbox folder is shared with its email), or the fallback
+GDRIVE_REFRESH_TOKEN with YT_CLIENT_ID and YT_CLIENT_SECRET. See pipeline/drive_auth.py.
+Without either it prints a note and exits 0.
 Usage: python pipeline/inbox.py [--dry-run] [--local some.zip]
 """
 import argparse
@@ -30,6 +31,9 @@ import zipfile
 from pathlib import Path, PurePosixPath
 
 import requests
+
+sys.path.insert(0, str(Path(__file__).parent))
+import drive_auth  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CFG = ROOT / "config" / "inbox.json"
@@ -52,11 +56,7 @@ def allowed(path):
 
 
 def drive_token():
-    r = requests.post("https://oauth2.googleapis.com/token", data={
-        "client_id": os.environ["YT_CLIENT_ID"], "client_secret": os.environ["YT_CLIENT_SECRET"],
-        "refresh_token": os.environ["GDRIVE_REFRESH_TOKEN"], "grant_type": "refresh_token"}, timeout=30)
-    r.raise_for_status()
-    return r.json()["access_token"]
+    return drive_auth.access_token()
 
 
 def list_bundles(token, folder):
@@ -207,8 +207,8 @@ def main():
         bundles = [{"id": "local", "name": Path(a.local).name, "md5Checksum": "local", "data": Path(a.local).read_bytes()}]
         token = None
     else:
-        if not os.environ.get("GDRIVE_REFRESH_TOKEN"):
-            print("inbox: GDRIVE_REFRESH_TOKEN not set, skipping (scripts arrive by manual upload)")
+        if not drive_auth.configured():
+            print("inbox: no Drive key set (GDRIVE_SA_JSON), skipping (scripts arrive by manual upload)")
             return 0
         folder = json.loads(CFG.read_text())["folder_id"]
         token = drive_token()

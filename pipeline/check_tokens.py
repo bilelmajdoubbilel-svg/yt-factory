@@ -4,7 +4,7 @@ For each channels/<id>.json with a "youtube_channel_id": swap the refresh token 
 "youtube_token_secret") for an access token, ask YouTube which channel it controls (channels.list mine=true)
 and compare. Exit 1 if any channel fails, so the run turns red and GitHub emails the owner.
 
-Optional: GDRIVE_REFRESH_TOKEN (Drive inbox) is checked the same way when it is set.
+Optional: GDRIVE_SA_JSON (Drive inbox, service account) is checked when it is set.
 Needs env: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN_1/2/3 (no other libraries than requests).
 Usage: python pipeline/check_tokens.py
 """
@@ -14,6 +14,9 @@ import sys
 from pathlib import Path
 
 import requests
+
+sys.path.insert(0, str(Path(__file__).parent))
+import drive_auth  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 TOKEN_URL = "https://oauth2.googleapis.com/token"
@@ -56,19 +59,21 @@ def main():
             bad += 1
             rows.append(f"FAIL  {name}: {e}")
 
-    drive = os.environ.get("GDRIVE_REFRESH_TOKEN")
-    if drive:
+    if drive_auth.configured():
         try:
-            tok = access_token(drive)
-            r = requests.get("https://www.googleapis.com/drive/v3/about", params={"fields": "user(emailAddress)"},
+            tok = drive_auth.access_token()
+            folder = json.loads((ROOT / "config" / "inbox.json").read_text())["folder_id"]
+            r = requests.get(f"https://www.googleapis.com/drive/v3/files/{folder}",
+                             params={"fields": "name,capabilities(canListChildren)"},
                              headers={"Authorization": f"Bearer {tok}"}, timeout=30)
             r.raise_for_status()
-            rows.append(f"OK    Drive inbox: GDRIVE_REFRESH_TOKEN -> {r.json()['user']['emailAddress']}")
+            who = "service account" if os.environ.get("GDRIVE_SA_JSON") else "OAuth token"
+            rows.append(f"OK    Drive inbox: {who} can read '{r.json()['name']}'")
         except Exception as e:  # noqa: BLE001
             bad += 1
-            rows.append(f"FAIL  Drive inbox: {e}")
+            rows.append(f"FAIL  Drive inbox: {e} (is the inbox folder shared with the service account?)")
     else:
-        rows.append("SKIP  Drive inbox: GDRIVE_REFRESH_TOKEN not set yet")
+        rows.append("SKIP  Drive inbox: GDRIVE_SA_JSON not set yet")
 
     report = "\n".join(rows)
     print(report)
