@@ -1,0 +1,125 @@
+{
+ "id": "mcd-s2-tenx",
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "long_video": "mcdonalds-landlord",
+ "title": "McDonald's Earns 10x More From Restaurants It Doesn't Run #shorts",
+ "summary": "Franchised margins $13.9B vs company-operated $1.4B in 2025.",
+ "tags": [
+  "mcdonalds",
+  "franchise",
+  "business model"
+ ],
+ "mood": "playful",
+ "sources": [
+  "McDonald's 2025 Form 10-K (Item 1): \"Of the 45,356 McDonald's restaurants at year-end 2025, approximately 95% were franchised\"; conventional franchisees pay \"rent and royalties based upon a percent of sales, with specified minimum rent payments\"; the Company \"generally owns or secures a long-term lease on the land and building\"; operating margin 46.1%; systemwide sales $139.4 billion: https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+  "McDonald's fourth quarter and full year 2025 results (Feb 11, 2026), income statement: revenues from franchised restaurants $16,548M; company-owned and operated sales $9,690M; franchised occupancy expenses $2,618M; company-operated restaurant expenses $8,268M; operating income $12,393M; net income $8,563M: https://mcdonalds.mediaroom.com/2026-02-11-McDONALDS-REPORTS-FOURTH-QUARTER-AND-FULL-YEAR-2025-RESULTS",
+  "Our calculations: franchised margin $16,548M - $2,618M = $13,930M; company-operated margin $9,690M - $8,268M = $1,422M (about 9.8x).",
+  "Harry J. Sonneborn proposed that Kroc own the land under McDonald's restaurants and lease it to franchisees: https://en.wikipedia.org/wiki/Harry_J._Sonneborn",
+  "Kroc bought the McDonald brothers' stake in 1961 for $2.7 million; at end-2025 the company owned about 56% of the land and 80% of the restaurant buildings: https://en.wikipedia.org/wiki/McDonald%27s"
+ ],
+ "scenes": [
+  {
+   "type": "statement",
+   "world": "street:BURGERS",
+   "narration": "McDonald's makes almost ten times more from restaurants it doesn't run.",
+   "data": {
+    "lines": [
+     {
+      "text": "10x more",
+      "cue": "mcdonald's"
+     },
+     {
+      "text": "from restaurants it *doesn't run*",
+      "cue": "run"
+     }
+    ]
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "bars",
+   "world": "stage",
+   "narration": "After costs, franchised restaurants left {$13.9 billion.|thirteen point nine billion.} Its own restaurants: {$1.4 billion.|one point four billion.}",
+   "data": {
+    "title": "Left after direct costs, 2025",
+    "source": "Our calculation, McDonald's 2025 results",
+    "items": [
+     {
+      "label": "Franchised",
+      "value": 13.93,
+      "display": "$13.9B",
+      "highlight": true,
+      "cue": "franchised"
+     },
+     {
+      "label": "Its own",
+      "value": 1.422,
+      "display": "$1.4B",
+      "cue": "$1.4"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Rent and royalties barely need a kitchen.",
+   "data": {
+    "lines": [
+     {
+      "text": "Rent needs",
+      "cue": "rent"
+     },
+     {
+      "text": "no *kitchen*",
+      "cue": "kitchen"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:BURGERS",
+   "narration": "The burgers are the franchisee's problem.",
+   "data": {
+    "lines": [
+     {
+      "text": "Burgers?",
+      "cue": "the"
+     },
+     {
+      "text": "*Their* problem",
+      "cue": "problem"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "problem",
+      "expr": "happy"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -5,15 +5,15 @@ video with a recurring host character, moving camera, depth of field, a music be
 then uploads itself to YouTube on schedule.
 
 ```
-content/<channel>/queue.json         what publishes when (long: weekly Thursday, Shorts: every 2 days)
+content/<channel>/queue.json         what publishes when (long: Tue + Fri 15:00 UTC, Shorts: daily 18:00 UTC)
 content/<channel>/<topic>/*.json     scripts: scenes with narration, world, host acting, data
         │
 pipeline/voice.py      Kokoro TTS (free, offline) -> voice.wav + word timings
 pipeline/compose.py    -> cine.py (style "cinematic"): worlds + host + camera + transitions + fx + audio mix
 pipeline/cinema.py     host rig (SVG), props        assets/cinema.js   camera, poses, faces, walk, grain
-pipeline/worlds.py     street, foodcourt, aisle, stage (multiplane layers)
+pipeline/worlds.py     street, foodcourt, aisle, studio, cinema, airport (multiplane layers, live motion)
 HyperFrames render     HTML -> MP4, then loudness to -14 LUFS
-pipeline/thumbnail.py  thumbnail in the episode style (host + one object + <=3 words)
+pipeline/thumbnail.py  brand thumbnail: Tag + receipt with one number and <=3 words
 pipeline/upload.py     YouTube Data API: scheduled publish, thumbnail, captions, chapters, sources
 pipeline/publish.py    runs daily from .github/workflows/publish.yml, publishes whatever is due
 pipeline/write.py      backup writer (Gemini free tier) when the queue runs dry; Claude is the main writer
@@ -54,5 +54,6 @@ Settings → Secrets and variables → Actions → New repository secret:
 `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN_1`, `GEMINI_API_KEY`
 (later `YT_REFRESH_TOKEN_2`, `YT_REFRESH_TOKEN_3` for the new channels).
 
-Test: Actions → publish → Run workflow (privacy `private`). After that it runs every day at 12:17 UTC
-and publishes what `queue.json` says is due.
+Test: Actions → publish → Run workflow → tick **test**: it renders the next Short and uploads it private with a
+[TEST] title. After that the robot runs every day at 12:17 UTC and uploads what `queue.json` says is due
+(one day ahead, scheduled for its slot).

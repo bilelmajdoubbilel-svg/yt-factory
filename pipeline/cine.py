@@ -225,6 +225,8 @@ def ambient_js(sid, anim, dur):
             js.append(f'tl.fromTo("{q}", {{x:0}}, {{x:(i, el) => parseFloat(el.dataset.v) * {D:.2f}, duration:{D:.2f}, ease:"none"}}, 0)')
             n = max(1, int(D / .34))
             js.append(f'tl.fromTo("{q}", {{y:0}}, {{y:-7, duration:.17, yoyo:true, repeat:{2 * n - 1}, ease:"sine.inOut"}}, 0)')
+        elif kind == "glide":
+            js.append(f'tl.fromTo("{q}", {{x:0}}, {{x:(i, el) => parseFloat(el.dataset.v) * {D:.2f}, duration:{D:.2f}, ease:"none"}}, 0)')
         elif kind == "rise":
             n = max(0, int(D / 2.4) - 1)
             js.append(f'tl.fromTo("{q}", {{y:0, scale:.7}}, {{y:(i, el) => -parseFloat(el.dataset.dy), scale:1.25, duration:2.4, ease:"none", repeat:{n}, stagger:.8}}, 0)')

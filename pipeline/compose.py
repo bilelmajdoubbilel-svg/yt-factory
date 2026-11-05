@@ -554,7 +554,7 @@ def t_end(S):
     m, c, js = t_statement(S)
     m += f'<div id="{sid}-foot" class="foot">{esc(d.get("foot", ""))}</div>'
     c += f'''
-    #root .foot {{ position:absolute; left:0; right:0; bottom:{S.s(110, 860)}px; text-align:center; font-size:{S.s(34, 38)}px; font-weight:700; color: var(--muted); }}'''
+    #root .foot {{ position:absolute; left:0; right:0; bottom:{S.s(110, 860)}px; text-align:center; font-size:{S.s(40, 40)}px; font-weight:700; color: var(--muted); }}'''
     js.append(f'tl.fromTo("#{sid}-foot", {{opacity:0}}, {{opacity:1, duration:.5}}, {S.cue(d.get("foot_cue"), S.narr_end * 0.45)})')
     return m, c, js
 

@@ -272,7 +272,55 @@ def cinema(F, H):
     return w
 
 
-WORLDS = {"street": street, "foodcourt": foodcourt, "aisle": aisle, "stage": studio, "studio": studio, "cinema": cinema}
+# ------------------------------------------------------------------ airport gate, daylight
+
+def _plane(x, y, s, cls, v, tail="#2F7F95"):
+    return (f'<div class="{cls}" data-v="{v}" style="position:absolute;left:{x}px;top:{y}px;width:{int(420 * s)}px;height:{int(120 * s)}px">'
+            f'<svg viewBox="0 0 420 120" width="100%" height="100%">'
+            f'<path d="M20,70 Q20,52 60,50 L350,50 Q400,50 410,66 Q400,82 350,82 L60,82 Q20,82 20,70Z" fill="#FFFFFF"/>'
+            f'<path d="M40,50 L20,8 L58,8 L96,50Z" fill="{tail}"/>'
+            f'<path d="M170,66 L250,66 L210,112 L180,112Z" fill="#D9E2EA"/>'
+            + "".join(f'<circle cx="{120 + i * 22}" cy="62" r="4" fill="#5C7A8C"/>' for i in range(10)) +
+            f'<path d="M378,58 Q398,60 404,66 L378,66Z" fill="#5C7A8C"/></svg></div>')
+
+
+def airport(F, H):
+    oy = F - 790
+    far = ('<div style="position:absolute;left:-1800px;top:-1400px;width:3600px;height:2100px;'
+           'background:linear-gradient(#7EC3EA 0%,#B5DDF2 55%,#E8F4FA 100%)"></div>'
+           '<div style="position:absolute;left:-1800px;top:560px;width:3600px;height:400px;background:linear-gradient(#9AA6AE,#7E8A92)"></div>'
+           '<div style="position:absolute;left:-1800px;top:640px;width:3600px;height:10px;background:repeating-linear-gradient(90deg,#FFF 0 80px,transparent 80px 160px)"></div>'
+           + _plane(-700, 470, 1.1, "parked", 0, "#E46C55"))
+    mullions = "".join(f'<rect x="{x}" y="-120" width="34" height="780" fill="#23505E"/>' for x in range(-1700, 1720, 330))
+    board = ('<rect x="-1480" y="150" width="520" height="330" rx="16" fill="#1E2A33"/>'
+             '<rect x="-1480" y="150" width="520" height="56" rx="16" fill="#F6C453"/>'
+             + "".join(f'<rect x="-1450" y="{232 + r * 46}" width="{180 + (r * 53 % 90)}" height="18" rx="4" fill="#F3E7D2" opacity=".8"/>'
+                       f'<rect x="-1080" y="{232 + r * 46}" width="90" height="18" rx="4" fill="{"#4FC3A1" if r % 3 else "#E46C55"}"/>' for r in range(5)))
+    gate = ('<rect x="780" y="120" width="300" height="120" rx="16" fill="#F6C453" stroke="#2B2230" stroke-width="6"/>'
+            '<text x="930" y="200" text-anchor="middle" font-family="PL Display" font-size="64" fill="#2B2230">GATE 12</text>'
+            '<rect x="925" y="-120" width="10" height="240" fill="#2B2230"/>')
+    mid = (f'<svg style="position:absolute;left:-1700px;top:0" width="3400" height="900" viewBox="-1700 0 3400 900" overflow="visible">'
+           f'<rect x="-1700" y="-120" width="3400" height="40" fill="#23505E"/>{mullions}'
+           f'<rect x="-1700" y="640" width="3400" height="26" fill="#23505E"/>{board}{gate}'
+           f'<rect x="-300" y="560" width="600" height="230" rx="12" fill="#E8ECF1" stroke="#2B2230" stroke-width="5"/>'
+           f'<rect x="-300" y="560" width="600" height="40" rx="12" fill="#2F7F95"/></svg>')
+    near = (f'<div style="position:absolute;left:-1800px;top:790px;width:3600px;height:{max(560, H - F + 400)}px;'
+            f'background:#3E6E8C;background-image:radial-gradient(circle,rgba(255,255,255,.12) 3px,transparent 4px);background-size:48px 48px"></div>'
+            f'<div style="position:absolute;left:-900px;top:800px;width:1800px;height:200px;border-radius:50%;background:radial-gradient(ellipse,rgba(255,255,255,.25),rgba(255,255,255,0) 70%)"></div>')
+    fore = ('<svg style="position:absolute;left:-1560px;top:760px" width="3120" height="420" viewBox="0 0 3120 420">'
+            + "".join(f'<rect x="{x}" y="60" width="150" height="190" rx="26" fill="#5D6B78"/><rect x="{x}" y="230" width="150" height="40" rx="12" fill="#46525E"/>'
+                      for x in (0, 170, 2800, 2970)) + '</svg>')
+    fore += _bokeh([(-1150, 60, 110, "255,255,255", .45), (1100, 80, 100, "255,236,190", .35)], "amb-bokeh")
+    live = {"far": _plane(-2600, 430, .8, "amb-glide", 180) + _plane(1900, 380, .55, "amb-glide", -140, "#F6C453"),
+            "mid": _walkers([(-1450, "rgba(40,60,80,.45)", 270, 60), (1150, "rgba(60,50,80,.45)", 260, -52)], 785, 1.0)}
+    anim = [("far", ".amb-glide", "glide"), ("mid", ".amb-walk", "walk"), ("fore", ".amb-bokeh", "drift")]
+    w = {"far": _shift(far, oy), "mid": _shift(mid, oy), "near": _shift(near, oy), "fore": _shift(fore, oy)}
+    w["live"] = {k: _shift(v, oy) for k, v in live.items()}
+    w["anim"] = anim
+    return w
+
+
+WORLDS = {"street": street, "foodcourt": foodcourt, "aisle": aisle, "stage": studio, "studio": studio, "cinema": cinema, "airport": airport}
 
 
 def _live_bokeh(w, F):

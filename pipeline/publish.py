@@ -66,6 +66,8 @@ def main():
     ap.add_argument("--privacy", default=None, help="upload now with this privacy instead of scheduling")
     ap.add_argument("--only", choices=["long", "short"])
     ap.add_argument("--check", action="store_true", help="print due=true/false and exit")
+    ap.add_argument("--test", action="store_true",
+                    help="end-to-end test: render the next queued Short and upload it PRIVATE with a [TEST] title; not logged")
     a = ap.parse_args()
     cfg = json.loads((ROOT / "channels" / f"{a.channel}.json").read_text())
     qpath = ROOT / "content" / a.channel / "queue.json"
@@ -81,6 +83,21 @@ def main():
         week = [q for q in pend if dt.date.fromisoformat(q["date"]) <= today + dt.timedelta(days=7)]
         need_writer = not week and bool(os.environ.get("GEMINI_API_KEY"))
         print("due=" + ("true" if soon or need_writer else "false"))
+        return
+
+    if a.test:
+        nxt = next((q for q in queue if q["kind"] == "short" and script_id(q) not in done), None)
+        if not nxt:
+            print("no Short in the queue to test with")
+            return
+        script = ROOT / nxt["script"]
+        sid = script_id(nxt)
+        run("bash", "pipeline/make_video.sh", script, "--render")
+        out = ROOT / "out"
+        run(sys.executable, "pipeline/upload.py", "--channel", a.channel, "--video", out / f"{sid}.mp4", "--script", script,
+            "--srt", out / f"{sid}.srt", "--timeline", ROOT / "build" / sid / "timeline.json", "--privacy", "private", "--test",
+            *(["--dry-run"] if a.dry_run else []))
+        print("TEST upload done (private, not logged): delete it in YouTube Studio after checking")
         return
 
     if not a.dry_run:

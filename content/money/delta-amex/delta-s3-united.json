@@ -1,0 +1,120 @@
+{
+ "id": "delta-s3-united",
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "long_video": "delta-amex",
+ "title": "United's Miles Were Worth More Than United #shorts",
+ "summary": "In June 2020 United valued MileagePlus at about $22 billion, almost double its $11.7 billion market value.",
+ "tags": [
+  "delta",
+  "airline miles",
+  "credit cards",
+  "how airlines make money"
+ ],
+ "mood": "playful",
+ "sources": [
+  "Delta Air Lines 2025 Form 10-K (Item 1): \"In 2025, remuneration from American Express totaled $8.2 billion, which we expect to grow to $10 billion over the next few years\"; \"Our most significant and valuable contract to sell miles relates to our co-brand credit card relationship with American Express\"; \"In 2025, 12% of revenue miles flown on Delta were from award travel ... approximately 35 million award tickets\"; fuel cost $9,819 million: https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+  "Delta December quarter and full year 2025 results (Jan 13, 2026): operating revenue $63.4 billion, operating income $5.8 billion (9.2% margin), pre-tax income $6.2 billion: https://news.delta.com/delta-air-lines-announces-december-quarter-and-full-year-2025-financial-results",
+  "Delta's $9.0 billion of financings secured by the SkyMiles program, September 2020 (Kilpatrick Townsend release): https://ktslaw.com/insights/news/news-release/2020/9/kilpatrick-townsend-advises-delta-air-lines-on-9-billion-skymiles-financings",
+  "Our calculation: $8.2B American Express remuneration / $9.819B fuel = 84%. Remuneration is revenue, not profit; it is compared with operating income only to show its size.",
+  "United's $6.8 billion financing secured by MileagePlus (July 7, 2020): https://www.kirkland.com/news/press-release/2020/07/kirkland-reps-ua-on--financing-mileageplus",
+  "United valued MileagePlus at about $22 billion, almost double its $11.7 billion market capitalization; 71% of MileagePlus cash flow in 2019 from third parties (Bloomberg, via Executive Traveller, June 2020): https://www.executivetraveller.com/news/how-united-airlines-took-a-7bn-mortgage-on-its-frequent-flyer-scheme"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "airport",
+   "narration": "In {2020,|twenty twenty,} United said its frequent flyer program was worth about {$22 billion.|twenty-two billion dollars.}",
+   "data": {
+    "price": "$22B",
+    "kicker": "MileagePlus, United's valuation",
+    "label": "a *miles* program",
+    "cue": "in",
+    "label_cue": "frequent"
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "The whole airline was worth {$11.7 billion|eleven point seven billion} on the stock market.",
+   "data": {
+    "title": "United, June 2020",
+    "source": "Bloomberg via Executive Traveller",
+    "items": [
+     {
+      "label": "Miles program",
+      "value": 22,
+      "display": "~$22B",
+      "highlight": true,
+      "cue": "whole"
+     },
+     {
+      "label": "Whole airline",
+      "value": 11.7,
+      "display": "$11.7B",
+      "cue": "$11.7"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Most of that miles money came from credit card partners, not from flying.",
+   "data": {
+    "lines": [
+     {
+      "text": "From card partners,",
+      "cue": "most"
+     },
+     {
+      "text": "not *flying*",
+      "cue": "flying"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "airport",
+   "narration": "The miles were worth more than the planes.",
+   "data": {
+    "lines": [
+     {
+      "text": "Miles beat",
+      "cue": "the"
+     },
+     {
+      "text": "the *planes*",
+      "cue": "planes"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "acts": [
+     {
+      "cue": "planes",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "id": "delta-s1-amex",
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "long_video": "delta-amex",
+ "title": "A Credit Card Paid Delta $8.2 Billion #shorts",
+ "summary": "American Express paid Delta $8.2 billion in 2025, more than Delta's operating profit.",
+ "tags": [
+  "delta",
+  "airline miles",
+  "credit cards",
+  "how airlines make money"
+ ],
+ "mood": "playful",
+ "sources": [
+  "Delta Air Lines 2025 Form 10-K (Item 1): \"In 2025, remuneration from American Express totaled $8.2 billion, which we expect to grow to $10 billion over the next few years\"; \"Our most significant and valuable contract to sell miles relates to our co-brand credit card relationship with American Express\"; \"In 2025, 12% of revenue miles flown on Delta were from award travel ... approximately 35 million award tickets\"; fuel cost $9,819 million: https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+  "Delta December quarter and full year 2025 results (Jan 13, 2026): operating revenue $63.4 billion, operating income $5.8 billion (9.2% margin), pre-tax income $6.2 billion: https://news.delta.com/delta-air-lines-announces-december-quarter-and-full-year-2025-financial-results",
+  "Delta's $9.0 billion of financings secured by the SkyMiles program, September 2020 (Kilpatrick Townsend release): https://ktslaw.com/insights/news/news-release/2020/9/kilpatrick-townsend-advises-delta-air-lines-on-9-billion-skymiles-financings",
+  "Our calculation: $8.2B American Express remuneration / $9.819B fuel = 84%. Remuneration is revenue, not profit; it is compared with operating income only to show its size.",
+  "United's $6.8 billion financing secured by MileagePlus (July 7, 2020): https://www.kirkland.com/news/press-release/2020/07/kirkland-reps-ua-on--financing-mileageplus",
+  "United valued MileagePlus at about $22 billion, almost double its $11.7 billion market capitalization; 71% of MileagePlus cash flow in 2019 from third parties (Bloomberg, via Executive Traveller, June 2020): https://www.executivetraveller.com/news/how-united-airlines-took-a-7bn-mortgage-on-its-frequent-flyer-scheme"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "airport",
+   "narration": "Last year, a credit card company paid Delta Air Lines {$8.2 billion.|eight point two billion dollars.}",
+   "data": {
+    "price": "$8.2B",
+    "kicker": "Paid to Delta, 2025",
+    "label": "by *American Express*",
+    "cue": "last",
+    "label_cue": "credit"
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "That's more than Delta's whole operating profit: {$5.8 billion.|five point eight billion.}",
+   "data": {
+    "title": "Delta, 2025",
+    "source": "Delta 2025 10-K and results",
+    "items": [
+     {
+      "label": "From Amex",
+      "value": 8.2,
+      "display": "$8.2B",
+      "highlight": true,
+      "cue": "that's"
+     },
+     {
+      "label": "Operating profit",
+      "value": 5.8,
+      "display": "$5.8B",
+      "cue": "$5.8"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "airport",
+   "narration": "Every swipe of a Delta card sends the airline a little money.",
+   "data": {
+    "lines": [
+     {
+      "text": "Every swipe",
+      "cue": "every"
+     },
+     {
+      "text": "pays an *airline*",
+      "cue": "airline"
+     }
+    ]
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold"
+   }
+  },
+  {
+   "type": "end",
+   "world": "airport",
+   "narration": "Delta's best product doesn't fly.",
+   "data": {
+    "lines": [
+     {
+      "text": "Its best product",
+      "cue": "delta's"
+     },
+     {
+      "text": "doesn't *fly*",
+      "cue": "fly"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "fly",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

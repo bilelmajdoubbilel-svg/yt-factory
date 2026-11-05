@@ -1,0 +1,563 @@
+{
+ "id": "printer-ink",
+ "format": "long",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.0,
+ "title": "HP's Printer Is the Bait",
+ "summary": "HP sold $5.8 billion of printers last year and $10.9 billion of ink and toner. Its own annual report explains why cartridges are where the money is.",
+ "intro_chapter": "Printers vs ink",
+ "tags": [
+  "printer ink",
+  "why is printer ink so expensive",
+  "hp",
+  "razor and blades",
+  "ink cartridges"
+ ],
+ "thumbnail": {
+  "tag": "$10.9B",
+  "top": "OF INK",
+  "expr": "surprised",
+  "prop": "ink"
+ },
+ "open_mood": "tension",
+ "body_mood": "curious",
+ "end_mood": "payoff",
+ "hooks": [
+  {
+   "formula": "Comparison",
+   "hook": "HP sold $5.8 billion of printers last year. It sold almost twice that in ink and toner.",
+   "score": 86,
+   "picked": true
+  },
+  {
+   "formula": "The Receipt",
+   "hook": "HP's own annual report calls its cartridges high margin.",
+   "score": 82
+  },
+  {
+   "formula": "Contrarian Flip",
+   "hook": "The cheapest printer is the most expensive one you'll ever own.",
+   "score": 78
+  }
+ ],
+ "sources": [
+  "HP Inc. fiscal 2025 results (year ended Oct 31, 2025), Exhibit 99.1: total net revenue $55,295M; Personal Systems revenue $38,532M, earnings from operations $2,054M (5.3%); Printing revenue $16,702M, earnings from operations $3,118M (18.7%); Supplies $10,916M (2024: $11,295M); Commercial Printing $4,633M; Consumer Printing $1,153M: https://www.hp.com/us-en/newsroom/press-releases/2025/hp-inc-reports-fiscal-2025-full-year-and-fourth-quarter-results.html",
+  "HP Inc. fiscal 2025 Form 10-K, Item 1A: \"While our big tank printers typically have a higher initial margin than our traditional in cartridge printers, they do not result in follow-on sales of high margin traditional ink cartridges and, as a result, may have lower overall device lifetime profitability.\" Commercial and Consumer Printing exclude supplies: https://www.sec.gov/Archives/edgar/data/47217/000004721725000071/hpq-20251031.htm",
+  "Our calculations: printer hardware $4,633M + $1,153M = $5,786M; supplies / printing revenue = 65%; supplies change -3.4%."
+ ],
+ "scenes": [
+  {
+   "type": "shot",
+   "world": "aisle",
+   "narration": "Last year, HP sold {$5.8 billion|five point eight billion dollars} worth of printers. It sold almost twice that in ink and toner.",
+   "data": {
+    "elements": [
+     {
+      "kind": "hangtag",
+      "text": "$10.9B",
+      "x": 430,
+      "y": 250,
+      "scale": 1.4,
+      "layer": "mid",
+      "cue": "last",
+      "cue2": "ink"
+     }
+    ]
+   },
+   "host": {
+    "x": -820,
+    "pose": "hold",
+    "prop": "ink",
+    "enter": {
+     "dx": 700,
+     "t": 0,
+     "dur": 1.4
+    },
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 16
+     },
+     {
+      "cue": "twice",
+      "expr": "surprised",
+      "look": 20
+     }
+    ]
+   },
+   "cam": [
+    {
+     "t": 0,
+     "x": -200,
+     "y": 10,
+     "z": 1.0
+    },
+    {
+     "t": "end",
+     "x": 80,
+     "y": -10,
+     "z": 1.12,
+     "ease": "sine.inOut"
+    }
+   ]
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "Printers: {$5.8 billion.|five point eight billion.} Ink and toner: {$10.9 billion.|ten point nine billion.}",
+   "data": {
+    "title": "HP, fiscal 2025",
+    "source": "HP fiscal 2025 results; printer hardware = commercial + consumer (our sum)",
+    "items": [
+     {
+      "label": "Printers",
+      "value": 5.786,
+      "display": "$5.8B",
+      "cue": "printers"
+     },
+     {
+      "label": "Ink and toner",
+      "value": 10.916,
+      "display": "$10.9B",
+      "highlight": true,
+      "cue": "ink"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "The printer isn't really the product. It's the bait. And HP's own annual report tells you why.",
+   "data": {
+    "lines": [
+     {
+      "text": "The printer is",
+      "cue": "the"
+     },
+     {
+      "text": "the *bait*",
+      "cue": "bait"
+     }
+    ]
+   },
+   "host": {
+    "prop": "ink",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "bait",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part one. The bait and the hook.",
+   "data": {
+    "num": "01",
+    "title": "The bait and the *hook*"
+   }
+  },
+  {
+   "type": "flow",
+   "world": "studio",
+   "narration": "It's an old trick called razor and blades. Sell the machine cheap. Then sell the refills, again and again, for years.",
+   "data": {
+    "steps": [
+     {
+      "label": "Cheap printer",
+      "cue": "sell"
+     },
+     {
+      "label": "You need ink",
+      "cue": "refills"
+     },
+     {
+      "label": "Refills for years",
+      "cue": "years"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "Home printers, the ones most of us buy, brought HP just {$1.2 billion.|one point two billion dollars.} A small slice next to the ink.",
+   "data": {
+    "value": 1.2,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "home printers, fiscal 2025",
+    "cue": "$1.2",
+    "source": "HP fiscal 2025 results: Consumer Printing $1,153M"
+   }
+  },
+  {
+   "type": "share",
+   "world": "stage",
+   "narration": "At HP, ink and toner made up about {65 percent|sixty-five percent} of all printing revenue last year.",
+   "data": {
+    "title": "HP printing revenue, fiscal 2025",
+    "pct": 65,
+    "part_label": "Ink and toner $10.9B",
+    "whole_label": "All printing $16.7B",
+    "cue": "65",
+    "source": "HP fiscal 2025 results (our calculation)"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "For every dollar spent on an HP printer last year, about a dollar ninety went on HP ink and toner.",
+   "data": {
+    "lines": [
+     {
+      "text": "$1 on printers",
+      "cue": "every"
+     },
+     {
+      "text": "*$1.89* on ink and toner",
+      "cue": "ninety"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "bars",
+   "world": "stage",
+   "narration": "Now compare it with HP's computers. Computers brought in {$38.5 billion|thirty-eight point five billion} and earned {$2.1 billion.|two point one billion.} Printing brought in less than half that, and earned {$3.1 billion.|three point one billion.}",
+   "data": {
+    "title": "HP operating profit, fiscal 2025",
+    "source": "HP fiscal 2025 results",
+    "items": [
+     {
+      "label": "Computers ($38.5B sales)",
+      "value": 2.054,
+      "display": "$2.1B",
+      "cue": "computers"
+     },
+     {
+      "label": "Printing ($16.7B sales)",
+      "value": 3.118,
+      "display": "$3.1B",
+      "highlight": true,
+      "cue": "printing"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "HP sells far more computers. It makes more money from printing.",
+   "data": {
+    "lines": [
+     {
+      "text": "Sells more *computers*",
+      "cue": "sells"
+     },
+     {
+      "text": "Earns more from *ink*",
+      "cue": "money"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "cta",
+   "world": "aisle",
+   "narration": "If you like seeing the receipts behind everyday prices, subscribe. New ones every Tuesday and Friday.",
+   "data": {
+    "cue": "subscribe"
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part two. HP's own receipt.",
+   "data": {
+    "num": "02",
+    "title": "HP's own *receipt*"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "Some printers now come with big ink tanks you refill yourself from a bottle. Here's how HP's annual report describes them.",
+   "data": {
+    "lines": [
+     {
+      "text": "Refillable *tanks*",
+      "cue": "tanks"
+     },
+     {
+      "text": "What does HP think?",
+      "cue": "here's"
+     }
+    ]
+   },
+   "host": {
+    "prop": "ink",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "quote",
+   "world": "stage",
+   "narration": "They do not result in follow-on sales of high margin traditional ink cartridges.",
+   "data": {
+    "quote": "They do not result in follow-on sales of *high margin* traditional ink cartridges.",
+    "who": "HP Inc., annual report (10-K), fiscal 2025",
+    "note": "on its big refillable tank printers",
+    "cue": "they"
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "In plain words: the cartridges are where the money is. A printer you refill yourself breaks the hook.",
+   "data": {
+    "lines": [
+     {
+      "text": "Cartridges = the *money*",
+      "cue": "cartridges"
+     },
+     {
+      "text": "Refills break the hook",
+      "cue": "refill"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "proud",
+      "pose": "present"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "That's why tank printers cost more up front. HP says they carry a higher margin at the start, because there's less to earn later.",
+   "data": {
+    "lines": [
+     {
+      "text": "Tank printer:",
+      "cue": "tank"
+     },
+     {
+      "text": "pay *up front*",
+      "cue": "front"
+     }
+    ]
+   },
+   "host": {
+    "prop": "ink",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "later",
+      "expr": "happy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "And the switch shows. HP's ink and toner sales fell about {3 percent|three percent} last year.",
+   "data": {
+    "value": -3,
+    "decimals": 0,
+    "suffix": "%",
+    "label": "HP ink and toner sales, fiscal 2025",
+    "cue": "3",
+    "source": "HP fiscal 2025 results: $11.3B to $10.9B"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "HP's report lists other threats too: cheaper cartridges from other brands, and people simply printing less, because more of life is digital.",
+   "data": {
+    "lines": [
+     {
+      "text": "Cheaper *other brands*",
+      "cue": "cheaper"
+     },
+     {
+      "text": "People printing *less*",
+      "cue": "printing"
+     }
+    ]
+   },
+   "host": {
+    "prop": "ink",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "worried",
+      "look": 14
+     },
+     {
+      "cue": "digital",
+      "pose": "shrug"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part three. The real price.",
+   "data": {
+    "num": "03",
+    "title": "The *real* price"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "So when a printer looks cheap, don't look at the box. Look at what a year of ink costs. That's the real price.",
+   "data": {
+    "lines": [
+     {
+      "text": "Don't price the *printer*",
+      "cue": "box"
+     },
+     {
+      "text": "Price a year of *ink*",
+      "cue": "year"
+     }
+    ]
+   },
+   "host": {
+    "prop": "ink",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 14
+     },
+     {
+      "cue": "real",
+      "expr": "proud",
+      "pose": "point"
+     }
+    ]
+   }
+  },
+  {
+   "type": "flow",
+   "world": "studio",
+   "narration": "Three questions before you buy. What does a cartridge cost? How many pages does it print? And does a refillable tank model cost less over a year?",
+   "data": {
+    "steps": [
+     {
+      "label": "Cartridge price?",
+      "cue": "cartridge"
+     },
+     {
+      "label": "Pages per cartridge?",
+      "cue": "pages"
+     },
+     {
+      "label": "Tank model cheaper per year?",
+      "cue": "tank"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "aisle",
+   "narration": "The cheapest printer can be the most expensive one you ever own. Next time: are Black Friday deals even real?",
+   "data": {
+    "lines": [
+     {
+      "text": "The cheapest printer",
+      "cue": "the"
+     },
+     {
+      "text": "can cost the *most*",
+      "cue": "expensive"
+     }
+    ],
+    "foot": "Sources in the description",
+    "foot_cue": "next"
+   },
+   "host": {
+    "prop": "ink",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "next",
+      "expr": "proud",
+      "pose": "wave"
+     }
+    ]
+   }
+  }
+ ]
+}

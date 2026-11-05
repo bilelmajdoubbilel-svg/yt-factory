@@ -1,0 +1,665 @@
+{
+ "id": "delta-amex",
+ "format": "long",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.0,
+ "title": "Delta's Best Product Doesn't Fly",
+ "summary": "American Express paid Delta $8.2 billion in 2025, more than Delta's whole operating profit. Here's how airline miles became one of the airline's most important products.",
+ "intro_chapter": "The $8.2 billion payment",
+ "tags": [
+  "delta",
+  "how airlines make money",
+  "skymiles",
+  "airline credit card",
+  "american express"
+ ],
+ "thumbnail": {
+  "tag": "$8.2B",
+  "top": "NOT TICKETS",
+  "expr": "surprised",
+  "prop": "card"
+ },
+ "open_mood": "tension",
+ "body_mood": "curious",
+ "end_mood": "payoff",
+ "hooks": [
+  {
+   "formula": "Statistic / The Reveal",
+   "hook": "Last year, one company paid Delta $8.2 billion. It wasn't a passenger. It was a credit card company.",
+   "score": 88,
+   "picked": true
+  },
+  {
+   "formula": "Contrarian Flip",
+   "hook": "Delta's most important product doesn't fly.",
+   "score": 80
+  },
+  {
+   "formula": "Comparison",
+   "hook": "A credit card paid Delta more than flying did.",
+   "score": 76
+  },
+  {
+   "formula": "The Question",
+   "hook": "Is Delta an airline or a credit card business with wings?",
+   "score": 70
+  },
+  {
+   "formula": "The Clock",
+   "hook": "In 2020, with every plane parked, Delta borrowed $9 billion against its miles.",
+   "score": 78
+  }
+ ],
+ "sources": [
+  "Delta Air Lines 2025 Form 10-K (Item 1): \"In 2025, remuneration from American Express totaled $8.2 billion, which we expect to grow to $10 billion over the next few years\"; \"Our most significant and valuable contract to sell miles relates to our co-brand credit card relationship with American Express\"; \"In 2025, 12% of revenue miles flown on Delta were from award travel ... approximately 35 million award tickets\"; fuel cost $9,819 million: https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+  "Delta December quarter and full year 2025 results (Jan 13, 2026): operating revenue $63.4 billion, operating income $5.8 billion (9.2% margin), pre-tax income $6.2 billion: https://news.delta.com/delta-air-lines-announces-december-quarter-and-full-year-2025-financial-results",
+  "Delta's $9.0 billion of financings secured by the SkyMiles program, September 2020 (Kilpatrick Townsend release): https://ktslaw.com/insights/news/news-release/2020/9/kilpatrick-townsend-advises-delta-air-lines-on-9-billion-skymiles-financings",
+  "Our calculation: $8.2B American Express remuneration / $9.819B fuel = 84%. Remuneration is revenue, not profit; it is compared with operating income only to show its size.",
+  "United's $6.8 billion financing secured by MileagePlus (July 7, 2020): https://www.kirkland.com/news/press-release/2020/07/kirkland-reps-ua-on--financing-mileageplus",
+  "United valued MileagePlus at about $22 billion, almost double its $11.7 billion market capitalization; 71% of MileagePlus cash flow in 2019 from third parties (Bloomberg, via Executive Traveller, June 2020): https://www.executivetraveller.com/news/how-united-airlines-took-a-7bn-mortgage-on-its-frequent-flyer-scheme"
+ ],
+ "scenes": [
+  {
+   "type": "shot",
+   "world": "airport",
+   "narration": "Last year, one company paid Delta Air Lines {$8.2 billion.|eight point two billion dollars.} It wasn't a passenger. It was a credit card company.",
+   "data": {
+    "elements": [
+     {
+      "kind": "hangtag",
+      "text": "$8.2B",
+      "x": 430,
+      "y": 250,
+      "scale": 1.4,
+      "layer": "mid",
+      "cue": "last",
+      "cue2": "credit"
+     }
+    ]
+   },
+   "host": {
+    "x": -820,
+    "pose": "hold",
+    "prop": "card",
+    "enter": {
+     "dx": 700,
+     "t": 0,
+     "dur": 1.4
+    },
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "surprised",
+      "look": 16
+     },
+     {
+      "cue": "credit",
+      "expr": "happy",
+      "look": 20
+     }
+    ]
+   },
+   "cam": [
+    {
+     "t": 0,
+     "x": -200,
+     "y": 10,
+     "z": 1.0
+    },
+    {
+     "t": "end",
+     "x": 80,
+     "y": -10,
+     "z": 1.12,
+     "ease": "sine.inOut"
+    }
+   ]
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "That's more than Delta made from running the whole airline: an operating profit of {$5.8 billion.|five point eight billion dollars.}",
+   "data": {
+    "title": "Delta, 2025",
+    "source": "Delta 2025 10-K and full-year results (payments are revenue, not profit)",
+    "items": [
+     {
+      "label": "Paid by American Express",
+      "value": 8.2,
+      "display": "$8.2B",
+      "highlight": true,
+      "cue": "more"
+     },
+     {
+      "label": "Operating profit",
+      "value": 5.8,
+      "display": "$5.8B",
+      "cue": "$5.8"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "Delta took in {$63.4 billion|sixty-three point four billion dollars} last year, mostly from tickets. But its most valuable deal isn't with a passenger.",
+   "data": {
+    "value": 63.4,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "Delta revenue, 2025",
+    "cue": "$63.4",
+    "source": "Delta full-year 2025 results"
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": 14
+     },
+     {
+      "cue": "valuable",
+      "expr": "thinking",
+      "pose": "chin"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "airport",
+   "narration": "So is Delta an airline that sells a credit card, or a credit card business that happens to fly planes?",
+   "data": {
+    "lines": [
+     {
+      "text": "An airline with a card?",
+      "cue": "so"
+     },
+     {
+      "text": "Or a card with *wings*?",
+      "cue": "business"
+     }
+    ]
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "planes",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "stage",
+   "narration": "To find out, let's follow a single mile: who makes it, who buys it, and who pays for your free flight.",
+   "data": {
+    "lines": [
+     {
+      "text": "Follow *one mile*",
+      "cue": "follow"
+     },
+     {
+      "text": "Who makes it, who pays",
+      "cue": "who"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "pose": "present"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part one. Miles are money.",
+   "data": {
+    "num": "01",
+    "title": "Miles are *money*"
+   }
+  },
+  {
+   "type": "flow",
+   "world": "studio",
+   "narration": "Delta creates miles whenever it likes. It sells them to American Express. Amex hands them to you every time you spend on its Delta card.",
+   "data": {
+    "steps": [
+     {
+      "label": "Delta makes miles",
+      "cue": "creates"
+     },
+     {
+      "label": "Amex buys them",
+      "cue": "sells"
+     },
+     {
+      "label": "You earn them shopping",
+      "cue": "hands"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Think of Delta as a little central bank. It prints the currency, and it decides what that currency buys.",
+   "data": {
+    "lines": [
+     {
+      "text": "Delta prints the *currency*",
+      "cue": "prints"
+     },
+     {
+      "text": "and sets what it buys",
+      "cue": "decides"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "pose": "present"
+     },
+     {
+      "cue": "decides",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:GROCERY",
+   "narration": "So every swipe of a Delta card at the grocery store sends a little money to an airline.",
+   "data": {
+    "lines": [
+     {
+      "text": "Groceries",
+      "cue": "swipe"
+     },
+     {
+      "text": "pay for *planes*",
+      "cue": "airline"
+     }
+    ]
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "airline",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "In {2025,|twenty twenty-five,} those payments reached {$8.2 billion,|eight point two billion dollars,} and Delta expects them to hit ten billion within a few years.",
+   "data": {
+    "value": 8.2,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "from American Express, 2025",
+    "cue": "$8.2",
+    "source": "Delta 2025 10-K: expected to grow to $10B"
+   }
+  },
+  {
+   "type": "cta",
+   "world": "airport",
+   "narration": "If you like seeing the receipts behind everyday prices, subscribe. New ones every Tuesday and Friday.",
+   "data": {
+    "cue": "subscribe"
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part two. The seat you paid for twice.",
+   "data": {
+    "num": "02",
+    "title": "The seat you *paid for twice*"
+   }
+  },
+  {
+   "type": "dots",
+   "world": "stage",
+   "narration": "Then you spend those miles. In {2025,|twenty twenty-five,} about {12 percent|twelve percent} of all the miles flown on Delta were award trips: roughly {35 million|thirty-five million} tickets.",
+   "data": {
+    "n": 12,
+    "big": "12%",
+    "label": "of miles flown were award trips",
+    "sub": "~35 million tickets",
+    "sub_cue": "roughly",
+    "cue": "12",
+    "source": "Delta 2025 10-K"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "airport",
+   "narration": "And Delta decides which seats you can book with miles, and how many miles each one costs.",
+   "data": {
+    "lines": [
+     {
+      "text": "Which seats,",
+      "cue": "which"
+     },
+     {
+      "text": "and at what *price*",
+      "cue": "costs"
+     }
+    ]
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "airport",
+   "narration": "And Delta was paid for those miles long before anyone boarded. The card company paid when you earned them.",
+   "data": {
+    "lines": [
+     {
+      "text": "Paid when you *earn*",
+      "cue": "paid"
+     },
+     {
+      "text": "not when you fly",
+      "cue": "card"
+     }
+    ]
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "earned",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "bars",
+   "world": "stage",
+   "narration": "Here's the scale. Delta's whole fuel bill for the year was {$9.8 billion.|nine point eight billion dollars.} The card money alone covered more than four fifths of it.",
+   "data": {
+    "title": "Delta, 2025, in billions",
+    "source": "Delta 2025 10-K; 84% = our calculation",
+    "items": [
+     {
+      "label": "Jet fuel",
+      "value": 9.819,
+      "display": "$9.8B",
+      "cue": "fuel"
+     },
+     {
+      "label": "Paid by American Express",
+      "value": 8.2,
+      "display": "$8.2B",
+      "highlight": true,
+      "cue": "card"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part three. When the planes stopped.",
+   "data": {
+    "num": "03",
+    "title": "When the planes *stopped*"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "airport",
+   "narration": "In {2020,|twenty twenty,} Delta's planes sat on the ground. The airline needed cash, fast.",
+   "data": {
+    "lines": [
+     {
+      "text": "2020",
+      "cue": "in"
+     },
+     {
+      "text": "Planes *parked*",
+      "cue": "planes"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "worried",
+      "look": 14
+     },
+     {
+      "cue": "cash",
+      "pose": "shrug"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "So it borrowed {$9 billion.|nine billion dollars.} And the collateral wasn't its planes. It was SkyMiles, its frequent flyer program.",
+   "data": {
+    "value": 9,
+    "decimals": 0,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "borrowed against *SkyMiles*, 2020",
+    "cue": "$9",
+    "source": "Delta SkyMiles financings, Sept 2020"
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": 14
+     },
+     {
+      "cue": "skymiles",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "When flying almost stopped, lenders were still willing to bet on the miles.",
+   "data": {
+    "lines": [
+     {
+      "text": "No flights?",
+      "cue": "when"
+     },
+     {
+      "text": "Lenders bet on the *miles*",
+      "cue": "lenders"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "miles",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "And it wasn't just Delta. That same summer, United borrowed {$6.8 billion|six point eight billion dollars} against its own program, MileagePlus.",
+   "data": {
+    "value": 6.8,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "United, borrowed against MileagePlus",
+    "cue": "$6.8",
+    "source": "Kirkland & Ellis release, July 2020"
+   }
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "United said MileagePlus was worth about {$22 billion,|twenty-two billion dollars,} almost double what the whole airline was worth on the stock market at the time.",
+   "data": {
+    "title": "United, June 2020",
+    "source": "United's own valuation, reported by Bloomberg via Executive Traveller",
+    "items": [
+     {
+      "label": "MileagePlus (United's valuation)",
+      "value": 22,
+      "display": "~$22B",
+      "highlight": true,
+      "cue": "$22"
+     },
+     {
+      "label": "The whole airline (market value)",
+      "value": 11.7,
+      "display": "$11.7B",
+      "cue": "double"
+     }
+    ]
+   }
+  },
+  {
+   "type": "dots",
+   "world": "stage",
+   "narration": "Why so valuable? In {2019,|twenty nineteen,} {71 percent|seventy-one percent} of MileagePlus cash came from partners like credit card companies, not from people flying.",
+   "data": {
+    "n": 71,
+    "big": "71%",
+    "label": "of MileagePlus cash came from *partners*",
+    "sub": "2019, United presentation",
+    "sub_cue": "partners",
+    "cue": "71",
+    "source": "United presentation via Bloomberg / Executive Traveller"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "airport",
+   "narration": "So the next time someone offers you a credit card at the gate, you're looking at one of Delta's most important products.",
+   "data": {
+    "lines": [
+     {
+      "text": "The card at the gate",
+      "cue": "so"
+     },
+     {
+      "text": "is a *core product*",
+      "cue": "important"
+     }
+    ]
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "important",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "airport",
+   "narration": "It doesn't fly. It keeps the airline flying. Next time: McDonald's, the landlord that sells burgers.",
+   "data": {
+    "lines": [
+     {
+      "text": "It doesn't fly.",
+      "cue": "it"
+     },
+     {
+      "text": "It keeps Delta *flying*.",
+      "cue": "keeps"
+     }
+    ],
+    "foot": "Sources in the description",
+    "foot_cue": "next"
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 14
+     },
+     {
+      "cue": "next",
+      "expr": "proud",
+      "pose": "wave"
+     }
+    ]
+   }
+  }
+ ]
+}

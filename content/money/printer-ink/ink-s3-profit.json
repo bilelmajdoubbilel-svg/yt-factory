@@ -1,0 +1,123 @@
+{
+ "id": "ink-s3-profit",
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "long_video": "printer-ink",
+ "title": "HP Makes More From Printing Than PCs #shorts",
+ "summary": "HP fiscal 2025: printing earned $3.1B on $16.7B; PCs earned $2.1B on $38.5B.",
+ "tags": [
+  "printer ink",
+  "hp",
+  "razor and blades"
+ ],
+ "mood": "playful",
+ "sources": [
+  "HP Inc. fiscal 2025 results (year ended Oct 31, 2025), Exhibit 99.1: total net revenue $55,295M; Personal Systems revenue $38,532M, earnings from operations $2,054M (5.3%); Printing revenue $16,702M, earnings from operations $3,118M (18.7%); Supplies $10,916M (2024: $11,295M); Commercial Printing $4,633M; Consumer Printing $1,153M: https://www.hp.com/us-en/newsroom/press-releases/2025/hp-inc-reports-fiscal-2025-full-year-and-fourth-quarter-results.html",
+  "HP Inc. fiscal 2025 Form 10-K, Item 1A: \"While our big tank printers typically have a higher initial margin than our traditional in cartridge printers, they do not result in follow-on sales of high margin traditional ink cartridges and, as a result, may have lower overall device lifetime profitability.\" Commercial and Consumer Printing exclude supplies: https://www.sec.gov/Archives/edgar/data/47217/000004721725000071/hpq-20251031.htm",
+  "Our calculations: printer hardware $4,633M + $1,153M = $5,786M; supplies / printing revenue = 65%; supplies change -3.4%."
+ ],
+ "scenes": [
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "HP sells more than twice as much in computers as in printing.",
+   "data": {
+    "lines": [
+     {
+      "text": "Computers: *$38.5B*",
+      "cue": "computers"
+     },
+     {
+      "text": "Printing: $16.7B",
+      "cue": "printing"
+     }
+    ]
+   },
+   "host": {
+    "prop": "ink",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "thinking",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "bars",
+   "world": "stage",
+   "narration": "But printing earned {$3.1 billion.|three point one billion.} Computers earned {$2.1 billion.|two point one billion.}",
+   "data": {
+    "title": "HP operating profit, fiscal 2025",
+    "source": "HP fiscal 2025 results",
+    "items": [
+     {
+      "label": "Printing",
+      "value": 3.118,
+      "display": "$3.1B",
+      "highlight": true,
+      "cue": "printing"
+     },
+     {
+      "label": "Computers",
+      "value": 2.054,
+      "display": "$2.1B",
+      "cue": "computers"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Most of printing's money comes from ink and toner.",
+   "data": {
+    "lines": [
+     {
+      "text": "The money is",
+      "cue": "most"
+     },
+     {
+      "text": "in the *ink*",
+      "cue": "ink"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "aisle",
+   "narration": "Ink pays better than laptops.",
+   "data": {
+    "lines": [
+     {
+      "text": "Ink beats",
+      "cue": "ink"
+     },
+     {
+      "text": "*laptops*",
+      "cue": "laptops"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "ink",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "laptops",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

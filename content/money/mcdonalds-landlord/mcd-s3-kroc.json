@@ -1,0 +1,110 @@
+{
+ "id": "mcd-s3-kroc",
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "long_video": "mcdonalds-landlord",
+ "title": "Ray Kroc Paid $2.7M for McDonald's #shorts",
+ "summary": "Kroc bought the McDonald brothers out in 1961 for $2.7 million; McDonald's restaurants sold $139.4B in 2025.",
+ "tags": [
+  "mcdonalds",
+  "franchise",
+  "business model"
+ ],
+ "mood": "playful",
+ "sources": [
+  "McDonald's 2025 Form 10-K (Item 1): \"Of the 45,356 McDonald's restaurants at year-end 2025, approximately 95% were franchised\"; conventional franchisees pay \"rent and royalties based upon a percent of sales, with specified minimum rent payments\"; the Company \"generally owns or secures a long-term lease on the land and building\"; operating margin 46.1%; systemwide sales $139.4 billion: https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+  "McDonald's fourth quarter and full year 2025 results (Feb 11, 2026), income statement: revenues from franchised restaurants $16,548M; company-owned and operated sales $9,690M; franchised occupancy expenses $2,618M; company-operated restaurant expenses $8,268M; operating income $12,393M; net income $8,563M: https://mcdonalds.mediaroom.com/2026-02-11-McDONALDS-REPORTS-FOURTH-QUARTER-AND-FULL-YEAR-2025-RESULTS",
+  "Our calculations: franchised margin $16,548M - $2,618M = $13,930M; company-operated margin $9,690M - $8,268M = $1,422M (about 9.8x).",
+  "Harry J. Sonneborn proposed that Kroc own the land under McDonald's restaurants and lease it to franchisees: https://en.wikipedia.org/wiki/Harry_J._Sonneborn",
+  "Kroc bought the McDonald brothers' stake in 1961 for $2.7 million; at end-2025 the company owned about 56% of the land and 80% of the restaurant buildings: https://en.wikipedia.org/wiki/McDonald%27s"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "street:BURGERS",
+   "narration": "In {1961,|nineteen sixty-one,} Ray Kroc bought out the McDonald brothers for {$2.7 million.|two point seven million dollars.}",
+   "data": {
+    "price": "$2.7M",
+    "kicker": "1961",
+    "label": "the *whole company*",
+    "cue": "in",
+    "label_cue": "brothers"
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "thinking",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "Last year, McDonald's restaurants sold {$139 billion|one hundred thirty-nine billion dollars} of food.",
+   "data": {
+    "value": 139.4,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "systemwide sales, 2025",
+    "cue": "$139",
+    "source": "McDonald's 2025 10-K"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "But the secret wasn't the burger. It was owning the land under it.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not the burger.",
+      "cue": "but"
+     },
+     {
+      "text": "The *land*.",
+      "cue": "land"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:BURGERS",
+   "narration": "Best two point seven million ever spent.",
+   "data": {
+    "lines": [
+     {
+      "text": "Best $2.7M",
+      "cue": "best"
+     },
+     {
+      "text": "ever *spent*",
+      "cue": "spent"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "spent",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

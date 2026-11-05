@@ -67,6 +67,16 @@ def prop_svg(kind, x=0, y=0, s=1.0):
                '<text x="18" y="22" text-anchor="middle" font-family="PL Display" font-size="66" fill="#1C1F2B">$1.50</text>',
         "card": '<rect x="-120" y="-76" width="240" height="152" rx="16" fill="#20242F" stroke="#F2B63C" stroke-width="5"/>'
                 '<rect x="-120" y="-50" width="240" height="22" fill="#F2B63C"/><rect x="-96" y="20" width="90" height="12" rx="6" fill="#8A8F98"/>',
+        "ink": '<rect x="-34" y="-58" width="68" height="104" rx="10" fill="#2B2230" stroke="#2B2230" stroke-width="4"/>'
+               '<rect x="-26" y="-40" width="52" height="54" rx="6" fill="#FFF8EC"/>'
+               '<rect x="-22" y="-34" width="14" height="40" rx="3" fill="#2BB3D9"/><rect x="-7" y="-34" width="14" height="40" rx="3" fill="#E0457B"/>'
+               '<rect x="8" y="-34" width="14" height="40" rx="3" fill="#F6C453"/><rect x="-12" y="46" width="24" height="10" rx="3" fill="#8E949E"/>',
+        "burger": '<path d="M-58,-6 Q-58,-56 0,-58 Q58,-56 58,-6Z" fill="#E7A65B" stroke="#2B2230" stroke-width="5"/>'
+                  '<circle cx="-22" cy="-34" r="3" fill="#FFF3D6"/><circle cx="6" cy="-42" r="3" fill="#FFF3D6"/><circle cx="26" cy="-28" r="3" fill="#FFF3D6"/>'
+                  '<path d="M-62,-4 q10,10 20,0 t20,0 t20,0 t20,0 t20,0 t20,0 L62,6 L-62,6Z" fill="#7BC86C"/>'
+                  '<path d="M-56,4 L56,4 L40,22 Z" fill="#F6C453"/>'
+                  '<rect x="-58" y="8" width="116" height="20" rx="10" fill="#7A3E2A"/>'
+                  '<path d="M-56,30 L56,30 Q56,48 40,48 L-40,48 Q-56,48 -56,30Z" fill="#E09A4E" stroke="#2B2230" stroke-width="5"/>',
         "popcorn": '<path d="M-48,-40 L48,-40 L36,70 L-36,70Z" fill="#F4EEE4"/>'
                    '<path d="M-40,-40 L-30,70 M-14,-40 L-10,70 M14,-40 L10,70 M40,-40 L30,70" stroke="#D63A2C" stroke-width="12"/>'
                    + "".join(f'<circle cx="{x}" cy="{y}" r="{r}" fill="#FFF3D6"/>' for x, y, r in

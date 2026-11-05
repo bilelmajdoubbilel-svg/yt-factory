@@ -19,6 +19,10 @@ on:
         description: render but do not upload
         type: boolean
         default: false
+      test:
+        description: "TEST: render the next Short and upload it private with a [TEST] title (checks the secrets)"
+        type: boolean
+        default: false
 
 concurrency:
   group: publish
@@ -97,6 +101,7 @@ jobs:
             [ -n "${{ inputs.only }}" ] && EXTRA="--only ${{ inputs.only }}"
             [ -n "${{ inputs.privacy }}" ] && EXTRA="$EXTRA --privacy ${{ inputs.privacy }}"
             [ "${{ inputs.dry_run }}" = "true" ] && EXTRA="$EXTRA --dry-run"
+            [ "${{ inputs.test }}" = "true" ] && EXTRA="--test"
           fi
           python pipeline/publish.py --channel "${{ matrix.channel }}" $EXTRA
 

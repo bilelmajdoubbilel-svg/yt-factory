@@ -20,6 +20,11 @@
   "date": "2026-11-12"
  },
  {
+  "script": "content/money/delta-amex/long.json",
+  "kind": "long",
+  "date": "2026-11-13"
+ },
+ {
   "script": "content/money/costco-hotdog/costco-s3-renewal.json",
   "kind": "short",
   "date": "2026-11-13"
@@ -28,6 +33,66 @@
   "script": "content/money/costco-hotdog/costco-s5-chicken.json",
   "kind": "short",
   "date": "2026-11-14"
+ },
+ {
+  "script": "content/money/delta-amex/delta-s1-amex.json",
+  "kind": "short",
+  "date": "2026-11-15"
+ },
+ {
+  "script": "content/money/delta-amex/delta-s2-skymiles.json",
+  "kind": "short",
+  "date": "2026-11-16"
+ },
+ {
+  "script": "content/money/mcdonalds-landlord/long.json",
+  "kind": "long",
+  "date": "2026-11-17"
+ },
+ {
+  "script": "content/money/delta-amex/delta-s3-united.json",
+  "kind": "short",
+  "date": "2026-11-17"
+ },
+ {
+  "script": "content/money/delta-amex/delta-s4-fuel.json",
+  "kind": "short",
+  "date": "2026-11-18"
+ },
+ {
+  "script": "content/money/mcdonalds-landlord/mcd-s1-franchise.json",
+  "kind": "short",
+  "date": "2026-11-19"
+ },
+ {
+  "script": "content/money/printer-ink/long.json",
+  "kind": "long",
+  "date": "2026-11-20"
+ },
+ {
+  "script": "content/money/mcdonalds-landlord/mcd-s2-tenx.json",
+  "kind": "short",
+  "date": "2026-11-20"
+ },
+ {
+  "script": "content/money/mcdonalds-landlord/mcd-s3-kroc.json",
+  "kind": "short",
+  "date": "2026-11-21"
+ },
+ {
+  "script": "content/money/printer-ink/ink-s1-ratio.json",
+  "kind": "short",
+  "date": "2026-11-22"
+ },
+ {
+  "script": "content/money/printer-ink/ink-s2-quote.json",
+  "kind": "short",
+  "date": "2026-11-23"
+ },
+ {
+  "script": "content/money/printer-ink/ink-s3-profit.json",
+  "kind": "short",
+  "date": "2026-11-24"
  },
  {
   "script": "content/money/movie-popcorn/long.json",

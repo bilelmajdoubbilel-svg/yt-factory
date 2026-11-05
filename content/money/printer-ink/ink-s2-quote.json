@@ -1,0 +1,110 @@
+{
+ "id": "ink-s2-quote",
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "long_video": "printer-ink",
+ "title": "HP's Annual Report Admits This About Ink #shorts",
+ "summary": "HP's fiscal 2025 10-K calls traditional ink cartridges high margin.",
+ "tags": [
+  "printer ink",
+  "hp",
+  "razor and blades"
+ ],
+ "mood": "playful",
+ "sources": [
+  "HP Inc. fiscal 2025 results (year ended Oct 31, 2025), Exhibit 99.1: total net revenue $55,295M; Personal Systems revenue $38,532M, earnings from operations $2,054M (5.3%); Printing revenue $16,702M, earnings from operations $3,118M (18.7%); Supplies $10,916M (2024: $11,295M); Commercial Printing $4,633M; Consumer Printing $1,153M: https://www.hp.com/us-en/newsroom/press-releases/2025/hp-inc-reports-fiscal-2025-full-year-and-fourth-quarter-results.html",
+  "HP Inc. fiscal 2025 Form 10-K, Item 1A: \"While our big tank printers typically have a higher initial margin than our traditional in cartridge printers, they do not result in follow-on sales of high margin traditional ink cartridges and, as a result, may have lower overall device lifetime profitability.\" Commercial and Consumer Printing exclude supplies: https://www.sec.gov/Archives/edgar/data/47217/000004721725000071/hpq-20251031.htm",
+  "Our calculations: printer hardware $4,633M + $1,153M = $5,786M; supplies / printing revenue = 65%; supplies change -3.4%."
+ ],
+ "scenes": [
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "HP's own annual report says the quiet part out loud.",
+   "data": {
+    "lines": [
+     {
+      "text": "HP's annual report",
+      "cue": "hp's"
+     },
+     {
+      "text": "says it *out loud*",
+      "cue": "loud"
+     }
+    ]
+   },
+   "host": {
+    "prop": "ink",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "quote",
+   "world": "stage",
+   "narration": "Refillable tank printers do not result in follow-on sales of high margin traditional ink cartridges.",
+   "data": {
+    "quote": "...follow-on sales of *high margin* traditional ink cartridges.",
+    "who": "HP Inc., 10-K, fiscal 2025",
+    "note": "on refillable tank printers",
+    "cue": "do"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Translation: the cartridges are the business.",
+   "data": {
+    "lines": [
+     {
+      "text": "Translation:",
+      "cue": "translation"
+     },
+     {
+      "text": "cartridges = *business*",
+      "cue": "business"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "aisle",
+   "narration": "Price the ink, not the printer.",
+   "data": {
+    "lines": [
+     {
+      "text": "Price the *ink*,",
+      "cue": "price"
+     },
+     {
+      "text": "not the printer",
+      "cue": "printer"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "ink",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "printer",
+      "expr": "happy"
+     }
+    ]
+   }
+  }
+ ]
+}

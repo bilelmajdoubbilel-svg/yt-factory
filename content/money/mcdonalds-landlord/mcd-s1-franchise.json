@@ -1,0 +1,121 @@
+{
+ "id": "mcd-s1-franchise",
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "long_video": "mcdonalds-landlord",
+ "title": "95% of McDonald's Aren't Run by McDonald's #shorts",
+ "summary": "About 95% of McDonald's 45,356 restaurants are franchised.",
+ "tags": [
+  "mcdonalds",
+  "franchise",
+  "business model"
+ ],
+ "mood": "playful",
+ "sources": [
+  "McDonald's 2025 Form 10-K (Item 1): \"Of the 45,356 McDonald's restaurants at year-end 2025, approximately 95% were franchised\"; conventional franchisees pay \"rent and royalties based upon a percent of sales, with specified minimum rent payments\"; the Company \"generally owns or secures a long-term lease on the land and building\"; operating margin 46.1%; systemwide sales $139.4 billion: https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+  "McDonald's fourth quarter and full year 2025 results (Feb 11, 2026), income statement: revenues from franchised restaurants $16,548M; company-owned and operated sales $9,690M; franchised occupancy expenses $2,618M; company-operated restaurant expenses $8,268M; operating income $12,393M; net income $8,563M: https://mcdonalds.mediaroom.com/2026-02-11-McDONALDS-REPORTS-FOURTH-QUARTER-AND-FULL-YEAR-2025-RESULTS",
+  "Our calculations: franchised margin $16,548M - $2,618M = $13,930M; company-operated margin $9,690M - $8,268M = $1,422M (about 9.8x).",
+  "Harry J. Sonneborn proposed that Kroc own the land under McDonald's restaurants and lease it to franchisees: https://en.wikipedia.org/wiki/Harry_J._Sonneborn",
+  "Kroc bought the McDonald brothers' stake in 1961 for $2.7 million; at end-2025 the company owned about 56% of the land and 80% of the restaurant buildings: https://en.wikipedia.org/wiki/McDonald%27s"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "street:BURGERS",
+   "narration": "{95 percent|Ninety-five percent} of McDonald's restaurants aren't run by McDonald's.",
+   "data": {
+    "price": "95%",
+    "kicker": "Of 45,356 restaurants",
+    "label": "run by *franchisees*",
+    "cue": "95",
+    "label_cue": "aren't"
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "flow",
+   "world": "studio",
+   "narration": "The franchisees pay rent and a royalty, both a percent of every sale.",
+   "data": {
+    "steps": [
+     {
+      "label": "Rent",
+      "cue": "rent"
+     },
+     {
+      "label": "Royalty",
+      "cue": "royalty"
+     },
+     {
+      "label": "% of every sale",
+      "cue": "percent"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:BURGERS",
+   "narration": "And McDonald's often owns the land they cook on.",
+   "data": {
+    "lines": [
+     {
+      "text": "It owns",
+      "cue": "and"
+     },
+     {
+      "text": "the *land*",
+      "cue": "land"
+     }
+    ]
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold"
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:BURGERS",
+   "narration": "It's a landlord that sells burgers.",
+   "data": {
+    "lines": [
+     {
+      "text": "A landlord",
+      "cue": "it's"
+     },
+     {
+      "text": "that sells *burgers*",
+      "cue": "burgers"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "burgers",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -68,7 +68,7 @@ def upload(args):
     channel = json.loads((ROOT / "channels" / f"{args.channel}.json").read_text())
     script = json.loads(Path(args.script).read_text())
     timeline = json.loads(Path(args.timeline).read_text()) if args.timeline else None
-    title = script["title"][:100]
+    title = (("[TEST] " if getattr(args, "test", False) else "") + script["title"])[:100]
     body = {
         "snippet": {
             "title": title,
@@ -132,6 +132,7 @@ if __name__ == "__main__":
     ap.add_argument("--timeline")
     ap.add_argument("--publish-at")
     ap.add_argument("--privacy", default="private")
+    ap.add_argument("--test", action="store_true", help="prefix the title with [TEST]")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
     v = upload(a)

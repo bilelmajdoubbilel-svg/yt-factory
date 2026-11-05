@@ -1,0 +1,574 @@
+{
+ "id": "mcdonalds-landlord",
+ "format": "long",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.0,
+ "title": "McDonald's Is Secretly a Landlord",
+ "summary": "95% of McDonald's restaurants are run by franchisees who pay it rent and royalties. Here's why the land under the restaurants matters more than the burgers.",
+ "intro_chapter": "Harry Sonneborn's idea",
+ "tags": [
+  "mcdonalds",
+  "how mcdonalds makes money",
+  "mcdonalds real estate",
+  "franchise",
+  "business model"
+ ],
+ "thumbnail": {
+  "tag": "95%",
+  "top": "NOT THEIRS",
+  "expr": "surprised",
+  "prop": "burger"
+ },
+ "open_mood": "tension",
+ "body_mood": "warm",
+ "end_mood": "payoff",
+ "hooks": [
+  {
+   "formula": "Origin / Story",
+   "hook": "In McDonald's early years, a finance man brought Ray Kroc an idea: own the land, rent it to the franchisees.",
+   "score": 84,
+   "picked": true
+  },
+  {
+   "formula": "Contrarian Flip",
+   "hook": "McDonald's is a landlord that sells burgers.",
+   "score": 80
+  },
+  {
+   "formula": "Statistic",
+   "hook": "95% of McDonald's restaurants aren't run by McDonald's.",
+   "score": 82
+  }
+ ],
+ "sources": [
+  "McDonald's 2025 Form 10-K (Item 1): \"Of the 45,356 McDonald's restaurants at year-end 2025, approximately 95% were franchised\"; conventional franchisees pay \"rent and royalties based upon a percent of sales, with specified minimum rent payments\"; the Company \"generally owns or secures a long-term lease on the land and building\"; operating margin 46.1%; systemwide sales $139.4 billion: https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+  "McDonald's fourth quarter and full year 2025 results (Feb 11, 2026), income statement: revenues from franchised restaurants $16,548M; company-owned and operated sales $9,690M; franchised occupancy expenses $2,618M; company-operated restaurant expenses $8,268M; operating income $12,393M; net income $8,563M: https://mcdonalds.mediaroom.com/2026-02-11-McDONALDS-REPORTS-FOURTH-QUARTER-AND-FULL-YEAR-2025-RESULTS",
+  "Our calculations: franchised margin $16,548M - $2,618M = $13,930M; company-operated margin $9,690M - $8,268M = $1,422M (about 9.8x).",
+  "Harry J. Sonneborn proposed that Kroc own the land under McDonald's restaurants and lease it to franchisees: https://en.wikipedia.org/wiki/Harry_J._Sonneborn",
+  "Kroc bought the McDonald brothers' stake in 1961 for $2.7 million; at end-2025 the company owned about 56% of the land and 80% of the restaurant buildings: https://en.wikipedia.org/wiki/McDonald%27s"
+ ],
+ "scenes": [
+  {
+   "type": "shot",
+   "world": "street:BURGERS",
+   "narration": "In McDonald's early years, a finance man named Harry Sonneborn brought Ray Kroc an idea. Don't just sell franchises. Own the land under them, and rent it to the franchisees.",
+   "data": {
+    "elements": [
+     {
+      "kind": "hangtag",
+      "text": "RENT",
+      "x": 430,
+      "y": 250,
+      "scale": 1.4,
+      "layer": "mid",
+      "cue": "in",
+      "cue2": "rent"
+     }
+    ]
+   },
+   "host": {
+    "x": -820,
+    "pose": "hold",
+    "prop": "burger",
+    "enter": {
+     "dx": 700,
+     "t": 0,
+     "dur": 1.4
+    },
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 16
+     },
+     {
+      "cue": "rent",
+      "expr": "surprised",
+      "look": 20
+     }
+    ]
+   },
+   "cam": [
+    {
+     "t": 0,
+     "x": -200,
+     "y": 10,
+     "z": 1.0
+    },
+    {
+     "t": "end",
+     "x": 80,
+     "y": -10,
+     "z": 1.12,
+     "ease": "sine.inOut"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "world": "stage",
+   "narration": "It may have been the most important money decision McDonald's ever made.",
+   "data": {
+    "lines": [
+     {
+      "text": "The most important",
+      "cue": "it"
+     },
+     {
+      "text": "*money* decision",
+      "cue": "money"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "proud",
+      "pose": "present"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "Today, about {95 percent|ninety-five percent} of McDonald's {45,356|forty-five thousand three hundred fifty-six} restaurants are run by franchisees, not by McDonald's.",
+   "data": {
+    "value": 95,
+    "decimals": 0,
+    "suffix": "%",
+    "label": "of 45,356 restaurants are franchised",
+    "cue": "95",
+    "source": "McDonald's 2025 10-K"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:BURGERS",
+   "narration": "And most of the money McDonald's makes from them doesn't come from selling burgers. It comes from being their landlord.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not the burgers.",
+      "cue": "doesn't"
+     },
+     {
+      "text": "The *rent*.",
+      "cue": "landlord"
+     }
+    ]
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "landlord",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part one. The rent check.",
+   "data": {
+    "num": "01",
+    "title": "The *rent* check"
+   }
+  },
+  {
+   "type": "flow",
+   "world": "studio",
+   "narration": "Here's the deal a franchisee signs. They pay rent and a royalty, both based on a percent of their sales, with a minimum rent even in a bad month.",
+   "data": {
+    "steps": [
+     {
+      "label": "Rent: % of sales",
+      "cue": "rent"
+     },
+     {
+      "label": "Royalty: % of sales",
+      "cue": "royalty"
+     },
+     {
+      "label": "Minimum rent",
+      "cue": "minimum"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Think about what that means. When a restaurant has a great year, the rent grows with its sales. When it has a bad year, McDonald's still collects the minimum.",
+   "data": {
+    "lines": [
+     {
+      "text": "Good year: rent *grows*",
+      "cue": "great"
+     },
+     {
+      "text": "Bad year: rent still *comes*",
+      "cue": "bad"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "pose": "present"
+     },
+     {
+      "cue": "bad",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:BURGERS",
+   "narration": "McDonald's usually owns the land and the building, or holds a long lease on them. The franchisee pays to cook in it.",
+   "data": {
+    "lines": [
+     {
+      "text": "McDonald's owns the *building*",
+      "cue": "owns"
+     },
+     {
+      "text": "You pay to cook in it",
+      "cue": "franchisee"
+     }
+    ]
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "bars",
+   "world": "stage",
+   "narration": "At the end of {2025,|twenty twenty-five,} McDonald's owned about {56 percent|fifty-six percent} of the land under its restaurants, and {80 percent|eighty percent} of the buildings.",
+   "data": {
+    "title": "Owned by McDonald's, end of 2025",
+    "source": "McDonald's 2025 10-K, via Wikipedia",
+    "items": [
+     {
+      "label": "Land",
+      "value": 56,
+      "display": "56%",
+      "cue": "56"
+     },
+     {
+      "label": "Buildings",
+      "value": 80,
+      "display": "80%",
+      "highlight": true,
+      "cue": "80"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cta",
+   "world": "street:BURGERS",
+   "narration": "If you like seeing the receipts behind everyday prices, subscribe. New ones every Tuesday and Friday.",
+   "data": {
+    "cue": "subscribe"
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part two. Follow the money.",
+   "data": {
+    "num": "02",
+    "title": "Follow the *money*"
+   }
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "In {2025,|twenty twenty-five,} franchisees paid McDonald's {$16.5 billion.|sixteen point five billion dollars.} The restaurants McDonald's runs itself sold {$9.7 billion|nine point seven billion} of food.",
+   "data": {
+    "title": "McDonald's revenue, 2025",
+    "source": "McDonald's full-year 2025 results",
+    "items": [
+     {
+      "label": "From franchisees",
+      "value": 16.548,
+      "display": "$16.5B",
+      "highlight": true,
+      "cue": "franchisees"
+     },
+     {
+      "label": "Own restaurants' sales",
+      "value": 9.69,
+      "display": "$9.7B",
+      "cue": "$9.7"
+     }
+    ]
+   }
+  },
+  {
+   "type": "bars",
+   "world": "stage",
+   "narration": "Now take away the costs. The franchise side left {$13.9 billion.|thirteen point nine billion.} McDonald's own restaurants left {$1.4 billion.|one point four billion.}",
+   "data": {
+    "title": "Left after direct costs, 2025",
+    "source": "Our calculation from McDonald's 2025 results",
+    "items": [
+     {
+      "label": "Franchised restaurants",
+      "value": 13.93,
+      "display": "$13.9B",
+      "highlight": true,
+      "cue": "franchise"
+     },
+     {
+      "label": "Restaurants it runs",
+      "value": 1.422,
+      "display": "$1.4B",
+      "cue": "$1.4"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:BURGERS",
+   "narration": "Rent doesn't need a grill, a fryer, or a night shift.",
+   "data": {
+    "lines": [
+     {
+      "text": "No grill. No fryer.",
+      "cue": "rent"
+     },
+     {
+      "text": "No *night shift*.",
+      "cue": "night"
+     }
+    ]
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "That's almost ten times more, from restaurants it doesn't even run.",
+   "data": {
+    "lines": [
+     {
+      "text": "Almost *10x* more",
+      "cue": "almost"
+     },
+     {
+      "text": "from restaurants it doesn't run",
+      "cue": "restaurants"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "surprised",
+      "look": 14
+     },
+     {
+      "cue": "run",
+      "pose": "shrug"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "That's why, out of every dollar McDonald's takes in, about {46 cents|forty-six cents} is operating profit.",
+   "data": {
+    "value": 46.1,
+    "decimals": 1,
+    "suffix": "%",
+    "label": "operating margin, 2025",
+    "cue": "46",
+    "source": "McDonald's 2025 10-K"
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part three. The brothers' price.",
+   "data": {
+    "num": "03",
+    "title": "The brothers' *price*"
+   }
+  },
+  {
+   "type": "pricetag",
+   "world": "street:BURGERS",
+   "narration": "In {1961,|nineteen sixty-one,} Ray Kroc bought out the McDonald brothers for {$2.7 million.|two point seven million dollars.}",
+   "data": {
+    "price": "$2.7M",
+    "kicker": "1961",
+    "label": "for the *whole company*",
+    "cue": "ray",
+    "label_cue": "brothers"
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "million",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "Last year, McDonald's restaurants around the world sold {$139.4 billion|one hundred thirty-nine point four billion dollars} of food.",
+   "data": {
+    "value": 139.4,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "systemwide sales, 2025",
+    "cue": "$139.4",
+    "source": "McDonald's 2025 10-K"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:BURGERS",
+   "narration": "Most of it rang up in restaurants McDonald's doesn't run, on land it often owns.",
+   "data": {
+    "lines": [
+     {
+      "text": "Their restaurants,",
+      "cue": "most"
+     },
+     {
+      "text": "its *land*",
+      "cue": "land"
+     }
+    ]
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "proud",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:BURGERS",
+   "narration": "So the next time your local McDonald's raises its prices, remember who gets a cut of every sale: the landlord.",
+   "data": {
+    "lines": [
+     {
+      "text": "Every sale,",
+      "cue": "so"
+     },
+     {
+      "text": "a cut for the *landlord*",
+      "cue": "landlord"
+     }
+    ]
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "landlord",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:BURGERS",
+   "narration": "McDonald's sells burgers. But the business is the ground under them. Next time: why the printer is the bait.",
+   "data": {
+    "lines": [
+     {
+      "text": "It sells burgers.",
+      "cue": "mcdonald's"
+     },
+     {
+      "text": "It earns *rent*.",
+      "cue": "ground"
+     }
+    ],
+    "foot": "Sources in the description",
+    "foot_cue": "next"
+   },
+   "host": {
+    "prop": "burger",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 14
+     },
+     {
+      "cue": "next",
+      "expr": "proud",
+      "pose": "wave"
+     }
+    ]
+   }
+  }
+ ]
+}
