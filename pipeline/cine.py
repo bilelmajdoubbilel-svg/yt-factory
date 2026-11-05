@@ -360,6 +360,10 @@ def scene_file_cine(S, idx, tin, tout):
     #root .panel.pglass {{ background:linear-gradient(160deg,rgba(24,22,36,.86),rgba(36,26,44,.86)); border:5px solid rgba(246,196,83,.9); }}
     #root .src {{ bottom:{S.s(52, 712)}px; }}
     #root .cwrap.lp .src {{ color:#7A7F8A; }}
+    /* bright worlds: cream bars vanish on beige walls, grey source lines too -> teal bars, source on a dark pill */
+    #root .cwrap:not(.lp) {{ --bar:#2F7F95; }}
+    #root .cwrap:not(.lp) .src {{ width:fit-content; max-width:{W - 160}px; margin:0 auto; padding:8px 22px; border-radius:14px;
+      background:rgba(24,20,32,.62); color:#EDE8DE; text-shadow:none; }}
     #{sid}-whip {{ position:absolute; inset:0; }}
     #root .L {{ position:absolute; left:0; top:0; width:{W}px; height:{H}px; transform-origin:{W // 2}px {H // 2}px; }}
     #root .cwrap {{ position:absolute; left:0; top:0; width:{W}px; height:{H}px; transform-origin:{W // 2}px {H // 2}px; }}
@@ -497,9 +501,9 @@ def build_music(script, assets, total, tl=None):
         p_.unlink()
     # duck the bed under the narration (sidechain), so it swells in the gaps
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(raw), "-i", str(assets / "voice.wav"), "-filter_complex",
-                    "[1:a]aresample=44100,aformat=channel_layouts=stereo,volume=3[sc];"
+                    "[1:a]aresample=44100,aformat=channel_layouts=stereo,volume=3,apad[sc];"
                     "[0:a][sc]sidechaincompress=threshold=0.02:ratio=5:attack=30:release=500:makeup=1[m]",
-                    "-map", "[m]", str(out)], check=True)
+                    "-map", "[m]", "-t", f"{total:.2f}", str(out)], check=True)
     raw.unlink()
     return " > ".join(f"{n} ({t0:.0f}s)" for t0, _, n in segs)
 

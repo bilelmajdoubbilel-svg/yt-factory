@@ -313,7 +313,7 @@
       "value": 1.0,
       "display": "~$1.00",
       "highlight": true,
-      "cue": "dollar"
+      "cue": "estimated"
      }
     ]
    },

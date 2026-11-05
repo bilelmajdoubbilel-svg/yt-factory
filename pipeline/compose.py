@@ -149,7 +149,7 @@ def t_counter(S):
         js.append(f'tl.fromTo("#{sid}-num", {{scale:1}}, {{scale:1.06, duration:.12, yoyo:true, repeat:1, ease:"power2.out"}}, {at + 1.4})')
         S.pops.append(at + 1.42)
     js.append(f'tl.fromTo("#{sid}-label", {{opacity:0, y:24}}, {{opacity:1, y:0, duration:.5, ease:"power3.out"}}, {at + 0.35})')
-    js.append(f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.6, duration:.4}}, {at + 0.6})')
+    js.append(f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.92, duration:.4}}, {at + 0.6})')
     return markup, css, js
 
 
@@ -167,7 +167,7 @@ def t_compare(S):
         cols.append(f'''
         <div class="col">
           <div id="{sid}-v{k}" class="col-val" style="color:{color}">{esc(it.get("display", it["value"]))}</div>
-          <div id="{sid}-b{k}" class="col-bar" style="height:{h}px;background:{color}"></div>
+          <div id="{sid}-b{k}" class="col-bar" style="height:{h}px;background:{color if it.get("highlight") else "var(--bar, var(--paper))"}"></div>
           <div id="{sid}-l{k}" class="col-lab">{esc(it["label"])}</div>
         </div>''')
         at = S.cue(it.get("cue"), S.spread(k, len(items), 0.4, 0.55))
@@ -192,7 +192,7 @@ def t_compare(S):
     #{sid}-base {{ position:absolute; left:{S.s(360, 90)}px; right:{S.s(360, 90)}px; bottom:{S.s(208, 878)}px; height:4px; background: var(--muted); }}'''
     if title:
         js.insert(0, f'tl.fromTo("#{sid}-title", {{opacity:0, y:-20}}, {{opacity:1, y:0, duration:.5, ease:"power3.out"}}, .05)')
-    js.append(f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.6, duration:.4}}, .8)')
+    js.append(f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.92, duration:.4}}, .8)')
     return markup, css, js
 
 
@@ -209,7 +209,7 @@ def t_bars(S):
         rows.append(f'''
         <div class="row">
           <div id="{sid}-l{k}" class="row-lab">{esc(it["label"])}</div>
-          <div class="row-track"><div id="{sid}-b{k}" class="row-bar" style="width:{w}px;background:{color}"></div>
+          <div class="row-track"><div id="{sid}-b{k}" class="row-bar" style="width:{w}px;background:{color if it.get("highlight") else "var(--bar, var(--paper))"}"></div>
           <div id="{sid}-v{k}" class="row-val" style="color:{color}">{esc(it.get("display", it["value"]))}</div></div>
         </div>''')
         at = S.cue(it.get("cue"), S.spread(k, len(items), 0.4, 0.6))
@@ -229,7 +229,7 @@ def t_bars(S):
     #root .row-bar {{ height:{S.s(84, 90)}px; border-radius:0 12px 12px 0; }}
     #root .row-val {{ font-family:'PL Display',sans-serif; font-size:{S.s(64, 64)}px; font-variant-numeric: tabular-nums; }}'''
     js.insert(0, f'tl.fromTo("#{sid}-title", {{opacity:0, y:-20}}, {{opacity:1, y:0, duration:.5, ease:"power3.out"}}, .05)')
-    js.append(f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.6, duration:.4}}, .8)')
+    js.append(f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.92, duration:.4}}, .8)')
     return markup, css, js
 
 
@@ -265,7 +265,7 @@ def t_share(S):
         f'tl.fromTo("#{sid}-part", {{scaleX:0, transformOrigin:"0% 50%"}}, {{scaleX:1, duration:1.4, ease:"power2.inOut"}}, {at})',
         f'tl.fromTo({sid}o, {{v:0}}, {{v:{pct}, duration:1.4, ease:"power2.inOut", onUpdate:function(){{ {sid}el.textContent = fmtN({sid}o.v, 0, false) + "%"; }} }}, {at})',
         f'tl.fromTo("#{sid}-pl", {{opacity:0, y:10}}, {{opacity:1, y:0, duration:.4}}, {at + 1.2})',
-        f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.6, duration:.4}}, {at + 1.0})',
+        f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.92, duration:.4}}, {at + 1.0})',
     ]
     S.pops.append(at + 1.42)
     return markup, css, js
@@ -303,7 +303,7 @@ def t_dots(S):
     js.append(f'tl.fromTo("#{sid}-label", {{opacity:0}}, {{opacity:1, duration:.4}}, {at + 0.5})')
     sub_at = S.cue(d.get("sub_cue"), at + 1.6)
     js.append(f'tl.fromTo("#{sid}-sub", {{opacity:0, y:12}}, {{opacity:1, y:0, duration:.4}}, {sub_at})')
-    js.append(f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.6, duration:.4}}, {at + 0.8})')
+    js.append(f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.92, duration:.4}}, {at + 0.8})')
     S.pops.append(at + 1.55)
     return markup, css, js
 
@@ -444,7 +444,7 @@ def t_years(S):
          f'tl.fromTo("#{sid}-p0", {{opacity:0, y:30, scale:.8}}, {{opacity:1, y:0, scale:1, duration:.45, ease:"back.out(2)"}}, {S.cue(d.get("cue_price"), 1.2)})'),
         f'tl.fromTo("#{sid}-flat", {{scaleX:0, transformOrigin:"0% 50%"}}, {{scaleX:1, duration:.9, ease:"power2.inOut"}}, {at1})',
         f'tl.fromTo("#{sid}-p1", {{opacity:0, y:30, scale:.8}}, {{opacity:1, y:0, scale:1, duration:.45, ease:"back.out(2)"}}, {at1 + 0.8})',
-        f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.6, duration:.4}}, 1)',
+        f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.92, duration:.4}}, 1)',
     ]
     S.pops += [S.cue(d.get("cue_price"), 1.2) + 0.05, at1 + 0.85]
     return markup, css, js
@@ -516,7 +516,7 @@ def t_cards(S):
     #root .card-price {{ font-family:'PL Display',sans-serif; font-size:{S.s(140, 150)}px; line-height:1.05; margin-top:12px; }}
     #root .card-sub {{ font-size:{S.s(32, 36)}px; color: var(--muted); }}'''
     js.insert(0, f'tl.fromTo("#{sid}-title", {{opacity:0, y:-20}}, {{opacity:1, y:0, duration:.5}}, .05)')
-    js.append(f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.6, duration:.4}}, 1)')
+    js.append(f'tl.fromTo("#{sid}-src", {{opacity:0}}, {{opacity:.92, duration:.4}}, 1)')
     return markup, css, js
 
 
