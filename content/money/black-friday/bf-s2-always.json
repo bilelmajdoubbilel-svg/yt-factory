@@ -1,0 +1,107 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "bf-s2-always",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "black-friday",
+ "title": "At Most Big Chains, the 'Sale' Price Is Just the Price #shorts",
+ "summary": "Consumers' Checkbook 2025: 21 of 25 US chains showed the same sale prices more than half the time.",
+ "tags": [
+  "black friday deals",
+  "fake sales",
+  "shopping tips"
+ ],
+ "mood": "playful",
+ "scenes": [
+  {
+   "type": "statement",
+   "world": "street:SALE",
+   "narration": "At most big US chains, the sale price is just the price.",
+   "data": {
+    "lines": [
+     {
+      "text": "'Sale' price",
+      "cue": "at"
+     },
+     {
+      "text": "= *the* price",
+      "cue": "just"
+     }
+    ]
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "A consumer group checked {25|twenty-five} chains for {24 weeks.|twenty-four weeks.} At {21,|twenty-one,} the same sale prices showed up more than half the time.",
+   "data": {
+    "value": 21,
+    "decimals": 0,
+    "suffix": " of 25",
+    "label": "chains: 'sale' over half the time",
+    "cue": "21",
+    "source": "Consumers' Checkbook, Nov 2025"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Only Apple, Costco and Dell consistently ran real discounts.",
+   "data": {
+    "lines": [
+     {
+      "text": "Real discounts:",
+      "cue": "only"
+     },
+     {
+      "text": "*Apple, Costco, Dell*",
+      "cue": "apple"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:SALE",
+   "narration": "If it's always on sale, it's never on sale.",
+   "data": {
+    "lines": [
+     {
+      "text": "Always on sale",
+      "cue": "if"
+     },
+     {
+      "text": "= *never* on sale",
+      "cue": "never"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "never",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

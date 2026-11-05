@@ -79,7 +79,7 @@ def cinematic_page(t, theme, outfit="money"):
             f'<div style="background:#FFF8EC;border-radius:18px 18px 0 0;padding:34px 46px 26px">'
             f'<div style="font-family:PLMono;font-size:30px;letter-spacing:.18em;color:#7A7480">PRICE LOGIC · RECEIPT</div>'
             f'<div style="height:4px;margin:18px 0 10px;background:repeating-linear-gradient(90deg,{ink} 0 14px,transparent 14px 24px)"></div>'
-            f'<div style="font-family:PLDisplay;font-size:210px;line-height:1;color:{ink};letter-spacing:-.04em">{html.escape(t["tag"])}</div>'
+            f'<div id="bignum" style="font-family:PLDisplay;font-size:210px;line-height:1;color:{ink};letter-spacing:-.04em;white-space:nowrap">{html.escape(t["tag"])}</div>'
             f'<div style="font-family:PLDisplay;font-size:96px;line-height:.98;color:{coral};margin-top:8px">{html.escape(t["top"])}</div></div>'
             f'<svg width="680" height="24" viewBox="0 0 672 22" preserveAspectRatio="none" style="display:block"><polygon points="0,0 {zig} 672,0" fill="#FFF8EC"/></svg></div>')
     page = frame_page([("far", w["far"]), ("mid", w["mid"]), ("near", w["near"] + host), ("fore", w["fore"])],
@@ -106,6 +106,10 @@ def main_cinematic(script_path, channel_path, out_png):
         b = p.chromium.launch()
         pg = b.new_page(viewport={"width": 1920, "height": 1080}, device_scale_factor=2 / 3)
         pg.goto(tmp.resolve().as_uri())
+        pg.evaluate("document.fonts.ready.then(() => 1)")
+        # wide numbers ($985M) shrink until they fit the receipt
+        pg.evaluate("""() => { const b = document.getElementById('bignum'); if (!b) return;
+            let f = 210; while (b.scrollWidth > b.clientWidth && f > 100) { f -= 4; b.style.fontSize = f + 'px'; } }""")
         pg.wait_for_timeout(400)
         pg.screenshot(path=out_png)
         b.close()

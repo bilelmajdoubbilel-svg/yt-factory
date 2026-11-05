@@ -141,10 +141,12 @@ def shot_elements(S):
         kind = el["kind"]
         if kind == "hangtag":
             sc = el.get("scale", 1.0)
+            txt = el.get("text", "$1.50")
+            fs = 66 if len(txt) <= 6 else max(32, int(62 * 6 / len(txt)))  # long words shrink to fit the tag
             html_ = (f'<div id="{eid}" style="position:absolute;left:{x - 210 * sc:.0f}px;top:{y}px;width:{420 * sc:.0f}px;height:{330 * sc:.0f}px;">'
                      f'<svg viewBox="-210 0 420 330" width="{420 * sc:.0f}" height="{330 * sc:.0f}" overflow="visible">'
                      f'<path d="M-100,0 L-100,112 M100,0 L100,112" stroke="#1A1420" stroke-width="5"/>'
-                     f'<g transform="translate(0 170)">{prop_svg("tag", 0, 0, 1.0).replace("$1.50", C.esc(el.get("text", "$1.50")))}</g></svg></div>')
+                     f'<g transform="translate(0 170)">{prop_svg("tag", 0, 0, 1.0).replace("$1.50", C.esc(txt)).replace('font-size="66"', f'font-size="{fs}"')}</g></svg></div>')
             js += [f'tl.fromTo("#{eid}", {{rotation:-28, y:-260, opacity:0, transformOrigin:"50% 0%"}}, {{rotation:0, y:0, opacity:1, duration:1.5, ease:"elastic.out(1, 0.38)"}}, {at})']
             if el.get("cue2"):
                 t2 = S.cue(el["cue2"], at + 3)
@@ -284,7 +286,10 @@ def scene_file_cine(S, idx, tin, tout):
     else:
         (a, b) = CAM_MOVES[idx % len(CAM_MOVES)]
         keys = [{"t": 0, "x": a[0], "y": a[1], "z": a[2]}, {"t": S.dur, "x": b[0], "y": b[1], "z": b[2], "ease": "sine.inOut"}]
-    focus = S.spec.get("focus") or [{"t": 0, "f": 3.0 if t == "chapter" else 1.0}]
+        if S.light and not S.portrait and markup:
+            # the studio panel nearly fills the frame: a full truck/push would crop its edge, so drift gently
+            keys = [dict(k, x=round(k["x"] * .4), z=round(1 + (k["z"] - 1) * .5, 3)) for k in keys]
+    focus =S.spec.get("focus") or [{"t": 0, "f": 3.0 if t == "chapter" else 1.0}]
     layers = [{"sel": f"#{sid}-L{n}", "d": DEPTHS[n], **({"blur": False} if n == "content" else {})}
               for n in ("far", "mid", "content", "near", "fore")]
     if t == "chapter":
@@ -359,7 +364,7 @@ def scene_file_cine(S, idx, tin, tout):
     #root .cwrap.lp .tag {{ background:#F6C453; color:#2B2230; }}
     #root .panel.pglass {{ background:linear-gradient(160deg,rgba(24,22,36,.86),rgba(36,26,44,.86)); border:5px solid rgba(246,196,83,.9); }}
     #root .src {{ bottom:{S.s(52, 712)}px; }}
-    #root .cwrap.lp .src {{ color:#7A7F8A; }}
+    #root .cwrap.lp .src {{ color:#5B6070; }}
     /* bright worlds: cream bars vanish on beige walls, grey source lines too -> teal bars, source on a dark pill */
     #root .cwrap:not(.lp) {{ --bar:#2F7F95; }}
     #root .cwrap:not(.lp) .src {{ width:fit-content; max-width:{W - 160}px; margin:0 auto; padding:8px 22px; border-radius:14px;

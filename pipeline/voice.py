@@ -23,7 +23,7 @@ SCENE_GAP = 0.18      # breath between scenes
 # extra hold after a scene's last word. Kept short (v2): the owner heard the old 1-2.7 s holds as
 # "voids". Visual payoffs land on their cue word instead of waiting for silence.
 TAIL = {"counter": 0.12, "compare": 0.18, "bars": 0.18, "share": 0.12, "dots": 0.12, "cards": 0.12,
-        "pricetag": 0.08, "years": 0.1, "flow": 0.12, "quote": 0.3, "statement": 0.05, "lines": 0.12,
+        "pricetag": 0.08, "years": 0.1, "flow": 0.12, "quote": 0.6, "statement": 0.05, "lines": 0.12,
         "chapter": 0.3, "end": 1.1, "cta": 0.08, "shot": 0.05}
 FADE_IN, FADE_OUT = 0.008, 0.03   # seconds; no clicks, no chopped word endings
 MODEL_DIR = Path(__file__).resolve().parent.parent / "models"

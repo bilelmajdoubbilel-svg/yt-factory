@@ -3,7 +3,7 @@ make its thumbnail, upload it scheduled for its slot, and log it in state/publis
 
 Usage: python publish.py --channel money [--dry-run] [--privacy private] [--only long|short]
 Queue items: {"script": path, "kind": "long"|"short", "date": "YYYY-MM-DD"}.
-Slots (UTC) come from channels/<id>.json "publish_hour_utc" (default long 15:00, short 18:00).
+Slots come from channels/<id>.json "publish_local" (audience clock, e.g. America/Toronto) or "publish_hour_utc".
 Items are uploaded one day ahead and scheduled for their slot, so a failed run can retry the next day.
 If the queue fell behind (the first unpublished item is in the past), every unpublished date slides
 forward by the same number of days, so the spacing (weekly long, Shorts every 2 days) is kept.
@@ -17,6 +17,7 @@ import os
 import subprocess
 import sys
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE = ROOT / "state" / "published.json"
@@ -31,9 +32,17 @@ LOOKAHEAD = 1  # days: upload this far ahead of the publish date
 
 
 def slot(cfg, kind, day):
-    """Publish time for this item; if its slot is already (nearly) past, the same hour the next day."""
-    hour = cfg.get("publish_hour_utc", {}).get(kind, 15 if kind == "long" else 18)
-    t = dt.datetime.combine(day, dt.time(hour, 0), tzinfo=dt.timezone.utc)
+    """Publish time for this item; if its slot is already (nearly) past, the same hour the next day.
+    "publish_local" {"tz", "long": "HH:MM", "short": "HH:MM"} sets the audience's local clock (DST-safe);
+    otherwise "publish_hour_utc"."""
+    loc = cfg.get("publish_local")
+    if loc:
+        hh, mm = map(int, loc.get(kind, "15:00" if kind == "long" else "13:00").split(":"))
+        t = dt.datetime.combine(day, dt.time(hh, mm), tzinfo=ZoneInfo(loc.get("tz", "America/Toronto")))
+        t = t.astimezone(dt.timezone.utc)
+    else:
+        hour = cfg.get("publish_hour_utc", {}).get(kind, 15 if kind == "long" else 18)
+        t = dt.datetime.combine(day, dt.time(hour, 0), tzinfo=dt.timezone.utc)
     now = dt.datetime.now(dt.timezone.utc)
     while t < now + dt.timedelta(minutes=45):
         t += dt.timedelta(days=1)

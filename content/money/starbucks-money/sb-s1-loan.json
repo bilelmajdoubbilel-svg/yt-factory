@@ -1,0 +1,108 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "sb-s1-loan",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "starbucks-money",
+ "title": "Your Starbucks App Balance Is a Loan to Starbucks #shorts",
+ "summary": "Starbucks held $1.75B of unspent card and rewards balances at the end of fiscal 2025.",
+ "tags": [
+  "starbucks",
+  "starbucks app",
+  "money"
+ ],
+ "mood": "playful",
+ "scenes": [
+  {
+   "type": "statement",
+   "world": "street:COFFEE",
+   "narration": "Loading money onto a coffee app is a tiny, interest-free loan.",
+   "data": {
+    "lines": [
+     {
+      "text": "Load $25",
+      "cue": "loading"
+     },
+     {
+      "text": "= a tiny *loan*",
+      "cue": "tiny"
+     }
+    ]
+   },
+   "host": {
+    "prop": "phone",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "At the end of its last fiscal year, Starbucks was holding about {$1.75 billion|one point seven five billion dollars} of it, not yet spent.",
+   "data": {
+    "value": 1.75,
+    "decimals": 2,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "on cards & rewards, not yet spent",
+    "cue": "$1.75",
+    "source": "Starbucks FY2025 10-K"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "No interest for you. Coffee, later.",
+   "data": {
+    "lines": [
+     {
+      "text": "No interest.",
+      "cue": "no"
+     },
+     {
+      "text": "Coffee *later*.",
+      "cue": "later"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:COFFEE",
+   "narration": "The cash comes first.",
+   "data": {
+    "lines": [
+     {
+      "text": "The *cash*",
+      "cue": "the"
+     },
+     {
+      "text": "comes first",
+      "cue": "first"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "phone",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "first",
+      "expr": "happy"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "sb-s3-nestle",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "starbucks-money",
+ "title": "Nestlé Paid Starbucks $7 Billion Up Front #shorts",
+ "summary": "Nestlé's 2018 up-front royalty: $7B, recognized by Starbucks over 40 years.",
+ "tags": [
+  "starbucks",
+  "nestle",
+  "business deals"
+ ],
+ "mood": "tension",
+ "scenes": [
+  {
+   "type": "statement",
+   "world": "street:COFFEE",
+   "narration": "In {2018,|twenty eighteen,} Nestlé paid Starbucks {$7 billion|seven billion dollars} up front.",
+   "data": {
+    "lines": [
+     {
+      "text": "*$7B*",
+      "cue": "in"
+     },
+     {
+      "text": "up front",
+      "cue": "up"
+     }
+    ]
+   },
+   "host": {
+    "prop": "cup",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "For the right to sell Starbucks coffee in grocery stores.",
+   "data": {
+    "lines": [
+     {
+      "text": "To sell the coffee",
+      "cue": "for"
+     },
+     {
+      "text": "in *grocery stores*",
+      "cue": "grocery"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "Starbucks counts it slowly. About {$177 million|one hundred seventy-seven million dollars} a year, for {40 years.|forty years.}",
+   "data": {
+    "value": 177,
+    "decimals": 0,
+    "prefix": "$",
+    "suffix": "M",
+    "label": "a year, for 40 years",
+    "cue": "$177",
+    "source": "Starbucks FY2025 10-K"
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:COFFEE",
+   "narration": "Paid first. Counted for decades.",
+   "data": {
+    "lines": [
+     {
+      "text": "Paid *first*.",
+      "cue": "paid"
+     },
+     {
+      "text": "Counted for decades.",
+      "cue": "decades"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "cup",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "decades",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

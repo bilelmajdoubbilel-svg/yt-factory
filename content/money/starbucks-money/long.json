@@ -1,0 +1,591 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "starbucks-money",
+ "format": "long",
+ "speed": 1.0,
+ "title": "Why Starbucks Wants Your Money First",
+ "summary": "Customers loaded $15.2 billion onto Starbucks cards and rewards in one year, and $1.75 billion was still unspent at year end. Here's how prepaid money, breakage and a $7 billion Nestlé deal fund Starbucks.",
+ "intro_chapter": "Your $25",
+ "tags": [
+  "starbucks",
+  "how does starbucks make money",
+  "starbucks app",
+  "gift cards",
+  "breakage",
+  "business model"
+ ],
+ "thumbnail": {
+  "tag": "$1.75B",
+  "top": "NOT SPENT YET",
+  "expr": "surprised",
+  "prop": "cup"
+ },
+ "open_mood": "curious",
+ "body_mood": "warm",
+ "end_mood": "payoff",
+ "hooks": [
+  {
+   "formula": "Direct Address",
+   "hook": "You load $25 onto the Starbucks app. You haven't ordered yet, but Starbucks already has your money.",
+   "score": 85,
+   "picked": true
+  },
+  {
+   "formula": "Statistic",
+   "hook": "In one year, $15.2 billion went onto Starbucks cards and rewards before anyone drank a thing.",
+   "score": 83
+  },
+  {
+   "formula": "Contrarian Flip",
+   "hook": "Starbucks isn't a bank. But it holds your money like one.",
+   "score": 79
+  }
+ ],
+ "sources": [
+  "Starbucks FY2025 Form 10-K (fiscal year ended Sept 28, 2025), deferred revenue details (XBRL R76): stored value cards and loyalty program deferred revenue $1,751.7M at year end; additions $15,245.8M during FY2025; Nestlé up-front prepaid royalty $7,000.0M received Aug 26, 2018, recognized over an economic life of 40 years, $176.5M recognized per year; Nestlé balance $177.0M current + $5,600.0M noncurrent: https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/R76.htm",
+  "Starbucks FY2025 10-K, accounting policies details (XBRL R48): stored value card and loyalty program breakage recognized $200.4M (company-operated stores) and $22.0M (licensed stores) in FY2025: https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/R48.htm",
+  "Starbucks FY2025 10-K, income statement (XBRL R3): total revenues $37,184.4M: https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/R3.htm",
+  "Starbucks FY2025 10-K, balance sheet (XBRL R7): deferred revenue $1,840.6M current + $5,772.6M long-term at Sept 28, 2025: https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/R7.htm",
+  "Starbucks FY2025 10-K: \"revenues from Starbucks Cards are recognized upon redemption and not when cash is loaded\"; Starbucks Rewards defers revenue for Stars earned toward free product: https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm",
+  "Stored value as \"essentially an interest-free loan from the customer to the business\" (Jack Raines, Sherwood News, Apr 23, 2024): https://sherwood.news/business/starbucks-could-use-a-cio-to-invest-the-usd2-2b-float-from-its-rewards",
+  "Our math: breakage $200.4M + $22.0M = $222.4M; / 365 days = about $609,000 a day."
+ ],
+ "scenes": [
+  {
+   "type": "shot",
+   "world": "street:COFFEE",
+   "narration": "You load {$25|twenty-five dollars} onto the Starbucks app. You haven't ordered anything yet. But Starbucks already has your money.",
+   "data": {
+    "elements": [
+     {
+      "kind": "hangtag",
+      "text": "$25",
+      "x": 430,
+      "y": 250,
+      "scale": 1.4,
+      "layer": "mid",
+      "cue": "you",
+      "cue2": "already"
+     }
+    ]
+   },
+   "host": {
+    "x": -820,
+    "pose": "hold",
+    "prop": "phone",
+    "enter": {
+     "dx": 700,
+     "t": 0,
+     "dur": 1.4
+    },
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 16
+     },
+     {
+      "cue": "already",
+      "expr": "surprised",
+      "look": 20
+     }
+    ]
+   },
+   "cam": [
+    {
+     "t": 0,
+     "x": -200,
+     "y": 10,
+     "z": 1.0
+    },
+    {
+     "t": "end",
+     "x": 80,
+     "y": -10,
+     "z": 1.12,
+     "ease": "sine.inOut"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Now multiply that by millions of people. In one year, more than {$15 billion|fifteen billion dollars} went onto Starbucks cards and rewards, before anyone drank a thing.",
+   "data": {
+    "lines": [
+     {
+      "text": "*$15B+* in one year",
+      "cue": "$15"
+     },
+     {
+      "text": "before the coffee",
+      "cue": "drank"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking"
+     },
+     {
+      "cue": "$15",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:COFFEE",
+   "narration": "Starbucks isn't a bank. But it's holding a lot of money that isn't quite its own yet. Here's how that works.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not a bank.",
+      "cue": "starbucks"
+     },
+     {
+      "text": "But it holds *your* money",
+      "cue": "holding"
+     }
+    ]
+   },
+   "host": {
+    "prop": "cup",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "proud",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part one. Money first, coffee later.",
+   "data": {
+    "num": "01",
+    "title": "Money *first*"
+   }
+  },
+  {
+   "type": "flow",
+   "world": "studio",
+   "narration": "Here's the order of things. You load the card. Starbucks gets the cash. Days or weeks later, you buy the drink. Only then does it count as a sale.",
+   "data": {
+    "steps": [
+     {
+      "label": "You load $25",
+      "cue": "load"
+     },
+     {
+      "label": "Starbucks has the cash",
+      "cue": "gets"
+     },
+     {
+      "label": "You buy a drink",
+      "cue": "buy"
+     },
+     {
+      "label": "Now it's a sale",
+      "cue": "count"
+     }
+    ]
+   }
+  },
+  {
+   "type": "quote",
+   "world": "stage",
+   "narration": "Starbucks' own annual report says it plainly. Revenue from its cards is recognized upon redemption, and not when cash is loaded.",
+   "data": {
+    "quote": "...recognized upon redemption and *not when cash is loaded*",
+    "who": "Starbucks, 10-K, fiscal 2025",
+    "note": "on Starbucks Cards",
+    "cue": "revenue"
+   }
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "In fiscal {2025,|twenty twenty-five,} {$15.2 billion|fifteen point two billion dollars} was added to those balances. Starbucks' total revenue that year was {$37.2 billion.|thirty-seven point two billion.}",
+   "data": {
+    "title": "Starbucks, fiscal 2025",
+    "source": "Starbucks FY2025 10-K",
+    "items": [
+     {
+      "label": "Cards & rewards",
+      "value": 15.246,
+      "display": "$15.2B",
+      "highlight": true,
+      "cue": "$15.2"
+     },
+     {
+      "label": "Total revenue",
+      "value": 37.184,
+      "display": "$37.2B",
+      "cue": "total"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "And at the end of that year, {$1.75 billion|one point seven five billion dollars} was still sitting there, not yet spent.",
+   "data": {
+    "value": 1.75,
+    "decimals": 2,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "on cards & rewards, not yet spent",
+    "cue": "$1.75",
+    "source": "Starbucks FY2025 10-K"
+   }
+  },
+  {
+   "type": "quote",
+   "world": "stage",
+   "narration": "One writer put it simply. It's essentially an interest-free loan from the customer to the business.",
+   "data": {
+    "quote": "...essentially an *interest-free loan* from the customer to the business",
+    "who": "Jack Raines, Sherwood News",
+    "note": "April 2024",
+    "cue": "it's"
+   }
+  },
+  {
+   "type": "cta",
+   "world": "street:COFFEE",
+   "narration": "If you like seeing the receipts behind everyday prices, subscribe. New ones every Tuesday and Friday.",
+   "data": {
+    "cue": "subscribe"
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part two. The money nobody spends.",
+   "data": {
+    "num": "02",
+    "title": "The money *nobody spends*"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:COFFEE",
+   "narration": "Some of that money never comes back for coffee. A gift card gets lost in a drawer. An app balance gets forgotten.",
+   "data": {
+    "lines": [
+     {
+      "text": "Lost in a drawer.",
+      "cue": "gift"
+     },
+     {
+      "text": "Forgotten in an *app*.",
+      "cue": "app"
+     }
+    ]
+   },
+   "host": {
+    "prop": "phone",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "forgotten",
+      "expr": "worried"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "In fiscal {2025,|twenty twenty-five,} Starbucks booked about {$222 million|two hundred twenty-two million dollars} of what accountants call breakage. Money it expects nobody will ever spend.",
+   "data": {
+    "value": 222,
+    "decimals": 0,
+    "prefix": "$",
+    "suffix": "M",
+    "label": "breakage, fiscal 2025",
+    "cue": "$222",
+    "source": "Starbucks FY2025 10-K ($200.4M + $22.0M)"
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "That works out to more than {$600,000|six hundred thousand dollars} a day.",
+   "data": {
+    "value": 609,
+    "decimals": 0,
+    "prefix": "$",
+    "suffix": "K",
+    "label": "a day, on average",
+    "cue": "$600,000",
+    "source": "Our math: $222.4M / 365"
+   },
+   "hold": 0.8
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "No coffee was made for it. No cup, no barista. It still becomes revenue.",
+   "data": {
+    "lines": [
+     {
+      "text": "No cup. No barista.",
+      "cue": "no"
+     },
+     {
+      "text": "Still *revenue*",
+      "cue": "revenue"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "surprised",
+      "pose": "shrug"
+     },
+     {
+      "cue": "revenue",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:COFFEE",
+   "narration": "Even the free drinks work this way. When you earn Stars, Starbucks sets aside part of what you paid, as a drink it owes you later.",
+   "data": {
+    "lines": [
+     {
+      "text": "Earn Stars",
+      "cue": "earn"
+     },
+     {
+      "text": "a drink it *owes* you",
+      "cue": "owes"
+     }
+    ]
+   },
+   "host": {
+    "prop": "cup",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 14
+     },
+     {
+      "cue": "owes",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part three. The seven billion dollar head start.",
+   "data": {
+    "num": "03",
+    "title": "The *$7B* head start"
+   }
+  },
+  {
+   "type": "pricetag",
+   "world": "studio",
+   "narration": "Customers aren't the only ones who pay first. In {2018,|twenty eighteen,} Nestlé paid Starbucks {$7 billion|seven billion dollars} up front, for the right to sell Starbucks coffee in grocery stores.",
+   "data": {
+    "price": "$7B",
+    "kicker": "NESTLÉ, 2018",
+    "label": "paid *up front*",
+    "cue": "$7",
+    "label_cue": "right"
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking"
+     },
+     {
+      "cue": "$7",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "Starbucks doesn't count it all at once. It spreads it over {40 years,|forty years,} about {$177 million|one hundred seventy-seven million dollars} a year.",
+   "data": {
+    "value": 177,
+    "decimals": 0,
+    "prefix": "$",
+    "suffix": "M",
+    "label": "a year, for 40 years",
+    "cue": "$177",
+    "source": "Starbucks FY2025 10-K"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "At the end of fiscal {2025,|twenty twenty-five,} about {$5.8 billion|five point eight billion dollars} of it was still waiting to be counted.",
+   "data": {
+    "lines": [
+     {
+      "text": "Still waiting:",
+      "cue": "end"
+     },
+     {
+      "text": "*$5.8B*",
+      "cue": "$5.8"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "proud",
+      "pose": "present"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "Add it all up, and Starbucks' balance sheet shows {$7.6 billion|seven point six billion dollars} it has been paid, but hasn't counted as revenue yet.",
+   "data": {
+    "value": 7.6,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "deferred revenue, end of FY2025",
+    "cue": "$7.6",
+    "source": "Starbucks FY2025 10-K ($1,840.6M + $5,772.6M)"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:COFFEE",
+   "narration": "Money first. Coffee later. Sometimes, coffee never.",
+   "data": {
+    "lines": [
+     {
+      "text": "Money *first*.",
+      "cue": "money"
+     },
+     {
+      "text": "Coffee later. Or *never*.",
+      "cue": "never"
+     }
+    ]
+   },
+   "host": {
+    "prop": "cup",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 14
+     },
+     {
+      "cue": "never",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:COFFEE",
+   "narration": "So the next time an app asks you to load money before you order, remember who's giving the loan. It's you.",
+   "data": {
+    "lines": [
+     {
+      "text": "Who's giving the loan?",
+      "cue": "remember"
+     },
+     {
+      "text": "*You*.",
+      "cue": "you"
+     }
+    ]
+   },
+   "host": {
+    "prop": "phone",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "you",
+      "expr": "happy",
+      "pose": "point"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:COFFEE",
+   "narration": "Starbucks sells coffee. But the cash shows up first. Next time: how casinos really make their money.",
+   "data": {
+    "lines": [
+     {
+      "text": "It sells coffee.",
+      "cue": "starbucks"
+     },
+     {
+      "text": "The *cash* comes first.",
+      "cue": "cash"
+     }
+    ],
+    "foot": "Sources in the description",
+    "foot_cue": "next"
+   },
+   "host": {
+    "prop": "cup",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 14
+     },
+     {
+      "cue": "next",
+      "expr": "proud",
+      "pose": "wave"
+     }
+    ]
+   }
+  }
+ ]
+}

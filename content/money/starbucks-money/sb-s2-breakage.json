@@ -1,0 +1,108 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "sb-s2-breakage",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "starbucks-money",
+ "title": "Starbucks Booked $222M for Coffee Nobody Drank #shorts",
+ "summary": "Stored value card and loyalty breakage in Starbucks' fiscal 2025: $200.4M + $22.0M.",
+ "tags": [
+  "starbucks",
+  "gift cards",
+  "breakage"
+ ],
+ "mood": "playful",
+ "scenes": [
+  {
+   "type": "statement",
+   "world": "street:COFFEE",
+   "narration": "Starbucks booked about {$222 million|two hundred twenty-two million dollars} for coffee nobody ever drank.",
+   "data": {
+    "lines": [
+     {
+      "text": "*$222M*",
+      "cue": "starbucks"
+     },
+     {
+      "text": "for no coffee",
+      "cue": "nobody"
+     }
+    ]
+   },
+   "host": {
+    "prop": "cup",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "That's the money on cards and in apps that it expects will never be spent, in one year.",
+   "data": {
+    "value": 222,
+    "decimals": 0,
+    "prefix": "$",
+    "suffix": "M",
+    "label": "breakage, fiscal 2025",
+    "cue": "that's",
+    "source": "Starbucks FY2025 10-K"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Lost gift cards. Forgotten balances. Accountants call it breakage.",
+   "data": {
+    "lines": [
+     {
+      "text": "Forgotten balances",
+      "cue": "lost"
+     },
+     {
+      "text": "= *breakage*",
+      "cue": "breakage"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:COFFEE",
+   "narration": "Spend your gift cards.",
+   "data": {
+    "lines": [
+     {
+      "text": "Spend your",
+      "cue": "spend"
+     },
+     {
+      "text": "*gift cards*",
+      "cue": "cards"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "cup",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "cards",
+      "expr": "happy"
+     }
+    ]
+   }
+  }
+ ]
+}

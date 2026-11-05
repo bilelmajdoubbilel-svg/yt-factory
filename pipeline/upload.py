@@ -76,7 +76,7 @@ def upload(args):
             "tags": (script.get("tags") or []) + channel.get("default_tags", []),
             "categoryId": channel.get("category_id", "27"),
             "defaultLanguage": "en",
-            "defaultAudioLanguage": "en",
+            "defaultAudioLanguage": channel.get("audio_language", "en-US"),
         },
         "status": {
             "privacyStatus": "private" if args.publish_at else args.privacy,

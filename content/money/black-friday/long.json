@@ -1,0 +1,634 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "black-friday",
+ "format": "long",
+ "speed": 1.0,
+ "title": "Most Black Friday Deals Aren't Deals",
+ "summary": "In 2012, J.C. Penney stopped its endless sales and lost $985 million. Here's why stores keep crossed-out prices, what US and Canadian rules say, and how to check a Black Friday deal.",
+ "intro_chapter": "The store that stopped sales",
+ "tags": [
+  "black friday deals",
+  "fake black friday deals",
+  "black friday",
+  "jcpenney",
+  "fake sales",
+  "reference price"
+ ],
+ "thumbnail": {
+  "tag": "$985M",
+  "top": "COST OF HONESTY",
+  "expr": "worried",
+  "prop": "bag"
+ },
+ "open_mood": "tension",
+ "body_mood": "curious",
+ "end_mood": "payoff",
+ "hooks": [
+  {
+   "formula": "Origin / Story",
+   "hook": "In 2012, the man who built the Apple Stores took over J.C. Penney and promised no more endless sales.",
+   "score": 86,
+   "picked": true
+  },
+  {
+   "formula": "Statistic",
+   "hook": "At 21 of 25 big US chains, the 'sale' price is just the price.",
+   "score": 82
+  },
+  {
+   "formula": "Contrarian Flip",
+   "hook": "The crossed-out price isn't the price. It's the bait.",
+   "score": 78
+  }
+ ],
+ "sources": [
+  "J.C. Penney's new pricing (Jan 2012): \"We had 590 unique promotions [online and in stores] last year in 365 days\"; \"less than 1 percent\" of sales at full price; towels \"$10 but always discounted to $4 will be priced at $4\": https://www.dallasnews.com/business/retail/2012/01/25/j-c-penneys-new-pricing-explained",
+  "J.C. Penney fiscal 2012: \"lost $985 million\"; \"Total sales decreased 24.8 percent\"; Ron Johnson: our customer \"loves a sale, at times she loves a coupon, and she always wants a reference price\" (JCK, Feb 28, 2013): https://www.jckonline.com/editorial-article/jc-penney-lost-nearly-1-billion-in-2012/",
+  "After Johnson left (April 2013): \"Overnight, the list prices for some items rose 60% or more\" (TIME): https://business.time.com/?p=98656",
+  "Johnson ran Apple's retail stores before J.C. Penney; ousted April 2013 (Fortune, Mar 20, 2014): https://fortune.com/2014/03/20/how-to-fail-in-business-while-really-really-trying/",
+  "Consumers' Checkbook, Sale Fail 2025 (Nov 13, 2025): 25 national chains, weekly for 24 weeks; \"21 out of 25\" showed the same sale prices more than half the time; JCPenney among stores where \"most of the items tracked ... were always or almost always on sale\"; only Apple, Costco and Dell \"consistently conducted legitimate discounts\"; Kevin Brasler quote: https://www.checkbook.org/pdfDocs/doc/Sale_Fail_2025_press_release.pdf",
+  "Which? (UK), Nov 25, 2025: 175 products at eight retailers tracked six months before and after Black Friday 2024; 83% cheaper or the same price at least once outside the sales period; no deal was at its cheapest of the year on Black Friday itself; toothbrush \"RRP £50\" applied on only 13 days in the prior six months: https://www.which.co.uk/policy-and-insight/article/dont-believe-the-hype-most-black-friday-deals-the-same-price-or-cheaper-at-other-times-of-the-year-which-finds-a3TbD5x5KADs",
+  "US FTC Guides Against Deceptive Pricing, 16 CFR 233.1 (1967): a former price should be one at which \"the product was openly and actively offered for sale, for a reasonably substantial period of time\": https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-233",
+  "Competition Bureau Canada, ordinary selling price (volume and time tests): https://competition-bureau.canada.ca/deceptive-marketing-practices/types-deceptive-marketing-practices/ordinary-selling-price",
+  "Amazon agreed to pay a $1,000,000 penalty in Canada (Jan 2017) after the Bureau found its list prices \"were not substantiated\": https://www.legal500.com/intelligence/canada/antitrust-competition-law/amazon-to-pay-$1000000-to-competition-bureau-for-unsubstantiated-sales-prices-global-advertising-lawyers-alliance-gala"
+ ],
+ "scenes": [
+  {
+   "type": "shot",
+   "world": "street:SALE",
+   "narration": "In {2012,|twenty twelve,} the man who built the Apple Stores took over J.C. Penney, and made a promise. No more endless sales. Just fair prices, every day.",
+   "data": {
+    "elements": [
+     {
+      "kind": "hangtag",
+      "text": "FAIR PRICE",
+      "x": 430,
+      "y": 250,
+      "scale": 1.3,
+      "layer": "mid",
+      "cue": "in",
+      "cue2": "fair"
+     }
+    ]
+   },
+   "host": {
+    "x": -820,
+    "pose": "hold",
+    "prop": "bag",
+    "enter": {
+     "dx": 700,
+     "t": 0,
+     "dur": 1.4
+    },
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 16
+     },
+     {
+      "cue": "fair",
+      "expr": "happy",
+      "look": 20
+     }
+    ]
+   },
+   "cam": [
+    {
+     "t": 0,
+     "x": -200,
+     "y": 10,
+     "z": 1.0
+    },
+    {
+     "t": "end",
+     "x": 80,
+     "y": -10,
+     "z": 1.12,
+     "ease": "sine.inOut"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "That year, sales fell by about a quarter, and the company lost {$985 million.|nine hundred eighty-five million dollars.} By April {2013,|twenty thirteen,} he was out.",
+   "data": {
+    "lines": [
+     {
+      "text": "Sales: *-25%*",
+      "cue": "sales"
+     },
+     {
+      "text": "Lost *$985M*",
+      "cue": "$985"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "worried"
+     },
+     {
+      "cue": "out",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:SALE",
+   "narration": "Shoppers didn't want fair prices. They wanted to feel like they were winning. And every Black Friday, stores sell them that feeling.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not fair prices.",
+      "cue": "shoppers"
+     },
+     {
+      "text": "The feeling of *winning*",
+      "cue": "winning"
+     }
+    ]
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "black",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part one. The price nobody paid.",
+   "data": {
+    "num": "01",
+    "title": "The price *nobody paid*"
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "Before the change, J.C. Penney ran {590|five hundred ninety} different promotions in a single year.",
+   "data": {
+    "value": 590,
+    "decimals": 0,
+    "label": "promotions in one year (2011)",
+    "cue": "590",
+    "source": "J.C. Penney, via Dallas Morning News, Jan 2012"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "And less than one percent of its sales happened at full price.",
+   "data": {
+    "lines": [
+     {
+      "text": "Full price?",
+      "cue": "and"
+     },
+     {
+      "text": "Under *1%* of sales",
+      "cue": "percent"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "surprised",
+      "pose": "shrug"
+     }
+    ]
+   }
+  },
+  {
+   "type": "pricetag",
+   "world": "aisle",
+   "narration": "One towel was listed at {$10,|ten dollars,} but it almost always sold for {$4.|four dollars.} So the new boss simply priced it at {$4.|four dollars.}",
+   "data": {
+    "price": "$4",
+    "kicker": "LISTED AT $10",
+    "label": "the *real* price",
+    "cue": "$4",
+    "label_cue": "boss"
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "boss",
+      "expr": "happy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "Same towel. Same four dollars. But now there was no ten-dollar price to beat, and the shoppers stayed away.",
+   "data": {
+    "lines": [
+     {
+      "text": "Same *$4* towel",
+      "cue": "same"
+     },
+     {
+      "text": "No $10 to beat",
+      "cue": "ten"
+     }
+    ]
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "neutral",
+      "look": 14
+     },
+     {
+      "cue": "shoppers",
+      "expr": "worried"
+     }
+    ]
+   }
+  },
+  {
+   "type": "quote",
+   "world": "stage",
+   "narration": "A year later, he admitted it. Their customer loves a sale, at times she loves a coupon, and she always wants a reference price.",
+   "data": {
+    "quote": "...loves a sale, at times she loves a coupon, and she always wants a *reference price*.",
+    "who": "Ron Johnson, J.C. Penney CEO",
+    "note": "Feb 2013, as reported by JCK",
+    "cue": "their"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "A reference price is the crossed-out number on the tag. It isn't there to tell you what the thing costs. It's there to make the real price feel like a win.",
+   "data": {
+    "lines": [
+     {
+      "text": "The *crossed-out* number",
+      "cue": "crossed-out"
+     },
+     {
+      "text": "makes it feel like a *win*",
+      "cue": "win"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "proud",
+      "pose": "point"
+     },
+     {
+      "cue": "win",
+      "expr": "happy",
+      "pose": "present"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cta",
+   "world": "street:SALE",
+   "narration": "If you like seeing the receipts behind everyday prices, subscribe. New ones every Tuesday and Friday.",
+   "data": {
+    "cue": "subscribe"
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part two. Always on sale.",
+   "data": {
+    "num": "02",
+    "title": "Always *on sale*"
+   }
+  },
+  {
+   "type": "flow",
+   "world": "studio",
+   "narration": "So how common is this today? A US consumer group, Consumers' Checkbook, checked prices at {25|twenty-five} national chains, once a week, for {24 weeks.|twenty-four weeks.}",
+   "data": {
+    "steps": [
+     {
+      "label": "25 national chains",
+      "cue": "25"
+     },
+     {
+      "label": "Checked weekly",
+      "cue": "once"
+     },
+     {
+      "label": "For 24 weeks",
+      "cue": "24"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "At {21|twenty-one} of the {25,|twenty-five,} the same sale prices were up more than half the time.",
+   "data": {
+    "value": 21,
+    "decimals": 0,
+    "suffix": " of 25",
+    "label": "chains: 'sale' over half the time",
+    "cue": "21",
+    "source": "Consumers' Checkbook, Nov 2025"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Only three ran real discounts consistently. Apple, Costco and Dell.",
+   "data": {
+    "lines": [
+     {
+      "text": "Real discounts:",
+      "cue": "only"
+     },
+     {
+      "text": "*Apple, Costco, Dell*",
+      "cue": "apple"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking"
+     },
+     {
+      "cue": "apple",
+      "expr": "happy",
+      "pose": "present"
+     }
+    ]
+   }
+  },
+  {
+   "type": "quote",
+   "world": "stage",
+   "narration": "Its editor put it bluntly. Seeing fifty or sixty percent off a regular price doesn't mean anything.",
+   "data": {
+    "quote": "Seeing 50 percent or 60 percent off a regular price *doesn't mean anything*.",
+    "who": "Kevin Brasler, Consumers' Checkbook",
+    "note": "Nov 2025",
+    "cue": "seeing"
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part three. The Black Friday test.",
+   "data": {
+    "num": "03",
+    "title": "The Black Friday *test*"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "And on Black Friday itself? A British consumer group tracked {175|one hundred seventy-five} products for a full year around the sales. Not one was at its lowest price of the year on Black Friday.",
+   "data": {
+    "lines": [
+     {
+      "text": "Lowest price on Black Friday:",
+      "cue": "british"
+     },
+     {
+      "text": "*Zero* products",
+      "cue": "not"
+     }
+    ]
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "not",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "In fact, {83 percent|eighty-three percent} were the same price or cheaper at some other time.",
+   "data": {
+    "value": 83,
+    "decimals": 0,
+    "suffix": "%",
+    "label": "same price or cheaper at other times",
+    "cue": "83",
+    "source": "Which?, Nov 2025 (UK, 175 products)"
+   }
+  },
+  {
+   "type": "quote",
+   "world": "stage",
+   "narration": "In the US, the rule is from {1967,|nineteen sixty-seven,} and it's vague. A crossed-out price should be one the product was openly and actively offered at, for a reasonably substantial period of time. It never says how many days.",
+   "data": {
+    "quote": "...openly and actively offered for sale, for a *reasonably substantial* period of time",
+    "who": "US FTC, Guides Against Deceptive Pricing",
+    "note": "16 CFR 233.1",
+    "cue": "a"
+   }
+  },
+  {
+   "type": "pricetag",
+   "world": "studio",
+   "narration": "Canada has an actual test. In {2017,|twenty seventeen,} Amazon paid a {$1 million|one million dollar} penalty there, because it couldn't back up the list prices it compared against.",
+   "data": {
+    "price": "$1M",
+    "kicker": "CANADA, 2017",
+    "label": "for *unbacked* list prices",
+    "cue": "$1",
+    "label_cue": "couldn't"
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking"
+     },
+     {
+      "cue": "$1",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:SALE",
+   "narration": "And J.C. Penney? After he left, the sales came back. Some list prices jumped {60 percent|sixty percent} or more, overnight.",
+   "data": {
+    "lines": [
+     {
+      "text": "Sales came *back*",
+      "cue": "sales"
+     },
+     {
+      "text": "List prices *+60%*",
+      "cue": "60"
+     }
+    ]
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "neutral",
+      "look": 14
+     },
+     {
+      "cue": "overnight",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "In {2025,|twenty twenty-five,} that same consumer group listed J.C. Penney among the stores where most items were always, or almost always, on sale.",
+   "data": {
+    "lines": [
+     {
+      "text": "2025:",
+      "cue": "2025"
+     },
+     {
+      "text": "*Always* on sale",
+      "cue": "always"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking"
+     },
+     {
+      "cue": "always",
+      "expr": "proud",
+      "pose": "shrug"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:SALE",
+   "narration": "So this Black Friday, ignore the crossed-out number. Look up what the thing cost last month. If it's the same, it isn't a deal. Trust me. I'm a price tag.",
+   "data": {
+    "lines": [
+     {
+      "text": "Check *last month's* price",
+      "cue": "look"
+     },
+     {
+      "text": "Trust me. I'm a *tag*.",
+      "cue": "trust"
+     }
+    ]
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "proud",
+      "look": 14
+     },
+     {
+      "cue": "trust",
+      "expr": "happy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:SALE",
+   "narration": "The crossed-out number isn't the price. It's the bait. Next time: why Starbucks wants your money before you order.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not the price.",
+      "cue": "the"
+     },
+     {
+      "text": "The *bait*.",
+      "cue": "bait"
+     }
+    ],
+    "foot": "Sources in the description",
+    "foot_cue": "next"
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 14
+     },
+     {
+      "cue": "next",
+      "expr": "proud",
+      "pose": "wave"
+     }
+    ]
+   }
+  }
+ ]
+}

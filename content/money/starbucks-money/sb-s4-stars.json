@@ -1,0 +1,108 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "sb-s4-stars",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "starbucks-money",
+ "title": "Your Free Starbucks Drink Was Partly Prepaid #shorts",
+ "summary": "Starbucks defers part of each purchase for Stars earned toward free drinks.",
+ "tags": [
+  "starbucks",
+  "starbucks rewards",
+  "loyalty programs"
+ ],
+ "mood": "playful",
+ "scenes": [
+  {
+   "type": "statement",
+   "world": "street:COFFEE",
+   "narration": "Your free Starbucks drink? In the books, you already paid for part of it.",
+   "data": {
+    "lines": [
+     {
+      "text": "Free drink?",
+      "cue": "your"
+     },
+     {
+      "text": "Partly *prepaid*",
+      "cue": "paid"
+     }
+    ]
+   },
+   "host": {
+    "prop": "cup",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "When you earn Stars, Starbucks sets aside part of what you paid, as a drink it owes you.",
+   "data": {
+    "lines": [
+     {
+      "text": "Part of each order",
+      "cue": "earn"
+     },
+     {
+      "text": "*held back*",
+      "cue": "aside"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "Cards and rewards together took in {$15.2 billion|fifteen point two billion dollars} in one year.",
+   "data": {
+    "value": 15.2,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "added to cards & rewards, FY2025",
+    "cue": "$15.2",
+    "source": "Starbucks FY2025 10-K"
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:COFFEE",
+   "narration": "Nothing's free. It's just paid early.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not free.",
+      "cue": "nothing's"
+     },
+     {
+      "text": "Paid *early*.",
+      "cue": "early"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "cup",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "early",
+      "expr": "happy"
+     }
+    ]
+   }
+  }
+ ]
+}

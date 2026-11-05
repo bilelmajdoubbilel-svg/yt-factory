@@ -5,7 +5,7 @@ video with a recurring host character, moving camera, depth of field, a music be
 then uploads itself to YouTube on schedule.
 
 ```
-content/<channel>/queue.json         what publishes when (long: Tue + Fri 15:00 UTC, Shorts: daily 18:00 UTC)
+content/<channel>/queue.json         what publishes when (long: Tue + Fri 3 pm ET, Shorts: daily 1 pm ET; see channels/money.json)
 content/<channel>/<topic>/*.json     scripts: scenes with narration, world, host acting, data
         │
 pipeline/voice.py      Kokoro TTS (free, offline) -> voice.wav + word timings

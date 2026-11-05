@@ -1,0 +1,106 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "bf-s1-honesty",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "black-friday",
+ "title": "This Store Stopped Fake Sales and Lost $985M #shorts",
+ "summary": "J.C. Penney's 2012 'fair and square' pricing and what it cost.",
+ "tags": [
+  "black friday",
+  "jcpenney",
+  "fake sales"
+ ],
+ "mood": "tension",
+ "scenes": [
+  {
+   "type": "statement",
+   "world": "street:SALE",
+   "narration": "A big store once stopped its endless sales. It lost {$985 million|nine hundred eighty-five million dollars} that year.",
+   "data": {
+    "lines": [
+     {
+      "text": "No more sales",
+      "cue": "big"
+     },
+     {
+      "text": "Lost *$985M*",
+      "cue": "$985"
+     }
+    ]
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "pricetag",
+   "world": "aisle",
+   "narration": "A towel listed at {$10|ten dollars} usually sold for {$4.|four dollars.} So J.C. Penney just priced it at {$4.|four dollars.}",
+   "data": {
+    "price": "$4",
+    "kicker": "LISTED AT $10",
+    "label": "the *real* price",
+    "cue": "$4",
+    "label_cue": "penney"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Same price. But no crossed-out ten to beat. Shoppers left.",
+   "data": {
+    "lines": [
+     {
+      "text": "No $10 to beat",
+      "cue": "same"
+     },
+     {
+      "text": "Shoppers *left*",
+      "cue": "shoppers"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:SALE",
+   "narration": "We don't shop for prices. We shop for wins.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not prices.",
+      "cue": "we"
+     },
+     {
+      "text": "*Wins*.",
+      "cue": "wins"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "wins",
+      "expr": "happy"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "bf-s3-today",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "black-friday",
+ "title": "Black Friday Is Almost Never the Cheapest Day #shorts",
+ "summary": "Which? tracked 175 products for a year: none was cheapest on Black Friday itself.",
+ "tags": [
+  "black friday",
+  "black friday deals",
+  "shopping tips"
+ ],
+ "mood": "tension",
+ "scenes": [
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "It's Black Friday. One study tracked {175|one hundred seventy-five} deals for a whole year. Not one was cheapest on Black Friday itself.",
+   "data": {
+    "lines": [
+     {
+      "text": "Cheapest on Black Friday:",
+      "cue": "one"
+     },
+     {
+      "text": "*Zero*",
+      "cue": "not"
+     }
+    ]
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "{83 percent|Eighty-three percent} were the same price or cheaper at another time.",
+   "data": {
+    "value": 83,
+    "decimals": 0,
+    "suffix": "%",
+    "label": "same or cheaper at other times",
+    "cue": "83",
+    "source": "Which?, Nov 2025 (UK, 175 products)"
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "One toothbrush said: was {£50.|fifty pounds.} In the six months before, it cost that on just {13 days.|thirteen days.}",
+   "data": {
+    "value": 13,
+    "decimals": 0,
+    "suffix": " days",
+    "label": "at its 'was' price, in 6 months",
+    "cue": "13",
+    "source": "Which?, Nov 2025"
+   }
+  },
+  {
+   "type": "end",
+   "world": "aisle",
+   "narration": "Check last month's price before you buy.",
+   "data": {
+    "lines": [
+     {
+      "text": "Check last month's",
+      "cue": "check"
+     },
+     {
+      "text": "*price*",
+      "cue": "buy"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "buy",
+      "expr": "happy"
+     }
+    ]
+   }
+  }
+ ]
+}

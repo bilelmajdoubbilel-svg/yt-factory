@@ -82,6 +82,25 @@ def prop_svg(kind, x=0, y=0, s=1.0):
                    + "".join(f'<circle cx="{x}" cy="{y}" r="{r}" fill="#FFF3D6"/>' for x, y, r in
                              ((-34, -48, 16), (-12, -58, 18), (12, -54, 17), (34, -46, 15), (-22, -70, 14), (4, -76, 15), (24, -68, 13))),
         "coin": '<circle r="26" fill="#FFC531" stroke="#C98E22" stroke-width="5"/><text y="10" text-anchor="middle" font-family="PL Display" font-size="28" fill="#C98E22">$</text>',
+        # plain takeaway cup (no brand): cream cup, teal sleeve, a wisp of steam
+        "cup": '<path d="M-10,-104 q-10,-12 0,-24 t0,-24 M14,-100 q-8,-10 0,-20" stroke="#FFF8EC" stroke-width="5" fill="none" stroke-linecap="round" opacity=".75"/>'
+               '<path d="M-36,-84 L36,-84 L30,-96 L-30,-96Z" fill="#F2E8D6" stroke="#2B2230" stroke-width="5" stroke-linejoin="round"/>'
+               '<rect x="-46" y="-84" width="92" height="18" rx="7" fill="#FFF8EC" stroke="#2B2230" stroke-width="5"/>'
+               '<path d="M-40,-66 L40,-66 L31,60 L-31,60Z" fill="#FFF8EC" stroke="#2B2230" stroke-width="5" stroke-linejoin="round"/>'
+               '<path d="M-37,-22 L37,-22 L33,26 L-33,26Z" fill="#2F7F95" stroke="#2B2230" stroke-width="4" stroke-linejoin="round"/>'
+               '<circle cx="0" cy="2" r="11" fill="#F6C453"/>',
+        # shopping bag with a % label
+        "bag": '<path d="M-30,-52 Q-30,-100 0,-100 Q30,-100 30,-52" stroke="#2B2230" stroke-width="8" fill="none"/>'
+               '<rect x="-62" y="-58" width="124" height="128" rx="10" fill="#E46C55" stroke="#2B2230" stroke-width="5"/>'
+               '<circle cx="0" cy="6" r="30" fill="#FFF8EC"/>'
+               '<text x="0" y="20" text-anchor="middle" font-family="PL Display" font-size="40" fill="#2B2230">%</text>',
+        # phone showing a prepaid balance (generic app, no brand)
+        "phone": '<rect x="-50" y="-96" width="100" height="192" rx="18" fill="#2B2230"/>'
+                 '<rect x="-41" y="-80" width="82" height="156" rx="9" fill="#FFF8EC"/>'
+                 '<text x="0" y="-42" text-anchor="middle" font-family="PL Mono" font-size="12" fill="#7A7480">BALANCE</text>'
+                 '<text x="0" y="-10" text-anchor="middle" font-family="PL Display" font-size="22" fill="#2B2230">$25.00</text>'
+                 '<rect x="-30" y="16" width="60" height="26" rx="13" fill="#2F7F95"/>'
+                 '<text x="0" y="34" text-anchor="middle" font-family="PL Mono" font-size="13" fill="#FFF8EC">PAY</text>',
     }[kind]
     return f'<g transform="translate({x} {y}) scale({s})">{body}</g>'
 
@@ -105,7 +124,7 @@ def character(cid, outfit="money", expr="neutral", pose="idle", prop=None, flip=
         head_extra = (f'<path d="M-84,-452 Q-80,-520 0,-522 Q80,-520 84,-452 Q40,-470 0,-470 Q-40,-470 -84,-452Z" fill="#6B5A3E"/>'
                       f'<rect x="-104" y="-462" width="208" height="16" rx="8" fill="#6B5A3E"/>')
     prop_html = prop_svg(prop, -2, 16, 0.8) if prop else ""
-    if prop == "popcorn":  # keep the bucket upright in the "hold" pose
+    if prop in ("popcorn", "cup", "phone"):  # keep these upright in the "hold" pose
         prop_html = f'<g transform="rotate(110)">{prop_html}</g>'
     arm = lambda side, sh, el, color, front: (
         (f'<g id="{cid}-arm{side}">' if animated else f'<g id="{cid}-arm{side}" transform="rotate({sh} {(-68 if side == "l" else 68)} -326)">') +
@@ -174,7 +193,7 @@ def tag_character(cid, outfit="money", expr="neutral", pose="idle", prop=None, f
     pl, pr = POSES[pose]
     sx = TAG_SX
     prop_html = prop_svg(prop, -2, 16, 0.8) if prop else ""
-    if prop == "popcorn":
+    if prop in ("popcorn", "cup", "phone"):  # upright in the hand
         prop_html = f'<g transform="rotate(110)">{prop_html}</g>'
 
     def arm(side, sh, el, front):

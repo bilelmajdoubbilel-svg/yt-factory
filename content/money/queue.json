@@ -90,9 +90,54 @@
   "date": "2026-11-23"
  },
  {
+  "script": "content/money/black-friday/long.json",
+  "kind": "long",
+  "date": "2026-11-24"
+ },
+ {
   "script": "content/money/printer-ink/ink-s3-profit.json",
   "kind": "short",
   "date": "2026-11-24"
+ },
+ {
+  "script": "content/money/black-friday/bf-s1-honesty.json",
+  "kind": "short",
+  "date": "2026-11-25"
+ },
+ {
+  "script": "content/money/black-friday/bf-s2-always.json",
+  "kind": "short",
+  "date": "2026-11-26"
+ },
+ {
+  "script": "content/money/starbucks-money/long.json",
+  "kind": "long",
+  "date": "2026-11-27"
+ },
+ {
+  "script": "content/money/black-friday/bf-s3-today.json",
+  "kind": "short",
+  "date": "2026-11-27"
+ },
+ {
+  "script": "content/money/starbucks-money/sb-s1-loan.json",
+  "kind": "short",
+  "date": "2026-11-28"
+ },
+ {
+  "script": "content/money/starbucks-money/sb-s2-breakage.json",
+  "kind": "short",
+  "date": "2026-11-29"
+ },
+ {
+  "script": "content/money/starbucks-money/sb-s3-nestle.json",
+  "kind": "short",
+  "date": "2026-11-30"
+ },
+ {
+  "script": "content/money/starbucks-money/sb-s4-stars.json",
+  "kind": "short",
+  "date": "2026-12-01"
  },
  {
   "script": "content/money/movie-popcorn/long.json",
