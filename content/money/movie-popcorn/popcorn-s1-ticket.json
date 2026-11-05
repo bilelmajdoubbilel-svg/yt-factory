@@ -1,0 +1,107 @@
+{
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.05,
+ "long_video": "movie-popcorn-long",
+ "sources": [
+  "AMC Entertainment Q4 and full-year 2025 results (Form 8-K, Exhibit 99.1, Feb 23, 2026): attendance 219.4M, average ticket $12.09, food & beverage per patron $7.62, admissions $2,652.8M, food & beverage revenue $1,671.3M, film exhibition costs $1,275.2M, food & beverage costs $327.0M, net loss $632.4M: https://www.sec.gov/Archives/edgar/data/1411579/000141157926000018/amc-20260223xex99d1.htm",
+  "Our calculations from the same release: film costs / admissions = 48.1%; food & beverage costs / food & beverage revenue = 19.6%; per person after direct costs: ticket $12.09 x (1 - 0.481) = $6.28, snacks $7.62 x (1 - 0.196) = $6.13 (before rent and staff)."
+ ],
+ "id": "popcorn-s1-ticket",
+ "title": "Where your movie ticket money really goes #shorts",
+ "summary": "About 48% of AMC's box office money went to the movie studios in 2025.",
+ "tags": [
+  "amc",
+  "movie tickets",
+  "cinema business"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "street:CINEMA",
+   "narration": "An average AMC ticket cost {$12.09|twelve dollars and nine cents} in {2025.|twenty twenty-five.}",
+   "data": {
+    "price": "$12.09",
+    "kicker": "Average ticket",
+    "label": "AMC, *2025*",
+    "cue": "an",
+    "label_cue": "2025"
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "x": -300,
+    "flip": false
+   }
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "About {$5.81|five eighty-one} of it went straight to the movie studios.",
+   "data": {
+    "title": "Per ticket",
+    "source": "AMC FY2025, our calculation",
+    "items": [
+     {
+      "label": "Ticket",
+      "value": 12.09,
+      "display": "$12.09",
+      "cue": "about"
+     },
+     {
+      "label": "Studios",
+      "value": 5.81,
+      "display": "~$5.81",
+      "highlight": true,
+      "cue": "studios"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "cinema",
+   "narration": "So the cinema needs another way to pay the bills.",
+   "data": {
+    "lines": [
+     {
+      "text": "Another way",
+      "cue": "another"
+     },
+     {
+      "text": "to pay the *bills*",
+      "cue": "bills"
+     }
+    ]
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold"
+   }
+  },
+  {
+   "type": "end",
+   "world": "cinema",
+   "narration": "It's in your hands right now.",
+   "data": {
+    "lines": [
+     {
+      "text": "It's in your",
+      "cue": "it's"
+     },
+     {
+      "text": "*hands*",
+      "cue": "hands"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold"
+   }
+  }
+ ]
+}

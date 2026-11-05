@@ -1,0 +1,754 @@
+{
+ "id": "costco-hotdog-v3",
+ "format": "long",
+ "channel": "money",
+ "title": "The $1.50 Hot Dog Costco Won't Raise",
+ "voice": "af_heart",
+ "speed": 1.0,
+ "scenes": [
+  {
+   "type": "shot",
+   "world": "foodcourt",
+   "narration": "In {2013,|twenty thirteen,} Costco's CEO went to the co-founder with bad news. Jim, we can't sell this hot dog for a buck fifty. We are losing our rear ends.",
+   "data": {
+    "elements": [
+     {
+      "kind": "hangtag",
+      "text": "$1.50",
+      "x": 430,
+      "y": 250,
+      "scale": 1.4,
+      "layer": "mid",
+      "cue": "in",
+      "cue2": "losing",
+      "t": 0.1
+     }
+    ]
+   },
+   "host": {
+    "x": -820,
+    "pose": "hold",
+    "prop": "hotdog",
+    "enter": {
+     "dx": 700,
+     "t": 0,
+     "dur": 1.4
+    },
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "worried",
+      "look": 16
+     },
+     {
+      "cue": "losing",
+      "expr": "surprised",
+      "look": 20
+     }
+    ]
+   },
+   "cam": [
+    {
+     "t": 0,
+     "x": -240,
+     "y": 10,
+     "z": 1.0
+    },
+    {
+     "t": "end",
+     "x": 80,
+     "y": -10,
+     "z": 1.12,
+     "ease": "sine.inOut"
+    }
+   ]
+  },
+  {
+   "type": "quote",
+   "world": "stage",
+   "narration": "The co-founder's answer: if you raise the effing hot dog, I will kill you. Figure it out.",
+   "data": {
+    "quote": "If you raise the [effing] hot dog, I will kill you. *Figure it out.*",
+    "who": "Jim Sinegal, Costco co-founder",
+    "note": "as recalled by CEO Craig Jelinek (425 Business, 2018)",
+    "cue": "if"
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "surprised",
+      "look": 14
+     },
+     {
+      "cue": "figure",
+      "expr": "worried",
+      "pose": "shrug"
+     }
+    ]
+   }
+  },
+  {
+   "type": "shot",
+   "world": "street",
+   "narration": "So they figured it out. Forty years later, a hot dog and a soda still cost {$1.50.|a dollar fifty.}",
+   "data": {
+    "elements": [
+     {
+      "kind": "hangtag",
+      "text": "$1.50",
+      "x": 120,
+      "y": 280,
+      "layer": "mid",
+      "cue": "hot",
+      "cue2": "still",
+      "scale": 1.35
+     },
+     {
+      "kind": "yearboard",
+      "from": 1985,
+      "to": 2025,
+      "x": 640,
+      "y": 360,
+      "layer": "mid",
+      "cue": "forty",
+      "t": 0.2,
+      "dur": 1.8
+     }
+    ]
+   },
+   "host": {
+    "x": -1250,
+    "pose": "hold",
+    "prop": "hotdog",
+    "enter": {
+     "dx": 880,
+     "t": 0,
+     "dur": 1.8
+    },
+    "acts": [
+     {
+      "cue": "forty",
+      "dt": 0.2,
+      "expr": "happy",
+      "look": 18
+     },
+     {
+      "cue": "still",
+      "expr": "proud"
+     }
+    ]
+   },
+   "cam": [
+    {
+     "t": 0,
+     "x": -260,
+     "y": 10,
+     "z": 1.0
+    },
+    {
+     "t": "end",
+     "x": 70,
+     "y": -10,
+     "z": 1.1,
+     "ease": "sine.inOut"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "world": "street",
+   "narration": "Because the hot dog was never the product. The real product makes Costco over five billion dollars a year, and there's a good chance it's in your wallet right now.",
+   "data": {
+    "lines": [
+     {
+      "text": "The hot dog isn't the product",
+      "cue": "because"
+     },
+     {
+      "text": "The *real* one is in your wallet",
+      "cue": "real"
+     }
+    ]
+   },
+   "host": {
+    "prop": "hotdog",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "wallet",
+      "expr": "happy",
+      "pose": "point"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "narration": "Last year alone, Costco sold {245.1 million|two hundred forty-five million} of these combos. So let's follow the money: what one costs, what it earns, and what it's really for.",
+   "data": {
+    "value": 245.1,
+    "decimals": 1,
+    "suffix": "M",
+    "kicker": "Fiscal year 2025",
+    "label": "hot dog combos sold",
+    "cue": "245.1",
+    "source": "Source: Costco annual shareholder meeting, Jan 2026"
+   },
+   "world": "foodcourt"
+  },
+  {
+   "type": "chapter",
+   "narration": "Part one. The price that should be {$4.50.|four fifty.}",
+   "data": {
+    "num": "01",
+    "title": "The price that *should* be $4.50"
+   },
+   "world": "stage"
+  },
+  {
+   "type": "lines",
+   "narration": "Since {1985,|nineteen eighty-five,} gas, rent and groceries all got more expensive. The hot dog didn't move.",
+   "data": {
+    "title": "Prices since 1985",
+    "note": "Illustrative trend, not to scale",
+    "series": [
+     {
+      "label": "Gas",
+      "points": [
+       0.08,
+       0.14,
+       0.2,
+       0.42,
+       0.55,
+       0.62
+      ],
+      "cue": "gas"
+     },
+     {
+      "label": "Rent",
+      "points": [
+       0.1,
+       0.22,
+       0.36,
+       0.5,
+       0.68,
+       0.86
+      ],
+      "cue": "rent"
+     },
+     {
+      "label": "Groceries",
+      "points": [
+       0.12,
+       0.2,
+       0.3,
+       0.42,
+       0.55,
+       0.72
+      ],
+      "cue": "almost"
+     },
+     {
+      "label": "Hot dog combo",
+      "points": [
+       0.12,
+       0.12,
+       0.12,
+       0.12,
+       0.12,
+       0.12
+      ],
+      "highlight": true,
+      "cue": "hot"
+     }
+    ]
+   },
+   "world": "stage"
+  },
+  {
+   "type": "compare",
+   "narration": "If the combo had simply kept up with inflation since {1985,|nineteen eighty-five,} it would cost about {$4.50|four dollars and fifty cents} today.",
+   "data": {
+    "title": "Hot dog + soda",
+    "source": "Inflation estimate: CNN, via Mashed (2026)",
+    "items": [
+     {
+      "label": "Actual price",
+      "value": 1.5,
+      "display": "$1.50",
+      "cue": "combo"
+     },
+     {
+      "label": "Adjusted for inflation",
+      "value": 4.5,
+      "display": "~$4.50",
+      "highlight": true,
+      "cue": "$4.50"
+     }
+    ]
+   },
+   "world": "stage"
+  },
+  {
+   "type": "compare",
+   "narration": "Meanwhile, the hot dog, the bun and the soda are estimated to cost Costco around a dollar.",
+   "data": {
+    "title": "What Costco keeps per combo",
+    "source": "Cost estimate: The Motley Fool, Dec 2025",
+    "items": [
+     {
+      "label": "Price",
+      "value": 1.5,
+      "display": "$1.50",
+      "cue": "hot"
+     },
+     {
+      "label": "Estimated cost",
+      "value": 1.0,
+      "display": "~$1.00",
+      "highlight": true,
+      "cue": "dollar"
+     }
+    ]
+   },
+   "world": "foodcourt",
+   "host": {
+    "prop": "hotdog",
+    "pose": "hold"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "foodcourt",
+   "narration": "Add staff, space and equipment, and what's left is pennies. One employee claimed it's about eight cents a combo.",
+   "data": {
+    "lines": [
+     {
+      "text": "Left per combo:",
+      "cue": "add"
+     },
+     {
+      "text": "*~8¢*, reportedly",
+      "cue": "eight"
+     }
+    ]
+   },
+   "host": {
+    "prop": "hotdog",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "worried",
+      "look": 14
+     },
+     {
+      "cue": "eight",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "flow",
+   "world": "foodcourt",
+   "narration": "So how did they figure it out? They switched sodas to save money, and they built their own hot dog factories.",
+   "data": {
+    "steps": [
+     {
+      "label": "Switch the soda (2013)",
+      "cue": "switched"
+     },
+     {
+      "label": "Own hot dog factories",
+      "cue": "built"
+     },
+     {
+      "label": "$1.50 holds",
+      "cue": "factories"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cta",
+   "world": "street",
+   "narration": "If you like seeing the receipts behind everyday prices, subscribe. There's a new one every week.",
+   "data": {
+    "cue": "subscribe"
+   }
+  },
+  {
+   "type": "chapter",
+   "narration": "Part two. The real product.",
+   "data": {
+    "num": "02",
+    "title": "The real product is the *card*"
+   },
+   "world": "stage"
+  },
+  {
+   "type": "cards",
+   "narration": "To shop at Costco, you need a membership. In the United States, a basic card costs {$65|sixty-five dollars} a year. The executive tier costs {$130.|a hundred and thirty.}",
+   "data": {
+    "title": "Annual membership, US",
+    "source": "Fees since Sept 1, 2024 (US & Canada)",
+    "cards": [
+     {
+      "name": "Gold Star",
+      "price": "$65",
+      "sub": "per year",
+      "cue": "$65"
+     },
+     {
+      "name": "Executive",
+      "price": "$130",
+      "sub": "per year",
+      "cue": "executive"
+     }
+    ]
+   },
+   "world": "stage"
+  },
+  {
+   "type": "counter",
+   "narration": "At the end of fiscal {2025,|twenty twenty-five,} Costco had {81 million|eighty-one million} paid members.",
+   "data": {
+    "value": 81,
+    "decimals": 0,
+    "suffix": "M",
+    "label": "paid members",
+    "cue": "81",
+    "source": "Source: Costco FY2025 annual report (10-K)"
+   },
+   "world": "stage"
+  },
+  {
+   "type": "counter",
+   "narration": "Remember that five billion? Here it is: membership fees brought in {$5.3 billion|five point three billion dollars} in a single year.",
+   "data": {
+    "value": 5.3,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "membership fees, FY2025",
+    "cue": "$5.3",
+    "source": "Source: Costco FY2025 annual report (10-K)"
+   },
+   "world": "stage"
+  },
+  {
+   "type": "bars",
+   "narration": "Now put that next to Costco's total profit for the same year: about {$8.1 billion.|eight point one billion dollars.}",
+   "data": {
+    "title": "FY2025, in billions of dollars",
+    "source": "Source: Costco FY2025 annual report (10-K)",
+    "items": [
+     {
+      "label": "Membership fees",
+      "value": 5.323,
+      "display": "$5.3B",
+      "highlight": true,
+      "cue": "now"
+     },
+     {
+      "label": "Net income",
+      "value": 8.099,
+      "display": "$8.1B",
+      "cue": "$8.1"
+     }
+    ]
+   },
+   "world": "stage"
+  },
+  {
+   "type": "share",
+   "narration": "In other words, membership fees alone equal roughly two thirds of everything Costco earns.",
+   "data": {
+    "title": "Membership fees as a share of net income",
+    "pct": 66,
+    "part_label": "Fees: $5.3B",
+    "whole_label": "Net income: $8.1B",
+    "cue": "two",
+    "source": "$5.323B / $8.099B, FY2025 10-K"
+   },
+   "world": "stage"
+  },
+  {
+   "type": "statement",
+   "narration": "Everything else, the groceries, the TVs, the tires, and yes, the hot dogs, is priced so close to cost that the shopping itself barely pays.",
+   "data": {
+    "lines": [
+     {
+      "text": "Groceries. TVs. Tires. Hot dogs.",
+      "cue": "groceries"
+     },
+     {
+      "text": "Priced *close to cost*",
+      "cue": "priced"
+     }
+    ]
+   },
+   "world": "aisle"
+  },
+  {
+   "type": "counter",
+   "narration": "Costco caps most markups at around fourteen to fifteen percent. The goal isn't profit on each item. It's a reason to come back.",
+   "data": {
+    "display": "14-15%",
+    "kicker": "Markup cap on most items",
+    "label": "The goal: a reason to *come back*",
+    "cue": "fourteen",
+    "source": "Source: The Motley Fool, Dec 2025"
+   },
+   "world": "aisle"
+  },
+  {
+   "type": "chapter",
+   "narration": "Part three. Why the hot dog has to stay at {$1.50.|a dollar fifty.}",
+   "data": {
+    "num": "03",
+    "title": "Why it *can't* change"
+   },
+   "world": "stage"
+  },
+  {
+   "type": "statement",
+   "narration": "A membership only works if members feel they're getting a deal, every single visit.",
+   "data": {
+    "lines": [
+     {
+      "text": "A membership is a promise",
+      "cue": "membership"
+     },
+     {
+      "text": "every visit must *feel* like a deal",
+      "cue": "every"
+     }
+    ]
+   },
+   "world": "street"
+  },
+  {
+   "type": "pricetag",
+   "narration": "The hot dog is the deal you can taste. It's often the last thing you see on the way out. It's advertising that customers pay for, two hundred forty-five million times a year.",
+   "data": {
+    "price": "$1.50",
+    "kicker": "The deal you can taste",
+    "label": "Advertising you *pay for*",
+    "cue": "deal",
+    "label_cue": "advertising"
+   },
+   "world": "foodcourt",
+   "host": {
+    "prop": "hotdog",
+    "pose": "hold"
+   }
+  },
+  {
+   "type": "pricetag",
+   "narration": "And it's not just the hot dog. Costco's rotisserie chicken has cost {$4.99|four ninety-nine} since {2009.|two thousand nine.}",
+   "data": {
+    "price": "$4.99",
+    "kicker": "Rotisserie chicken",
+    "label": "Same price since *2009*",
+    "cue": "rotisserie",
+    "label_cue": "since"
+   },
+   "world": "foodcourt"
+  },
+  {
+   "type": "counter",
+   "narration": "To keep it there, Costco built its own chicken operation in Nebraska, designed to produce more than two million chickens a week at full capacity.",
+   "data": {
+    "display": "2M+",
+    "kicker": "Chickens per week at full capacity",
+    "label": "Costco's own operation in *Nebraska*",
+    "cue": "two",
+    "source": "Source: Fortune (2018), citing NPR"
+   },
+   "world": "stage"
+  },
+  {
+   "type": "dots",
+   "narration": "And members keep coming back. In the US and Canada, {92.3%|ninety-two point three percent} of members renewed. Worldwide, it was {89.8%.|eighty-nine point eight percent.}",
+   "data": {
+    "n": 92,
+    "big": "92.3%",
+    "label": "renewed in the US & Canada",
+    "sub": "89.8% worldwide",
+    "sub_cue": "worldwide",
+    "cue": "92.3%",
+    "source": "Source: Costco FY2025 annual report (10-K)"
+   },
+   "world": "stage"
+  },
+  {
+   "type": "flow",
+   "narration": "Every renewal is almost pure profit. Costco doesn't have to sell you anything extra to collect it.",
+   "data": {
+    "steps": [
+     {
+      "label": "Cheap hot dog",
+      "cue": "every"
+     },
+     {
+      "label": "Feels like a deal",
+      "cue": "pure"
+     },
+     {
+      "label": "Member renews",
+      "cue": "costco"
+     },
+     {
+      "label": "Near-pure profit",
+      "cue": "collect"
+     }
+    ]
+   },
+   "world": "stage"
+  },
+  {
+   "type": "statement",
+   "world": "foodcourt",
+   "narration": "So when the co-founder said he'd kill anyone who raised the price, he wasn't protecting a hot dog.",
+   "data": {
+    "lines": [
+     {
+      "text": "He wasn't protecting",
+      "cue": "so"
+     },
+     {
+      "text": "a *hot dog*",
+      "cue": "protecting"
+     }
+    ]
+   },
+   "host": {
+    "prop": "hotdog",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "protecting",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street",
+   "narration": "He was protecting five billion dollars a year. Costco doesn't mainly make money selling you things. It makes money because you pay for the right to buy them. Next week: why movie theater popcorn costs what it does.",
+   "data": {
+    "lines": [
+     {
+      "text": "He was protecting",
+      "cue": "he"
+     },
+     {
+      "text": "*$5.3 billion* a year",
+      "cue": "billion"
+     }
+    ],
+    "foot": "Sources in the description",
+    "foot_cue": "next"
+   },
+   "host": {
+    "prop": "hotdog",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.3,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "right",
+      "expr": "proud"
+     },
+     {
+      "cue": "next",
+      "expr": "happy",
+      "pose": "present"
+     }
+    ]
+   }
+  }
+ ],
+ "sources": [
+  "Costco FY2025 Form 10-K (net sales $269.9B, membership fees $5.323B, net income $8.099B, 81.0M paid members, renewal 92.3% US & Canada / 89.8% worldwide): https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm",
+  "245.1 million hot dog combos sold in FY2025; $1.50 since 1985; ~$4.50 adjusted for inflation (CNN): https://www.mashed.com/2096043/costco-hot-dog-soda-combo-sales-2025",
+  "Estimated cost per combo, markup caps of 14%/15%: https://www.fool.com/investing/2025/12/05/how-costco-makes-money-despite-150-hot-dog-combos",
+  "Membership fee increase effective Sept 1, 2024 ($60 to $65; $120 to $130) and the Jim Sinegal quote recalled by Craig Jelinek (425 Business): https://ca.news.yahoo.com/costco-raising-membership-fee-first-191136748.html",
+  "Rotisserie chicken at $4.99 since 2009 and Costco's Nebraska poultry operation (2M+ chickens/week at full capacity, per NPR): https://fortune.com/2018/10/24/costco-kirkland-rotisserie-chickens-supply-chain",
+  "Jelinek recalling the conversation (\"Jim, we can't sell this hot dog for a buck fifty. We are losing our rear ends.\" / \"If you raise the effing hot dog, I will kill you. Figure it out.\"), via 425 Business (2018); the ~8 cents per combo claim by a Costco employee (Popsugar, 2018): https://www.today.com/today/amp/tdna192310",
+  "2013 approach about $1.75 and the switch from Coca-Cola to Pepsi; Costco's own hot dog factories from 2008: https://en.wikipedia.org/wiki/Costco_hot_dog"
+ ],
+ "summary": "Costco's CEO said the $1.50 hot dog was losing money. The co-founder said: raise it and I'll kill you. Here's why: the hot dog was never the product.",
+ "tags": [
+  "costco",
+  "costco hot dog",
+  "costco membership",
+  "business model",
+  "loss leader"
+ ],
+ "thumbnail": {
+  "tag": "1985",
+  "top": "SAME PRICE",
+  "expr": "surprised",
+  "prop": "hotdog"
+ },
+ "style": "cinematic",
+ "music": "music-cozy-acoustic.mp3",
+ "hooks": [
+  {
+   "formula": "Story / The Insider",
+   "hook": "In 2013, Costco's CEO went to the co-founder with bad news: we can't sell this hot dog for a buck fifty. The answer: raise it and I will kill you.",
+   "score": 90,
+   "picked": true
+  },
+  {
+   "formula": "Before and After",
+   "hook": "In 1985 a hot dog and a soda at Costco cost $1.50. Forty years later, it still costs $1.50.",
+   "score": 82,
+   "picked": false
+  },
+  {
+   "formula": "Statistic",
+   "hook": "Costco sold 245 million hot dogs in a single year, and made almost nothing on them. On purpose.",
+   "score": 80,
+   "picked": false
+  },
+  {
+   "formula": "The Question",
+   "hook": "Why hasn't Costco's hot dog changed price in forty years, when everything else has?",
+   "score": 66,
+   "picked": false
+  },
+  {
+   "formula": "Contrarian Flip",
+   "hook": "Costco's $1.50 hot dog isn't a bargain. It's the most important ad in the store.",
+   "score": 74,
+   "picked": false
+  },
+  {
+   "formula": "The Insider",
+   "hook": "The most important number in Costco's annual report isn't the price of anything it sells.",
+   "score": 70,
+   "picked": false
+  }
+ ],
+ "intro_chapter": "The threat",
+ "body_mood": "warm"
+}

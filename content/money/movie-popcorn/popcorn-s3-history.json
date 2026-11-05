@@ -1,0 +1,138 @@
+{
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.05,
+ "long_video": "movie-popcorn-long",
+ "sources": [
+  "Smithsonian magazine, \"Why Do We Eat Popcorn at the Movies?\" (Andrew F. Smith; 5 to 10 cents a bag; the Dallas chain; over half of US popcorn eaten at theaters by 1945): https://www.smithsonianmag.com/arts-culture/why-do-we-eat-popcorn-at-the-movies-475063/"
+ ],
+ "id": "popcorn-s3-history",
+ "title": "Cinemas Once Didn't Want Popcorn #shorts",
+ "summary": "Early movie theaters kept popcorn out. The Great Depression changed their minds.",
+ "tags": [
+  "popcorn history",
+  "movie theater popcorn",
+  "cinema business"
+ ],
+ "scenes": [
+  {
+   "type": "statement",
+   "world": "cinema",
+   "narration": "The first movie theaters wanted nothing to do with popcorn. It would ruin their fancy carpets.",
+   "data": {
+    "lines": [
+     {
+      "text": "No popcorn",
+      "cue": "the"
+     },
+     {
+      "text": "on our *carpets*",
+      "cue": "carpets"
+     }
+    ]
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "surprised",
+      "look": 14
+     },
+     {
+      "cue": "carpets",
+      "expr": "worried"
+     }
+    ]
+   }
+  },
+  {
+   "type": "pricetag",
+   "world": "street:CINEMA",
+   "narration": "Then the Great Depression hit. At {5 to 10 cents|five to ten cents} a bag, popcorn was a treat almost anyone could afford.",
+   "data": {
+    "price": "5-10¢",
+    "kicker": "A bag in the 1930s",
+    "label": "almost *anyone* could buy",
+    "cue": "five",
+    "label_cue": "treat"
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "treat",
+      "expr": "happy",
+      "hop": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "cinema",
+   "narration": "One Dallas chain kept popcorn out of its five best theaters. Two years later, those five were losing money.",
+   "data": {
+    "lines": [
+     {
+      "text": "5 without popcorn",
+      "cue": "one"
+     },
+     {
+      "text": "*in the red*",
+      "cue": "losing"
+     }
+    ]
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "losing",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "cinema",
+   "narration": "By {1945,|nineteen forty-five,} over half of America's popcorn was eaten at the movies.",
+   "data": {
+    "lines": [
+     {
+      "text": "1945",
+      "cue": "by"
+     },
+     {
+      "text": "*half* of it, at the movies",
+      "cue": "half"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "half",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

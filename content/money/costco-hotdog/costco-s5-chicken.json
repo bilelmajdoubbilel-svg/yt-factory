@@ -1,0 +1,84 @@
+{
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "long_video": "costco-hotdog-v2",
+ "id": "costco-s5-chicken",
+ "title": "Why Costco built its own chicken farms #shorts",
+ "summary": "Costco's rotisserie chicken has cost $4.99 since 2009, and Costco built its own chicken operation to keep it there.",
+ "tags": [
+  "costco",
+  "rotisserie chicken",
+  "business"
+ ],
+ "sources": [
+  "Rotisserie chicken $4.99 and Costco's Nebraska poultry operation (Fortune, citing NPR): https://fortune.com/2018/10/24/costco-kirkland-rotisserie-chickens-supply-chain"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "foodcourt",
+   "narration": "Costco built a whole chicken operation to protect one price: {$4.99.|four ninety-nine.}",
+   "data": {
+    "price": "$4.99",
+    "kicker": "Rotisserie chicken",
+    "label": "since *2009*",
+    "cue": "costco",
+    "label_cue": "protect"
+   },
+   "host": {
+    "x": -300,
+    "flip": false
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "The Nebraska plant was built to produce over two million chickens a week.",
+   "data": {
+    "display": "2M+",
+    "kicker": "Chickens per week",
+    "label": "at full *capacity*",
+    "cue": "two",
+    "source": "Fortune (2018), citing NPR"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "stage",
+   "narration": "That's not a grocery store move. That's a promise.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not a store move.",
+      "cue": "not"
+     },
+     {
+      "text": "A *promise*.",
+      "cue": "promise"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street",
+   "narration": "Members don't pay for chicken. They pay for promises like this one.",
+   "data": {
+    "lines": [
+     {
+      "text": "Members pay",
+      "cue": "members"
+     },
+     {
+      "text": "for *promises*",
+      "cue": "promises"
+     }
+    ],
+    "foot": ""
+   }
+  }
+ ]
+}

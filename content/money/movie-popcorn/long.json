@@ -1,0 +1,823 @@
+{
+ "id": "movie-popcorn-long",
+ "format": "long",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 0.95,
+ "music": "music-lofi-lobby.mp3",
+ "title": "Why AMC Needs Your Popcorn Money",
+ "summary": "AMC sends almost half of every ticket back to the movie studios, and the snack bar earns nearly as much as the screen. Plus: why the first cinemas wanted nothing to do with popcorn.",
+ "intro_chapter": "219 million tickets",
+ "tags": [
+  "movie theater popcorn",
+  "amc",
+  "cinema business",
+  "how cinemas make money",
+  "cinemark",
+  "popcorn history",
+  "why is movie popcorn so expensive"
+ ],
+ "thumbnail": {
+  "tag": "48%",
+  "top": "TO HOLLYWOOD",
+  "expr": "surprised",
+  "prop": "popcorn"
+ },
+ "hooks": [
+  {
+   "formula": "Statistic",
+   "hook": "In 2025 AMC sold about 219 million movie tickets. Almost half of that ticket money went straight back to the studios.",
+   "score": 82,
+   "picked": true
+  },
+  {
+   "formula": "The Question",
+   "hook": "Why does a bucket of popcorn cost almost as much as the movie?",
+   "score": 68
+  },
+  {
+   "formula": "Contrarian Flip",
+   "hook": "Cinemas aren't in the movie business. They're in the popcorn business.",
+   "score": 72
+  },
+  {
+   "formula": "The Receipt",
+   "hook": "This is AMC's 2025 income statement, and the most important line is the snack bar.",
+   "score": 70
+  },
+  {
+   "formula": "The Insider",
+   "hook": "The ticket you buy has a silent partner. The popcorn doesn't.",
+   "score": 74
+  }
+ ],
+ "sources": [
+  "AMC Entertainment Q4 and full-year 2025 results (Form 8-K, Exhibit 99.1, Feb 23, 2026): attendance 219.4M, average ticket $12.09, food & beverage per patron $7.62, admissions $2,652.8M, food & beverage revenue $1,671.3M, film exhibition costs $1,275.2M, food & beverage costs $327.0M, net loss $632.4M: https://www.sec.gov/Archives/edgar/data/1411579/000141157926000018/amc-20260223xex99d1.htm",
+  "Our calculations from the same release: film costs / admissions = 48.1%; food & beverage costs / food & beverage revenue = 19.6%; per person after direct costs: ticket $12.09 x (1 - 0.481) = $6.28, snacks $7.62 x (1 - 0.196) = $6.13 (before rent and staff).",
+  "Cinemark Holdings Q4 and full-year 2025 results (Exhibit 99.1, Feb 18, 2026): admissions $1,544.7M, concession revenue $1,227.2M, film rentals and advertising $877.0M, concession supplies $240.5M (our calculations: 56.8% and 19.6%): https://ir.cinemark.com/sec-filings/all-sec-filings/content/0001193125-26-056010/cnk-ex99_1.htm",
+  "AMC Entertainment Q4 and full-year 2019 results (Exhibit 99.1, Feb 27, 2020): attendance 356,443 thousand, average ticket $9.26, food and beverage per patron $4.82: https://www.sec.gov/Archives/edgar/data/1411579/000141157920000024/amc-20200227ex991bfe06d.htm",
+  "Smithsonian magazine, \"Why Do We Eat Popcorn at the Movies?\" (Andrew F. Smith quote, 5 to 10 cents a bag, the Dallas chain, over half of US popcorn eaten at theaters by 1945): https://www.smithsonianmag.com/arts-culture/why-do-we-eat-popcorn-at-the-movies-475063/"
+ ],
+ "scenes": [
+  {
+   "type": "shot",
+   "world": "street:CINEMA",
+   "narration": "In {2025,|twenty twenty-five,} AMC sold about {219 million|two hundred nineteen million} movie tickets. Almost half of all that ticket money went straight back to the movie studios.",
+   "data": {
+    "elements": [
+     {
+      "kind": "hangtag",
+      "text": "$12.09",
+      "x": 160,
+      "y": 280,
+      "scale": 1.35,
+      "layer": "mid",
+      "cue": "tickets"
+     }
+    ]
+   },
+   "host": {
+    "x": -1250,
+    "pose": "hold",
+    "prop": "popcorn",
+    "enter": {
+     "dx": 880,
+     "t": 0,
+     "dur": 2.6
+    },
+    "acts": [
+     {
+      "cue": "tickets",
+      "dt": 0.2,
+      "expr": "happy",
+      "look": 18
+     },
+     {
+      "cue": "almost",
+      "expr": "surprised",
+      "look": 22
+     }
+    ]
+   },
+   "cam": [
+    {
+     "t": 0,
+     "x": -260,
+     "y": 10,
+     "z": 1.0
+    },
+    {
+     "t": "end",
+     "x": 70,
+     "y": -10,
+     "z": 1.1,
+     "ease": "sine.inOut"
+    }
+   ]
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "On an average ticket of {$12.09,|twelve dollars and nine cents,} the studios got about {$5.81.|five dollars and eighty-one cents.} That's our math, from AMC's own numbers.",
+   "data": {
+    "title": "Average AMC ticket, 2025",
+    "source": "AMC FY2025 results; studios' share = film costs / admissions (our calculation)",
+    "items": [
+     {
+      "label": "Ticket",
+      "value": 12.09,
+      "display": "$12.09",
+      "cue": "average"
+     },
+     {
+      "label": "Studios' share",
+      "value": 5.81,
+      "display": "~$5.81",
+      "highlight": true,
+      "cue": "studios"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "cinema",
+   "narration": "So how does a cinema actually pay its bills? The answer is probably in your hands right now. Buttered.",
+   "data": {
+    "lines": [
+     {
+      "text": "How does a cinema",
+      "cue": "how"
+     },
+     {
+      "text": "pay its *bills*?",
+      "cue": "bills"
+     }
+    ]
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.3,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "buttered",
+      "expr": "happy",
+      "hop": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "cinema",
+   "narration": "In the next few minutes: where your ticket money really goes, what the snack bar actually earns, and why the first movie theaters wanted nothing to do with popcorn.",
+   "data": {
+    "lines": [
+     {
+      "text": "Where the ticket *goes*",
+      "cue": "where"
+     },
+     {
+      "text": "What popcorn *earns*",
+      "cue": "snack"
+     },
+     {
+      "text": "Why cinemas *didn't want it*",
+      "cue": "first"
+     }
+    ]
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.3,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "first",
+      "expr": "surprised",
+      "look": 20
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "min_duration": 3.2,
+   "narration": "Part one. The ticket is shared.",
+   "data": {
+    "num": "01",
+    "title": "The ticket is *shared*"
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "Across the whole year, AMC paid {$1.28 billion|one point two eight billion dollars} in film costs.",
+   "data": {
+    "value": 1.28,
+    "decimals": 2,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "film costs, 2025",
+    "cue": "$1.28",
+    "source": "AMC FY2025 results ($1,275.2M)"
+   }
+  },
+  {
+   "type": "share",
+   "world": "stage",
+   "narration": "That's about {48 percent|forty-eight percent} of everything it took in at the box office.",
+   "data": {
+    "title": "Box office money that went to the studios",
+    "pct": 48,
+    "part_label": "Studios $1.28B",
+    "whole_label": "Tickets $2.65B",
+    "cue": "48",
+    "source": "$1,275.2M / $2,652.8M (our calculation)"
+   }
+  },
+  {
+   "type": "bars",
+   "world": "stage",
+   "narration": "And it isn't just AMC. At Cinemark, another of America's biggest chains, film rentals and advertising took about {57 percent|fifty-seven percent} of ticket sales.",
+   "data": {
+    "title": "Ticket money paid out, 2025",
+    "source": "AMC and Cinemark FY2025 results (our calculation: $1,275.2M / $2,652.8M; $877.0M / $1,544.7M)",
+    "items": [
+     {
+      "label": "AMC film costs",
+      "value": 48.1,
+      "display": "48%",
+      "cue": "just"
+     },
+     {
+      "label": "Cinemark film + ads",
+      "value": 56.8,
+      "display": "57%",
+      "highlight": true,
+      "cue": "57"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:CINEMA",
+   "narration": "And out of the other half, AMC still has to pay for the building, the staff, and the screens.",
+   "data": {
+    "lines": [
+     {
+      "text": "Rent. Staff. Screens.",
+      "cue": "building"
+     },
+     {
+      "text": "all from the *other half*",
+      "cue": "other"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cta",
+   "world": "street:CINEMA",
+   "narration": "If you like knowing where your money really goes, subscribe. There's a new breakdown every week.",
+   "data": {
+    "cue": "subscribe"
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "min_duration": 3.2,
+   "narration": "Part two. The snack bar.",
+   "data": {
+    "num": "02",
+    "title": "The *snack bar*"
+   }
+  },
+  {
+   "type": "shot",
+   "world": "foodcourt",
+   "narration": "The average AMC customer spent {$7.62|seven dollars and sixty-two cents} on food and drinks.",
+   "data": {
+    "elements": [
+     {
+      "kind": "hangtag",
+      "text": "$7.62",
+      "x": 200,
+      "y": 260,
+      "scale": 1.35,
+      "layer": "mid",
+      "cue": "$7.62"
+     }
+    ]
+   },
+   "host": {
+    "x": -1250,
+    "pose": "hold",
+    "prop": "popcorn",
+    "enter": {
+     "dx": 860,
+     "t": 0,
+     "dur": 2.2
+    },
+    "acts": [
+     {
+      "cue": "$7.62",
+      "dt": 0.2,
+      "expr": "surprised",
+      "look": 18
+     },
+     {
+      "cue": "drinks",
+      "expr": "happy"
+     }
+    ]
+   },
+   "cam": [
+    {
+     "t": 0,
+     "x": -220,
+     "y": 10,
+     "z": 1.0
+    },
+    {
+     "t": "end",
+     "x": 60,
+     "y": -10,
+     "z": 1.08,
+     "ease": "sine.inOut"
+    }
+   ]
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "And here's the twist: the food itself cost AMC only about twenty cents of every dollar.",
+   "data": {
+    "title": "Every dollar at the snack bar",
+    "source": "$327.0M / $1,671.3M = 19.6% (our calculation)",
+    "items": [
+     {
+      "label": "You pay",
+      "value": 1.0,
+      "display": "$1.00",
+      "cue": "food"
+     },
+     {
+      "label": "Food costs AMC",
+      "value": 0.2,
+      "display": "~$0.20",
+      "highlight": true,
+      "cue": "twenty"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "foodcourt",
+   "narration": "Cinemark's numbers look the same: its snacks also cost it about twenty cents for every dollar you paid.",
+   "data": {
+    "lines": [
+     {
+      "text": "Cinemark, 2025",
+      "cue": "cinemark's"
+     },
+     {
+      "text": "*19.6¢* per snack dollar",
+      "cue": "twenty"
+     }
+    ]
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.3,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "twenty",
+      "expr": "proud",
+      "look": 18
+     }
+    ]
+   }
+  },
+  {
+   "type": "bars",
+   "world": "stage",
+   "narration": "So per person, the ticket leaves AMC about {$6.28,|six twenty-eight,} and the snacks leave about {$6.13.|six thirteen.}",
+   "data": {
+    "title": "Left per person after direct costs",
+    "source": "Before rent and staff. Our calculation from AMC FY2025",
+    "items": [
+     {
+      "label": "Ticket",
+      "value": 6.28,
+      "display": "$6.28",
+      "cue": "ticket"
+     },
+     {
+      "label": "Snacks",
+      "value": 6.13,
+      "display": "$6.13",
+      "highlight": true,
+      "cue": "snacks"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "cinema",
+   "narration": "A seven-dollar snack earns almost as much as a twelve-dollar ticket.",
+   "data": {
+    "lines": [
+     {
+      "text": "$7.62 of snacks",
+      "cue": "seven"
+     },
+     {
+      "text": "earns like a *$12 ticket*",
+      "cue": "twelve"
+     }
+    ]
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.3,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "share",
+   "world": "stage",
+   "narration": "For the whole company, snacks were about a third of all revenue, but nearly half of what tickets and snacks earned after their direct costs.",
+   "data": {
+    "title": "Snacks' share of ticket + snack earnings",
+    "pct": 49,
+    "part_label": "Snacks $1.34B",
+    "whole_label": "Total $2.72B",
+    "cue": "nearly",
+    "source": "After film and food costs, before rent and staff (our calculation)"
+   }
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "And the snack bar matters more every year. Since {2019,|twenty nineteen,} AMC's average ticket price went up about {31 percent.|thirty-one percent.} Snack spending per person went up about {58 percent.|fifty-eight percent.}",
+   "data": {
+    "title": "AMC, per person: 2019 to 2025",
+    "source": "AMC FY2019 and FY2025 results: ticket $9.26 to $12.09, snacks $4.82 to $7.62 (our calculation)",
+    "items": [
+     {
+      "label": "Ticket price",
+      "value": 31,
+      "display": "+31%",
+      "cue": "31"
+     },
+     {
+      "label": "Snacks",
+      "value": 58,
+      "display": "+58%",
+      "highlight": true,
+      "cue": "58"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "That matters, because AMC sold about {137 million|one hundred thirty-seven million} fewer tickets in {2025|twenty twenty-five} than in {2019.|twenty nineteen.} Fewer people, each spending more at the counter.",
+   "data": {
+    "value": 137,
+    "decimals": 0,
+    "suffix": "M",
+    "label": "fewer tickets than in 2019",
+    "cue": "137",
+    "source": "AMC attendance: 356.4M (2019), 219.4M (2025)"
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.3,
+      "look": 14
+     },
+     {
+      "cue": "fewer",
+      "dt": 0.3,
+      "expr": "worried"
+     },
+     {
+      "cue": "spending",
+      "expr": "thinking",
+      "pose": "chin"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part three. The snack nobody wanted.",
+   "data": {
+    "num": "03",
+    "title": "The snack *nobody wanted*"
+   }
+  },
+  {
+   "type": "quote",
+   "world": "stage",
+   "narration": "It wasn't always like this. The first movie palaces copied fancy stage theaters, with beautiful carpets. As food historian Andrew Smith told Smithsonian magazine: movie theaters wanted nothing to do with popcorn.",
+   "data": {
+    "quote": "Movie theaters wanted nothing to do with *popcorn.*",
+    "who": "Andrew F. Smith, food historian",
+    "note": "author of Popped Culture, to Smithsonian magazine",
+    "cue": "movie"
+   }
+  },
+  {
+   "type": "pricetag",
+   "world": "street:CINEMA",
+   "narration": "Then came the Great Depression. People wanted cheap fun, and at {5 to 10 cents|five to ten cents} a bag, popcorn was a treat almost anyone could afford.",
+   "data": {
+    "price": "5-10¢",
+    "kicker": "A bag in the 1930s",
+    "label": "a treat almost *anyone* could buy",
+    "cue": "five",
+    "label_cue": "treat"
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.3,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "treat",
+      "expr": "happy",
+      "hop": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "cinema",
+   "narration": "One Dallas chain put popcorn machines in {80|eighty} of its theaters, but not in its five best ones. Within two years, the theaters with popcorn saw profits soar. The five without it were losing money.",
+   "data": {
+    "lines": [
+     {
+      "text": "80 with popcorn: *profit*",
+      "cue": "within"
+     },
+     {
+      "text": "5 without: *in the red*",
+      "cue": "five"
+     }
+    ]
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.3,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "soar",
+      "expr": "happy"
+     },
+     {
+      "cue": "losing",
+      "expr": "surprised",
+      "look": 20
+     }
+    ]
+   }
+  },
+  {
+   "type": "shot",
+   "world": "street:CINEMA",
+   "narration": "By {1945,|nineteen forty-five,} more than half of all the popcorn eaten in America was eaten at the movies. The snack the theaters didn't want had saved them.",
+   "data": {
+    "elements": [
+     {
+      "kind": "yearboard",
+      "from": 1930,
+      "to": 1945,
+      "x": 620,
+      "y": 330,
+      "layer": "mid",
+      "cue": "by",
+      "t": 0.1,
+      "dur": 1.6
+     },
+     {
+      "kind": "hangtag",
+      "text": "50%+",
+      "x": 140,
+      "y": 280,
+      "scale": 1.3,
+      "layer": "mid",
+      "cue": "more"
+     }
+    ]
+   },
+   "host": {
+    "x": 1250,
+    "flip": true,
+    "pose": "hold",
+    "prop": "popcorn",
+    "enter": {
+     "dx": -880,
+     "t": 0,
+     "dur": 2.6
+    },
+    "acts": [
+     {
+      "cue": "more",
+      "dt": 0.2,
+      "expr": "surprised",
+      "look": -20
+     },
+     {
+      "cue": "saved",
+      "expr": "proud"
+     }
+    ]
+   },
+   "cam": [
+    {
+     "t": 0,
+     "x": 260,
+     "y": 10,
+     "z": 1.0
+    },
+    {
+     "t": "end",
+     "x": -60,
+     "y": -10,
+     "z": 1.1,
+     "ease": "sine.inOut"
+    }
+   ]
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "min_duration": 3.2,
+   "narration": "Part four. Why popcorn costs so much.",
+   "data": {
+    "num": "04",
+    "title": "Why popcorn *costs* so much"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "foodcourt",
+   "narration": "That's why the snack bar sits right where you walk in, and why the biggest size always looks like the best deal.",
+   "data": {
+    "lines": [
+     {
+      "text": "Right where you *walk in*",
+      "cue": "snack"
+     },
+     {
+      "text": "The big size *looks* like the deal",
+      "cue": "biggest"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "cinema",
+   "narration": "It isn't greed hiding in the popcorn. It's math. The ticket has a partner. The popcorn doesn't.",
+   "data": {
+    "lines": [
+     {
+      "text": "The ticket has a *partner*",
+      "cue": "ticket"
+     },
+     {
+      "text": "The popcorn doesn't",
+      "cue": "popcorn"
+     }
+    ]
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold"
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "And even with all that popcorn, AMC still reported a net loss of {$632 million|six hundred thirty-two million dollars} in {2025.|twenty twenty-five.}",
+   "data": {
+    "display": "-$632M",
+    "kicker": "AMC net result, 2025",
+    "label": "a *loss*, not a profit",
+    "cue": "$632",
+    "source": "AMC FY2025 results"
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.3,
+      "look": 14
+     },
+     {
+      "cue": "loss",
+      "dt": 0.3,
+      "expr": "worried",
+      "pose": "shrug"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:CINEMA",
+   "narration": "Without the snack bar's one point three billion dollars in earnings, that hole would be far deeper.",
+   "data": {
+    "lines": [
+     {
+      "text": "Without the snack bar",
+      "cue": "without"
+     },
+     {
+      "text": "the hole gets *much deeper*",
+      "cue": "hole"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "cinema",
+   "narration": "Ninety years ago, popcorn helped cinemas survive the Depression. Today it's still doing the same job. So next time the popcorn feels expensive, remember: you're not just buying a snack. You're helping keep the lights on. Next week: why printer ink costs what it does.",
+   "data": {
+    "lines": [
+     {
+      "text": "Then: it *saved* them.",
+      "cue": "ninety"
+     },
+     {
+      "text": "Now: it keeps the *lights on*.",
+      "cue": "lights"
+     }
+    ],
+    "foot": "Sources in the description",
+    "foot_cue": "next"
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.3,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "lights",
+      "expr": "happy"
+     },
+     {
+      "cue": "next",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+node_modules/
+models/
+build/
+out/
+__pycache__/
+*.raw.mp4

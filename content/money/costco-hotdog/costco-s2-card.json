@@ -1,0 +1,81 @@
+{
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "long_video": "costco-hotdog-v2",
+ "id": "costco-s2-card",
+ "title": "Costco Profits Before You Buy Anything #shorts",
+ "summary": "Costco's membership fees brought in $5.3 billion in fiscal 2025, about two thirds of its profit.",
+ "tags": [
+  "costco",
+  "costco membership",
+  "business model"
+ ],
+ "sources": [
+  "Costco FY2025 Form 10-K: https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "stage",
+   "narration": "Costco makes most of its profit before you buy a single thing.",
+   "data": {
+    "price": "$65",
+    "kicker": "Paid upfront, every year",
+    "label": "The real *product*",
+    "cue": "costco",
+    "label_cue": "before"
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "{81 million|Eighty-one million} people pay this membership fee.",
+   "data": {
+    "value": 81,
+    "decimals": 0,
+    "suffix": "M",
+    "label": "paid members, FY2025",
+    "cue": "81",
+    "source": "Costco FY2025 10-K"
+   }
+  },
+  {
+   "type": "share",
+   "world": "stage",
+   "narration": "Those fees brought in {$5.3 billion,|five point three billion dollars,} equal to about two thirds of Costco's profit.",
+   "data": {
+    "title": "Fees vs. total profit",
+    "pct": 66,
+    "part_label": "Fees $5.3B",
+    "whole_label": "Profit $8.1B",
+    "cue": "two",
+    "source": "Costco FY2025 10-K"
+   }
+  },
+  {
+   "type": "end",
+   "world": "foodcourt",
+   "narration": "The groceries? Mostly the bait.",
+   "data": {
+    "lines": [
+     {
+      "text": "The groceries?",
+      "cue": "groceries"
+     },
+     {
+      "text": "Mostly the *bait*",
+      "cue": "bait"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "hotdog",
+    "pose": "hold"
+   }
+  }
+ ]
+}

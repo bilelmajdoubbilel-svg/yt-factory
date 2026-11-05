@@ -1,0 +1,12 @@
+{
+  "id": "history",
+  "name": "Map Minutes",
+  "youtube_token_secret": "YT_REFRESH_TOKEN_2",
+  "niche": "History told on animated maps and timelines: how borders, empires, trade routes and wars actually unfolded. Every date and figure sourced.",
+  "voice": "bm_george",
+  "theme": {"bg": "#10140F", "panel": "#1A2019", "paper": "#F1ECDD", "muted": "#8C9286", "accent": "#E4572E", "gold": "#E8C547", "mint": "#5FBF8F"},
+  "music_dir": "music/history",
+  "music_volume": 0.13,
+  "category_id": "27",
+  "default_tags": ["history", "history explained", "maps"]
+}

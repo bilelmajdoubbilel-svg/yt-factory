@@ -1,0 +1,110 @@
+{
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.05,
+ "long_video": "movie-popcorn-long",
+ "sources": [
+  "AMC Entertainment Q4 and full-year 2025 results (Form 8-K, Exhibit 99.1, Feb 23, 2026): attendance 219.4M, average ticket $12.09, food & beverage per patron $7.62, admissions $2,652.8M, food & beverage revenue $1,671.3M, film exhibition costs $1,275.2M, food & beverage costs $327.0M, net loss $632.4M: https://www.sec.gov/Archives/edgar/data/1411579/000141157926000018/amc-20260223xex99d1.htm",
+  "Our calculations from the same release: film costs / admissions = 48.1%; food & beverage costs / food & beverage revenue = 19.6%; per person after direct costs: ticket $12.09 x (1 - 0.481) = $6.28, snacks $7.62 x (1 - 0.196) = $6.13 (before rent and staff)."
+ ],
+ "id": "popcorn-s2-snack",
+ "title": "A $7 snack that earns like a $12 ticket #shorts",
+ "summary": "At AMC in 2025, snacks left about as much per person as the ticket did, after direct costs.",
+ "tags": [
+  "popcorn",
+  "amc",
+  "business"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "foodcourt",
+   "narration": "The average AMC customer spent {$7.62|seven sixty-two} on snacks.",
+   "data": {
+    "price": "$7.62",
+    "kicker": "Snacks per person",
+    "label": "AMC, *2025*",
+    "cue": "the",
+    "label_cue": "snacks"
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold",
+    "x": -300,
+    "flip": false
+   }
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "The food itself cost AMC about twenty cents per dollar.",
+   "data": {
+    "title": "Every snack dollar",
+    "source": "AMC FY2025, our calculation",
+    "items": [
+     {
+      "label": "You pay",
+      "value": 1.0,
+      "display": "$1.00",
+      "cue": "food"
+     },
+     {
+      "label": "Food cost",
+      "value": 0.2,
+      "display": "~$0.20",
+      "highlight": true,
+      "cue": "twenty"
+     }
+    ]
+   }
+  },
+  {
+   "type": "bars",
+   "world": "stage",
+   "narration": "So the snacks leave about {$6.13|six thirteen}, nearly as much as the whole ticket.",
+   "data": {
+    "title": "Left per person",
+    "source": "Before rent and staff, our calculation",
+    "items": [
+     {
+      "label": "Ticket",
+      "value": 6.28,
+      "display": "$6.28",
+      "cue": "so"
+     },
+     {
+      "label": "Snacks",
+      "value": 6.13,
+      "display": "$6.13",
+      "highlight": true,
+      "cue": "snacks"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "cinema",
+   "narration": "Popcorn isn't a side business.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not a side",
+      "cue": "popcorn"
+     },
+     {
+      "text": "*business*",
+      "cue": "business"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "popcorn",
+    "pose": "hold"
+   }
+  }
+ ]
+}

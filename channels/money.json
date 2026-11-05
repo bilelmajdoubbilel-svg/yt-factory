@@ -1,0 +1,46 @@
+{
+  "id": "money",
+  "name": "Price Logic",
+  "youtube_token_secret": "YT_REFRESH_TOKEN_1",
+  "niche": "Business and money explained: why things cost what they cost and how companies really make money. Every number sourced; animated charts, no stock-footage loops.",
+  "voice": "af_heart",
+  "theme": {
+    "bg": "#1C2A33",
+    "panel": "#22303B",
+    "paper": "#FFF8EC",
+    "muted": "#B9C2C6",
+    "accent": "#E46C55",
+    "gold": "#F6C453",
+    "mint": "#4FC3A1",
+    "ink": "#2B2230",
+    "teal": "#2F7F95"
+  },
+  "music_dir": "music/money",
+  "music_volume": 0.13,
+  "schedule": {
+    "long_days": [
+      "Tue",
+      "Fri"
+    ],
+    "long_per_week": 2,
+    "shorts_per_day": 1
+  },
+  "category_id": "27",
+  "default_tags": [
+    "business explained",
+    "economics",
+    "how companies make money"
+  ],
+  "publish_hour_utc": {
+    "long": 15,
+    "short": 18
+  },
+  "brand": {
+    "mascot": "Tag, a living price tag",
+    "tagline": "The receipts behind everyday prices",
+    "fonts": {
+      "display": "Bricolage Grotesque 800 (PL Display)",
+      "mono": "Space Mono 700 (PL Mono)"
+    }
+  }
+}

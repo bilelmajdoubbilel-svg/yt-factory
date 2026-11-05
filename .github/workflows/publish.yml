@@ -1,0 +1,119 @@
+name: publish
+
+on:
+  schedule:
+    - cron: "17 12 * * *"   # daily 12:17 UTC: render + upload whatever content/<channel>/queue.json has due today
+                            # (long videos weekly on Thursday 15:00 UTC, Shorts every 2 days 18:00 UTC)
+  workflow_dispatch:
+    inputs:
+      only:
+        description: only this kind (empty = everything due)
+        default: ""
+      channel:
+        description: channel id (file name in channels/)
+        default: money
+      privacy:
+        description: "empty = upload now, scheduled for the queue's slot (private until then). Or private / unlisted / public"
+        default: ""
+      dry_run:
+        description: render but do not upload
+        type: boolean
+        default: false
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+    strategy:
+      max-parallel: 1
+      matrix:
+        channel: ${{ github.event_name == 'workflow_dispatch' && fromJSON(format('["{0}"]', inputs.channel)) || fromJSON(vars.CHANNELS || '["money"]') }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Anything due? (skips the heavy install on quiet days)
+        id: check
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 pipeline/publish.py --channel "${{ matrix.channel }}" --check | tee -a "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-node@v4
+        if: steps.check.outputs.due == 'true' || github.event_name == 'workflow_dispatch'
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        if: steps.check.outputs.due == 'true' || github.event_name == 'workflow_dispatch'
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: System packages
+        if: steps.check.outputs.due == 'true' || github.event_name == 'workflow_dispatch'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Voice model cache
+        if: steps.check.outputs.due == 'true' || github.event_name == 'workflow_dispatch'
+        uses: actions/cache@v4
+        with:
+          path: models
+          key: kokoro-v1.0
+
+      - name: Download voice model
+        if: steps.check.outputs.due == 'true' || github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p models
+          [ -f models/kokoro-v1.0.onnx ] || curl -sSL -o models/kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+          [ -f models/voices-v1.0.bin ] || curl -sSL -o models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+
+      - name: Install
+        if: steps.check.outputs.due == 'true' || github.event_name == 'workflow_dispatch'
+        run: |
+          npm ci
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+          npx hyperframes browser ensure
+
+      - name: Publish
+        if: steps.check.outputs.due == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN_1: ${{ secrets.YT_REFRESH_TOKEN_1 }}
+          YT_REFRESH_TOKEN_2: ${{ secrets.YT_REFRESH_TOKEN_2 }}
+          YT_REFRESH_TOKEN_3: ${{ secrets.YT_REFRESH_TOKEN_3 }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: |
+          EXTRA=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            [ -n "${{ inputs.only }}" ] && EXTRA="--only ${{ inputs.only }}"
+            [ -n "${{ inputs.privacy }}" ] && EXTRA="$EXTRA --privacy ${{ inputs.privacy }}"
+            [ "${{ inputs.dry_run }}" = "true" ] && EXTRA="$EXTRA --dry-run"
+          fi
+          python pipeline/publish.py --channel "${{ matrix.channel }}" $EXTRA
+
+      - name: Keep the rendered files for 7 days
+        if: always() && (steps.check.outputs.due == 'true' || github.event_name == 'workflow_dispatch')
+        uses: actions/upload-artifact@v4
+        with:
+          name: out-${{ matrix.channel }}-${{ github.run_id }}
+          path: out/
+          retention-days: 7
+
+      - name: Save what was published
+        if: always() && (steps.check.outputs.due == 'true' || github.event_name == 'workflow_dispatch')
+        run: |
+          git config user.name "yt-factory bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state content
+          git diff --cached --quiet || git commit -m "Publish log: ${{ matrix.channel }}"
+          git pull --rebase --autostash || true
+          git push

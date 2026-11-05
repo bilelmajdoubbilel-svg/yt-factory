@@ -1,0 +1,94 @@
+{
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "long_video": "costco-hotdog-v2",
+ "id": "costco-s3-renewal",
+ "title": "92 out of 100 Costco members come back #shorts",
+ "summary": "In the US and Canada, 92.3% of Costco members renewed in fiscal 2025.",
+ "tags": [
+  "costco",
+  "membership",
+  "customer loyalty"
+ ],
+ "sources": [
+  "Costco FY2025 Form 10-K: https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm"
+ ],
+ "scenes": [
+  {
+   "type": "dots",
+   "world": "stage",
+   "narration": "{92 out of 100|Ninety-two out of a hundred} Costco members pay again every single year. Here's the trick.",
+   "data": {
+    "n": 92,
+    "big": "92.3%",
+    "label": "renew (US & Canada)",
+    "sub": "FY2025",
+    "cue": "92",
+    "source": "Costco FY2025 10-K"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "foodcourt",
+   "narration": "Every visit has to feel like a deal, and a {$1.50|dollar fifty} hot dog proves it.",
+   "data": {
+    "lines": [
+     {
+      "text": "Every visit",
+      "cue": "every"
+     },
+     {
+      "text": "must feel like a *deal*",
+      "cue": "deal"
+     }
+    ]
+   },
+   "host": {
+    "prop": "hotdog",
+    "pose": "hold"
+   }
+  },
+  {
+   "type": "flow",
+   "world": "stage",
+   "narration": "Cheap hot dog. Happy member. Another year of fees.",
+   "data": {
+    "steps": [
+     {
+      "label": "Cheap hot dog",
+      "cue": "cheap"
+     },
+     {
+      "label": "Happy member",
+      "cue": "happy"
+     },
+     {
+      "label": "Another year of fees",
+      "cue": "another"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street",
+   "narration": "That's the whole business.",
+   "data": {
+    "lines": [
+     {
+      "text": "That's the",
+      "cue": "that's"
+     },
+     {
+      "text": "whole *business*",
+      "cue": "business"
+     }
+    ],
+    "foot": ""
+   }
+  }
+ ]
+}

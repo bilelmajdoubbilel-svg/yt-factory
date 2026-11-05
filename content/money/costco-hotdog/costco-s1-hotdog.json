@@ -1,0 +1,99 @@
+{
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "long_video": "costco-hotdog-v2",
+ "id": "costco-s1-hotdog",
+ "title": "This Hot Dog Should Cost $4.50 #shorts",
+ "summary": "Costco's hot dog and soda have cost $1.50 since 1985. The reason isn't the hot dog.",
+ "tags": [
+  "costco",
+  "costco hot dog",
+  "business"
+ ],
+ "sources": [
+  "Combo sales (245.1M, FY2025), $1.50 since 1985, ~$4.50 inflation-adjusted (CNN): https://www.mashed.com/2096043/costco-hot-dog-soda-combo-sales-2025",
+  "Costco FY2025 Form 10-K: https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "foodcourt",
+   "narration": "This hot dog should cost about four fifty today. Costco still charges {$1.50.|a dollar fifty.}",
+   "data": {
+    "price": "$1.50",
+    "kicker": "Should be ~$4.50",
+    "label": "Since *1985*",
+    "cue": "this",
+    "label_cue": "still"
+   },
+   "host": {
+    "prop": "hotdog",
+    "pose": "hold",
+    "x": -300,
+    "flip": false
+   }
+  },
+  {
+   "type": "counter",
+   "world": "foodcourt",
+   "narration": "Last year they sold {245 million|two hundred forty-five million} of them, for almost no profit.",
+   "data": {
+    "value": 245,
+    "decimals": 0,
+    "suffix": "M",
+    "label": "sold in FY2025",
+    "cue": "245",
+    "source": "Costco shareholder meeting, 2026"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street",
+   "narration": "Why would a company do that on purpose?",
+   "data": {
+    "lines": [
+     {
+      "text": "Why do that",
+      "cue": "why"
+     },
+     {
+      "text": "on *purpose*?",
+      "cue": "purpose"
+     }
+    ]
+   },
+   "host": {
+    "prop": "hotdog",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "thinking",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street",
+   "narration": "Because the hot dog isn't the product. The {$65|sixty-five dollar} card in your wallet is.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not the product.",
+      "cue": "because"
+     },
+     {
+      "text": "The *$65 card* is.",
+      "cue": "card"
+     }
+    ],
+    "foot": ""
+   }
+  }
+ ]
+}

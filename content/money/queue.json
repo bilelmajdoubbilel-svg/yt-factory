@@ -1,0 +1,52 @@
+[
+ {
+  "script": "content/money/costco-hotdog/long.json",
+  "kind": "long",
+  "date": "2026-11-10"
+ },
+ {
+  "script": "content/money/costco-hotdog/costco-s1-hotdog.json",
+  "kind": "short",
+  "date": "2026-11-10"
+ },
+ {
+  "script": "content/money/costco-hotdog/costco-s4-rule.json",
+  "kind": "short",
+  "date": "2026-11-11"
+ },
+ {
+  "script": "content/money/costco-hotdog/costco-s2-card.json",
+  "kind": "short",
+  "date": "2026-11-12"
+ },
+ {
+  "script": "content/money/costco-hotdog/costco-s3-renewal.json",
+  "kind": "short",
+  "date": "2026-11-13"
+ },
+ {
+  "script": "content/money/costco-hotdog/costco-s5-chicken.json",
+  "kind": "short",
+  "date": "2026-11-14"
+ },
+ {
+  "script": "content/money/movie-popcorn/long.json",
+  "kind": "long",
+  "date": "2026-12-08"
+ },
+ {
+  "script": "content/money/movie-popcorn/popcorn-s3-history.json",
+  "kind": "short",
+  "date": "2026-12-08"
+ },
+ {
+  "script": "content/money/movie-popcorn/popcorn-s1-ticket.json",
+  "kind": "short",
+  "date": "2026-12-09"
+ },
+ {
+  "script": "content/money/movie-popcorn/popcorn-s2-snack.json",
+  "kind": "short",
+  "date": "2026-12-10"
+ }
+]

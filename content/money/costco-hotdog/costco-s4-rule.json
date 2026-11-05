@@ -1,0 +1,85 @@
+{
+ "format": "short",
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "long_video": "costco-hotdog-v2",
+ "id": "costco-s4-rule",
+ "title": "Costco's Co-Founder Threatened His CEO #shorts",
+ "summary": "As former CEO Craig Jelinek told it, Costco's co-founder Jim Sinegal refused to let the hot dog price go up.",
+ "tags": [
+  "costco",
+  "jim sinegal",
+  "costco hot dog"
+ ],
+ "sources": [
+  "Jim Sinegal quote as recalled by Craig Jelinek (425 Business, via Yahoo): https://ca.news.yahoo.com/costco-raising-membership-fee-first-191136748.html",
+  "Combo sales (245.1M, FY2025), $1.50 since 1985, ~$4.50 inflation-adjusted (CNN): https://www.mashed.com/2096043/costco-hot-dog-soda-combo-sales-2025"
+ ],
+ "scenes": [
+  {
+   "type": "statement",
+   "world": "stage",
+   "narration": "Costco's co-founder once threatened his CEO over a hot dog.",
+   "data": {
+    "lines": [
+     {
+      "text": "A threat",
+      "cue": "costco's"
+     },
+     {
+      "text": "over a *hot dog*",
+      "cue": "threatened"
+     }
+    ]
+   }
+  },
+  {
+   "type": "quote",
+   "world": "stage",
+   "narration": "The CEO said they were losing money on it. The answer: if you raise the effing hot dog, I will kill you. Figure it out.",
+   "data": {
+    "quote": "If you raise the [effing] hot dog, I will kill you. *Figure it out.*",
+    "who": "Jim Sinegal, co-founder",
+    "note": "as recalled by CEO Craig Jelinek (2018)",
+    "cue": "if"
+   }
+  },
+  {
+   "type": "pricetag",
+   "world": "foodcourt",
+   "narration": "They figured it out. It still costs {$1.50.|a dollar fifty.}",
+   "data": {
+    "price": "$1.50",
+    "kicker": "Still",
+    "label": "since *1985*",
+    "cue": "still",
+    "label_cue": "still"
+   },
+   "host": {
+    "prop": "hotdog",
+    "pose": "hold"
+   }
+  },
+  {
+   "type": "end",
+   "world": "street",
+   "narration": "Because that hot dog protects five billion dollars a year in membership fees.",
+   "data": {
+    "lines": [
+     {
+      "text": "It protects",
+      "cue": "because"
+     },
+     {
+      "text": "*$5.3B* a year",
+      "cue": "billion"
+     }
+    ],
+    "foot": ""
+   }
+  }
+ ],
+ "mood": "tension"
+}
