@@ -93,6 +93,37 @@ Put a new channel's look in new files where possible, so Price Logic cannot brea
    (30 minutes, title starting `YouTube:`, exact steps in the description, popup reminder) and list it in the report.
    Never ask for secrets or tokens in a doc, event or chat; they go only into GitHub Secrets.
 
+## Watchdog (Wednesday and Friday evenings)
+
+A short check between Monday runs, so a failure costs one day, not a week. Do not write new scripts here unless a
+ready channel's queue would run empty before Monday.
+1. For each ready channel, every queue item dated up to yesterday must be in `state/published.json`, and the robot
+   must have committed in the last 2 days (`git log --since=2.days --author="yt-factory bot"`). Look at
+   `state/inbox.json` for bundles rejected since the last check.
+2. If something did not publish: reproduce it in your session (`bash pipeline/make_video.sh <script> --render`,
+   `python pipeline/publish.py --channel <id> --dry-run`), find the cause, fix it, test, and send a fix bundle.
+   The queue slides forward by itself when the robot falls behind, so nothing is lost if it is fixed quickly.
+3. If the fix needs the owner (a token, a workflow file, a Google setting), create one calendar event for the
+   next day with exact steps, and do not repeat it if one already exists.
+4. If everything is fine, change nothing and end with one line: "All channels on schedule."
+
+## Monthly improvement (1st of each month)
+
+The system learns here; the Monday runs apply it. RUNBOOK.md is the single source of truth: when you find a
+better way, change this file in the bundle, but never weaken "Rules that protect the channels".
+1. Read every `content/<channel>/LESSONS.md`, the last four weekly reports and the Drive stats files. Merge
+   duplicate lessons; delete lessons the newer numbers contradict.
+2. Check what changed outside in the last month: YouTube Help and the official YouTube blog (monetization,
+   inauthentic content, Shorts, API quotas), the YouTube Data/Analytics API changelogs, vidIQ, Kokoro and
+   HyperFrames releases. Update the rules here when something changed, with the source link.
+3. One improvement per channel to its look, format or packaging, taken from the lessons; build it, render a
+   Short of that channel and one Price Logic Short end to end, and send it in a bundle.
+4. Refresh each channel's topic plan for the next two months with search data (vidIQ, keep 20 credits) and its
+   own best videos; update the "Topic plan" section and the calendar's "(planned)" events.
+5. Write a Google Doc `Monthly improvement YYYY-MM` in the Drive root: what changed and why, in plain words.
+   Update the brand plan doc (https://claude.ai/artifact/DRSLDs4heV6fWmz6GchHeS) if a channel's identity,
+   schedule or launch topics changed.
+
 ## Channel identities (decided with the owner, 6 Nov 2026)
 
 - **Map Minutes**: host **Pin**, a living map pin with a compass needle (`pin_host` in `pipeline/brand_art.py`);
