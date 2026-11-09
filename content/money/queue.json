@@ -135,9 +135,49 @@
   "date": "2026-11-30"
  },
  {
+  "script": "content/money/casino-house/long.json",
+  "kind": "long",
+  "date": "2026-12-01"
+ },
+ {
   "script": "content/money/starbucks-money/sb-s4-stars.json",
   "kind": "short",
   "date": "2026-12-01"
+ },
+ {
+  "script": "content/money/casino-house/cas-s1-roulette.json",
+  "kind": "short",
+  "date": "2026-12-02"
+ },
+ {
+  "script": "content/money/casino-house/cas-s2-comps.json",
+  "kind": "short",
+  "date": "2026-12-03"
+ },
+ {
+  "script": "content/money/car-wash-club/long.json",
+  "kind": "long",
+  "date": "2026-12-04"
+ },
+ {
+  "script": "content/money/casino-house/cas-s3-mgm.json",
+  "kind": "short",
+  "date": "2026-12-04"
+ },
+ {
+  "script": "content/money/car-wash-club/cw-s1-members.json",
+  "kind": "short",
+  "date": "2026-12-05"
+ },
+ {
+  "script": "content/money/car-wash-club/cw-s2-boom.json",
+  "kind": "short",
+  "date": "2026-12-06"
+ },
+ {
+  "script": "content/money/car-wash-club/cw-s3-spend.json",
+  "kind": "short",
+  "date": "2026-12-07"
  },
  {
   "script": "content/money/movie-popcorn/long.json",

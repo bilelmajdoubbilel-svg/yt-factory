@@ -1,0 +1,124 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "cas-s3-mgm",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "casino-house",
+ "title": "Gambling Is Under a Quarter of MGM's Vegas Money #shorts",
+ "summary": "At MGM's Las Vegas Strip resorts in 2025, casino revenue was $2.0B of $8.4B (24%); rooms brought $2.9B and food and drink $2.3B.",
+ "tags": [
+  "mgm resorts",
+  "las vegas",
+  "casino"
+ ],
+ "mood": "playful",
+ "sources": [
+  "MGM Resorts International 2025 Form 10-K, segment revenue (XBRL R88), Las Vegas Strip Resorts net revenue 2025: casino $2,013,701K; total $8,441,503K; rooms, food and beverage, entertainment/retail/other make up the rest (34.1%, 26.8%, 15.2%): https://www.sec.gov/Archives/edgar/data/789570/000078957026000018/R88.htm",
+  "MGM Resorts 2025 Form 10-K: \"Over half of the net revenue from our Las Vegas Strip Resorts is typically derived from non-gaming operations.\": https://www.sec.gov/Archives/edgar/data/789570/000078957026000018/mgm-20251231.htm",
+  "Our math: slots share of Nevada win 10,713.8 / 15,798.5 = 67.8%; MGM Strip casino share 2,013.7 / 8,441.5 = 23.9%; $100 x 5.26% = about $5."
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "street:CASINO",
+   "narration": "Less than a quarter of MGM's Las Vegas Strip money came from gambling last year.",
+   "data": {
+    "price": "24%",
+    "kicker": "MGM's Vegas Strip money",
+    "label": "from *gambling*",
+    "cue": "less",
+    "label_cue": "gambling"
+   },
+   "host": {
+    "prop": "coin",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "bars",
+   "world": "stage",
+   "narration": "Rooms brought in more. So did food and drink.",
+   "data": {
+    "title": "MGM Strip resorts, 2025",
+    "source": "MGM Resorts 2025 10-K",
+    "items": [
+     {
+      "label": "Casino",
+      "value": 2.014,
+      "display": "$2.0B",
+      "cue": "rooms"
+     },
+     {
+      "label": "Rooms",
+      "value": 2.879,
+      "display": "$2.9B",
+      "highlight": true,
+      "cue": "rooms"
+     },
+     {
+      "label": "Food and drink",
+      "value": 2.262,
+      "display": "$2.3B",
+      "cue": "food"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "MGM's own report says over half of its Strip revenue typically isn't gaming.",
+   "data": {
+    "lines": [
+     {
+      "text": "Over half:",
+      "cue": "over"
+     },
+     {
+      "text": "*not* gaming",
+      "cue": "isn't"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:CASINO",
+   "narration": "The casino brings the crowd. The building does the rest.",
+   "data": {
+    "lines": [
+     {
+      "text": "Casino: the crowd",
+      "cue": "casino"
+     },
+     {
+      "text": "Building: *the rest*",
+      "cue": "building"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "coin",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "rest",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

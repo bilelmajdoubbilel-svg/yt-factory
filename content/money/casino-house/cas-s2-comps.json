@@ -1,0 +1,109 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "cas-s2-comps",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "casino-house",
+ "title": "Vegas Casinos Gave Away $3.8 Billion in One Year #shorts",
+ "summary": "Clark County casinos recorded $3.76 billion of complimentaries (free rooms, food and drinks) in fiscal 2025; comped drinks were 41.4% of beverage revenue.",
+ "tags": [
+  "las vegas",
+  "casino comps",
+  "casino"
+ ],
+ "mood": "playful",
+ "sources": [
+  "Nevada Gaming Abstract, fiscal year 2025 (July 2024-June 2025), Clark County casinos: complimentary expense (contra revenue) $3,761,859,671; complimentary beverage sales 41.4% of beverage revenue: https://www.gaming.nv.gov/siteassets/content/about/abstract/abstract-fy-2025.pdf"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "street:CASINO",
+   "narration": "Las Vegas casinos gave away about {$3.8 billion|three point eight billion dollars} in one year.",
+   "data": {
+    "price": "$3.8B",
+    "kicker": "Las Vegas casinos",
+    "label": "given away in *one year*",
+    "cue": "las",
+    "label_cue": "gave"
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Free rooms. Free dinners. And about four in every ten dollars of drinks.",
+   "data": {
+    "lines": [
+     {
+      "text": "Rooms, dinners",
+      "cue": "free"
+     },
+     {
+      "text": "*41%* of drinks",
+      "cue": "four"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "stage",
+   "narration": "Why? Because every hour you stay inside, the house edge keeps working.",
+   "data": {
+    "lines": [
+     {
+      "text": "Every hour inside",
+      "cue": "every"
+     },
+     {
+      "text": "the *edge* works",
+      "cue": "edge"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:CASINO",
+   "narration": "Free drinks aren't free. They're how the house keeps you playing.",
+   "data": {
+    "lines": [
+     {
+      "text": "Free drinks",
+      "cue": "free"
+     },
+     {
+      "text": "aren't *free*",
+      "cue": "aren't"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "playing",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

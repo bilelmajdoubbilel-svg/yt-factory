@@ -1,0 +1,105 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "cw-s3-spend",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "car-wash-club",
+ "title": "Why Car Washes Push the Unlimited Plan #shorts",
+ "summary": "Mister Car Wash's 2025 annual report says a member spends more than four times what a retail customer does; members were 76% of its 2025 wash sales.",
+ "tags": [
+  "unlimited car wash",
+  "mister car wash",
+  "business"
+ ],
+ "mood": "playful",
+ "sources": [
+  "Mister Car Wash 2025 Form 10-K: 548 locations in 21 states at Dec 31, 2025; \"In 2025, we increased overall UWC penetration from 74% to 76% of total wash sales\"; \"UWC Members contribute a significant portion of our net revenue and provide recurring revenue through their monthly membership fees\"; a UWC member \"spends more than four times the retail car wash consumer\" (Item 1): https://www.sec.gov/Archives/edgar/data/1853513/000119312526078965/mcw-20251231.htm"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "street:CAR WASH",
+   "narration": "A car wash member spends more than four times what a regular customer does.",
+   "data": {
+    "price": "4x+",
+    "kicker": "car wash member spend",
+    "label": "vs a *regular* customer",
+    "cue": "car",
+    "label_cue": "regular"
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "That's Mister Car Wash's own number, from its annual report.",
+   "data": {
+    "lines": [
+     {
+      "text": "Its own",
+      "cue": "that's"
+     },
+     {
+      "text": "*annual report*",
+      "cue": "annual"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "And members already bring in {76 percent|seventy-six percent} of its wash sales in {2025.|twenty twenty-five.}",
+   "data": {
+    "value": 76,
+    "decimals": 0,
+    "suffix": "%",
+    "label": "member share of wash sales, 2025",
+    "cue": "76",
+    "source": "Mister Car Wash 10-K"
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:CAR WASH",
+   "narration": "The unlimited plan isn't a discount. It's the business.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not a discount.",
+      "cue": "isn't"
+     },
+     {
+      "text": "*The business.*",
+      "cue": "business"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "business",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

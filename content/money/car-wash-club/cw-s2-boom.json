@@ -1,0 +1,111 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "cw-s2-boom",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "car-wash-club",
+ "title": "America Built About 900 Car Washes in a Year #shorts",
+ "summary": "About 850-900 new car washes opened in the US in 2023 (industry estimate). In February 2025 Zips, with about 260 locations, filed for Chapter 11.",
+ "tags": [
+  "car wash business",
+  "private equity",
+  "zips car wash"
+ ],
+ "mood": "playful",
+ "sources": [
+  "Industry estimate (equipment maker Sonny's, via Professional Carwashing & Detailing, 2025 State of the Carwash Market): \"around 850-900 new stores in 2023\", now about 550 a year (plus or minus 100), over 90% express tunnels: https://www.carwash.com/2025-state-of-the-carwash-market/",
+  "Express tunnel construction \"$5 to $8 million\", land often more than $1 million (Star Tribune, Jan 2025): https://www.startribune.com/car-wash-subscription-private-equity-boom-everywhere-drive-thru-tunnel/601209808",
+  "Zips Car Wash files Chapter 11, \"operating approximately 260 locations across 23 states\" (Business Wire, Feb 5, 2025): https://www.businesswire.com/news/home/20250205641535/en"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "street:CAR WASH",
+   "narration": "America built roughly {900|nine hundred} car washes in one year. Then a big chain went bankrupt.",
+   "data": {
+    "price": "~900",
+    "kicker": "new car washes, 2023 (est.)",
+    "label": "then *bankrupt*",
+    "cue": "america",
+    "label_cue": "bankrupt"
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Investors loved the monthly memberships, so tunnels went up at {5 to 8 million dollars|five to eight million dollars} each.",
+   "data": {
+    "lines": [
+     {
+      "text": "Memberships",
+      "cue": "investors"
+     },
+     {
+      "text": "*$5-8M* a tunnel",
+      "cue": "5"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "stage",
+   "narration": "In {2025,|twenty twenty-five,} Zips, with about {260|two hundred sixty} locations, filed for bankruptcy.",
+   "data": {
+    "lines": [
+     {
+      "text": "Zips: ~260 sites",
+      "cue": "zips"
+     },
+     {
+      "text": "*Chapter 11*",
+      "cue": "filed"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:CAR WASH",
+   "narration": "Steady members can't pay for unlimited tunnels.",
+   "data": {
+    "lines": [
+     {
+      "text": "Steady members,",
+      "cue": "steady"
+     },
+     {
+      "text": "*too many tunnels*",
+      "cue": "unlimited"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "tunnels",
+      "expr": "worried"
+     }
+    ]
+   }
+  }
+ ]
+}

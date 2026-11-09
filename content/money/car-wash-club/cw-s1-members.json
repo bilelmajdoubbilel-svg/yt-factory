@@ -1,0 +1,106 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "cw-s1-members",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "car-wash-club",
+ "title": "79% of These Car Wash Sales Are Subscriptions #shorts",
+ "summary": "In Q4 2025, 79% of Mister Car Wash's wash sales came from its Unlimited Wash Club, about 2.3 million members on auto-renewing monthly plans.",
+ "tags": [
+  "mister car wash",
+  "car wash membership",
+  "subscriptions"
+ ],
+ "mood": "playful",
+ "sources": [
+  "Mister Car Wash FY2025 results (8-K Ex. 99.1, Feb 18, 2026): net revenues $1,051.7M; adjusted EBITDA $345.4M; net income $103.1M; \"Ended the quarter with approximately 2.3 million UWC members\"; \"UWC sales represented 79% of total wash sales\" in Q4 2025: https://www.sec.gov/Archives/edgar/data/1853513/000119312526056047/d113732dex991.htm",
+  "Mister Car Wash membership terms: \"YOUR UWC MEMBERSHIP PLAN WILL AUTOMATICALLY RENEW MONTHLY\": https://mistercarwash.com/member-terms"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "street:CAR WASH",
+   "narration": "{79 percent|Seventy-nine percent} of the wash sales at Mister Car Wash came from members paying monthly.",
+   "data": {
+    "price": "79%",
+    "kicker": "of wash sales",
+    "label": "paid *monthly*",
+    "cue": "79",
+    "label_cue": "members"
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "That's about {2.3 million|two point three million} people on an unlimited plan.",
+   "data": {
+    "value": 2.3,
+    "decimals": 1,
+    "suffix": "M",
+    "label": "members, end of 2025",
+    "cue": "2.3",
+    "source": "Mister Car Wash, 2025 results"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Rain or shine, the plan renews every month.",
+   "data": {
+    "lines": [
+     {
+      "text": "Rain or shine",
+      "cue": "rain"
+     },
+     {
+      "text": "*renews*",
+      "cue": "renews"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:CAR WASH",
+   "narration": "Your car wash isn't selling washes. It's selling the plan.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not washes.",
+      "cue": "isn't"
+     },
+     {
+      "text": "*The plan.*",
+      "cue": "plan"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "plan",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

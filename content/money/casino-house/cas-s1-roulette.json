@@ -1,0 +1,103 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "cas-s1-roulette",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "casino-house",
+ "title": "Roulette's Edge Is 5%. So Why Did Tables Keep 19%? #shorts",
+ "summary": "Double-zero roulette has a 5.26% house edge, but Nevada's roulette tables held 19.00% of the chips bought in 2025, because the same money is bet again and again.",
+ "tags": [
+  "roulette",
+  "house edge",
+  "casino"
+ ],
+ "mood": "playful",
+ "sources": [
+  "Wizard of Odds, roulette basics: double-zero roulette house edge 1/19 = 5.26% on all bets except the 0-00-1-2-3 bet (7.89%); single zero 1/37 = 2.70%: https://wizardofodds.com/games/roulette/basics/",
+  "Nevada Gaming Control Board, December 2025 monthly revenue report, 12-month (calendar 2025) columns: statewide total gaming win $15,798,466K (+1.23%); slots $10,713,837K, win 7.13%; table, counter and card games $5,084,629K, win 14.41%; roulette win 19.00%; Las Vegas Strip total $8,815,212K, slots $4,950,173K (7.83%): https://www.gaming.nv.gov/siteassets/content/about/gaming-revenue/december-2025-monthly-revenue-report.pdf",
+  "Wizard of Odds glossary, \"hold\": \"The hold percentage will be much higher than the house edge because players tend to circulate through the same money.\": https://wizardofodds.com/gambling/glossary/"
+ ],
+ "scenes": [
+  {
+   "type": "pricetag",
+   "world": "street:CASINO",
+   "narration": "Roulette's house edge is about five percent. Nevada's roulette tables kept nineteen.",
+   "data": {
+    "price": "19%",
+    "kicker": "Edge: only 5%",
+    "label": "*Kept*, Nevada 2025",
+    "cue": "roulette's",
+    "label_cue": "kept"
+   },
+   "host": {
+    "prop": "coin",
+    "pose": "hold",
+    "x": -300,
+    "flip": false,
+    "acts": [
+     {
+      "t": 0.1,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "That's {19 percent|nineteen percent} of the money players turned into chips, in {2025.|twenty twenty-five.}",
+   "data": {
+    "value": 19,
+    "decimals": 0,
+    "suffix": "%",
+    "label": "roulette hold, Nevada 2025",
+    "cue": "19",
+    "source": "Nevada Gaming Control Board"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "The trick isn't better odds. It's the same chips, bet again and again, losing a cut every spin.",
+   "data": {
+    "lines": [
+     {
+      "text": "Same chips,",
+      "cue": "same"
+     },
+     {
+      "text": "*again and again*",
+      "cue": "again"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:CASINO",
+   "narration": "That's how five percent becomes nineteen.",
+   "data": {
+    "lines": [
+     {
+      "text": "5% *becomes 19%*",
+      "cue": "that's"
+     }
+    ],
+    "foot": ""
+   },
+   "host": {
+    "prop": "coin",
+    "pose": "hold",
+    "acts": [
+     {
+      "cue": "nineteen",
+      "expr": "proud"
+     }
+    ]
+   }
+  }
+ ]
+}

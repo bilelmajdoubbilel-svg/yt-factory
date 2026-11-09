@@ -1,0 +1,621 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "car-wash-club",
+ "format": "long",
+ "speed": 1.0,
+ "title": "Mister Car Wash Doesn't Really Sell Car Washes",
+ "summary": "At Mister Car Wash, 79% of wash sales in late 2025 came from 2.3 million monthly members. Here's how the unlimited wash club works, why private equity rushed to build express tunnels, and why one chain still went bankrupt.",
+ "intro_chapter": "79% members",
+ "tags": [
+  "mister car wash",
+  "car wash business",
+  "unlimited car wash",
+  "car wash membership",
+  "private equity",
+  "business explained"
+ ],
+ "thumbnail": {
+  "tag": "79%",
+  "top": "SUBSCRIBERS",
+  "expr": "surprised",
+  "prop": "card"
+ },
+ "open_mood": "tension",
+ "body_mood": "curious",
+ "end_mood": "payoff",
+ "hooks": [
+  {
+   "formula": "Statistic",
+   "hook": "At Mister Car Wash, 79% of wash sales came from people paying a monthly fee.",
+   "score": 85,
+   "picked": true
+  },
+  {
+   "formula": "Contrarian Flip",
+   "hook": "Your car wash isn't selling clean cars. It's selling a monthly payment.",
+   "score": 82
+  },
+  {
+   "formula": "Before and After",
+   "hook": "America built about 900 car washes in one year. Then a big chain went bankrupt.",
+   "score": 80
+  },
+  {
+   "formula": "The Receipt",
+   "hook": "Mister Car Wash's own annual report says a member spends more than four times a regular customer.",
+   "score": 76
+  },
+  {
+   "formula": "The Question",
+   "hook": "Why is there a new car wash on every corner?",
+   "score": 71
+  }
+ ],
+ "sources": [
+  "Mister Car Wash FY2025 results (8-K Ex. 99.1, Feb 18, 2026): net revenues $1,051.7M; adjusted EBITDA $345.4M; net income $103.1M; \"Ended the quarter with approximately 2.3 million UWC members\"; \"UWC sales represented 79% of total wash sales\" in Q4 2025: https://www.sec.gov/Archives/edgar/data/1853513/000119312526056047/d113732dex991.htm",
+  "Mister Car Wash 2025 Form 10-K: 548 locations in 21 states at Dec 31, 2025; \"In 2025, we increased overall UWC penetration from 74% to 76% of total wash sales\"; \"UWC Members contribute a significant portion of our net revenue and provide recurring revenue through their monthly membership fees\"; a UWC member \"spends more than four times the retail car wash consumer\" (Item 1): https://www.sec.gov/Archives/edgar/data/1853513/000119312526078965/mcw-20251231.htm",
+  "Mister Car Wash membership terms: \"YOUR UWC MEMBERSHIP PLAN WILL AUTOMATICALLY RENEW MONTHLY\": https://mistercarwash.com/member-terms",
+  "\"Over the last decade, more car washes were built than all the preceding years combined\"; \"Fueled by private equity and a subscription-based business model\" (Bloomberg CityLab, Feb 21, 2024): https://www.bloomberg.com/news/newsletters/2024-02-21/citylab-daily-a-car-wash-mania-is-taking-over-the-us",
+  "Industry estimate (equipment maker Sonny's, via Professional Carwashing & Detailing, 2025 State of the Carwash Market): \"around 850-900 new stores in 2023\", now about 550 a year (plus or minus 100), over 90% express tunnels: https://www.carwash.com/2025-state-of-the-carwash-market/",
+  "Express tunnel construction \"$5 to $8 million\", land often more than $1 million (Star Tribune, Jan 2025): https://www.startribune.com/car-wash-subscription-private-equity-boom-everywhere-drive-thru-tunnel/601209808",
+  "Driven Brands agrees to divest its U.S. car wash business to Whistle Express for $385 million (Feb 25, 2025); closed Apr 10, 2025: https://investors.drivenbrands.com/news-and-events/news/news-details/2025/Driven-Brands-Announces-Agreement-to-Divest-U.S.-Car-Wash-Business-for-385-Million/default.aspx",
+  "Whistle Express (majority investment from funds managed by Oaktree Capital Management since 2023) on the Driven deal (Business Wire, Feb 25, 2025): https://www.businesswire.com/news/home/20250225313854/en",
+  "Mister Car Wash to be taken private by Leonard Green & Partners at $7.00 a share, total enterprise value $3.1 billion (Feb 18, 2026); completed May 2026: https://mistercarwash.gcs-web.com/news-releases/news-release-details/mister-car-wash-be-taken-private-leonard-green-partners-700 and https://www.lw.com/en/news/2026/05/latham-watkins-advises-mister-car-wash-in-completed-take-private-acquisition",
+  "Zips Car Wash files Chapter 11, \"operating approximately 260 locations across 23 states\" (Business Wire, Feb 5, 2025): https://www.businesswire.com/news/home/20250205641535/en",
+  "Zips' $654 million loan (Bloomberg, Feb 13, 2025): https://www.bloomberg.com/news/articles/2025-02-13/bankrupt-car-wash-exposes-flaws-in-private-credit-valuations",
+  "Our math: adjusted EBITDA $345.4M / revenue $1,051.7M = 32.8%, about 33 cents per dollar."
+ ],
+ "scenes": [
+  {
+   "type": "shot",
+   "world": "street:CAR WASH",
+   "narration": "At Mister Car Wash, one of America's biggest chains, {79 percent|seventy-nine percent} of wash sales at the end of last year came from people paying a monthly fee.",
+   "data": {
+    "elements": [
+     {
+      "kind": "hangtag",
+      "text": "79%",
+      "x": 430,
+      "y": 250,
+      "scale": 1.4,
+      "layer": "mid",
+      "cue": "mister",
+      "cue2": "monthly"
+     }
+    ]
+   },
+   "host": {
+    "x": -820,
+    "pose": "hold",
+    "prop": "card",
+    "enter": {
+     "dx": 700,
+     "t": 0,
+     "dur": 1.4
+    },
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 16
+     },
+     {
+      "cue": "monthly",
+      "expr": "surprised",
+      "look": 20
+     }
+    ]
+   },
+   "cam": [
+    {
+     "t": 0,
+     "x": -220,
+     "y": 10,
+     "z": 1.0
+    },
+    {
+     "t": "end",
+     "x": 80,
+     "y": -10,
+     "z": 1.12,
+     "ease": "sine.inOut"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "That idea, the unlimited wash club, helped set off a building boom. In the decade before {2024,|twenty twenty-four,} America built more car washes than in all the years before it combined.",
+   "data": {
+    "lines": [
+     {
+      "text": "The *unlimited* club",
+      "cue": "unlimited"
+     },
+     {
+      "text": "A building *boom*",
+      "cue": "boom"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "combined",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:CAR WASH",
+   "narration": "But in {2025,|twenty twenty-five,} one big chain, Zips, filed for bankruptcy. If memberships are such a great business, how does that happen? Hold that thought.",
+   "data": {
+    "lines": [
+     {
+      "text": "*Bankrupt* in 2025",
+      "cue": "bankruptcy"
+     },
+     {
+      "text": "How?",
+      "cue": "how"
+     }
+    ]
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "worried",
+      "look": 14
+     },
+     {
+      "cue": "how",
+      "expr": "thinking",
+      "pose": "chin"
+     }
+    ]
+   }
+  },
+  {
+   "type": "flow",
+   "world": "studio",
+   "narration": "Let's follow the money: how the club works, why investors rushed in, and where it broke.",
+   "data": {
+    "steps": [
+     {
+      "label": "The club",
+      "cue": "club"
+     },
+     {
+      "label": "The rush",
+      "cue": "investors"
+     },
+     {
+      "label": "The break",
+      "cue": "broke"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part one. The club.",
+   "data": {
+    "num": "01",
+    "title": "The *club*"
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "At the end of {2025,|twenty twenty-five,} Mister Car Wash had about {2.3 million|two point three million} members in its Unlimited Wash Club, across {548|five hundred forty-eight} locations.",
+   "data": {
+    "value": 2.3,
+    "decimals": 1,
+    "label": "Unlimited Wash Club members, end of 2025",
+    "cue": "2.3",
+    "source": "Mister Car Wash, 2025 results",
+    "suffix": "M"
+   }
+  },
+  {
+   "type": "share",
+   "world": "stage",
+   "narration": "Over the full year, members made up {76 percent|seventy-six percent} of all its wash sales, up from {74|seventy-four} the year before.",
+   "data": {
+    "title": "Mister Car Wash, 2025",
+    "pct": 76,
+    "part_label": "Members",
+    "whole_label": "All wash sales",
+    "cue": "76",
+    "source": "Mister Car Wash 2025 annual report (10-K)"
+   }
+  },
+  {
+   "type": "quote",
+   "world": "studio",
+   "narration": "Its annual report says members provide recurring revenue through their monthly membership fees.",
+   "data": {
+    "quote": "UWC Members contribute a significant portion of our net revenue and provide *recurring revenue* through their monthly membership fees.",
+    "who": "Mister Car Wash, annual report (10-K), 2025",
+    "note": "UWC = Unlimited Wash Club",
+    "cue": "its"
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:CAR WASH",
+   "narration": "And members spend more. Mister says a member spends more than four times what a regular pay-per-wash customer does.",
+   "data": {
+    "lines": [
+     {
+      "text": "Members spend",
+      "cue": "members"
+     },
+     {
+      "text": "*4x+* a regular",
+      "cue": "four"
+     }
+    ]
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 14
+     },
+     {
+      "cue": "four",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Why does that matter? A rainy month empties a pay-per-wash lot. A membership renews on schedule, every month, rain or shine.",
+   "data": {
+    "lines": [
+     {
+      "text": "Rain: empty lot",
+      "cue": "rainy"
+     },
+     {
+      "text": "Members: *still renew*",
+      "cue": "renews"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "worried",
+      "look": 14
+     },
+     {
+      "cue": "renews",
+      "expr": "proud",
+      "pose": "present"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "It shows in the numbers. On just over a billion dollars of revenue in {2025,|twenty twenty-five,} Mister made {$345 million|three hundred forty-five million} in what Wall Street calls adjusted EBITDA. That's about {33 cents|thirty-three cents} of every dollar, before interest, taxes and wear on its machines.",
+   "data": {
+    "value": 345,
+    "decimals": 0,
+    "label": "adjusted EBITDA, 2025 (about 33% of revenue)",
+    "cue": "$345",
+    "source": "Mister Car Wash 2025 results; % = our math",
+    "prefix": "$",
+    "suffix": "M"
+   }
+  },
+  {
+   "type": "cta",
+   "world": "street:CAR WASH",
+   "narration": "If you like seeing the receipts behind everyday prices, subscribe. New ones every Tuesday and Friday.",
+   "data": {
+    "cue": "subscribe"
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part two. The rush.",
+   "data": {
+    "num": "02",
+    "title": "The *rush*"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Steady monthly money is exactly what investors love. And they piled in.",
+   "data": {
+    "lines": [
+     {
+      "text": "Steady money",
+      "cue": "steady"
+     },
+     {
+      "text": "Investors *piled in*",
+      "cue": "piled"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 14
+     },
+     {
+      "cue": "piled",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "street:CAR WASH",
+   "narration": "In {2023|twenty twenty-three} alone, roughly {900|nine hundred} new car washes went up in the US, by one equipment maker's industry estimate.",
+   "data": {
+    "value": 900,
+    "decimals": 0,
+    "label": "new car washes, 2023 (estimate: 850 to 900)",
+    "cue": "900",
+    "source": "Sonny's estimate, via Professional Carwashing & Detailing",
+    "prefix": "~"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:CAR WASH",
+   "narration": "Each new express tunnel can cost {5 to 8 million dollars|five to eight million dollars} to build, before you even buy the land.",
+   "data": {
+    "lines": [
+     {
+      "text": "*$5-8M* a tunnel",
+      "cue": "5"
+     },
+     {
+      "text": "plus the land",
+      "cue": "land"
+     }
+    ]
+   },
+   "host": {
+    "prop": "coin",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "surprised",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "In {2025,|twenty twenty-five,} Driven Brands sold its US car wash chain to Whistle Express, backed by the investment firm Oaktree, for {$385 million.|three hundred eighty-five million dollars.}",
+   "data": {
+    "value": 385,
+    "decimals": 0,
+    "label": "Driven Brands' car washes, sold 2025",
+    "cue": "$385",
+    "source": "Driven Brands, Feb 2025",
+    "prefix": "$",
+    "suffix": "M"
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "Then in {2026,|twenty twenty-six,} the private equity firm Leonard Green took Mister Car Wash private, at a value of {$3.1 billion,|three point one billion dollars,} debt included.",
+   "data": {
+    "value": 3.1,
+    "decimals": 1,
+    "label": "taken private, 2026",
+    "cue": "$3.1",
+    "source": "enterprise value, Feb 2026",
+    "prefix": "$",
+    "suffix": "B"
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part three. Where it broke.",
+   "data": {
+    "num": "03",
+    "title": "Where it *broke*"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:CAR WASH",
+   "narration": "Back to Zips. In February {2025,|twenty twenty-five,} with about {260|two hundred sixty} locations in {23|twenty-three} states, it filed for {Chapter 11|chapter eleven} bankruptcy protection.",
+   "data": {
+    "lines": [
+     {
+      "text": "Zips: *Chapter 11*",
+      "cue": "zips"
+     },
+     {
+      "text": "~260 washes",
+      "cue": "260"
+     }
+    ]
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "worried",
+      "look": 14
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "It had borrowed heavily. Bloomberg reported a {$654 million|six hundred fifty-four million dollar} loan behind the chain.",
+   "data": {
+    "value": 654,
+    "decimals": 0,
+    "label": "Zips loan, reported Feb 2025",
+    "cue": "$654",
+    "source": "Bloomberg, Feb 2025",
+    "prefix": "$",
+    "suffix": "M"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "A tunnel only pays off if enough cars roll through it. Build too many too close together, and they split the same drivers.",
+   "data": {
+    "lines": [
+     {
+      "text": "Enough *cars*?",
+      "cue": "cars"
+     },
+     {
+      "text": "Too many tunnels",
+      "cue": "many"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "split",
+      "expr": "worried",
+      "pose": "shrug"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "street:CAR WASH",
+   "narration": "And the boom is cooling. By the same industry estimate, new builds have dropped to roughly {550|five hundred fifty} a year.",
+   "data": {
+    "value": 550,
+    "decimals": 0,
+    "label": "new car washes a year, 2025 (estimate)",
+    "cue": "550",
+    "source": "Sonny's estimate, via Professional Carwashing & Detailing",
+    "prefix": "~"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "So how does a subscription business go bankrupt? Memberships bring in steady money every month. But steady money can't carry unlimited debt, or too many tunnels chasing the same cars.",
+   "data": {
+    "lines": [
+     {
+      "text": "Steady money",
+      "cue": "steady"
+     },
+     {
+      "text": "can't carry *unlimited debt*",
+      "cue": "debt"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "debt",
+      "expr": "proud",
+      "pose": "point"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:CAR WASH",
+   "narration": "Your car wash isn't really selling clean cars. It's selling a monthly payment. Next time: why cinemas once banned popcorn.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not clean cars.",
+      "cue": "isn't"
+     },
+     {
+      "text": "A *monthly payment*",
+      "cue": "monthly"
+     }
+    ],
+    "foot": "Sources in the description",
+    "foot_cue": "next"
+   },
+   "host": {
+    "prop": "card",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking",
+      "look": 14
+     },
+     {
+      "cue": "next",
+      "expr": "proud",
+      "pose": "wave"
+     }
+    ]
+   }
+  }
+ ]
+}
