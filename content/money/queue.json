@@ -1,91 +1,51 @@
 [
  {
-  "script": "content/money/costco-hotdog/long.json",
-  "kind": "long",
-  "date": "2026-11-10"
- },
- {
   "script": "content/money/costco-hotdog/costco-s1-hotdog.json",
-  "kind": "short",
-  "date": "2026-11-10"
- },
- {
-  "script": "content/money/costco-hotdog/costco-s4-rule.json",
-  "kind": "short",
-  "date": "2026-11-11"
- },
- {
-  "script": "content/money/costco-hotdog/costco-s2-card.json",
-  "kind": "short",
-  "date": "2026-11-12"
- },
- {
-  "script": "content/money/delta-amex/long.json",
-  "kind": "long",
-  "date": "2026-11-13"
- },
- {
-  "script": "content/money/costco-hotdog/costco-s3-renewal.json",
-  "kind": "short",
-  "date": "2026-11-13"
- },
- {
-  "script": "content/money/costco-hotdog/costco-s5-chicken.json",
-  "kind": "short",
-  "date": "2026-11-14"
- },
- {
-  "script": "content/money/delta-amex/delta-s1-amex.json",
-  "kind": "short",
-  "date": "2026-11-15"
- },
- {
-  "script": "content/money/delta-amex/delta-s2-skymiles.json",
   "kind": "short",
   "date": "2026-11-16"
  },
  {
-  "script": "content/money/mcdonalds-landlord/long.json",
+  "script": "content/money/costco-hotdog/long.json",
   "kind": "long",
   "date": "2026-11-17"
  },
  {
-  "script": "content/money/delta-amex/delta-s3-united.json",
+  "script": "content/money/costco-hotdog/costco-s4-rule.json",
   "kind": "short",
   "date": "2026-11-17"
  },
  {
-  "script": "content/money/delta-amex/delta-s4-fuel.json",
+  "script": "content/money/costco-hotdog/costco-s2-card.json",
   "kind": "short",
   "date": "2026-11-18"
  },
  {
-  "script": "content/money/mcdonalds-landlord/mcd-s1-franchise.json",
+  "script": "content/money/costco-hotdog/costco-s3-renewal.json",
   "kind": "short",
   "date": "2026-11-19"
  },
  {
-  "script": "content/money/printer-ink/long.json",
+  "script": "content/money/delta-amex/long.json",
   "kind": "long",
   "date": "2026-11-20"
  },
  {
-  "script": "content/money/mcdonalds-landlord/mcd-s2-tenx.json",
+  "script": "content/money/costco-hotdog/costco-s5-chicken.json",
   "kind": "short",
   "date": "2026-11-20"
  },
  {
-  "script": "content/money/mcdonalds-landlord/mcd-s3-kroc.json",
+  "script": "content/money/delta-amex/delta-s1-amex.json",
   "kind": "short",
   "date": "2026-11-21"
  },
  {
-  "script": "content/money/printer-ink/ink-s1-ratio.json",
+  "script": "content/money/delta-amex/delta-s2-skymiles.json",
   "kind": "short",
   "date": "2026-11-22"
  },
  {
-  "script": "content/money/printer-ink/ink-s2-quote.json",
+  "script": "content/money/delta-amex/delta-s3-united.json",
   "kind": "short",
   "date": "2026-11-23"
  },
@@ -95,7 +55,7 @@
   "date": "2026-11-24"
  },
  {
-  "script": "content/money/printer-ink/ink-s3-profit.json",
+  "script": "content/money/delta-amex/delta-s4-fuel.json",
   "kind": "short",
   "date": "2026-11-24"
  },
@@ -135,7 +95,7 @@
   "date": "2026-11-30"
  },
  {
-  "script": "content/money/casino-house/long.json",
+  "script": "content/money/mcdonalds-landlord/long.json",
   "kind": "long",
   "date": "2026-12-01"
  },
@@ -145,58 +105,98 @@
   "date": "2026-12-01"
  },
  {
-  "script": "content/money/casino-house/cas-s1-roulette.json",
+  "script": "content/money/mcdonalds-landlord/mcd-s1-franchise.json",
   "kind": "short",
   "date": "2026-12-02"
  },
  {
-  "script": "content/money/casino-house/cas-s2-comps.json",
+  "script": "content/money/mcdonalds-landlord/mcd-s2-tenx.json",
   "kind": "short",
   "date": "2026-12-03"
  },
  {
-  "script": "content/money/car-wash-club/long.json",
+  "script": "content/money/printer-ink/long.json",
   "kind": "long",
   "date": "2026-12-04"
  },
  {
-  "script": "content/money/casino-house/cas-s3-mgm.json",
+  "script": "content/money/mcdonalds-landlord/mcd-s3-kroc.json",
   "kind": "short",
   "date": "2026-12-04"
  },
  {
-  "script": "content/money/car-wash-club/cw-s1-members.json",
+  "script": "content/money/printer-ink/ink-s1-ratio.json",
   "kind": "short",
   "date": "2026-12-05"
  },
  {
-  "script": "content/money/car-wash-club/cw-s2-boom.json",
+  "script": "content/money/printer-ink/ink-s2-quote.json",
   "kind": "short",
   "date": "2026-12-06"
  },
  {
-  "script": "content/money/car-wash-club/cw-s3-spend.json",
+  "script": "content/money/printer-ink/ink-s3-profit.json",
   "kind": "short",
   "date": "2026-12-07"
  },
  {
-  "script": "content/money/movie-popcorn/long.json",
+  "script": "content/money/casino-house/long.json",
   "kind": "long",
   "date": "2026-12-08"
  },
  {
-  "script": "content/money/movie-popcorn/popcorn-s3-history.json",
+  "script": "content/money/casino-house/cas-s1-roulette.json",
   "kind": "short",
   "date": "2026-12-08"
  },
  {
-  "script": "content/money/movie-popcorn/popcorn-s1-ticket.json",
+  "script": "content/money/casino-house/cas-s2-comps.json",
   "kind": "short",
   "date": "2026-12-09"
  },
  {
-  "script": "content/money/movie-popcorn/popcorn-s2-snack.json",
+  "script": "content/money/casino-house/cas-s3-mgm.json",
   "kind": "short",
   "date": "2026-12-10"
+ },
+ {
+  "script": "content/money/car-wash-club/long.json",
+  "kind": "long",
+  "date": "2026-12-11"
+ },
+ {
+  "script": "content/money/car-wash-club/cw-s1-members.json",
+  "kind": "short",
+  "date": "2026-12-11"
+ },
+ {
+  "script": "content/money/car-wash-club/cw-s2-boom.json",
+  "kind": "short",
+  "date": "2026-12-12"
+ },
+ {
+  "script": "content/money/car-wash-club/cw-s3-spend.json",
+  "kind": "short",
+  "date": "2026-12-13"
+ },
+ {
+  "script": "content/money/movie-popcorn/popcorn-s3-history.json",
+  "kind": "short",
+  "date": "2026-12-14"
+ },
+ {
+  "script": "content/money/movie-popcorn/long.json",
+  "kind": "long",
+  "date": "2026-12-15"
+ },
+ {
+  "script": "content/money/movie-popcorn/popcorn-s1-ticket.json",
+  "kind": "short",
+  "date": "2026-12-15"
+ },
+ {
+  "script": "content/money/movie-popcorn/popcorn-s2-snack.json",
+  "kind": "short",
+  "date": "2026-12-16"
  }
 ]
