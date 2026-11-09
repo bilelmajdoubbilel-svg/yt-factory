@@ -119,4 +119,10 @@ def main_cinematic(script_path, channel_path, out_png):
 
 if __name__ == "__main__":
     _sp = json.loads(Path(sys.argv[1]).read_text())
-    (main_cinematic if _sp.get("style") == "cinematic" else main)(*sys.argv[1:4])
+    _ch = json.loads(Path(sys.argv[2]).read_text())
+    if _ch.get("look"):   # channel look module (channels/<id>.json "look") draws its own thumbnail
+        import importlib
+        sys.path.insert(0, str(Path(__file__).parent))
+        importlib.import_module("look_" + _ch["look"]).thumbnail(*sys.argv[1:4])
+    else:
+        (main_cinematic if _sp.get("style") == "cinematic" else main)(*sys.argv[1:4])

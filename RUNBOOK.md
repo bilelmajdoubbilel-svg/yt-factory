@@ -49,7 +49,9 @@ Build and lint a script without rendering: `bash pipeline/make_video.sh <script.
 
 Before sending code that Price Logic also uses (compose.py, cine.py, cinema.py, voice.py, thumbnail.py,
 upload.py, publish.py), render one queued Price Logic Short end to end in your session and check its frames.
-Put a new channel's look in new files where possible, so Price Logic cannot break.
+Put a new channel's look in new files where possible, so Price Logic cannot break: `"look": "<name>"` in
+`channels/<id>.json` makes make_video.sh and thumbnail.py call `pipeline/look_<name>.py` (compose step and `thumbnail()`);
+a channel without the field keeps the Price Logic path.
 
 ## Weekly run (every Monday)
 
@@ -133,7 +135,9 @@ better way, change this file in the bundle, but never weaken "Rules that protect
 - **Hidden Systems**: host **Drip**, a water drop in a safety-orange hard hat (`drip_host`); palette concrete
   #2E3338, pipe green #3E8E5E, safety orange #F26B1D, water #7CCBEA; fonts Barlow Condensed 800 + JetBrains Mono 700
   (`assets/hidden/fonts`); motif: looking into a pipe, following one drop, parcel or call through the system.
-  Avatar and banner: `assets/hidden/art`.
+  Avatar and banner: `assets/hidden/art`. Video look (built 9 Nov, waiting for approval): `pipeline/look_hidden.py`,
+  `pipeline/hs_art.py` (rig + cutaway kit), `assets/hidden/drip.js`; scene types host / follow / data / chapter /
+  endcard; sample Short `content/hidden/power-grid/grid-s1-switch.json`; voice am_michael (provisional).
 - Brand plan with launch topics and search data: https://claude.ai/artifact/DRSLDs4heV6fWmz6GchHeS
 
 ## Topic plan (check `content/<channel>/` first; never repeat)

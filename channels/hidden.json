@@ -4,22 +4,25 @@
   "youtube_token_secret": "YT_REFRESH_TOKEN_3",
   "niche": "How the systems you use every day really work in the US and Canada: water, power, trash, mail, 911. Every figure sourced.",
   "voice": "am_michael",
+  "voice_note": "Kokoro am_michael (provisional, owner to confirm by ear). Must differ from Price Logic af_heart and Map Minutes bm_george.",
   "theme": {
-    "bg": "#0B0F1A",
-    "panel": "#141A2A",
-    "paper": "#EEF1F8",
-    "muted": "#8590A6",
-    "accent": "#5B8CFF",
-    "gold": "#FFD166",
-    "mint": "#3DDBD9"
+    "bg": "#2E3338",
+    "panel": "#3B4248",
+    "paper": "#FFF6E8",
+    "muted": "#A3ADB5",
+    "accent": "#F26B1D",
+    "gold": "#F26B1D",
+    "mint": "#3E8E5E",
+    "ink": "#1B1F23",
+    "water": "#7CCBEA"
   },
   "music_dir": "music/shared",
   "music_volume": 0.13,
   "category_id": "28",
   "default_tags": [
-    "science",
-    "space",
-    "scale comparison"
+    "how it works",
+    "infrastructure",
+    "explained"
   ],
   "youtube_channel_id": "UCkTDWtmz8rme1LDyF0mJIgA",
   "handle": "@HiddenSystems19",
@@ -38,6 +41,8 @@
     "why": "US + Canada audience. Long Sun 3 pm ET, Shorts 8 pm ET (network plan 5 Nov 2026)."
   },
   "host": "Drip, a living water drop",
+  "look": "hidden",
+  "look_note": "pipeline/look_hidden.py + pipeline/hs_art.py + assets/hidden/drip.js (Drip rig, cutaways, follow-the-drop camera, concrete data beats, thumbnail, end card). make_video.sh and thumbnail.py dispatch on this field; channels without it keep the Price Logic path.",
   "ready": false,
   "gemini_fallback": false,
   "ready_note": "Set to true only after the owner approves this channel's own host and look (stills). Until then the robot publishes nothing here.",

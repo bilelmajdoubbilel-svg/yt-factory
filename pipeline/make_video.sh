@@ -10,7 +10,13 @@ CH=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['channel'])"
 B="$HERE/build/$ID"
 rm -rf "$B"; mkdir -p "$B"
 python3 "$HERE/pipeline/voice.py" "$SCRIPT" "$B"
-python3 "$HERE/pipeline/compose.py" "$SCRIPT" "$B" "$HERE/channels/$CH.json"
+# a channel with its own look ("look": "<name>" in channels/<id>.json) composes with pipeline/look_<name>.py
+LOOK=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('look',''))" "$HERE/channels/$CH.json")
+if [ -n "$LOOK" ]; then
+  python3 "$HERE/pipeline/look_$LOOK.py" "$SCRIPT" "$B" "$HERE/channels/$CH.json"
+else
+  python3 "$HERE/pipeline/compose.py" "$SCRIPT" "$B" "$HERE/channels/$CH.json"
+fi
 cd "$B"
 npx --prefix "$HERE" hyperframes check --json > check.json 2>/dev/null || true
 python3 "$HERE/pipeline/lint_report.py" check.json

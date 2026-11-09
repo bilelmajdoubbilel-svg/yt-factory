@@ -1,0 +1,390 @@
+{
+ "format": "short",
+ "channel": "hidden",
+ "style": "hidden",
+ "system": "power",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "long_video": "power-grid",
+ "id": "grid-s1-switch",
+ "title": "Your Light Switch Is Wired to a Power Plant #shorts",
+ "summary": "Follow one spark from the generator to your bulb: step-up transformer, high-voltage lines, substation, the can on your pole. And why supply has to match demand in real time, at 60 Hz.",
+ "tags": [
+  "power grid",
+  "how electricity works",
+  "electric grid explained"
+ ],
+ "thumbnail": {
+  "big": "60×",
+  "small": "A SECOND",
+  "expr": "surprised"
+ },
+ "sources": [
+  "Transformers step voltage up and down; higher voltage makes long-distance transmission more efficient; supply constantly matches demand (EIA, Electricity explained: delivery to consumers): https://www.eia.gov/energyexplained/electricity/delivery-to-consumers.php",
+  "Nearly 160,000 miles of high-voltage power lines; balancing authorities keep demand and supply balanced in real time (EIA Today in Energy, 20 Jul 2016): https://www.eia.gov/todayinenergy/detail.php?id=27152",
+  "Interconnections operate at a synchronized frequency averaging 60 Hz (US DOE Office of Electricity, Learn more about interconnections): https://www.energy.gov/oe/learn-more-about-interconnections"
+ ],
+ "scenes": [
+  {
+   "type": "host",
+   "narration": "Flip a switch, and somewhere a power plant has to answer.",
+   "data": {
+    "stencil": "WHO ANSWERS?",
+    "flips": [
+     {
+      "cue": "flip",
+      "on": true,
+      "dt": 0.05
+     }
+    ]
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": -1,
+      "point": "R",
+      "angle": 0
+     },
+     {
+      "cue": "flip",
+      "dt": 0.4,
+      "look": [
+       10,
+       -12
+      ],
+      "take": "happy",
+      "amp": 0.6
+     },
+     {
+      "cue": "switch",
+      "dt": 0.2,
+      "unpoint": "R"
+     },
+     {
+      "cue": "somewhere",
+      "look": [
+       0,
+       0
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "answer",
+      "take": "surprised",
+      "look": [
+       -12,
+       -6
+      ]
+     },
+     {
+      "cue": "answer",
+      "dt": 0.25,
+      "point": "L",
+      "angle": 50
+     }
+    ]
+   },
+   "transition_out": "iris"
+  },
+  {
+   "type": "follow",
+   "narration": "Follow one spark. A generator makes it, and a transformer cranks the voltage way up.",
+   "data": {
+    "waypoints": [
+     {
+      "mark": "gen",
+      "cue": "generator",
+      "dt": -0.15
+     },
+     {
+      "mark": "stepup",
+      "cue": "way",
+      "dt": 0.3
+     }
+    ],
+    "zoom": [
+     [
+      0,
+      1.25
+     ],
+     [
+      "transformer",
+      1.08
+     ]
+    ],
+    "zaps": [
+     "stepup"
+    ]
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.3,
+      "expr": "neutral",
+      "look": [
+       10,
+       2
+      ]
+     },
+     {
+      "cue": "cranks",
+      "take": "surprised"
+     }
+    ]
+   },
+   "transition_in": "iris"
+  },
+  {
+   "type": "follow",
+   "narration": "That lets it cross whole states on high-voltage lines. Nearly {160,000|a hundred and sixty thousand} miles of them.",
+   "data": {
+    "waypoints": [
+     {
+      "mark": "tower2",
+      "cue": "160",
+      "dt": 0.2
+     },
+     {
+      "mark": "tower3",
+      "t": "end",
+      "dt": -0.1
+     }
+    ],
+    "zoom": [
+     [
+      0,
+      1.0
+     ],
+     [
+      "nearly",
+      0.86
+     ]
+    ],
+    "lead": [
+     [
+      0,
+      0,
+      60
+     ],
+     [
+      "nearly",
+      0,
+      190
+     ]
+    ]
+   },
+   "drip": {
+    "acts": [
+     {
+      "cue": "cross",
+      "look": [
+       12,
+       4
+      ],
+      "expr": "happy"
+     },
+     {
+      "cue": "160",
+      "take": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "follow",
+   "narration": "A substation steps it down. The can on your pole steps it down again.",
+   "data": {
+    "waypoints": [
+     {
+      "mark": "substation",
+      "cue": "substation",
+      "dt": 0.1
+     },
+     {
+      "mark": "pole",
+      "cue": "pole",
+      "dt": 0.15
+     },
+     {
+      "mark": "bulb",
+      "t": "end",
+      "dt": -0.35
+     }
+    ],
+    "zoom": [
+     [
+      0,
+      1.1
+     ],
+     [
+      "your",
+      1.18
+     ]
+    ],
+    "lead": [
+     [
+      0,
+      0,
+      60
+     ],
+     [
+      "your",
+      0,
+      60
+     ]
+    ],
+    "zaps": [
+     "t2",
+     "pole"
+    ]
+   },
+   "drip": {
+    "acts": [
+     {
+      "cue": "substation",
+      "expr": "thinking",
+      "look": [
+       10,
+       4
+      ]
+     },
+     {
+      "cue": "again",
+      "take": "happy"
+     }
+    ]
+   },
+   "transition_out": "flash"
+  },
+  {
+   "type": "data",
+   "narration": "The catch: supply must match demand in real time, at {60|sixty} cycles a second.",
+   "data": {
+    "top": [
+     [
+      "SUPPLY",
+      "supply"
+     ],
+     [
+      "=",
+      "match"
+     ],
+     [
+      "DEMAND",
+      "demand"
+     ]
+    ],
+    "gauge": {
+     "min": 59.8,
+     "max": 60.2,
+     "value": 60,
+     "start": 59.9,
+     "unit": "HZ",
+     "labels": [
+      [
+       59.8,
+       "59.8"
+      ],
+      [
+       60,
+       "60"
+      ],
+      [
+       60.2,
+       "60.2"
+      ]
+     ],
+     "moves": [
+      {
+       "cue": "supply",
+       "value": 60.07
+      },
+      {
+       "cue": "demand",
+       "value": 59.94
+      },
+      {
+       "cue": "60",
+       "value": 60.0
+      }
+     ],
+     "wobble": 0.006
+    },
+    "big": "60 HZ",
+    "cue": "60",
+    "source": "US DOE · GRID FREQUENCY AVERAGES 60 HZ",
+    "source_cue": "catch"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "neutral"
+     },
+     {
+      "cue": "real",
+      "take": "surprised"
+     },
+     {
+      "cue": "60",
+      "dt": 0.35,
+      "take": "proud",
+      "amp": 0.6
+     }
+    ]
+   },
+   "transition_in": "flash",
+   "transition_out": "whip"
+  },
+  {
+   "type": "host",
+   "narration": "So every flip gets answered. Go on, flip one.",
+   "data": {
+    "start_lit": true,
+    "flips": [
+     {
+      "cue": "one",
+      "on": false,
+      "dt": 0.05
+     }
+    ],
+    "push": 0.03
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.15,
+      "take": "happy",
+      "amp": 0.7,
+      "look": [
+       0,
+       0
+      ]
+     },
+     {
+      "cue": "answered",
+      "expr": "proud"
+     },
+     {
+      "cue": "go",
+      "look": [
+       10,
+       2
+      ],
+      "expr": "happy"
+     },
+     {
+      "cue": "flip",
+      "point": "R",
+      "angle": 0
+     }
+    ]
+   },
+   "transition_in": "whip"
+  }
+ ]
+}
