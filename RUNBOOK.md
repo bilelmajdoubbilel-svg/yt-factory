@@ -131,7 +131,16 @@ better way, change this file in the bundle, but never weaken "Rules that protect
 - **Map Minutes**: host **Pin**, a living map pin with a compass needle (`pin_host` in `pipeline/brand_art.py`);
   palette parchment #F3E6C4, ocean #1F5F8B, ink #142B3D, coral #D65A3A; fonts Fraunces 800 + IBM Plex Mono 600
   (`assets/mapminutes/fonts`); motif: the dotted 49th parallel and a coral route line. Avatar and banner:
-  `assets/mapminutes/art`.
+  `assets/mapminutes/art`. Video look (built 9 Nov 2026, waiting for the owner's approval): `"look": "mapminutes"` in
+  `channels/history.json` -> `pipeline/look_mapminutes.py`, which runs the look in `pipeline/looks/mapminutes.py`.
+  Pin's rig: `pipeline/looks/mm_pin.py` (pin_host split into groups; expressions neutral/happy/surprised/thinking/
+  worried, mouth shapes; the needle reacts and points); runtime `assets/mapminutes/mm.js`. Maps come only from public-domain vectors in `assets/mapminutes/geo` (Natural Earth,
+  US Census cartographic boundaries; licences in `geo/LICENSES.md`; rebuild with `pipeline/looks/mm_geo_prep.py`).
+  Scene types: `map` (camera `cam` keys `{"fit": "canada"|"north"|"strip"|[lon0,lat0,lon1,lat1]}` or
+  `{"at": [lon,lat], "span": km}`; `layers`: strip, border, parallel49, territories, regions, routes with beads,
+  bracket; `labels` that land on cue), `data` (parchment sheet with counted bars), `pin` (close-up, rack focus),
+  `end` (end card). Examples: `content/history/canada-empty/canada-s1-strip.json` (Short, not queued) and
+  `practice/mapminutes-landscape-demo.json` (landscape map move + end card).
 - **Hidden Systems**: host **Drip**, a water drop in a safety-orange hard hat (`drip_host`); palette concrete
   #2E3338, pipe green #3E8E5E, safety orange #F26B1D, water #7CCBEA; fonts Barlow Condensed 800 + JetBrains Mono 700
   (`assets/hidden/fonts`); motif: looking into a pipe, following one drop, parcel or call through the system.

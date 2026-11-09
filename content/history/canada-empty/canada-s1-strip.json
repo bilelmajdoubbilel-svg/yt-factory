@@ -1,0 +1,620 @@
+{
+  "format": "short",
+  "channel": "history",
+  "style": "mapminutes",
+  "status": "look sample (9 Nov 2026), not queued: the launch long video 'why most of Canada is empty' is planned for 2 Dec",
+  "voice": "bm_george",
+  "speed": 1.1,
+  "projection": "canada",
+  "mood": "explore",
+  "long_video": "canada-empty",
+  "id": "mm-canada-s1-strip",
+  "title": "Where 2 in 3 Canadians Actually Live #shorts",
+  "summary": "Two out of three Canadians live within 100 km of the US border, on about 4% of the country (Statistics Canada, 2016 Census). The three territories hold about 0.3% of Canadians (2021 Census).",
+  "tags": [
+    "canada",
+    "canada population",
+    "why is canada empty",
+    "canada map",
+    "geography"
+  ],
+  "thumbnail": {
+    "words": [
+      "66%",
+      "LIVE",
+      "HERE"
+    ],
+    "expr": "surprised",
+    "cam": {
+      "fit": [
+        -126,
+        43.0,
+        -60,
+        63.0
+      ],
+      "pad": -0.04
+    },
+    "layers": {
+      "strip": {
+        "opacity": 0.9
+      }
+    },
+    "callout": {
+      "at": [
+        -79.4,
+        43.7
+      ],
+      "arrow_from": [
+        1012,
+        388
+      ],
+      "bend": 40
+    },
+    "ax": 700,
+    "ay": 372,
+    "fw": 1260,
+    "pin_x": 200,
+    "pin_y": 705,
+    "pin_r": 160,
+    "words_top": 40,
+    "words_right": 50,
+    "words_fs": 118,
+    "needle": 120,
+    "lean": 6
+  },
+  "sources": [
+    "Two out of three people (66%) lived within 100 km of the southern Canada-US border, an area that represents about 4% of Canada's territory; 3.9 people per square km vs 35.3 in the US (Statistics Canada, The Daily, 8 Feb 2017, 2016 Census): https://www150.statcan.gc.ca/n1/daily-quotidien/170208/dq170208a-eng.htm",
+    "Approximately 0.3% of Canadians or 118,000 people were living in the three territories (Statistics Canada, The Daily, 9 Feb 2022, 2021 Census): https://www150.statcan.gc.ca/n1/daily-quotidien/220209/dq220209a-eng.htm",
+    "Map data: Natural Earth (public domain) https://www.naturalearthdata.com and US Census Bureau cartographic boundary files (public domain) https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html"
+  ],
+  "scenes": [
+    {
+      "type": "map",
+      "narration": "Two out of three Canadians live in this thin strip.",
+      "cam": [
+        {
+          "fit": "canada",
+          "pad": 0.04,
+          "t": 0
+        },
+        {
+          "fit": "canada",
+          "pad": -0.02,
+          "t": "end",
+          "ease": "sine.inOut"
+        }
+      ],
+      "data": {
+        "layers": {
+          "strip": {
+            "lit": true,
+            "pulse": 2
+          },
+          "border": {
+            "draw": false
+          },
+          "parallel49": {
+            "lit": true
+          }
+        },
+        "labels": [
+          {
+            "text": "2 in 3",
+            "at": [
+              -79.4,
+              43.7
+            ],
+            "style": "callout",
+            "anchor": "n",
+            "lit": true
+          }
+        ]
+      },
+      "pin": {
+        "expr": "surprised",
+        "acts": [
+          {
+            "t": 0.35,
+            "point": [
+              -79.4,
+              43.7
+            ],
+            "hold": 0
+          }
+        ]
+      }
+    },
+    {
+      "type": "map",
+      "narration": "It's everything within {100 km|a hundred kilometres} of the US border.",
+      "cam": [
+        {
+          "from": "prev",
+          "t": 0
+        },
+        {
+          "at": [
+            -99.0,
+            49.6
+          ],
+          "span": 880,
+          "t": 1.5,
+          "ease": "power3.inOut"
+        },
+        {
+          "at": [
+            -99.0,
+            49.5
+          ],
+          "span": 820,
+          "t": "end",
+          "ease": "sine.inOut"
+        }
+      ],
+      "data": {
+        "layers": {
+          "strip": {
+            "lit": true
+          },
+          "border": {
+            "draw": false
+          },
+          "parallel49": {
+            "lit": true,
+            "label_lon": -103.6
+          },
+          "bracket": {
+            "at": [
+              -97.3,
+              49.0
+            ],
+            "km": 100,
+            "text": "100 km",
+            "cue": "hundred"
+          }
+        },
+        "labels": [
+          {
+            "text": "Canada",
+            "at": [
+              -101.2,
+              51.15
+            ],
+            "style": "region",
+            "cue": "everything"
+          },
+          {
+            "text": "United States",
+            "at": [
+              -100.6,
+              47.95
+            ],
+            "style": "region",
+            "cue": "border"
+          }
+        ]
+      },
+      "pin": {
+        "expr": "neutral",
+        "acts": [
+          {
+            "t": 0.25,
+            "look": [
+              6,
+              5
+            ]
+          },
+          {
+            "cue": "hundred",
+            "point": [
+              -97.3,
+              49.45
+            ],
+            "hold": 1.6,
+            "expr": "thinking"
+          }
+        ]
+      }
+    },
+    {
+      "type": "data",
+      "narration": "That's about {4%|four percent} of the land, holding {66%|sixty-six percent} of the people.",
+      "data": {
+        "kicker": "2016 Census",
+        "title": "The *thin strip*",
+        "rows": [
+          {
+            "label": "LAND",
+            "value": 4,
+            "display": "4%",
+            "cue": "four"
+          },
+          {
+            "label": "PEOPLE",
+            "value": 66,
+            "display": "66%",
+            "cue": "sixty-six",
+            "highlight": true
+          }
+        ],
+        "source": "Statistics Canada, The Daily, 8 Feb 2017"
+      },
+      "pin": {
+        "expr": "neutral",
+        "acts": [
+          {
+            "t": 0.3,
+            "look": [
+              8,
+              -6
+            ]
+          },
+          {
+            "cue": "sixty-six",
+            "dt": 0.9,
+            "expr": "surprised"
+          }
+        ]
+      }
+    },
+    {
+      "type": "map",
+      "narration": "The three territories up north? Just {0.3%|zero point three percent} of Canadians.",
+      "cam": [
+        {
+          "fit": "canada",
+          "pad": 0.0,
+          "t": 0
+        },
+        {
+          "fit": "north",
+          "pad": 0.06,
+          "t": 1.6,
+          "ease": "expo.out"
+        },
+        {
+          "fit": "north",
+          "pad": 0.0,
+          "t": "end",
+          "ease": "sine.inOut"
+        }
+      ],
+      "data": {
+        "layers": {
+          "territories": {
+            "cue": "territories",
+            "opacity": 0.32
+          },
+          "parallel49": {
+            "lit": true
+          },
+          "border": {
+            "draw": false
+          }
+        },
+        "labels": [
+          {
+            "text": "Yukon",
+            "at": [
+              -135.7,
+              63.2
+            ],
+            "style": "region",
+            "cue": "territories",
+            "dt": 0.2
+          },
+          {
+            "text": "N.W.T.",
+            "at": [
+              -118.5,
+              64.3
+            ],
+            "style": "region",
+            "cue": "up"
+          },
+          {
+            "text": "Nunavut",
+            "at": [
+              -96.0,
+              66.2
+            ],
+            "style": "region",
+            "cue": "north"
+          },
+          {
+            "text": "118,000 people",
+            "at": [
+              -108.0,
+              69.4
+            ],
+            "style": "callout",
+            "anchor": "n",
+            "cue": "zero"
+          }
+        ],
+        "source": "Statistics Canada, 2021 Census"
+      },
+      "pin": {
+        "expr": "neutral",
+        "acts": [
+          {
+            "t": 0.2,
+            "look": [
+              3,
+              -9
+            ]
+          },
+          {
+            "cue": "zero",
+            "dt": 0.5,
+            "expr": "worried"
+          }
+        ]
+      }
+    },
+    {
+      "type": "pin",
+      "narration": "Why? The north is cold rock and frozen ground, with summers too short to farm.",
+      "cam": [
+        {
+          "fit": "canada",
+          "pad": 0.0,
+          "nudge": [
+            -0.16,
+            0.06
+          ],
+          "t": 0
+        },
+        {
+          "fit": "canada",
+          "pad": -0.06,
+          "nudge": [
+            -0.16,
+            0.06
+          ],
+          "t": "end",
+          "ease": "sine.inOut"
+        }
+      ],
+      "data": {
+        "layers": {
+          "regions": {
+            "names": [
+              "Canadian Shield",
+              "Barren Grounds"
+            ],
+            "lit": true,
+            "opacity": 0.42
+          },
+          "strip": {
+            "lit": true,
+            "opacity": 0.5
+          },
+          "parallel49": {
+            "lit": true,
+            "label": false
+          }
+        },
+        "labels": [
+          {
+            "text": "Canadian Shield",
+            "at": [
+              -79.0,
+              56.5
+            ],
+            "style": "region",
+            "cue": "rock",
+            "dt": 0.5
+          },
+          {
+            "text": "Barren Grounds",
+            "at": [
+              -97.0,
+              64.6
+            ],
+            "style": "region",
+            "cue": "frozen",
+            "dt": 0.3
+          }
+        ]
+      },
+      "pin": {
+        "expr": "thinking",
+        "acts": [
+          {
+            "t": 0.15,
+            "look": [
+              8,
+              -8
+            ]
+          },
+          {
+            "cue": "frozen",
+            "expr": "worried",
+            "needle": "tremble"
+          },
+          {
+            "cue": "farm",
+            "expr": "neutral",
+            "look": [
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "blur": [
+        {
+          "t": 0,
+          "b": 9
+        },
+        {
+          "cue": "rock",
+          "b": 0,
+          "dur": 0.9
+        }
+      ]
+    },
+    {
+      "type": "map",
+      "narration": "So cities grew in the south, strung along the border like beads.",
+      "cam": [
+        {
+          "from": "prev",
+          "t": 0
+        },
+        {
+          "fit": [
+            -127,
+            42.5,
+            -61,
+            51.5
+          ],
+          "pad": 0.0,
+          "t": 1.4,
+          "ease": "power3.inOut"
+        }
+      ],
+      "data": {
+        "layers": {
+          "strip": {
+            "lit": true,
+            "opacity": 0.45
+          },
+          "border": {
+            "draw": false
+          },
+          "parallel49": {
+            "lit": true,
+            "label": false
+          },
+          "routes": [
+            {
+              "via": [
+                "Vancouver",
+                "Calgary",
+                "Regina",
+                "Winnipeg",
+                "Thunder Bay",
+                "Toronto",
+                "Montréal",
+                "Québec",
+                "Halifax"
+              ],
+              "cue": "grew",
+              "dur": 3.4,
+              "beads": [
+                {
+                  "text": "Vancouver",
+                  "anchor": "s",
+                  "at": 0.02
+                },
+                {
+                  "text": "Calgary",
+                  "anchor": "n",
+                  "at": 0.14
+                },
+                {
+                  "text": "Winnipeg",
+                  "anchor": "s",
+                  "at": 0.36
+                },
+                {
+                  "text": "Toronto",
+                  "anchor": "s",
+                  "at": 0.68
+                },
+                {
+                  "text": "Montréal",
+                  "anchor": "n",
+                  "at": 0.78
+                },
+                {
+                  "text": "Halifax",
+                  "anchor": "s",
+                  "at": 0.98
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "pin": {
+        "expr": "neutral",
+        "acts": [
+          {
+            "cue": "grew",
+            "expr": "happy",
+            "hop": true
+          },
+          {
+            "cue": "beads",
+            "look": [
+              9,
+              -3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "map",
+      "narration": "So next time you see a map of Canada, remember:",
+      "hold": 0.25,
+      "cam": [
+        {
+          "from": "prev",
+          "t": 0
+        },
+        {
+          "fit": "canada",
+          "pad": 0.04,
+          "t": 1.6,
+          "ease": "power2.inOut"
+        }
+      ],
+      "data": {
+        "layers": {
+          "strip": {
+            "lit": true,
+            "opacity": 0.82
+          },
+          "border": {
+            "draw": false
+          },
+          "parallel49": {
+            "lit": true
+          }
+        },
+        "labels": [
+          {
+            "text": "2 in 3",
+            "at": [
+              -79.4,
+              43.7
+            ],
+            "style": "callout",
+            "anchor": "n",
+            "cue": "remember"
+          }
+        ]
+      },
+      "pin": {
+        "expr": "happy",
+        "acts": [
+          {
+            "t": 0.3,
+            "look": [
+              0,
+              0
+            ]
+          },
+          {
+            "cue": "remember",
+            "expr": "surprised"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -2,24 +2,27 @@
   "id": "history",
   "name": "Map Minutes",
   "youtube_token_secret": "YT_REFRESH_TOKEN_2",
-  "niche": "History told on animated maps and timelines: how borders, empires, trade routes and wars actually unfolded. Every date and figure sourced.",
+  "niche": "US and Canada geography and history told on animated maps: borders, routes, why places are where they are. Every date and figure sourced.",
   "voice": "bm_george",
   "theme": {
-    "bg": "#10140F",
-    "panel": "#1A2019",
-    "paper": "#F1ECDD",
-    "muted": "#8C9286",
-    "accent": "#E4572E",
-    "gold": "#E8C547",
-    "mint": "#5FBF8F"
+    "bg": "#142B3D",
+    "panel": "#1F5F8B",
+    "paper": "#FFF7E3",
+    "muted": "#CDB987",
+    "accent": "#D65A3A",
+    "gold": "#F2C14E",
+    "mint": "#A9CBD9",
+    "ink": "#142B3D"
   },
   "music_dir": "music/shared",
   "music_volume": 0.13,
   "category_id": "27",
   "default_tags": [
-    "history",
-    "history explained",
-    "maps"
+    "geography",
+    "maps",
+    "canada",
+    "united states",
+    "history explained"
   ],
   "youtube_channel_id": "UCxREWny8Z2nQcWlVwrQh3lg",
   "handle": "@MapMinutes19",
@@ -38,6 +41,7 @@
     "why": "US + Canada audience. Long Wed 3 pm ET, Shorts 10 am ET (network plan 5 Nov 2026)."
   },
   "host": "Pin, a living map pin",
+  "look": "mapminutes",
   "ready": false,
   "gemini_fallback": false,
   "ready_note": "Set to true only after the owner approves this channel's own host and look (stills). Until then the robot publishes nothing here.",
@@ -56,6 +60,7 @@
     },
     "art": "assets/mapminutes/art (avatar.png, banner.png)",
     "motif": "the dotted 49th parallel and a coral route line",
-    "tagline": "The US and Canada, explained on the map"
+    "tagline": "The US and Canada, explained on the map",
+    "look": "pipeline/looks/mapminutes.py (scene types map, data, pin, end; Pin rig pipeline/looks/mm_pin.py; runtime assets/mapminutes/mm.js; map data assets/mapminutes/geo, public domain)"
   }
 }
