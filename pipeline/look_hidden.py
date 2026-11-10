@@ -430,7 +430,7 @@ def scene_data(S, ctx):
     over = []
     top = d.get("top")            # e.g. [["SUPPLY", cue], ["=", cue], ["DEMAND", cue]]
     if top:
-        y = 420 if p else 190
+        y = 420 if p else 270   # landscape: clear of the source plate in the top-right corner
         xs = [W * .24, W * .5, W * .76] if len(top) == 3 else [W * (k + 1) / (len(top) + 1) for k in range(len(top))]
         for k, (word, cw) in enumerate(top):
             col = PAL["hat"] if word.strip() in ("=", "≠") else PAL["cream"]
@@ -449,10 +449,15 @@ def scene_data(S, ctx):
         js.append(f'DRIP.gauge(tl, "#{sid}-needle", {S.dur:.3f}, {json.dumps({"keys": keys, "min": gauge["min"], "max": gauge["max"], "a0": a0, "a1": a1, "wobble": gauge.get("wobble", 0)})})')
     big = d.get("big")
     if big:
-        bx, by = (W / 2, 1180) if p else (W * .72, H * .6)
-        at = cue(S, d.get("cue"), .5)
+        # landscape: left of Drip (he stands at W*.86), unless a gauge holds the left half
+        bx, by = (W / 2 + 60, 1180) if p else (W * (.72 if gauge else .58), H * .6)   # portrait: a step right of Drip
+        # a Short that opens on a number shows it from frame 0, so the hook reads muted in the feed
+        at = 0.0 if (S.first and p and d.get("hook", True)) else cue(S, d.get("cue"), .5)
         over.append(f'<g id="{sid}-big">{A.stencil(bx, by, C.esc(big), 168 if p else 190, PAL["hat"], ls=6)}</g>')
-        js.append(f'tl.fromTo("#{sid}-big", {{opacity:0, scale:1.3, svgOrigin:"{bx} {by - 60}"}}, {{opacity:1, scale:1, svgOrigin:"{bx} {by - 60}", duration:.35, ease:"power4.out"}}, {at})')
+        if at == 0.0:   # already on screen at frame 0 (Short hook); a small settle instead of the stamp-in
+            js.append(f'tl.fromTo("#{sid}-big", {{opacity:1, scale:1.06, svgOrigin:"{bx} {by - 60}"}}, {{opacity:1, scale:1, svgOrigin:"{bx} {by - 60}", duration:.5, ease:"power2.out"}}, 0)')
+        else:
+            js.append(f'tl.fromTo("#{sid}-big", {{opacity:0, scale:1.3, svgOrigin:"{bx} {by - 60}"}}, {{opacity:1, scale:1, svgOrigin:"{bx} {by - 60}", duration:.35, ease:"power4.out"}}, {at})')
         S.sfx.append(("stamp-thud", at + .05, 13))
         if d.get("label"):
             over.append(f'<g id="{sid}-lab">{A.stencil(bx, by + (70 if p else 80), C.esc(d["label"]), 56, PAL["cream"], spray=False, ls=8)}</g>')

@@ -43,8 +43,8 @@ def description(script, timeline=None):
     if timeline and script.get("format") != "short":
         chapters = [(0.0, script.get("intro_chapter", "Intro"))]
         for spec, sc in zip(script["scenes"], timeline["scenes"]):
-            if spec["type"] == "chapter":
-                title = spec["data"]["title"].replace("*", "")
+            if spec["type"] == "chapter" or spec.get("chapter"):   # a chapter card, or any scene that starts one
+                title = (spec.get("chapter") or spec["data"]["title"]).replace("*", "")
                 chapters.append((sc["start"], title))
         if len(chapters) >= 3:
             lines.append("Chapters")
