@@ -46,5 +46,11 @@
   "md5": "03417c8714458b8b2aed5da0ba9bba30",
   "result": "applied",
   "at": "2026-11-10T15:35:55+00:00"
+ },
+ "1F2D2BFeEK82e_g6TNvREptJTtAxRqm2U": {
+  "name": "2026-11-10-hidden-launch.zip",
+  "md5": "d9a17f08aaed31cab023f52f1289655e",
+  "result": "rejected: Error -3 while decompressing data: invalid literal/lengths set",
+  "at": "2026-11-10T15:35:56+00:00"
  }
 }
