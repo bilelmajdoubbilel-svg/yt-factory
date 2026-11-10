@@ -131,37 +131,48 @@ better way, change this file in the bundle, but never weaken "Rules that protect
 - **Map Minutes**: host **Pin**, a living map pin with a compass needle (`pin_host` in `pipeline/brand_art.py`);
   palette parchment #F3E6C4, ocean #1F5F8B, ink #142B3D, coral #D65A3A; fonts Fraunces 800 + IBM Plex Mono 600
   (`assets/mapminutes/fonts`); motif: the dotted 49th parallel and a coral route line. Avatar and banner:
-  `assets/mapminutes/art`. Video look (built 9 Nov 2026, waiting for the owner's approval): `"look": "mapminutes"` in
+  `assets/mapminutes/art`. Video look (built 9 Nov 2026, approved by the owner 9 Nov; live from 16 Nov): `"look": "mapminutes"` in
   `channels/history.json` -> `pipeline/look_mapminutes.py`, which runs the look in `pipeline/looks/mapminutes.py`.
   Pin's rig: `pipeline/looks/mm_pin.py` (pin_host split into groups; expressions neutral/happy/surprised/thinking/
   worried, mouth shapes; the needle reacts and points); runtime `assets/mapminutes/mm.js`. Maps come only from public-domain vectors in `assets/mapminutes/geo` (Natural Earth,
   US Census cartographic boundaries; licences in `geo/LICENSES.md`; rebuild with `pipeline/looks/mm_geo_prep.py`).
   Scene types: `map` (camera `cam` keys `{"fit": "canada"|"north"|"strip"|[lon0,lat0,lon1,lat1]}` or
   `{"at": [lon,lat], "span": km}`; `layers`: strip, border, parallel49, territories, regions, routes with beads,
-  bracket; `labels` that land on cue), `data` (parchment sheet with counted bars), `pin` (close-up, rack focus),
-  `end` (end card). Examples: `content/history/canada-empty/canada-s1-strip.json` (Short, not queued) and
-  `practice/mapminutes-landscape-demo.json` (landscape map move + end card).
+  bracket; `labels` that land on cue), `data` (parchment sheet with counted bars: a row's `value` is the number that
+  counts up and also the bar width 0-100, so keep values on a 0-100 scale; `decimals`, `suffix` (default "%")),
+  `pin` (close-up, rack focus), `end` (end card). Any scene can carry `"chapter": "Title"` to start a description
+  chapter (upload.py). Examples: `content/history/canada-empty/long.json` (first long) and its Shorts. Lesson from the
+  first build: check each data card's numbers in a still; the counter shows `value`, not `display`.
 - **Hidden Systems**: host **Drip**, a water drop in a safety-orange hard hat (`drip_host`); palette concrete
   #2E3338, pipe green #3E8E5E, safety orange #F26B1D, water #7CCBEA; fonts Barlow Condensed 800 + JetBrains Mono 700
   (`assets/hidden/fonts`); motif: looking into a pipe, following one drop, parcel or call through the system.
-  Avatar and banner: `assets/hidden/art`. Video look (built 9 Nov, waiting for approval): `pipeline/look_hidden.py`,
-  `pipeline/hs_art.py` (rig + cutaway kit), `assets/hidden/drip.js`; scene types host / follow / data / chapter /
-  endcard; sample Short `content/hidden/power-grid/grid-s1-switch.json`; voice am_michael (provisional).
+  Avatar and banner: `assets/hidden/art`. Video look (built 9 Nov, approved by the owner 9 Nov; live from 16 Nov):
+  `pipeline/look_hidden.py`, `pipeline/hs_art.py` (rig + cutaway kit), `assets/hidden/drip.js`; scene types host /
+  follow / data / chapter / endcard; examples `content/hidden/power-grid/long.json` and its Shorts; voice am_michael.
+  Data beats: keep `big` to about 6 characters in Shorts (wider words run off the left edge). **Only the power world
+  exists** (`"system": "power"`, `hs_art.power_strip`): the 29 Nov sewer video needs a new world (water/sewer strip
+  with its own marks) built in `hs_art.py` + `look_hidden.py` before its script can use `follow` scenes; until then
+  use host/data/chapter scenes only.
 - Brand plan with launch topics and search data: https://claude.ai/artifact/DRSLDs4heV6fWmz6GchHeS
 
 ## Topic plan (check `content/<channel>/` first; never repeat)
 
-- **Price Logic** (long Tue + Fri 3 pm ET): casinos (1 Dec), car washes (4 Dec), popcorn (8 Dec, scripted),
-  Amazon delivery (11 Dec), hotels (15 Dec), ticket fees (18 Dec), Uber (22 Dec), Toys "R" Us (25 Dec), gyms (29 Dec).
-  Calendar file: `content/money/PLAN-2026-11-12.md`.
-- **Map Minutes** (long Wed 3 pm ET, launch 2 Dec), in this order (vidIQ search data, 6 Nov): 2 Dec why most of
-  Canada is empty (~19.4K searches/month, competition 35); 9 Dec the Americans who need a passport to reach their
-  own state (Northwest Angle, Point Roberts); 16 Dec why the US bought Alaska; 23 Dec why the US-Canada border is a
-  straight line; 30 Dec why Washington, D.C. isn't a state.
-- **Hidden Systems** (long Sun 3 pm ET, launch 6 Dec): 6 Dec how the power grid keeps your lights on ("power grid"
-  ~47.2K/month, competition 35); 13 Dec where your poop actually goes; 20 Dec what really happens to your recycling;
-  27 Dec how 911 finds you; 3 Jan why North America runs on 60 Hz. Short ideas: septic tanks, what one flush
-  costs the city, why power lines hum, where a 911 call goes first.
+All three channels start together on **Mon 16 Nov 2026** (owner's decision, 9 Nov): Shorts every day from 16 Nov.
+- **Price Logic** (long Tue + Fri 3 pm ET), scripted: Costco (17 Nov), Delta (20 Nov), Black Friday (24 Nov, fixed:
+  Black Friday is 27 Nov), Starbucks (27 Nov), McDonald's (1 Dec), printer ink (4 Dec), casinos (8 Dec), car washes
+  (11 Dec), popcorn (15 Dec). Planned: Amazon delivery (18 Dec), hotels (22 Dec), Toys "R" Us (25 Dec), ticket fees
+  (29 Dec), gyms (1 Jan, New Year), Uber (5 Jan). Shorts are queued daily to 16 Dec. (`PLAN-2026-11-12.md` has the
+  old dates.)
+- **Map Minutes** (long Wed 3 pm ET), in this order (vidIQ search data, 6 Nov): 18 Nov why most of Canada is empty
+  (scripted; ~19.4K searches/month, competition 35); 25 Nov the Americans who need a passport to reach their own
+  state (Northwest Angle, Point Roberts); 2 Dec why the US bought Alaska; 9 Dec why the US-Canada border is a
+  straight line; 16 Dec why Washington, D.C. isn't a state. Shorts queued to 22 Nov; the 16 Nov weekly run writes
+  the Northwest Angle long + 7 Shorts (23-29 Nov).
+- **Hidden Systems** (long Sun 3 pm ET): 22 Nov how the power grid keeps your lights on (scripted; "power grid"
+  ~47.2K/month, competition 35); 29 Nov where your poop actually goes (needs the sewer world, see above); 6 Dec what
+  really happens to your recycling; 13 Dec how 911 finds you; 20 Dec where your tap water comes from (60 Hz is
+  already covered in the grid video). Shorts queued to 22 Nov. Short ideas: septic tanks, what one flush costs the
+  city, why power lines hum, where a 911 call goes first.
 
 ## Rules that protect the channels (do not break)
 
