@@ -43,9 +43,9 @@
   "host": "Drip, a living water drop",
   "look": "hidden",
   "look_note": "pipeline/look_hidden.py + pipeline/hs_art.py + assets/hidden/drip.js (Drip rig, cutaways, follow-the-drop camera, concrete data beats, thumbnail, end card). make_video.sh and thumbnail.py dispatch on this field; channels without it keep the Price Logic path.",
-  "ready": false,
+  "ready": true,
   "gemini_fallback": false,
-  "ready_note": "Set to true only after the owner approves this channel's own host and look (stills). Until then the robot publishes nothing here.",
+  "ready_note": "Approved by the owner on 9 Nov 2026 in chat with Claude: 'all the channels are ready to publish ... start uploading videos starting from Monday next week' (recorded in the Notes doc). First uploads: Shorts from 16 Nov.",
   "brand": {
     "host": "Drip, a water drop in a safety-orange hard hat (pipeline/brand_art.py drip_host)",
     "palette": {

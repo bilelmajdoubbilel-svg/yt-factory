@@ -1,1 +1,42 @@
-[]
+[
+ {
+  "script": "content/hidden/power-grid/grid-s1-switch.json",
+  "kind": "short",
+  "date": "2026-11-16"
+ },
+ {
+  "script": "content/hidden/power-grid/grid-s2-three.json",
+  "kind": "short",
+  "date": "2026-11-17"
+ },
+ {
+  "script": "content/hidden/power-grid/grid-s3-texas.json",
+  "kind": "short",
+  "date": "2026-11-18"
+ },
+ {
+  "script": "content/hidden/power-grid/grid-s4-loss.json",
+  "kind": "short",
+  "date": "2026-11-19"
+ },
+ {
+  "script": "content/hidden/power-grid/grid-s5-mix.json",
+  "kind": "short",
+  "date": "2026-11-20"
+ },
+ {
+  "script": "content/hidden/power-grid/grid-s6-canada.json",
+  "kind": "short",
+  "date": "2026-11-21"
+ },
+ {
+  "script": "content/hidden/power-grid/long.json",
+  "kind": "long",
+  "date": "2026-11-22"
+ },
+ {
+  "script": "content/hidden/power-grid/grid-s7-trees.json",
+  "kind": "short",
+  "date": "2026-11-22"
+ }
+]
