@@ -42,9 +42,9 @@
   },
   "host": "Pin, a living map pin",
   "look": "mapminutes",
-  "ready": false,
+  "ready": true,
   "gemini_fallback": false,
-  "ready_note": "Set to true only after the owner approves this channel's own host and look (stills). Until then the robot publishes nothing here.",
+  "ready_note": "Approved by the owner on 9 Nov 2026 in chat with Claude: 'all the channels are ready to publish ... start uploading videos starting from Monday next week' (recorded in the Notes doc). First uploads: Shorts from 16 Nov.",
   "brand": {
     "host": "Pin, a living map pin with a compass needle (pipeline/brand_art.py pin_host)",
     "palette": {

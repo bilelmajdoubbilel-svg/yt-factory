@@ -1,1 +1,42 @@
-[]
+[
+ {
+  "script": "content/history/canada-empty/canada-s1-strip.json",
+  "kind": "short",
+  "date": "2026-11-16"
+ },
+ {
+  "script": "content/history/canada-empty/canada-s2-toronto.json",
+  "kind": "short",
+  "date": "2026-11-17"
+ },
+ {
+  "script": "content/history/canada-empty/long.json",
+  "kind": "long",
+  "date": "2026-11-18"
+ },
+ {
+  "script": "content/history/canada-empty/canada-s3-nunavut.json",
+  "kind": "short",
+  "date": "2026-11-18"
+ },
+ {
+  "script": "content/history/canada-empty/canada-s4-shield.json",
+  "kind": "short",
+  "date": "2026-11-19"
+ },
+ {
+  "script": "content/history/canada-empty/canada-s5-farmland.json",
+  "kind": "short",
+  "date": "2026-11-20"
+ },
+ {
+  "script": "content/history/canada-empty/canada-s6-density.json",
+  "kind": "short",
+  "date": "2026-11-21"
+ },
+ {
+  "script": "content/history/canada-empty/canada-s7-permafrost.json",
+  "kind": "short",
+  "date": "2026-11-22"
+ }
+]
