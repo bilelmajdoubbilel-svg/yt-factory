@@ -1,0 +1,179 @@
+{
+ "total": 202.663,
+ "scenes": [
+  {
+   "id": "s01",
+   "type": "shot",
+   "start": 0.0,
+   "duration": 9.098
+  },
+  {
+   "id": "s02",
+   "type": "quote",
+   "start": 9.098,
+   "duration": 5.961
+  },
+  {
+   "id": "s03",
+   "type": "shot",
+   "start": 15.058,
+   "duration": 5.653
+  },
+  {
+   "id": "s04",
+   "type": "statement",
+   "start": 20.712,
+   "duration": 9.122
+  },
+  {
+   "id": "s05",
+   "type": "counter",
+   "start": 29.833,
+   "duration": 9.444
+  },
+  {
+   "id": "s06",
+   "type": "chapter",
+   "start": 39.277,
+   "duration": 3.155
+  },
+  {
+   "id": "s07",
+   "type": "lines",
+   "start": 42.432,
+   "duration": 7.175
+  },
+  {
+   "id": "s08",
+   "type": "compare",
+   "start": 49.607,
+   "duration": 7.569
+  },
+  {
+   "id": "s09",
+   "type": "compare",
+   "start": 57.176,
+   "duration": 5.952
+  },
+  {
+   "id": "s10",
+   "type": "statement",
+   "start": 63.128,
+   "duration": 6.155
+  },
+  {
+   "id": "s11",
+   "type": "flow",
+   "start": 69.283,
+   "duration": 6.539
+  },
+  {
+   "id": "s12",
+   "type": "cta",
+   "start": 75.822,
+   "duration": 5.637
+  },
+  {
+   "id": "s13",
+   "type": "chapter",
+   "start": 81.459,
+   "duration": 2.45
+  },
+  {
+   "id": "s14",
+   "type": "cards",
+   "start": 83.909,
+   "duration": 9.437
+  },
+  {
+   "id": "s15",
+   "type": "counter",
+   "start": 93.346,
+   "duration": 5.1
+  },
+  {
+   "id": "s16",
+   "type": "counter",
+   "start": 98.446,
+   "duration": 6.845
+  },
+  {
+   "id": "s17",
+   "type": "bars",
+   "start": 105.291,
+   "duration": 6.074
+  },
+  {
+   "id": "s18",
+   "type": "share",
+   "start": 111.365,
+   "duration": 5.735
+  },
+  {
+   "id": "s19",
+   "type": "statement",
+   "start": 117.1,
+   "duration": 9.195
+  },
+  {
+   "id": "s20",
+   "type": "counter",
+   "start": 126.295,
+   "duration": 7.748
+  },
+  {
+   "id": "s21",
+   "type": "chapter",
+   "start": 134.043,
+   "duration": 4.049
+  },
+  {
+   "id": "s22",
+   "type": "statement",
+   "start": 138.092,
+   "duration": 6.209
+  },
+  {
+   "id": "s23",
+   "type": "pricetag",
+   "start": 144.301,
+   "duration": 9.794
+  },
+  {
+   "id": "s24",
+   "type": "pricetag",
+   "start": 154.096,
+   "duration": 6.74
+  },
+  {
+   "id": "s25",
+   "type": "counter",
+   "start": 160.836,
+   "duration": 9.062
+  },
+  {
+   "id": "s26",
+   "type": "dots",
+   "start": 169.898,
+   "duration": 9.073
+  },
+  {
+   "id": "s27",
+   "type": "flow",
+   "start": 178.971,
+   "duration": 6.023
+  },
+  {
+   "id": "s28",
+   "type": "statement",
+   "start": 184.994,
+   "duration": 5.69
+  },
+  {
+   "id": "s29",
+   "type": "end",
+   "start": 190.684,
+   "duration": 11.979
+  }
+ ]
+}

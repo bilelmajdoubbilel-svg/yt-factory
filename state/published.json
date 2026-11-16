@@ -14,5 +14,21 @@
   "video_id": "mRTAldL6TJ8",
   "date": "2026-11-16",
   "at": "2026-11-15T19:01:49+00:00"
+ },
+ {
+  "id": "costco-hotdog-v3",
+  "channel": "money",
+  "kind": "long",
+  "video_id": "qRIa4QIOcNI",
+  "date": "2026-11-17",
+  "at": "2026-11-16T22:25:52+00:00"
+ },
+ {
+  "id": "costco-s4-rule",
+  "channel": "money",
+  "kind": "short",
+  "video_id": "aM_dQQgfRFo",
+  "date": "2026-11-17",
+  "at": "2026-11-16T22:27:59+00:00"
  }
 ]
