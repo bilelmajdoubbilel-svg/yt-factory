@@ -4,3 +4,4 @@ numpy
 requests
 google-auth
 playwright
+Pillow

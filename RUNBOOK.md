@@ -42,13 +42,19 @@ Build and lint a script without rendering: `bash pipeline/make_video.sh <script.
 2. Allowed: `content/ pipeline/ assets/ channels/ music/ config/ practice/` and `README.md QUALITY.md RUNBOOK.md
    requirements.txt package.json package-lock.json`. Never `.github/` or `state/` (the robot rejects the bundle).
 3. Name it `YYYY-MM-DD-<channel>-<what>.zip` and upload it with the Google Drive connector: `create_file`, parentId
-   = inbox id, `contentMimeType` `application/zip`, `disableConversionToGoogleType` true, `base64Content`.
+   = inbox id, `contentMimeType` `application/zip`, `disableConversionToGoogleType` true, and `base64Content` set
+   to a file reference `sha256:<64 hex>:<absolute path>` (never typed base64: a typed copy of
+   2026-11-10-hidden-launch.zip arrived corrupt). Test the zip first with `python pipeline/inbox.py --local <zip>`.
 4. The robot applies it at the next daily run (12:17 UTC) after checks (JSON parses, Python compiles, every queued
    script exists, `publish.py --check` runs). A rejected bundle is listed in `state/inbox.json` with the reason.
 5. Changes to `.github/workflows/` need the owner: put the zip in previews and add a calendar task (below).
 
 Before sending code that Price Logic also uses (compose.py, cine.py, cinema.py, voice.py, thumbnail.py,
 upload.py, publish.py), render one queued Price Logic Short end to end in your session and check its frames.
+Every Python package the pipeline imports must be in `requirements.txt`: the robot installs only that list. Test new
+code in a clean venv (`python3 -m venv v && v/bin/pip install -r requirements.txt`, then `publish.py --dry-run` with
+`v/bin` first in PATH). On 15 Nov the first Hidden Systems Short failed on the robot because `hs_art.concrete_png`
+needs Pillow, which was installed in the session but not listed (fixed by 2026-11-15-network-pillow.zip).
 Put a new channel's look in new files where possible, so Price Logic cannot break: `"look": "<name>"` in
 `channels/<id>.json` makes make_video.sh and thumbnail.py call `pipeline/look_<name>.py` (compose step and `thumbnail()`);
 a channel without the field keeps the Price Logic path.
