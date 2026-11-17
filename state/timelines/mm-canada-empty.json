@@ -1,0 +1,161 @@
+{
+ "total": 173.979,
+ "scenes": [
+  {
+   "id": "s01",
+   "type": "map",
+   "start": 0.0,
+   "duration": 4.06
+  },
+  {
+   "id": "s02",
+   "type": "map",
+   "start": 4.06,
+   "duration": 6.314
+  },
+  {
+   "id": "s03",
+   "type": "pin",
+   "start": 10.374,
+   "duration": 6.419
+  },
+  {
+   "id": "s04",
+   "type": "map",
+   "start": 16.793,
+   "duration": 7.245
+  },
+  {
+   "id": "s05",
+   "type": "pin",
+   "start": 24.039,
+   "duration": 6.444
+  },
+  {
+   "id": "s06",
+   "type": "map",
+   "start": 30.483,
+   "duration": 5.143
+  },
+  {
+   "id": "s07",
+   "type": "data",
+   "start": 35.626,
+   "duration": 5.225
+  },
+  {
+   "id": "s08",
+   "type": "data",
+   "start": 40.851,
+   "duration": 7.566
+  },
+  {
+   "id": "s09",
+   "type": "map",
+   "start": 48.417,
+   "duration": 6.465
+  },
+  {
+   "id": "s10",
+   "type": "map",
+   "start": 54.882,
+   "duration": 7.543
+  },
+  {
+   "id": "s11",
+   "type": "pin",
+   "start": 62.425,
+   "duration": 5.835
+  },
+  {
+   "id": "s12",
+   "type": "pin",
+   "start": 68.26,
+   "duration": 5.38
+  },
+  {
+   "id": "s13",
+   "type": "map",
+   "start": 73.64,
+   "duration": 5.442
+  },
+  {
+   "id": "s14",
+   "type": "pin",
+   "start": 79.081,
+   "duration": 6.83
+  },
+  {
+   "id": "s15",
+   "type": "map",
+   "start": 85.911,
+   "duration": 5.538
+  },
+  {
+   "id": "s16",
+   "type": "data",
+   "start": 91.449,
+   "duration": 7.255
+  },
+  {
+   "id": "s17",
+   "type": "data",
+   "start": 98.704,
+   "duration": 7.102
+  },
+  {
+   "id": "s18",
+   "type": "map",
+   "start": 105.806,
+   "duration": 7.058
+  },
+  {
+   "id": "s19",
+   "type": "pin",
+   "start": 112.864,
+   "duration": 7.052
+  },
+  {
+   "id": "s20",
+   "type": "map",
+   "start": 119.916,
+   "duration": 8.551
+  },
+  {
+   "id": "s21",
+   "type": "data",
+   "start": 128.467,
+   "duration": 8.715
+  },
+  {
+   "id": "s22",
+   "type": "map",
+   "start": 137.183,
+   "duration": 11.93
+  },
+  {
+   "id": "s23",
+   "type": "map",
+   "start": 149.112,
+   "duration": 4.423
+  },
+  {
+   "id": "s24",
+   "type": "pin",
+   "start": 153.536,
+   "duration": 8.294
+  },
+  {
+   "id": "s25",
+   "type": "map",
+   "start": 161.83,
+   "duration": 5.149
+  },
+  {
+   "id": "s26",
+   "type": "end",
+   "start": 166.979,
+   "duration": 7.0
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "total": 26.912,
+ "scenes": [
+  {
+   "id": "s01",
+   "type": "map",
+   "start": 0.0,
+   "duration": 4.646
+  },
+  {
+   "id": "s02",
+   "type": "data",
+   "start": 4.646,
+   "duration": 7.642
+  },
+  {
+   "id": "s03",
+   "type": "map",
+   "start": 12.289,
+   "duration": 5.489
+  },
+  {
+   "id": "s04",
+   "type": "pin",
+   "start": 17.778,
+   "duration": 5.076
+  },
+  {
+   "id": "s05",
+   "type": "map",
+   "start": 22.854,
+   "duration": 4.057
+  }
+ ]
+}
