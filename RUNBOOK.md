@@ -87,6 +87,8 @@ a channel without the field keeps the Price Logic path.
    topics from evidence (vidIQ outliers/keywords if connected, web search), never repeat a topic (see
    `content/<channel>/`), research every number from primary sources, write long + Shorts per the playbook,
    build and lint each script, render at least one Short and look at its frames, then send one bundle per channel.
+   Work one channel at a time, the one whose queue runs out first, and upload its bundle before starting the next:
+   the 16 Nov run stopped at the plan's usage limit after 43 minutes and had sent nothing.
    Schedules: Price Logic long Tue + Fri, Map Minutes long Wed, Hidden Systems long Sun; one Short a day each.
 6. **Report.** Create a Google Doc `Weekly report YYYY-MM-DD` in the Drive root: what published, what you
    queued (titles + dates), problems, anything the owner must do. Keep it short and plain.
@@ -155,10 +157,16 @@ better way, change this file in the bundle, but never weaken "Rules that protect
   Avatar and banner: `assets/hidden/art`. Video look (built 9 Nov, approved by the owner 9 Nov; live from 16 Nov):
   `pipeline/look_hidden.py`, `pipeline/hs_art.py` (rig + cutaway kit), `assets/hidden/drip.js`; scene types host /
   follow / data / chapter / endcard; examples `content/hidden/power-grid/long.json` and its Shorts; voice am_michael.
-  Data beats: keep `big` to about 6 characters in Shorts (wider words run off the left edge). **Only the power world
-  exists** (`"system": "power"`, `hs_art.power_strip`): the 29 Nov sewer video needs a new world (water/sewer strip
-  with its own marks) built in `hs_art.py` + `look_hidden.py` before its script can use `follow` scenes; until then
-  use host/data/chapter scenes only.
+  Data beats: keep `big` to about 6 characters in Shorts (wider words run off the left edge). **Worlds for `follow`
+  scenes** (the script's `"system"` picks one; an unknown name fails the build): `power` (`hs_art.power_strip`; marks
+  gen, stepup, tower1-3, substation, t2, pole, house, bulb) and `sewer` (`hs_art.sewer_strip`, code in
+  `pipeline/hs_sewer.py`, built 17 Nov; the traveller is a drop; marks toilet, drain, lateral, cleanout, main, manhole,
+  sign, manhole2, lift, pump, force, plant, screen, aeration, clarifier, uv, outfall, river; `zaps` = a tap sound at
+  that mark; arriving at `river` makes ripples). The sewer world shows "800,000 MILES" (ASCE 2021) on a plate under
+  the main: a script whose drop passes `sign` must list https://infrastructurereportcard.org/wp-content/uploads/2020/12/Wastewater-2021.pdf
+  in `sources`. Example: `practice/hidden-sewer-test.json` (19.5 s portrait test; framing that worked: zoom
+  1.15-1.35, lead dy +130 at the plate, -150 through the plant). Thumbnails follow the system (sewer: a toilet beside
+  Drip). A new world = a new `*_strip()` in its own file + one line in `look_hidden.STRIPS`.
 - Brand plan with launch topics and search data: https://claude.ai/artifact/DRSLDs4heV6fWmz6GchHeS
 
 ## Topic plan (check `content/<channel>/` first; never repeat)
@@ -175,7 +183,7 @@ All three channels start together on **Mon 16 Nov 2026** (owner's decision, 9 No
   straight line; 16 Dec why Washington, D.C. isn't a state. Shorts queued to 22 Nov; the 16 Nov weekly run writes
   the Northwest Angle long + 7 Shorts (23-29 Nov).
 - **Hidden Systems** (long Sun 3 pm ET): 22 Nov how the power grid keeps your lights on (scripted; "power grid"
-  ~47.2K/month, competition 35); 29 Nov where your poop actually goes (needs the sewer world, see above); 6 Dec what
+  ~47.2K/month, competition 35); 29 Nov where your poop actually goes (sewer world ready since 17 Nov: `"system": "sewer"`, see above); 6 Dec what
   really happens to your recycling; 13 Dec how 911 finds you; 20 Dec where your tap water comes from (60 Hz is
   already covered in the grid video). Shorts queued to 22 Nov. Short ideas: septic tanks, what one flush costs the
   city, why power lines hum, where a 911 call goes first.

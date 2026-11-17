@@ -645,3 +645,10 @@ def kit_sheet_svg(W=1920, H=1080):
     inner.append(stencil(60, 130, "CUTAWAY KIT", 96, C["hat"], anchor="start"))
     inner.append(mono(64, 180, "under every street: gas · water · fibre · sewer   above: treatment · sorting line · transformer · tower", 26, C["steel"]))
     return "".join(inner)
+
+
+def sewer_strip():
+    """The sewer world (toilet -> lateral -> sewer main -> lift station -> treatment plant -> river).
+    Built in hs_sewer.py (new file, so the power world above stays byte-for-byte the same)."""
+    from hs_sewer import sewer_strip as _sewer
+    return _sewer()

@@ -28,6 +28,7 @@ import numpy as np
 import compose as C
 import cine
 import hs_art as A
+import hs_sewer
 from brand_art import pipe_ring
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -320,6 +321,9 @@ def scene_follow(S, ctx):
     bulb = strip["bulb"]
     bglow = (f'<div id="{sid}-bglow" style="position:absolute;left:{bulb[0] - 260}px;top:{bulb[1] - 260}px;width:520px;height:520px;border-radius:50%;'
              f'background:radial-gradient(circle, rgba(255,246,232,.95) 0%, rgba(255,217,168,.6) 18%, rgba(255,217,168,0) 70%);opacity:0" data-layout-ignore></div>')
+    if strip.get("traveller", "spark") != "spark":   # e.g. the sewer world's drop (hs_sewer.py)
+        spark, trail, lit, bglow = hs_sewer.traveller_markup(sid, strip, path_d)
+    sfx_names = strip.get("sfx", {})
     sign = strip["sign"]
     mid = (svg_layer(strip["near"] + strip["mid"] + sign + lit, -800, -200, strip["width"] + 1600, 2400) + bglow + trail + spark)
     far = svg_layer(strip["far"], -800, -400, int(strip["width"] * .45) + 3400, 2800)
@@ -332,7 +336,7 @@ def scene_follow(S, ctx):
     cfg = {"W": W, "H": H, "g0": S.start, "path": strip["path"], "keys": keys, "lag": .22, "mix": .5, "anchor": anchor, "c0": [0, 1000],
            "zoom": ctx["zoom_hist"] + zoom, "lead": ctx["lead_hist"] + lead,
            "layers": [{"sel": f"#{sid}-Lfar", "p": .35}, {"sel": f"#{sid}-Lmid", "p": 1}, {"sel": f"#{sid}-Lfore", "p": 1.6}],
-           "spark": f"#{sid}-spark", "trail": [f"#{sid}-tr{k}" for k in range(5)], "lit": f"#{sid}-lit", "litLen": 900,
+           "spark": f"#{sid}-spark", "trail": [f"#{sid}-tr{k}" for k in range(5)], "lit": f"#{sid}-lit", "litLen": strip.get("lit_len", 900),
            "spin": [[f"#{sid}-Lmid .hs-spin", 3.0]], "flow": [[f"#{sid}-Lmid .hs-flow", 90], [f"#{sid}-Lmid .hs-flow2", 45]]}
     ctx["zoom_hist"] += zoom
     ctx["lead_hist"] += lead
@@ -341,19 +345,21 @@ def scene_follow(S, ctx):
     t_first = keys[0][0] - S.start if keys else 0
     if 0 <= t_first < S.dur:
         js.append(f'tl.fromTo("#{sid}-spark", {{opacity:0}}, {{opacity:1, duration:.12}}, {max(0, t_first - .3):.3f})')
-        S.sfx.append(("glitch-soft-1", max(0, t_first - .3), 12))
+        S.sfx.append((sfx_names.get("birth", "glitch-soft-1"), max(0, t_first - .3), 12))
     elif t_first >= S.dur:
         js.append(f'tl.set("#{sid}-spark", {{opacity:0}}, 0)')
     # arrival at the bulb: it lights and blooms (cause of the flash transition)
     t_bulb = None
     for k in keys:
-        if abs(k[1] - strip["marks"]["bulb"]) < 1:
+        if abs(k[1] - strip["marks"][strip.get("end_mark", "bulb")]) < 1:
             t_bulb = k[0] - S.start
     if t_bulb is not None and 0 <= t_bulb <= S.dur + .01:
         js.append(f'tl.to("#{sid}-bglow", {{opacity:1, duration:.15}}, {max(0, t_bulb - .1):.3f})')
         gone = json.dumps([f"#{sid}-spark"] + [f"#{sid}-tr{k}" for k in range(5)])
         js.append(f'tl.to("#{sid}-spark", {{opacity:0, duration:.12}}, {t_bulb + .05:.3f})')
-        S.sfx.append(("pop-1", max(0, t_bulb - .05), 14))
+        S.sfx.append((sfx_names.get("end", "pop-1"), max(0, t_bulb - .05), 14))
+        if strip.get("traveller", "spark") != "spark":
+            js += hs_sewer.arrival_js(sid, t_bulb)
     # zap sounds where the traveller passes a transformer
     for m in d.get("zaps", []):
         for i in range(1, len(keys)):
@@ -361,7 +367,7 @@ def scene_follow(S, ctx):
                 f = (strip["marks"][m] - keys[i - 1][1]) / (keys[i][1] - keys[i - 1][1])
                 tz = keys[i - 1][0] + f * (keys[i][0] - keys[i - 1][0]) - S.start
                 if 0 <= tz < S.dur:
-                    S.sfx.append(("glitch-soft-2", tz, 14))
+                    S.sfx.append((sfx_names.get("pass", "glitch-soft-2"), tz, 14))
     # Drip in the porthole, reacting + lip-sync
     ph = ""
     if d.get("porthole", True):
@@ -642,6 +648,17 @@ def score_for(script, tl):
 
 # ------------------------------------------------------------------ assemble
 
+STRIPS = {"power": "power_strip", "sewer": "sewer_strip"}   # script "system" -> cutaway world in hs_art
+
+
+def strip_for(system):
+    """The follow-scene world named by the script's "system" field. Unknown names fail the build (lint) instead
+    of silently drawing the wrong world."""
+    if system not in STRIPS:
+        raise SystemExit(f'look_hidden: unknown "system": {system!r} (known: {", ".join(sorted(STRIPS))})')
+    return getattr(A, STRIPS[system])()
+
+
 def main(script, channel, build, tl):
     portrait = script.get("format") == "short"
     W, H = (1080, 1920) if portrait else (1920, 1080)
@@ -670,7 +687,7 @@ def main(script, channel, build, tl):
     ctx = {"voice": assets / "voice.wav", "zoom_hist": [], "lead_hist": []}
     follows = [S for S in S_all if S.spec["type"] == "follow"]
     if follows:
-        ctx["strip"] = A.power_strip() if script.get("system", "power") == "power" else A.power_strip()
+        ctx["strip"] = strip_for(script.get("system", "power"))
         ctx["fkeys"] = follow_keys(follows, ctx["strip"], ctx)
     hosts, sfx = [], []
     for S in S_all:
@@ -699,7 +716,7 @@ def main(script, channel, build, tl):
         audio.append(f'<audio id="bed" class="clip" data-start="0" data-duration="{total}" data-track-index="4" data-volume="1" src="assets/music.wav"></audio>')
     if follows:   # transformer hum under the cutaway travel, ~30 dB under the voice
         f0, f1 = follows[0].start, follows[-1].start + follows[-1].dur
-        hum_wav(assets / "hum.wav", f1 - f0)
+        (hs_sewer.flow_wav if ctx["strip"].get("ambience") == "flow" else hum_wav)(assets / "hum.wav", f1 - f0)
         g = round(min(1.0, 10 ** ((voice_lufs - 30 - cine.lufs(assets / "hum.wav")) / 20)), 3)
         audio.append(f'<audio id="hum" class="clip" data-start="{f0:.3f}" data-duration="{f1 - f0:.3f}" data-track-index="9" data-volume="{g}" src="assets/hum.wav"></audio>')
     last_end = {}
@@ -747,7 +764,7 @@ def main(script, channel, build, tl):
 
 # ------------------------------------------------------------------ thumbnail + stills
 
-def thumbnail_page(t):
+def thumbnail_page(t, system="power"):
     """1280x720: Drip big with a clear emotion (hat mid-pop), the system behind him in cutaway,
     at most 3 words on a concrete slab on the other third. Never repeats the title's words."""
     W, H = 1280, 720
@@ -763,6 +780,12 @@ def thumbnail_page(t):
              f'<path d="M-40 250 Q{(ax - 40) / 2:.0f} {ay + 120:.0f} {ax:.0f} {ay:.0f}" stroke="{PAL["hat"]}" stroke-width="7" fill="none"/>'
              f'<path d="M{ax:.0f} {ay:.0f} Q{ax + 120:.0f} {ay + 60:.0f} {ax + 260:.0f} {ay + 20:.0f}" stroke="{PAL["steel"]}" stroke-width="6" fill="none"/>')
     spark_xy = (ax, ay)
+    stops = ('<stop offset="0" stop-color="#FFF6E8" stop-opacity="1"/><stop offset=".25" stop-color="#FFD9A8" stop-opacity=".8"/>'
+             '<stop offset="1" stop-color="#F26B1D" stop-opacity="0"/>')
+    if system == "sewer":   # a cut-open main under a street, the drop glowing inside (hs_sewer.thumb_world)
+        world, spark_xy = hs_sewer.thumb_world()
+        stops = ('<stop offset="0" stop-color="#FFF6E8" stop-opacity="1"/><stop offset=".25" stop-color="#7CCBEA" stop-opacity=".8"/>'
+                 '<stop offset="1" stop-color="#2F7FA6" stop-opacity="0"/>')
     rig = A.drip_rig("th", expr)
     # hat mid-pop: lift + tilt (same as a take's peak), squash/stretch
     rig = rig.replace('<g id="th-hat">', '<g id="th-hat" transform="translate(-6 -30) rotate(-9 0 -52)">')
@@ -779,8 +802,7 @@ def thumbnail_page(t):
             + (f'<text x="995" y="458" font-family="HS Display" font-weight="800" font-size="78" fill="{PAL["cream"]}" text-anchor="middle" letter-spacing="4">{small}</text>' if small else "")
             + "</g>")
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">'
-           f'<defs><radialGradient id="thg"><stop offset="0" stop-color="#FFF6E8" stop-opacity="1"/><stop offset=".25" stop-color="#FFD9A8" stop-opacity=".8"/>'
-           f'<stop offset="1" stop-color="#F26B1D" stop-opacity="0"/></radialGradient></defs>'
+           f'<defs><radialGradient id="thg">{stops}</radialGradient></defs>'
            f'<rect width="{W}" height="{H}" fill="{PAL["concrete"]}"/>{grid}'
            f'<rect x="0" y="600" width="{W}" height="120" fill="#24292D"/><rect x="0" y="594" width="{W}" height="14" fill="{PAL["line"]}"/>'
            f'{world}{spark}<g transform="translate(330 470) scale(2.05)">{rig}</g>{slab}</svg>')
@@ -793,7 +815,7 @@ def thumbnail(script_path, channel_path, out_png):
     script = json.loads(Path(script_path).read_text())
     t = script.get("thumbnail") or {"big": "?", "small": ""}
     tmp = Path(out_png).with_suffix(".html")
-    tmp.write_text(thumbnail_page(t))
+    tmp.write_text(thumbnail_page(t, script.get("system", "power")))
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(viewport={"width": 1280, "height": 720})
