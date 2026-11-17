@@ -38,5 +38,45 @@
   "script": "content/history/canada-empty/canada-s7-permafrost.json",
   "kind": "short",
   "date": "2026-11-22"
+ },
+ {
+  "script": "content/history/northwest-angle/mm-nwangle-s1-drive.json",
+  "kind": "short",
+  "date": "2026-11-23"
+ },
+ {
+  "script": "content/history/northwest-angle/mm-nwangle-s2-pointroberts.json",
+  "kind": "short",
+  "date": "2026-11-24"
+ },
+ {
+  "script": "content/history/northwest-angle/long.json",
+  "kind": "long",
+  "date": "2026-11-25"
+ },
+ {
+  "script": "content/history/northwest-angle/mm-nwangle-s3-wrongmap.json",
+  "kind": "short",
+  "date": "2026-11-25"
+ },
+ {
+  "script": "content/history/northwest-angle/mm-nwangle-s4-report.json",
+  "kind": "short",
+  "date": "2026-11-26"
+ },
+ {
+  "script": "content/history/northwest-angle/mm-nwangle-s5-water.json",
+  "kind": "short",
+  "date": "2026-11-27"
+ },
+ {
+  "script": "content/history/northwest-angle/mm-nwangle-s6-northorsouth.json",
+  "kind": "short",
+  "date": "2026-11-28"
+ },
+ {
+  "script": "content/history/northwest-angle/mm-nwangle-s7-mississippi.json",
+  "kind": "short",
+  "date": "2026-11-29"
  }
 ]
