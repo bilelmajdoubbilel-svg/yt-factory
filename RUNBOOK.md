@@ -33,6 +33,11 @@ npx hyperframes browser ensure || true
 ```
 Build and lint a script without rendering: `bash pipeline/make_video.sh <script.json>`; render: add `--render`
 (output in `out/`). Load the skills `faceless-channel-playbook` and `cinematic-explainer` before writing or designing.
+Cues (`cue`, `source_cue`, `stencil_cue`, label and `top` cues) match the words as SHOWN, not as spoken: for
+`{96.5%|ninety-six and a half percent}` the cue is `96.5%`, not `ninety`. A cue that matches nothing falls back to a
+default time, so the number lands before or after it is said (found in every new script on 17 Nov). In Shorts cut
+from a long, re-check labels in portrait (side-anchored labels ran off the frame) and cue the first scene's main
+label on the first spoken word so the payoff is on screen in the first second.
 
 ## Sending work to the robot (the Drive inbox)
 
@@ -177,16 +182,17 @@ All three channels start together on **Mon 16 Nov 2026** (owner's decision, 9 No
   (11 Dec), popcorn (15 Dec). Planned: Amazon delivery (18 Dec), hotels (22 Dec), Toys "R" Us (25 Dec), ticket fees
   (29 Dec), gyms (1 Jan, New Year), Uber (5 Jan). Shorts are queued daily to 16 Dec. (`PLAN-2026-11-12.md` has the
   old dates.)
-- **Map Minutes** (long Wed 3 pm ET), in this order (vidIQ search data, 6 Nov): 18 Nov why most of Canada is empty
-  (scripted; ~19.4K searches/month, competition 35); 25 Nov the Americans who need a passport to reach their own
-  state (Northwest Angle, Point Roberts); 2 Dec why the US bought Alaska; 9 Dec why the US-Canada border is a
-  straight line; 16 Dec why Washington, D.C. isn't a state. Shorts queued to 22 Nov; the 16 Nov weekly run writes
-  the Northwest Angle long + 7 Shorts (23-29 Nov).
-- **Hidden Systems** (long Sun 3 pm ET): 22 Nov how the power grid keeps your lights on (scripted; "power grid"
-  ~47.2K/month, competition 35); 29 Nov where your poop actually goes (sewer world ready since 17 Nov: `"system": "sewer"`, see above); 6 Dec what
-  really happens to your recycling; 13 Dec how 911 finds you; 20 Dec where your tap water comes from (60 Hz is
-  already covered in the grid video). Shorts queued to 22 Nov. Short ideas: septic tanks, what one flush costs the
-  city, why power lines hum, where a 911 call goes first.
+- **Map Minutes** (long Wed 3 pm ET), vidIQ search data of 6 Nov: scripted 18 Nov why most of Canada is empty
+  (~19.4K searches/month, competition 35), 25 Nov Northwest Angle and Point Roberts, 2 Dec why Russia sold Alaska,
+  9 Dec why the border is (not quite) straight; Shorts queued daily to 14 Dec. Planned: 16 Dec why Washington, D.C.
+  isn't a state; 23 Dec why part of Canada is south of Detroit (added 17 Nov without vidIQ: check demand first).
+- **Hidden Systems** (long Sun 3 pm ET): scripted 22 Nov power grid ("power grid" ~47.2K/month, competition 35),
+  29 Nov where your poop goes (sewer world, 7 follow beats), 6 Dec recycling and 13 Dec 911 (both host/data beats only:
+  no recycling or 911 world yet, and thumbnails of systems other than sewer still show the power tower; build a
+  recycling world + per-system thumbnails before 6 Dec, then upgrade those scripts); Shorts queued daily to 14 Dec.
+  Planned: 20 Dec where your tap water comes from (the sewer world's river/plant can be reused); 27 Dec how a letter
+  crosses the country in days (added 17 Nov without vidIQ: check demand first). Short ideas: septic tanks, what one
+  flush costs the city, why power lines hum.
 
 ## Rules that protect the channels (do not break)
 
