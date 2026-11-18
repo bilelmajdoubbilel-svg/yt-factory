@@ -118,5 +118,50 @@
   "script": "content/hidden/recycling/recy-s7-bales.json",
   "kind": "short",
   "date": "2026-12-06"
+ },
+ {
+  "script": "content/hidden/911-call/e911-s1-question.json",
+  "kind": "short",
+  "date": "2026-12-07"
+ },
+ {
+  "script": "content/hidden/911-call/e911-s2-floor.json",
+  "kind": "short",
+  "date": "2026-12-08"
+ },
+ {
+  "script": "content/hidden/911-call/e911-s3-indoors.json",
+  "kind": "short",
+  "date": "2026-12-09"
+ },
+ {
+  "script": "content/hidden/911-call/e911-s4-wrong.json",
+  "kind": "short",
+  "date": "2026-12-10"
+ },
+ {
+  "script": "content/hidden/911-call/e911-s5-centers.json",
+  "kind": "short",
+  "date": "2026-12-11"
+ },
+ {
+  "script": "content/hidden/911-call/e911-s6-text.json",
+  "kind": "short",
+  "date": "2026-12-12"
+ },
+ {
+  "script": "content/hidden/911-call/long.json",
+  "kind": "long",
+  "date": "2026-12-13"
+ },
+ {
+  "script": "content/hidden/911-call/e911-s7-canada.json",
+  "kind": "short",
+  "date": "2026-12-13"
+ },
+ {
+  "script": "content/hidden/911-call/e911-s8-nextgen.json",
+  "kind": "short",
+  "date": "2026-12-14"
  }
 ]
