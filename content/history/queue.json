@@ -75,6 +75,11 @@
   "date": "2026-11-27"
  },
  {
+  "script": "content/history/dc-statehood/long.json",
+  "kind": "long",
+  "date": "2026-11-28"
+ },
+ {
   "script": "content/history/northwest-angle/mm-nwangle-s6-northorsouth.json",
   "kind": "short",
   "date": "2026-11-28"

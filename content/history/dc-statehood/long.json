@@ -1,0 +1,3570 @@
+{
+ "format": "long",
+ "channel": "history",
+ "style": "mapminutes",
+ "voice": "bm_george",
+ "speed": 1.1,
+ "projection": "us",
+ "id": "mm-dcstate",
+ "title": "Why Washington, D.C. Isn't a State: The 10-Mile Square",
+ "summary": "The Constitution lets Congress rule a federal district of up to ten miles square, which is why Washington, D.C. has more people than Wyoming or Vermont but no voting member of Congress. Here is how the district got its shape, and the main arguments for and against statehood, from both sides' own sources.",
+ "tags": [
+  "dc statehood",
+  "washington dc",
+  "why isn't dc a state",
+  "district of columbia",
+  "23rd amendment",
+  "constitution",
+  "map minutes"
+ ],
+ "intro_chapter": "More people than Wyoming",
+ "thumbnail": {
+  "words": [
+   "NO",
+   "SENATORS"
+  ],
+  "expr": "worried",
+  "cam": {
+   "fit": [
+    -78.6,
+    38.2,
+    -75.6,
+    39.8
+   ],
+   "pad": -0.02
+  },
+  "layers": {
+   "parallel49": false
+  },
+  "callout": {
+   "at": [
+    -77.03,
+    38.9
+   ],
+   "arrow_from": [
+    880,
+    420
+   ],
+   "bend": 40
+  },
+  "ax": 720,
+  "ay": 400,
+  "fw": 1050,
+  "pin_x": 200,
+  "pin_y": 705,
+  "pin_r": 160,
+  "words_top": 40,
+  "words_right": 50,
+  "words_fs": 130,
+  "needle": 120,
+  "lean": 6
+ },
+ "sources": [
+  "US Constitution, Article I, Section 8, Clause 17 (District Clause): Congress shall have power 'To exercise exclusive Legislation in all Cases whatsoever, over such District (not exceeding ten Miles square) as may, by Cession of particular States, and the Acceptance of Congress, become the Seat of the Government' (Constitution Annotated): https://www.law.cornell.edu/constitution-conan/article-1/section-8/clause-17",
+  "US Constitution, Article I, Sections 2-3: the House is composed of Members chosen by the People of the several States; the Senate of two Senators from each State (National Archives transcript): https://www.archives.gov/founding-docs/constitution-transcript",
+  "US Constitution, 23rd Amendment: the District appoints electors equal to the number of Senators and Representatives it would have if a State, 'but in no event more than the least populous State' (Constitution Annotated): https://www.law.cornell.edu/constitution-conan/amendment-23/twenty-third-amendment-historical-background",
+  "Congressional Research Service, R47101, DC Statehood: Constitutional Considerations for Proposed Legislation (12 May 2022): Federalist No. 43 on 'the indispensable necessity of complete authority at the seat of government'; ten miles square is 100 square miles; on 9 Jul 1846 Congress retroceded the Virginia portion on the assent of Alexandria's voters; the House passed H.R. 51 in June 2020, the first time either house passed such a bill; H.R. 51 would admit 'Washington, Douglass Commonwealth' and keep the White House, the Capitol and nearby federal buildings as the seat of government; Congress retains plenary legislative authority over the District; arguments that Maryland's consent is required, and the reply that no part of the District is in Maryland's jurisdiction; the 23rd Amendment as a separate consideration; retrocession to Maryland as an alternative: https://www.everycrsreport.com/reports/R47101.html",
+  "City of Alexandria, Alexandria African American History Trail, Retrocession: President Polk signed the retrocession in July 1846; Alexandria's port had been eclipsed by Baltimore and New York; slaveholders feared abolitionists would succeed in the District: https://www.alexandriava.gov/sites/default/files/2023-12/AAHT-3-Retrocession.pdf",
+  "US Census Bureau, 2020 Census resident population (table reproduced by the Maryland Department of Planning): District of Columbia 689,545; Vermont 643,077; Wyoming 576,851: https://planning.maryland.gov/MSDC/Documents/Census/Census2020/resident-population.pdf",
+  "Office of the Clerk, US House, Roll Call 132, 22 Apr 2021, H.R. 51 Washington, D.C. Admission Act, On Passage: Yeas 216, Nays 208: https://clerk.house.gov/evs/2021/roll132",
+  "DC Office of Statehood (Government of the District of Columbia), Why Statehood: DC elects a non-voting Delegate who 'can draft legislation but cannot vote'; DC residents 'pay more per capita to the federal government than any state'; 'Congress interferes with our local laws': https://statehood.dc.gov/page/why-statehood-dc",
+  "Senate Republican Policy Committee, Practical and Legal Problems with D.C. Statehood (19 Apr 2021): 'a constitutional amendment would be required'; 'The first family would effectively get three electoral votes'; 'Joe Biden received 93% of the vote in D.C.': https://www.rpc.senate.gov/policy-papers/practical-and-legal-problems-with-dc-statehood",
+  "Derived: Wyoming has 3 voting members of Congress (2 senators + 1 representative), equal to its 3 electoral votes as the least populous state (23rd Amendment; Senate RPC)",
+  "Map data: Natural Earth (public domain) https://www.naturalearthdata.com and US Census Bureau cartographic boundary files (public domain) https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html; the ten-mile square, the Potomac, the 1846 line and the federal core are drawn schematically"
+ ],
+ "score": [
+  {
+   "scene": 0,
+   "mood": "wonder"
+  },
+  {
+   "scene": 4,
+   "mood": "explore"
+  },
+  {
+   "scene": 11,
+   "mood": "explore"
+  },
+  {
+   "scene": 16,
+   "mood": "tension"
+  },
+  {
+   "scene": 22,
+   "mood": "payoff"
+  }
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "narration": "More people live in Washington, D.C. than in Wyoming, or in Vermont.",
+   "cam": [
+    {
+     "fit": "us48",
+     "pad": 0.02,
+     "t": 0
+    },
+    {
+     "fit": "us48",
+     "pad": -0.01,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "labels": [
+     {
+      "text": "Washington, D.C.",
+      "at": [
+       -77.03,
+       38.9
+      ],
+      "style": "callout",
+      "anchor": "w",
+      "cue": "more"
+     },
+     {
+      "text": "Wyoming",
+      "at": [
+       -107.5,
+       43.0
+      ],
+      "style": "city",
+      "anchor": "c",
+      "cue": "wyoming"
+     },
+     {
+      "text": "Vermont",
+      "at": [
+       -72.7,
+       44.0
+      ],
+      "style": "city",
+      "anchor": "w",
+      "cue": "vermont"
+     }
+    ]
+   },
+   "pin": {
+    "expr": "surprised",
+    "enter": "drop",
+    "acts": [
+     {
+      "cue": "wyoming",
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "vermont",
+      "expr": "thinking"
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Yet Wyoming has {3|three} voting members of Congress. D.C. has {0|zero}: just a House delegate who can't vote.",
+   "data": {
+    "kicker": "Voting members of Congress",
+    "title": "More people, *no vote*",
+    "rows": [
+     {
+      "label": "WYOMING: 2 SENATE + 1 HOUSE",
+      "value": 3,
+      "suffix": "",
+      "cue": "3"
+     },
+     {
+      "label": "WASHINGTON, D.C.",
+      "value": 0,
+      "suffix": "",
+      "cue": "0",
+      "highlight": true
+     }
+    ],
+    "source": "US Constitution; DC Office of Statehood"
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "delegate",
+      "expr": "worried"
+     }
+    ]
+   }
+  },
+  {
+   "type": "pin",
+   "narration": "So why isn't the nation's capital a state? The answer is in the Constitution, and the two sides read it very differently.",
+   "cam": [
+    {
+     "fit": [
+      -80.6,
+      37.2,
+      -74.6,
+      40.4
+     ],
+     "pad": 0.0,
+     "t": 0,
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    },
+    {
+     "fit": [
+      -80.6,
+      37.2,
+      -74.6,
+      40.4
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut",
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    }
+   ],
+   "data": {},
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "constitution",
+      "needle": "waver"
+     },
+     {
+      "cue": "differently",
+      "expr": "surprised"
+     }
+    ]
+   },
+   "blur": [
+    {
+     "t": 0,
+     "b": 9
+    }
+   ]
+  },
+  {
+   "type": "pin",
+   "narration": "By the end, you'll know why the Founders built it this way, and the strongest case on each side today.",
+   "cam": [
+    {
+     "fit": [
+      -80.6,
+      37.2,
+      -74.6,
+      40.4
+     ],
+     "pad": 0.0,
+     "t": 0,
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    },
+    {
+     "fit": [
+      -80.6,
+      37.2,
+      -74.6,
+      40.4
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut",
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    }
+   ],
+   "data": {},
+   "pin": {
+    "expr": "happy",
+    "acts": [
+     {
+      "t": 0.2,
+      "hop": true
+     },
+     {
+      "cue": "founders",
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "today",
+      "expr": "proud"
+     }
+    ]
+   },
+   "blur": [
+    {
+     "t": 0,
+     "b": 9
+    },
+    {
+     "cue": "side",
+     "b": 0,
+     "dur": 0.9
+    }
+   ],
+   "rack": true
+  },
+  {
+   "type": "map",
+   "chapter": "Ten miles square",
+   "narration": "The Constitution lets Congress take a district, up to ten miles square, from the states, as the seat of government.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.04,
+     "t": 2.4,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.03525,
+         38.7944
+        ],
+        [
+         -76.9749,
+         38.8416
+        ],
+        [
+         -76.91455,
+         38.8888
+        ],
+        [
+         -76.9093,
+         38.8929
+        ],
+        [
+         -76.91457,
+         38.897
+        ],
+        [
+         -76.97515,
+         38.9442
+        ],
+        [
+         -77.03573,
+         38.9914
+        ],
+        [
+         -77.041,
+         38.9955
+        ],
+        [
+         -77.04625,
+         38.9914
+        ],
+        [
+         -77.10665,
+         38.94425
+        ],
+        [
+         -77.16705,
+         38.8971
+        ],
+        [
+         -77.1723,
+         38.893
+        ],
+        [
+         -77.16703,
+         38.88889
+        ],
+        [
+         -77.1064,
+         38.84165
+        ],
+        [
+         -77.04577,
+         38.79441
+        ],
+        [
+         -77.0405,
+         38.7903
+        ]
+       ],
+       "cue": "ten",
+       "dur": 2.4
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "10 miles square",
+      "at": [
+       -76.97,
+       38.84
+      ],
+      "style": "measure",
+      "anchor": "c",
+      "cue": "square"
+     },
+     {
+      "text": "Maryland",
+      "at": [
+       -76.97,
+       38.985
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Virginia",
+      "at": [
+       -77.2,
+       38.81
+      ],
+      "style": "region",
+      "lit": true
+     }
+    ],
+    "source": "US Constitution, Art. I, Sec. 8, Cl. 17"
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "ten",
+      "point": [
+       -77.041,
+       38.9955
+      ],
+      "hold": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "Over that district, Congress holds exclusive legislation in all cases whatsoever. Not a governor. Not a state.",
+   "cam": [
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.02,
+     "t": 0
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.03525,
+         38.7944
+        ],
+        [
+         -76.9749,
+         38.8416
+        ],
+        [
+         -76.91455,
+         38.8888
+        ],
+        [
+         -76.9093,
+         38.8929
+        ],
+        [
+         -76.91457,
+         38.897
+        ],
+        [
+         -76.97515,
+         38.9442
+        ],
+        [
+         -77.03573,
+         38.9914
+        ],
+        [
+         -77.041,
+         38.9955
+        ],
+        [
+         -77.04625,
+         38.9914
+        ],
+        [
+         -77.10665,
+         38.94425
+        ],
+        [
+         -77.16705,
+         38.8971
+        ],
+        [
+         -77.1723,
+         38.893
+        ],
+        [
+         -77.16703,
+         38.88889
+        ],
+        [
+         -77.1064,
+         38.84165
+        ],
+        [
+         -77.04577,
+         38.79441
+        ],
+        [
+         -77.0405,
+         38.7903
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Congress rules",
+      "at": [
+       -77.04,
+       38.9
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "exclusive"
+     },
+     {
+      "text": "No governor",
+      "at": [
+       -76.96,
+       38.84
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "governor"
+     },
+     {
+      "text": "Maryland",
+      "at": [
+       -76.97,
+       38.985
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Virginia",
+      "at": [
+       -77.2,
+       38.81
+      ],
+      "style": "region",
+      "lit": true
+     }
+    ]
+   },
+   "pin": {
+    "expr": "surprised",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "whatsoever",
+      "needle": "spin"
+     }
+    ]
+   }
+  },
+  {
+   "type": "pin",
+   "narration": "Why? James Madison wrote of the indispensable necessity of complete authority at the seat of government.",
+   "cam": [
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.0,
+     "t": 0,
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut",
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.03525,
+         38.7944
+        ],
+        [
+         -76.9749,
+         38.8416
+        ],
+        [
+         -76.91455,
+         38.8888
+        ],
+        [
+         -76.9093,
+         38.8929
+        ],
+        [
+         -76.91457,
+         38.897
+        ],
+        [
+         -76.97515,
+         38.9442
+        ],
+        [
+         -77.03573,
+         38.9914
+        ],
+        [
+         -77.041,
+         38.9955
+        ],
+        [
+         -77.04625,
+         38.9914
+        ],
+        [
+         -77.10665,
+         38.94425
+        ],
+        [
+         -77.16705,
+         38.8971
+        ],
+        [
+         -77.1723,
+         38.893
+        ],
+        [
+         -77.16703,
+         38.88889
+        ],
+        [
+         -77.1064,
+         38.84165
+        ],
+        [
+         -77.04577,
+         38.79441
+        ],
+        [
+         -77.0405,
+         38.7903
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    }
+   },
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "complete",
+      "expr": "neutral"
+     }
+    ]
+   },
+   "blur": [
+    {
+     "t": 0,
+     "b": 9
+    }
+   ]
+  },
+  {
+   "type": "map",
+   "narration": "The land came from Maryland and Virginia: a square of {100|a hundred} square miles, across the Potomac River.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.0,
+     "t": 1.6,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.03525,
+         38.7944
+        ],
+        [
+         -76.9749,
+         38.8416
+        ],
+        [
+         -76.91455,
+         38.8888
+        ],
+        [
+         -76.9093,
+         38.8929
+        ],
+        [
+         -76.91457,
+         38.897
+        ],
+        [
+         -76.97515,
+         38.9442
+        ],
+        [
+         -77.03573,
+         38.9914
+        ],
+        [
+         -77.041,
+         38.9955
+        ],
+        [
+         -77.04625,
+         38.9914
+        ],
+        [
+         -77.10665,
+         38.94425
+        ],
+        [
+         -77.16705,
+         38.8971
+        ],
+        [
+         -77.1723,
+         38.893
+        ],
+        [
+         -77.16703,
+         38.88889
+        ],
+        [
+         -77.1064,
+         38.84165
+        ],
+        [
+         -77.04577,
+         38.79441
+        ],
+        [
+         -77.0405,
+         38.7903
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      },
+      {
+       "via": [
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.039,
+         38.84
+        ],
+        [
+         -77.047,
+         38.873
+        ],
+        [
+         -77.068,
+         38.9
+        ],
+        [
+         -77.1,
+         38.921
+        ],
+        [
+         -77.119,
+         38.9346
+        ]
+       ],
+       "cue": "potomac",
+       "dur": 1.6
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "100 sq mi",
+      "at": [
+       -77.0,
+       38.86
+      ],
+      "style": "measure",
+      "anchor": "c",
+      "cue": "100"
+     },
+     {
+      "text": "Maryland",
+      "at": [
+       -76.97,
+       38.985
+      ],
+      "style": "region",
+      "cue": "maryland"
+     },
+     {
+      "text": "Virginia",
+      "at": [
+       -77.2,
+       38.81
+      ],
+      "style": "region",
+      "cue": "virginia"
+     },
+     {
+      "text": "Potomac",
+      "at": [
+       -77.06,
+       38.825
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "potomac"
+     }
+    ],
+    "source": "Congressional Research Service, R47101"
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "potomac",
+      "expr": "happy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "In {1846|eighteen forty-six}, Congress handed the Virginia side back. Alexandria's port was fading, and slaveholders feared the capital would end slavery.",
+   "cam": [
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.02,
+     "t": 0
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.06,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.03525,
+         38.7944
+        ],
+        [
+         -76.9749,
+         38.8416
+        ],
+        [
+         -76.91455,
+         38.8888
+        ],
+        [
+         -76.9093,
+         38.8929
+        ],
+        [
+         -76.91457,
+         38.897
+        ],
+        [
+         -76.97515,
+         38.9442
+        ],
+        [
+         -77.03573,
+         38.9914
+        ],
+        [
+         -77.041,
+         38.9955
+        ],
+        [
+         -77.04625,
+         38.9914
+        ],
+        [
+         -77.10665,
+         38.94425
+        ],
+        [
+         -77.16705,
+         38.8971
+        ],
+        [
+         -77.1723,
+         38.893
+        ],
+        [
+         -77.16703,
+         38.88889
+        ],
+        [
+         -77.1064,
+         38.84165
+        ],
+        [
+         -77.04577,
+         38.79441
+        ],
+        [
+         -77.0405,
+         38.7903
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      },
+      {
+       "via": [
+        [
+         -77.1723,
+         38.893
+        ],
+        [
+         -77.16703,
+         38.88889
+        ],
+        [
+         -77.1064,
+         38.84165
+        ],
+        [
+         -77.04577,
+         38.79441
+        ],
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.04044,
+         38.79229
+        ],
+        [
+         -77.03975,
+         38.81515
+        ],
+        [
+         -77.03906,
+         38.83801
+        ],
+        [
+         -77.039,
+         38.84
+        ],
+        [
+         -77.03932,
+         38.84132
+        ],
+        [
+         -77.043,
+         38.8565
+        ],
+        [
+         -77.04668,
+         38.87168
+        ],
+        [
+         -77.047,
+         38.873
+        ],
+        [
+         -77.04784,
+         38.87408
+        ],
+        [
+         -77.0575,
+         38.8865
+        ],
+        [
+         -77.06716,
+         38.89892
+        ],
+        [
+         -77.068,
+         38.9
+        ],
+        [
+         -77.06928,
+         38.90084
+        ],
+        [
+         -77.084,
+         38.9105
+        ],
+        [
+         -77.09872,
+         38.92016
+        ],
+        [
+         -77.1,
+         38.921
+        ],
+        [
+         -77.10076,
+         38.92154
+        ],
+        [
+         -77.1095,
+         38.9278
+        ],
+        [
+         -77.11824,
+         38.93406
+        ],
+        [
+         -77.119,
+         38.9346
+        ],
+        [
+         -77.12113,
+         38.93294
+        ],
+        [
+         -77.14565,
+         38.9138
+        ],
+        [
+         -77.17017,
+         38.89466
+        ],
+        [
+         -77.1723,
+         38.893
+        ]
+       ],
+       "cue": "virginia",
+       "dur": 2.0
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "1846",
+      "at": [
+       -77.12,
+       38.88
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "1846"
+     },
+     {
+      "text": "Back to Virginia",
+      "at": [
+       -77.12,
+       38.85
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "back"
+     },
+     {
+      "text": "Alexandria",
+      "at": [
+       -77.047,
+       38.805
+      ],
+      "style": "city",
+      "anchor": "w",
+      "cue": "alexandria"
+     }
+    ],
+    "source": "City of Alexandria; CRS R47101"
+   },
+   "pin": {
+    "expr": "worried",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "slaveholders",
+      "needle": "tremble"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "That's why today's D.C. is a square with one side cut away by the river.",
+   "cam": [
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.0,
+     "t": 0
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.04,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.03525,
+         38.7944
+        ],
+        [
+         -76.9749,
+         38.8416
+        ],
+        [
+         -76.91455,
+         38.8888
+        ],
+        [
+         -76.9093,
+         38.8929
+        ],
+        [
+         -76.91457,
+         38.897
+        ],
+        [
+         -76.97515,
+         38.9442
+        ],
+        [
+         -77.03573,
+         38.9914
+        ],
+        [
+         -77.041,
+         38.9955
+        ],
+        [
+         -77.04412,
+         38.99306
+        ],
+        [
+         -77.08,
+         38.96505
+        ],
+        [
+         -77.11588,
+         38.93704
+        ],
+        [
+         -77.119,
+         38.9346
+        ],
+        [
+         -77.11824,
+         38.93406
+        ],
+        [
+         -77.1095,
+         38.9278
+        ],
+        [
+         -77.10076,
+         38.92154
+        ],
+        [
+         -77.1,
+         38.921
+        ],
+        [
+         -77.09872,
+         38.92016
+        ],
+        [
+         -77.084,
+         38.9105
+        ],
+        [
+         -77.06928,
+         38.90084
+        ],
+        [
+         -77.068,
+         38.9
+        ],
+        [
+         -77.06716,
+         38.89892
+        ],
+        [
+         -77.0575,
+         38.8865
+        ],
+        [
+         -77.04784,
+         38.87408
+        ],
+        [
+         -77.047,
+         38.873
+        ],
+        [
+         -77.04668,
+         38.87168
+        ],
+        [
+         -77.043,
+         38.8565
+        ],
+        [
+         -77.03932,
+         38.84132
+        ],
+        [
+         -77.039,
+         38.84
+        ],
+        [
+         -77.03906,
+         38.83801
+        ],
+        [
+         -77.03975,
+         38.81515
+        ],
+        [
+         -77.04044,
+         38.79229
+        ],
+        [
+         -77.0405,
+         38.7903
+        ]
+       ],
+       "cue": "square",
+       "dur": 2.2
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "D.C. today",
+      "at": [
+       -77.0,
+       38.93
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "today"
+     },
+     {
+      "text": "Maryland",
+      "at": [
+       -76.97,
+       38.985
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Virginia",
+      "at": [
+       -77.2,
+       38.81
+      ],
+      "style": "region",
+      "lit": true
+     }
+    ]
+   },
+   "pin": {
+    "expr": "happy",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "river",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "pin",
+   "narration": "If you like maps that explain things, subscribe. There's a new map every other day.",
+   "cam": [
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.0,
+     "t": 0,
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut",
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    }
+   ],
+   "data": {},
+   "pin": {
+    "expr": "happy",
+    "acts": [
+     {
+      "t": 0.2,
+      "hop": true
+     },
+     {
+      "cue": "every",
+      "point": {
+       "deg": 70
+      },
+      "hold": 1.2
+     }
+    ]
+   },
+   "blur": [
+    {
+     "t": 0,
+     "b": 9
+    }
+   ]
+  },
+  {
+   "type": "map",
+   "chapter": "The case for statehood",
+   "narration": "The case for statehood starts with people. The {2020|twenty twenty} census counted {689,545|six hundred eighty-nine thousand} in D.C., {643,077|six hundred forty-three thousand} in Vermont, and {576,851|five hundred seventy-seven thousand} in Wyoming.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": "us48",
+     "pad": 0.02,
+     "t": 1.6,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": "us48",
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "labels": [
+     {
+      "text": "689,545",
+      "at": [
+       -77.03,
+       38.9
+      ],
+      "style": "measure",
+      "anchor": "w",
+      "cue": "689,545"
+     },
+     {
+      "text": "643,077",
+      "at": [
+       -72.7,
+       44.0
+      ],
+      "style": "measure",
+      "anchor": "n",
+      "cue": "643,077"
+     },
+     {
+      "text": "576,851",
+      "at": [
+       -107.5,
+       43.0
+      ],
+      "style": "measure",
+      "anchor": "c",
+      "cue": "576,851"
+     }
+    ],
+    "source": "US Census Bureau, 2020 Census"
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "689,545",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "D.C.'s government says its residents pay more federal tax per person than people in any state.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -80.6,
+      37.2,
+      -74.6,
+      40.4
+     ],
+     "pad": 0.0,
+     "t": 1.6,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -80.6,
+      37.2,
+      -74.6,
+      40.4
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "labels": [
+     {
+      "text": "Washington, D.C.",
+      "at": [
+       -77.03,
+       38.9
+      ],
+      "style": "city",
+      "anchor": "e",
+      "lit": true
+     },
+     {
+      "text": "Taxed, no vote",
+      "at": [
+       -77.6,
+       39.55
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "tax"
+     }
+    ],
+    "source": "DC Office of Statehood, Why Statehood"
+   },
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "any",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "And Congress can overrule its local laws. Congress's own researchers call its power over D.C. plenary: total.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.04,
+     "t": 1.6,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.03525,
+         38.7944
+        ],
+        [
+         -76.9749,
+         38.8416
+        ],
+        [
+         -76.91455,
+         38.8888
+        ],
+        [
+         -76.9093,
+         38.8929
+        ],
+        [
+         -76.91457,
+         38.897
+        ],
+        [
+         -76.97515,
+         38.9442
+        ],
+        [
+         -77.03573,
+         38.9914
+        ],
+        [
+         -77.041,
+         38.9955
+        ],
+        [
+         -77.04412,
+         38.99306
+        ],
+        [
+         -77.08,
+         38.96505
+        ],
+        [
+         -77.11588,
+         38.93704
+        ],
+        [
+         -77.119,
+         38.9346
+        ],
+        [
+         -77.11824,
+         38.93406
+        ],
+        [
+         -77.1095,
+         38.9278
+        ],
+        [
+         -77.10076,
+         38.92154
+        ],
+        [
+         -77.1,
+         38.921
+        ],
+        [
+         -77.09872,
+         38.92016
+        ],
+        [
+         -77.084,
+         38.9105
+        ],
+        [
+         -77.06928,
+         38.90084
+        ],
+        [
+         -77.068,
+         38.9
+        ],
+        [
+         -77.06716,
+         38.89892
+        ],
+        [
+         -77.0575,
+         38.8865
+        ],
+        [
+         -77.04784,
+         38.87408
+        ],
+        [
+         -77.047,
+         38.873
+        ],
+        [
+         -77.04668,
+         38.87168
+        ],
+        [
+         -77.043,
+         38.8565
+        ],
+        [
+         -77.03932,
+         38.84132
+        ],
+        [
+         -77.039,
+         38.84
+        ],
+        [
+         -77.03906,
+         38.83801
+        ],
+        [
+         -77.03975,
+         38.81515
+        ],
+        [
+         -77.04044,
+         38.79229
+        ],
+        [
+         -77.0405,
+         38.7903
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Plenary power",
+      "at": [
+       -77.0,
+       38.93
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "plenary"
+     },
+     {
+      "text": "Maryland",
+      "at": [
+       -76.97,
+       38.985
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Virginia",
+      "at": [
+       -77.2,
+       38.81
+      ],
+      "style": "region",
+      "lit": true
+     }
+    ],
+    "source": "Congressional Research Service, R47101"
+   },
+   "pin": {
+    "expr": "worried",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "overrule",
+      "needle": "tremble"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "In {2020|twenty twenty}, the House passed a statehood bill for the first time. In {2021|twenty twenty-one}, it passed again, {216|two hundred sixteen} to {208|two hundred eight}.",
+   "cam": [
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.0,
+     "t": 0
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.03525,
+         38.7944
+        ],
+        [
+         -76.9749,
+         38.8416
+        ],
+        [
+         -76.91455,
+         38.8888
+        ],
+        [
+         -76.9093,
+         38.8929
+        ],
+        [
+         -76.91457,
+         38.897
+        ],
+        [
+         -76.97515,
+         38.9442
+        ],
+        [
+         -77.03573,
+         38.9914
+        ],
+        [
+         -77.041,
+         38.9955
+        ],
+        [
+         -77.04412,
+         38.99306
+        ],
+        [
+         -77.08,
+         38.96505
+        ],
+        [
+         -77.11588,
+         38.93704
+        ],
+        [
+         -77.119,
+         38.9346
+        ],
+        [
+         -77.11824,
+         38.93406
+        ],
+        [
+         -77.1095,
+         38.9278
+        ],
+        [
+         -77.10076,
+         38.92154
+        ],
+        [
+         -77.1,
+         38.921
+        ],
+        [
+         -77.09872,
+         38.92016
+        ],
+        [
+         -77.084,
+         38.9105
+        ],
+        [
+         -77.06928,
+         38.90084
+        ],
+        [
+         -77.068,
+         38.9
+        ],
+        [
+         -77.06716,
+         38.89892
+        ],
+        [
+         -77.0575,
+         38.8865
+        ],
+        [
+         -77.04784,
+         38.87408
+        ],
+        [
+         -77.047,
+         38.873
+        ],
+        [
+         -77.04668,
+         38.87168
+        ],
+        [
+         -77.043,
+         38.8565
+        ],
+        [
+         -77.03932,
+         38.84132
+        ],
+        [
+         -77.039,
+         38.84
+        ],
+        [
+         -77.03906,
+         38.83801
+        ],
+        [
+         -77.03975,
+         38.81515
+        ],
+        [
+         -77.04044,
+         38.79229
+        ],
+        [
+         -77.0405,
+         38.7903
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "House: 216-208",
+      "at": [
+       -77.0,
+       38.93
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "216"
+     },
+     {
+      "text": "First time",
+      "at": [
+       -77.0,
+       38.86
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "first"
+     }
+    ],
+    "source": "Office of the Clerk, Roll Call 132 (2021); CRS R47101"
+   },
+   "pin": {
+    "expr": "happy",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "again",
+      "hop": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "The bill would shrink the federal district to its core, around the White House and the Capitol. The rest would become a state: Washington, Douglass Commonwealth.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -77.12,
+      38.845,
+      -76.95,
+      38.94
+     ],
+     "pad": 0.04,
+     "t": 1.8,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -77.12,
+      38.845,
+      -76.95,
+      38.94
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.052,
+         38.8875
+        ],
+        [
+         -77.0514,
+         38.88798
+        ],
+        [
+         -77.0445,
+         38.8935
+        ],
+        [
+         -77.0376,
+         38.89902
+        ],
+        [
+         -77.037,
+         38.8995
+        ],
+        [
+         -77.03588,
+         38.89926
+        ],
+        [
+         -77.023,
+         38.8965
+        ],
+        [
+         -77.01012,
+         38.89374
+        ],
+        [
+         -77.009,
+         38.8935
+        ],
+        [
+         -77.0088,
+         38.8932
+        ],
+        [
+         -77.0065,
+         38.88975
+        ],
+        [
+         -77.0042,
+         38.8863
+        ],
+        [
+         -77.004,
+         38.886
+        ],
+        [
+         -77.00504,
+         38.8858
+        ],
+        [
+         -77.017,
+         38.8835
+        ],
+        [
+         -77.02896,
+         38.8812
+        ],
+        [
+         -77.03,
+         38.881
+        ],
+        [
+         -77.03088,
+         38.88126
+        ],
+        [
+         -77.041,
+         38.88425
+        ],
+        [
+         -77.05112,
+         38.88724
+        ],
+        [
+         -77.052,
+         38.8875
+        ]
+       ],
+       "cue": "core",
+       "dur": 1.8
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Federal core",
+      "at": [
+       -77.03,
+       38.89
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "core"
+     },
+     {
+      "text": "Douglass Commonwealth",
+      "at": [
+       -77.03,
+       38.906
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "douglass"
+     }
+    ],
+    "source": "CRS R47101 (H.R. 51, 117th Congress)"
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "douglass",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "pin",
+   "chapter": "The case against",
+   "narration": "Opponents read the same Constitution and see a different answer.",
+   "cam": [
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.0,
+     "t": 0,
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut",
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    }
+   ],
+   "data": {},
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "different",
+      "needle": "swing"
+     }
+    ]
+   },
+   "blur": [
+    {
+     "t": 0,
+     "b": 9
+    }
+   ]
+  },
+  {
+   "type": "map",
+   "narration": "The Senate Republican Policy Committee argues that making D.C. a state would take a constitutional amendment, not just a law.",
+   "cam": [
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.0,
+     "t": 0
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.04,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.03525,
+         38.7944
+        ],
+        [
+         -76.9749,
+         38.8416
+        ],
+        [
+         -76.91455,
+         38.8888
+        ],
+        [
+         -76.9093,
+         38.8929
+        ],
+        [
+         -76.91457,
+         38.897
+        ],
+        [
+         -76.97515,
+         38.9442
+        ],
+        [
+         -77.03573,
+         38.9914
+        ],
+        [
+         -77.041,
+         38.9955
+        ],
+        [
+         -77.04412,
+         38.99306
+        ],
+        [
+         -77.08,
+         38.96505
+        ],
+        [
+         -77.11588,
+         38.93704
+        ],
+        [
+         -77.119,
+         38.9346
+        ],
+        [
+         -77.11824,
+         38.93406
+        ],
+        [
+         -77.1095,
+         38.9278
+        ],
+        [
+         -77.10076,
+         38.92154
+        ],
+        [
+         -77.1,
+         38.921
+        ],
+        [
+         -77.09872,
+         38.92016
+        ],
+        [
+         -77.084,
+         38.9105
+        ],
+        [
+         -77.06928,
+         38.90084
+        ],
+        [
+         -77.068,
+         38.9
+        ],
+        [
+         -77.06716,
+         38.89892
+        ],
+        [
+         -77.0575,
+         38.8865
+        ],
+        [
+         -77.04784,
+         38.87408
+        ],
+        [
+         -77.047,
+         38.873
+        ],
+        [
+         -77.04668,
+         38.87168
+        ],
+        [
+         -77.043,
+         38.8565
+        ],
+        [
+         -77.03932,
+         38.84132
+        ],
+        [
+         -77.039,
+         38.84
+        ],
+        [
+         -77.03906,
+         38.83801
+        ],
+        [
+         -77.03975,
+         38.81515
+        ],
+        [
+         -77.04044,
+         38.79229
+        ],
+        [
+         -77.0405,
+         38.7903
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Amendment needed?",
+      "at": [
+       -77.0,
+       38.93
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "amendment"
+     },
+     {
+      "text": "Maryland",
+      "at": [
+       -76.97,
+       38.985
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Virginia",
+      "at": [
+       -77.2,
+       38.81
+      ],
+      "style": "region",
+      "lit": true
+     }
+    ],
+    "source": "Senate Republican Policy Committee, 19 Apr 2021"
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "amendment",
+      "expr": "thinking"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "Some say Maryland must agree, because the land was once Maryland's. Supporters answer that no part of D.C. is in Maryland today.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -80.6,
+      37.2,
+      -74.6,
+      40.4
+     ],
+     "pad": 0.0,
+     "t": 1.6,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -80.6,
+      37.2,
+      -74.6,
+      40.4
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "labels": [
+     {
+      "text": "Maryland",
+      "at": [
+       -76.75,
+       39.35
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "maryland"
+     },
+     {
+      "text": "Washington, D.C.",
+      "at": [
+       -77.03,
+       38.9
+      ],
+      "style": "city",
+      "anchor": "w",
+      "lit": true
+     },
+     {
+      "text": "Consent?",
+      "at": [
+       -76.45,
+       38.85
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "agree"
+     }
+    ],
+    "source": "CRS R47101"
+   },
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "supporters",
+      "expr": "neutral"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "Then there's the {23rd|twenty-third} Amendment, which gives the district {3|three} electoral votes. Shrink the district, critics say, and the first family would effectively get them.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -77.12,
+      38.845,
+      -76.95,
+      38.94
+     ],
+     "pad": 0.04,
+     "t": 1.6,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -77.12,
+      38.845,
+      -76.95,
+      38.94
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.052,
+         38.8875
+        ],
+        [
+         -77.0514,
+         38.88798
+        ],
+        [
+         -77.0445,
+         38.8935
+        ],
+        [
+         -77.0376,
+         38.89902
+        ],
+        [
+         -77.037,
+         38.8995
+        ],
+        [
+         -77.03588,
+         38.89926
+        ],
+        [
+         -77.023,
+         38.8965
+        ],
+        [
+         -77.01012,
+         38.89374
+        ],
+        [
+         -77.009,
+         38.8935
+        ],
+        [
+         -77.0088,
+         38.8932
+        ],
+        [
+         -77.0065,
+         38.88975
+        ],
+        [
+         -77.0042,
+         38.8863
+        ],
+        [
+         -77.004,
+         38.886
+        ],
+        [
+         -77.00504,
+         38.8858
+        ],
+        [
+         -77.017,
+         38.8835
+        ],
+        [
+         -77.02896,
+         38.8812
+        ],
+        [
+         -77.03,
+         38.881
+        ],
+        [
+         -77.03088,
+         38.88126
+        ],
+        [
+         -77.041,
+         38.88425
+        ],
+        [
+         -77.05112,
+         38.88724
+        ],
+        [
+         -77.052,
+         38.8875
+        ]
+       ],
+       "cue": "shrink",
+       "dur": 1.4
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "3 electoral votes",
+      "at": [
+       -77.03,
+       38.906
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "electoral"
+     },
+     {
+      "text": "White House",
+      "at": [
+       -77.0365,
+       38.8977
+      ],
+      "style": "city",
+      "anchor": "e",
+      "cue": "family"
+     }
+    ],
+    "source": "US Constitution, 23rd Amendment; Senate RPC (2021)"
+   },
+   "pin": {
+    "expr": "surprised",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "family",
+      "needle": "spin"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "Another idea: give the homes back to Maryland, the way the Virginia side went back in {1846|eighteen forty-six}.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.04,
+     "t": 1.6,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.03525,
+         38.7944
+        ],
+        [
+         -76.9749,
+         38.8416
+        ],
+        [
+         -76.91455,
+         38.8888
+        ],
+        [
+         -76.9093,
+         38.8929
+        ],
+        [
+         -76.91457,
+         38.897
+        ],
+        [
+         -76.97515,
+         38.9442
+        ],
+        [
+         -77.03573,
+         38.9914
+        ],
+        [
+         -77.041,
+         38.9955
+        ],
+        [
+         -77.04412,
+         38.99306
+        ],
+        [
+         -77.08,
+         38.96505
+        ],
+        [
+         -77.11588,
+         38.93704
+        ],
+        [
+         -77.119,
+         38.9346
+        ],
+        [
+         -77.11824,
+         38.93406
+        ],
+        [
+         -77.1095,
+         38.9278
+        ],
+        [
+         -77.10076,
+         38.92154
+        ],
+        [
+         -77.1,
+         38.921
+        ],
+        [
+         -77.09872,
+         38.92016
+        ],
+        [
+         -77.084,
+         38.9105
+        ],
+        [
+         -77.06928,
+         38.90084
+        ],
+        [
+         -77.068,
+         38.9
+        ],
+        [
+         -77.06716,
+         38.89892
+        ],
+        [
+         -77.0575,
+         38.8865
+        ],
+        [
+         -77.04784,
+         38.87408
+        ],
+        [
+         -77.047,
+         38.873
+        ],
+        [
+         -77.04668,
+         38.87168
+        ],
+        [
+         -77.043,
+         38.8565
+        ],
+        [
+         -77.03932,
+         38.84132
+        ],
+        [
+         -77.039,
+         38.84
+        ],
+        [
+         -77.03906,
+         38.83801
+        ],
+        [
+         -77.03975,
+         38.81515
+        ],
+        [
+         -77.04044,
+         38.79229
+        ],
+        [
+         -77.0405,
+         38.7903
+        ]
+       ],
+       "cue": "maryland",
+       "dur": 1.8
+      },
+      {
+       "via": [
+        [
+         -77.1723,
+         38.893
+        ],
+        [
+         -77.16703,
+         38.88889
+        ],
+        [
+         -77.1064,
+         38.84165
+        ],
+        [
+         -77.04577,
+         38.79441
+        ],
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.04044,
+         38.79229
+        ],
+        [
+         -77.03975,
+         38.81515
+        ],
+        [
+         -77.03906,
+         38.83801
+        ],
+        [
+         -77.039,
+         38.84
+        ],
+        [
+         -77.03932,
+         38.84132
+        ],
+        [
+         -77.043,
+         38.8565
+        ],
+        [
+         -77.04668,
+         38.87168
+        ],
+        [
+         -77.047,
+         38.873
+        ],
+        [
+         -77.04784,
+         38.87408
+        ],
+        [
+         -77.0575,
+         38.8865
+        ],
+        [
+         -77.06716,
+         38.89892
+        ],
+        [
+         -77.068,
+         38.9
+        ],
+        [
+         -77.06928,
+         38.90084
+        ],
+        [
+         -77.084,
+         38.9105
+        ],
+        [
+         -77.09872,
+         38.92016
+        ],
+        [
+         -77.1,
+         38.921
+        ],
+        [
+         -77.10076,
+         38.92154
+        ],
+        [
+         -77.1095,
+         38.9278
+        ],
+        [
+         -77.11824,
+         38.93406
+        ],
+        [
+         -77.119,
+         38.9346
+        ],
+        [
+         -77.12113,
+         38.93294
+        ],
+        [
+         -77.14565,
+         38.9138
+        ],
+        [
+         -77.17017,
+         38.89466
+        ],
+        [
+         -77.1723,
+         38.893
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "To Maryland?",
+      "at": [
+       -77.0,
+       38.93
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "maryland"
+     },
+     {
+      "text": "1846",
+      "at": [
+       -77.12,
+       38.85
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "1846"
+     }
+    ],
+    "source": "CRS R47101"
+   },
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "1846",
+      "expr": "neutral"
+     }
+    ]
+   }
+  },
+  {
+   "type": "pin",
+   "narration": "Politics hangs over all of it. In {2020|twenty twenty}, D.C. gave Joe Biden {93%|ninety-three percent} of its vote.",
+   "cam": [
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.0,
+     "t": 0,
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut",
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    }
+   ],
+   "data": {},
+   "pin": {
+    "expr": "worried",
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "93%",
+      "expr": "surprised"
+     }
+    ]
+   },
+   "blur": [
+    {
+     "t": 0,
+     "b": 9
+    }
+   ]
+  },
+  {
+   "type": "map",
+   "chapter": "So why isn't it a state?",
+   "narration": "So D.C. isn't a state because the Constitution made it Congress's district, and every bill to change that has stopped short of becoming law.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": 0.02,
+     "t": 1.6,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -77.27,
+      38.765,
+      -76.88,
+      39.02
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -77.0405,
+         38.7903
+        ],
+        [
+         -77.03525,
+         38.7944
+        ],
+        [
+         -76.9749,
+         38.8416
+        ],
+        [
+         -76.91455,
+         38.8888
+        ],
+        [
+         -76.9093,
+         38.8929
+        ],
+        [
+         -76.91457,
+         38.897
+        ],
+        [
+         -76.97515,
+         38.9442
+        ],
+        [
+         -77.03573,
+         38.9914
+        ],
+        [
+         -77.041,
+         38.9955
+        ],
+        [
+         -77.04412,
+         38.99306
+        ],
+        [
+         -77.08,
+         38.96505
+        ],
+        [
+         -77.11588,
+         38.93704
+        ],
+        [
+         -77.119,
+         38.9346
+        ],
+        [
+         -77.11824,
+         38.93406
+        ],
+        [
+         -77.1095,
+         38.9278
+        ],
+        [
+         -77.10076,
+         38.92154
+        ],
+        [
+         -77.1,
+         38.921
+        ],
+        [
+         -77.09872,
+         38.92016
+        ],
+        [
+         -77.084,
+         38.9105
+        ],
+        [
+         -77.06928,
+         38.90084
+        ],
+        [
+         -77.068,
+         38.9
+        ],
+        [
+         -77.06716,
+         38.89892
+        ],
+        [
+         -77.0575,
+         38.8865
+        ],
+        [
+         -77.04784,
+         38.87408
+        ],
+        [
+         -77.047,
+         38.873
+        ],
+        [
+         -77.04668,
+         38.87168
+        ],
+        [
+         -77.043,
+         38.8565
+        ],
+        [
+         -77.03932,
+         38.84132
+        ],
+        [
+         -77.039,
+         38.84
+        ],
+        [
+         -77.03906,
+         38.83801
+        ],
+        [
+         -77.03975,
+         38.81515
+        ],
+        [
+         -77.04044,
+         38.79229
+        ],
+        [
+         -77.0405,
+         38.7903
+        ]
+       ],
+       "cue": "district",
+       "dur": 1.8
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Congress's district",
+      "at": [
+       -77.0,
+       38.93
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "district"
+     },
+     {
+      "text": "Maryland",
+      "at": [
+       -76.97,
+       38.985
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Virginia",
+      "at": [
+       -77.2,
+       38.81
+      ],
+      "style": "region",
+      "lit": true
+     }
+    ]
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "law",
+      "expr": "thinking"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "Until that changes, more people than Wyoming or Vermont live in a place the Constitution calls a district, not a state.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": "us48",
+     "pad": 0.02,
+     "t": 1.8,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": "us48",
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "labels": [
+     {
+      "text": "Washington, D.C.",
+      "at": [
+       -77.03,
+       38.9
+      ],
+      "style": "callout",
+      "anchor": "w",
+      "cue": "place"
+     },
+     {
+      "text": "Wyoming",
+      "at": [
+       -107.5,
+       43.0
+      ],
+      "style": "city",
+      "anchor": "c",
+      "cue": "wyoming"
+     },
+     {
+      "text": "Vermont",
+      "at": [
+       -72.7,
+       44.0
+      ],
+      "style": "city",
+      "anchor": "w",
+      "cue": "vermont"
+     }
+    ]
+   },
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "place",
+      "point": [
+       -77.03,
+       38.9
+      ],
+      "hold": 0.8
+     },
+     {
+      "cue": "state.",
+      "expr": "neutral"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "narration": "There's a new map every other day. Pick one, and I'll see you there.",
+   "min_duration": 7.0,
+   "cam": [
+    {
+     "fit": "us48",
+     "pad": 0.3,
+     "t": 0
+    },
+    {
+     "fit": "us48",
+     "pad": 0.24,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "blur": [
+    {
+     "t": 0,
+     "b": 4
+    }
+   ],
+   "data": {
+    "tagline": "The US and Canada, explained on the map",
+    "slot": "WATCH NEXT",
+    "next": "A new map every other day"
+   },
+   "pin": {
+    "expr": "happy",
+    "acts": [
+     {
+      "t": 0.4,
+      "hop": true
+     },
+     {
+      "t": 2.2,
+      "point": {
+       "deg": 70
+      },
+      "hold": 1.6
+     }
+    ]
+   }
+  }
+ ]
+}
