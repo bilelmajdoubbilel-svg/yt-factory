@@ -263,7 +263,7 @@
   {
    "type": "cta",
    "world": "street:COFFEE",
-   "narration": "If you like seeing the receipts behind everyday prices, subscribe. New ones every Tuesday and Friday.",
+   "narration": "If you like seeing the receipts behind everyday prices, subscribe. New ones every other day.",
    "data": {
     "cue": "subscribe"
    }

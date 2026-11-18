@@ -25,6 +25,11 @@
   "date": "2026-11-19"
  },
  {
+  "script": "content/history/northwest-angle/long.json",
+  "kind": "long",
+  "date": "2026-11-20"
+ },
+ {
   "script": "content/history/canada-empty/canada-s5-farmland.json",
   "kind": "short",
   "date": "2026-11-20"
@@ -48,11 +53,6 @@
   "script": "content/history/northwest-angle/mm-nwangle-s2-pointroberts.json",
   "kind": "short",
   "date": "2026-11-24"
- },
- {
-  "script": "content/history/northwest-angle/long.json",
-  "kind": "long",
-  "date": "2026-11-25"
  },
  {
   "script": "content/history/northwest-angle/mm-nwangle-s3-wrongmap.json",

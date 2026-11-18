@@ -18,12 +18,19 @@
  "music_dir": "music/money",
  "music_volume": 0.13,
  "schedule": {
+  "long_every_days": 2,
+  "long_anchor": "2026-11-19",
+  "shorts_per_day": 1,
   "long_days": [
+   "Mon",
    "Tue",
-   "Fri"
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat",
+   "Sun"
   ],
-  "long_per_week": 2,
-  "shorts_per_day": 1
+  "note": "Owner's OK in chat, 17 Nov 2026: a Short every day and a long video every 2 days on every channel. Long dates = long_anchor + 2n days. long_days is only for the Gemini fallback writer (write.py)."
  },
  "category_id": "27",
  "default_tags": [

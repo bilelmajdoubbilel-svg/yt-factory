@@ -25,19 +25,24 @@
   "date": "2026-11-20"
  },
  {
+  "script": "content/hidden/power-grid/long.json",
+  "kind": "long",
+  "date": "2026-11-21"
+ },
+ {
   "script": "content/hidden/power-grid/grid-s6-canada.json",
   "kind": "short",
   "date": "2026-11-21"
  },
  {
-  "script": "content/hidden/power-grid/long.json",
-  "kind": "long",
-  "date": "2026-11-22"
- },
- {
   "script": "content/hidden/power-grid/grid-s7-trees.json",
   "kind": "short",
   "date": "2026-11-22"
+ },
+ {
+  "script": "content/hidden/sewer/long.json",
+  "kind": "long",
+  "date": "2026-11-23"
  },
  {
   "script": "content/hidden/sewer/sewer-s1-rain.json",
@@ -48,6 +53,11 @@
   "script": "content/hidden/sewer/sewer-s2-wipes.json",
   "kind": "short",
   "date": "2026-11-24"
+ },
+ {
+  "script": "content/hidden/recycling/long.json",
+  "kind": "long",
+  "date": "2026-11-25"
  },
  {
   "script": "content/hidden/sewer/sewer-s3-microbes.json",
@@ -68,11 +78,6 @@
   "script": "content/hidden/sewer/sewer-s6-gravity.json",
   "kind": "short",
   "date": "2026-11-28"
- },
- {
-  "script": "content/hidden/sewer/long.json",
-  "kind": "long",
-  "date": "2026-11-29"
  },
  {
   "script": "content/hidden/sewer/sewer-s7-hours.json",
@@ -108,11 +113,6 @@
   "script": "content/hidden/recycling/recy-s6-canada.json",
   "kind": "short",
   "date": "2026-12-05"
- },
- {
-  "script": "content/hidden/recycling/long.json",
-  "kind": "long",
-  "date": "2026-12-06"
  },
  {
   "script": "content/hidden/recycling/recy-s7-bales.json",
