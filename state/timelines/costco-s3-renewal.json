@@ -1,0 +1,29 @@
+{
+ "total": 15.92,
+ "scenes": [
+  {
+   "id": "s01",
+   "type": "dots",
+   "start": 0.0,
+   "duration": 5.442
+  },
+  {
+   "id": "s02",
+   "type": "statement",
+   "start": 5.442,
+   "duration": 4.327
+  },
+  {
+   "id": "s03",
+   "type": "flow",
+   "start": 9.769,
+   "duration": 3.7
+  },
+  {
+   "id": "s04",
+   "type": "end",
+   "start": 13.469,
+   "duration": 2.45
+  }
+ ]
+}

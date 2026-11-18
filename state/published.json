@@ -86,5 +86,21 @@
   "video_id": "pXH3Z7-jWhE",
   "date": "2026-11-18",
   "at": "2026-11-17T21:41:09+00:00"
+ },
+ {
+  "id": "delta-amex",
+  "channel": "money",
+  "kind": "long",
+  "video_id": "lE2-TwQ7vfM",
+  "date": "2026-11-19",
+  "at": "2026-11-18T20:51:33+00:00"
+ },
+ {
+  "id": "costco-s3-renewal",
+  "channel": "money",
+  "kind": "short",
+  "video_id": "FW_mXCL0WNk",
+  "date": "2026-11-19",
+  "at": "2026-11-18T20:53:17+00:00"
  }
 ]
