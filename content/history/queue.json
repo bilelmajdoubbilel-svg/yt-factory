@@ -50,6 +50,11 @@
   "date": "2026-11-23"
  },
  {
+  "script": "content/history/toledo-war/long.json",
+  "kind": "long",
+  "date": "2026-11-24"
+ },
+ {
   "script": "content/history/northwest-angle/mm-nwangle-s2-pointroberts.json",
   "kind": "short",
   "date": "2026-11-24"

@@ -1,0 +1,5186 @@
+{
+ "format": "long",
+ "channel": "history",
+ "style": "mapminutes",
+ "voice": "bm_george",
+ "speed": 1.1,
+ "projection": "us",
+ "id": "mm-toledo",
+ "title": "Why Michigan Got the Upper Peninsula: The Toledo War",
+ "summary": "A 1787 line drawn from maps that put Lake Michigan too far north left Ohio and Michigan both claiming the 468-square-mile Toledo Strip. Congress gave the strip to Ohio and paid Michigan with most of the Upper Peninsula, a prize Michigan first voted down.",
+ "tags": [
+  "toledo war",
+  "upper peninsula",
+  "michigan",
+  "ohio",
+  "toledo strip",
+  "michigan history",
+  "why does michigan have the upper peninsula",
+  "map minutes"
+ ],
+ "intro_chapter": "Michigan's prize for losing",
+ "thumbnail": {
+  "words": [
+   "LOSER'S",
+   "PRIZE"
+  ],
+  "expr": "surprised",
+  "cam": {
+   "fit": [
+    -90.8,
+    44.2,
+    -83.2,
+    47.9
+   ],
+   "pad": -0.02
+  },
+  "layers": {
+   "parallel49": false
+  },
+  "callout": {
+   "at": [
+    -87.4,
+    46.3
+   ],
+   "arrow_from": [
+    880,
+    420
+   ],
+   "bend": 40
+  },
+  "ax": 700,
+  "ay": 420,
+  "fw": 1050,
+  "pin_x": 200,
+  "pin_y": 705,
+  "pin_r": 160,
+  "words_top": 40,
+  "words_right": 50,
+  "words_fs": 130,
+  "needle": 120,
+  "lean": 6
+ },
+ "sources": [
+  "Northwest Ordinance, 13 Jul 1787, Article 5: Congress may form one or two States 'north of an east and west line drawn through the southerly bend or extreme of Lake Michigan' (Avalon Project, Yale Law School): https://avalon.law.yale.edu/18th_century/nworder.asp",
+  "Michigan Dept. of Military and Veterans Affairs, The Toledo War: the 1787 line from the southern tip of Lake Michigan; maps showed it meeting Lake Erie north of the Maumee River; William Harris survey (1817) and John A. Fulton survey; the strip 'a total of 468 square miles', 8 miles apart at Lake Erie and 5 at the Indiana border; Gov. Stevens T. Mason; Gov. Robert Lucas turned the region into a county named after himself; Ohio budget $300,000, Michigan $315,000; Michigan militia captured nine surveyors; Two Stickney stabbed a Michigan sheriff in a tavern brawl; Michigan gained 'the western three-quarters of the upper peninsula as compensation', '9,000 square miles of the most valuable timber, iron, and copper country in America': https://www.michigan.gov/dmva/about/history/military-events/highlights/the-toledo-war",
+  "Michigan State University, Geography of Michigan, The Toledo War: maps showed Lake Michigan 'much farther north than it actually is'; Harris (1817) ran the Ohio constitution's line, not due east; Fulton (1818) ran the ordinance line due east, leaving the Maumee's outlet in Michigan; strip of 468 square miles; Ohio had two senators and nineteen representatives, Michigan one non-voting delegate; no one was killed; Ohioan Two Stickney stabbed a Michigan sheriff; signed by President Jackson on June 15; the Detroit Free Press called the Upper Peninsula 'a region of perpetual snows'; opponents dubbed the second convention the 'Frostbitten Convention'; the Upper Peninsula rich in lumber, copper and iron ore: https://project.geo.msu.edu/geogmich/toledo_war.html",
+  "Michigan Legislature, Michigan Manual 2021-2022, pp. 20-21: in compensation Congress offered 9,000 square miles in what is now the Upper Peninsula; the first convention at Ann Arbor (26-30 Sep 1836) rejected the compromise 28-21; the second ('Frost-Bitten') convention met at Ann Arbor on 14-15 Dec 1836 and assented; Act of June 15, 1836 (5 Stat. 49): https://www.legislature.mi.gov/documents/2021-2022/michiganmanual/2021-MM-P0020-P0021.pdf",
+  "An act to admit the State of Michigan into the Union (5 Stat. 144): recites the Act of June 15, 1836 establishing the northern boundary of Ohio and the convention's assent of 15 Dec 1836: https://www.govinfo.gov/link/statute/5/144",
+  "Derived: 9,000 / 468 = about 19 times the land (from the Michigan Manual and DMVA figures above)",
+  "Map data: Natural Earth (public domain) https://www.naturalearthdata.com and US Census Bureau cartographic boundary files (public domain) https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html; the 1787, Harris, Fulton and 'old maps' lines and the strip are drawn schematically"
+ ],
+ "score": [
+  {
+   "scene": 0,
+   "mood": "wonder"
+  },
+  {
+   "scene": 5,
+   "mood": "explore"
+  },
+  {
+   "scene": 12,
+   "mood": "tension"
+  },
+  {
+   "scene": 18,
+   "mood": "explore"
+  },
+  {
+   "scene": 25,
+   "mood": "payoff"
+  }
+ ],
+ "scenes": [
+  {
+   "type": "map",
+   "narration": "Michigan once went to war with Ohio, and lost. Its prize for losing was this.",
+   "cam": [
+    {
+     "fit": [
+      -91.0,
+      41.0,
+      -81.6,
+      48.2
+     ],
+     "pad": 0.04,
+     "t": 0
+    },
+    {
+     "fit": [
+      -91.0,
+      41.0,
+      -81.6,
+      48.2
+     ],
+     "pad": -0.02,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -90.348,
+         46.6
+        ],
+        [
+         -88.959,
+         47.009
+        ],
+        [
+         -88.18,
+         47.458
+        ],
+        [
+         -87.8,
+         47.473
+        ],
+        [
+         -87.714,
+         47.401
+        ],
+        [
+         -87.958,
+         47.387
+        ],
+        [
+         -88.231,
+         47.199
+        ],
+        [
+         -88.442,
+         46.972
+        ],
+        [
+         -88.496,
+         46.757
+        ],
+        [
+         -88.144,
+         46.966
+        ],
+        [
+         -88.284,
+         46.832
+        ],
+        [
+         -88.083,
+         46.92
+        ],
+        [
+         -87.818,
+         46.891
+        ],
+        [
+         -87.595,
+         46.783
+        ],
+        [
+         -87.351,
+         46.501
+        ],
+        [
+         -87.017,
+         46.533
+        ],
+        [
+         -86.816,
+         46.438
+        ],
+        [
+         -86.698,
+         46.439
+        ],
+        [
+         -86.709,
+         46.544
+        ],
+        [
+         -86.587,
+         46.463
+        ],
+        [
+         -86.138,
+         46.673
+        ],
+        [
+         -84.95,
+         46.77
+        ],
+        [
+         -85.025,
+         46.483
+        ],
+        [
+         -84.63,
+         46.485
+        ],
+        [
+         -84.595,
+         46.415
+        ],
+        [
+         -84.128,
+         46.53
+        ],
+        [
+         -84.117,
+         46.234
+        ],
+        [
+         -84.25,
+         46.176
+        ],
+        [
+         -83.873,
+         45.993
+        ],
+        [
+         -83.765,
+         46.018
+        ],
+        [
+         -83.823,
+         46.104
+        ],
+        [
+         -83.625,
+         46.102
+        ],
+        [
+         -83.475,
+         45.985
+        ],
+        [
+         -83.561,
+         45.912
+        ],
+        [
+         -84.376,
+         45.932
+        ],
+        [
+         -84.656,
+         46.052
+        ],
+        [
+         -84.745,
+         45.836
+        ],
+        [
+         -85.015,
+         46.011
+        ],
+        [
+         -85.513,
+         46.094
+        ],
+        [
+         -85.696,
+         45.96
+        ],
+        [
+         -86.278,
+         45.942
+        ],
+        [
+         -86.615,
+         45.607
+        ],
+        [
+         -86.719,
+         45.668
+        ],
+        [
+         -86.54,
+         45.89
+        ],
+        [
+         -86.784,
+         45.855
+        ],
+        [
+         -86.964,
+         45.673
+        ],
+        [
+         -87.017,
+         45.838
+        ],
+        [
+         -87.592,
+         45.095
+        ],
+        [
+         -87.742,
+         45.197
+        ],
+        [
+         -87.656,
+         45.369
+        ],
+        [
+         -87.875,
+         45.381
+        ],
+        [
+         -87.782,
+         45.674
+        ],
+        [
+         -88.137,
+         45.819
+        ],
+        [
+         -88.101,
+         45.922
+        ],
+        [
+         -90.122,
+         46.337
+        ],
+        [
+         -90.219,
+         46.503
+        ],
+        [
+         -90.395,
+         46.533
+        ],
+        [
+         -90.348,
+         46.6
+        ]
+       ],
+       "cue": "prize",
+       "dur": 2.6
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Michigan",
+      "at": [
+       -84.75,
+       43.6
+      ],
+      "style": "region",
+      "cue": "michigan"
+     },
+     {
+      "text": "Ohio",
+      "at": [
+       -82.6,
+       41.15
+      ],
+      "style": "region",
+      "cue": "ohio"
+     },
+     {
+      "text": "Upper Peninsula",
+      "at": [
+       -87.1,
+       46.75
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "prize"
+     }
+    ]
+   },
+   "pin": {
+    "expr": "surprised",
+    "enter": "drop",
+    "acts": [
+     {
+      "cue": "lost",
+      "expr": "worried"
+     },
+     {
+      "cue": "this",
+      "expr": "surprised",
+      "point": [
+       -87.1,
+       46.4
+      ],
+      "hold": 0
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "The Upper Peninsula: about {9,000|nine thousand} square miles that Michigan said it didn't want.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -90.7,
+      45.0,
+      -83.2,
+      47.7
+     ],
+     "pad": 0.0,
+     "t": 2.0,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -90.7,
+      45.0,
+      -83.2,
+      47.7
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -90.348,
+         46.6
+        ],
+        [
+         -88.959,
+         47.009
+        ],
+        [
+         -88.18,
+         47.458
+        ],
+        [
+         -87.8,
+         47.473
+        ],
+        [
+         -87.714,
+         47.401
+        ],
+        [
+         -87.958,
+         47.387
+        ],
+        [
+         -88.231,
+         47.199
+        ],
+        [
+         -88.442,
+         46.972
+        ],
+        [
+         -88.496,
+         46.757
+        ],
+        [
+         -88.144,
+         46.966
+        ],
+        [
+         -88.284,
+         46.832
+        ],
+        [
+         -88.083,
+         46.92
+        ],
+        [
+         -87.818,
+         46.891
+        ],
+        [
+         -87.595,
+         46.783
+        ],
+        [
+         -87.351,
+         46.501
+        ],
+        [
+         -87.017,
+         46.533
+        ],
+        [
+         -86.816,
+         46.438
+        ],
+        [
+         -86.698,
+         46.439
+        ],
+        [
+         -86.709,
+         46.544
+        ],
+        [
+         -86.587,
+         46.463
+        ],
+        [
+         -86.138,
+         46.673
+        ],
+        [
+         -84.95,
+         46.77
+        ],
+        [
+         -85.025,
+         46.483
+        ],
+        [
+         -84.63,
+         46.485
+        ],
+        [
+         -84.595,
+         46.415
+        ],
+        [
+         -84.128,
+         46.53
+        ],
+        [
+         -84.117,
+         46.234
+        ],
+        [
+         -84.25,
+         46.176
+        ],
+        [
+         -83.873,
+         45.993
+        ],
+        [
+         -83.765,
+         46.018
+        ],
+        [
+         -83.823,
+         46.104
+        ],
+        [
+         -83.625,
+         46.102
+        ],
+        [
+         -83.475,
+         45.985
+        ],
+        [
+         -83.561,
+         45.912
+        ],
+        [
+         -84.376,
+         45.932
+        ],
+        [
+         -84.656,
+         46.052
+        ],
+        [
+         -84.745,
+         45.836
+        ],
+        [
+         -85.015,
+         46.011
+        ],
+        [
+         -85.513,
+         46.094
+        ],
+        [
+         -85.696,
+         45.96
+        ],
+        [
+         -86.278,
+         45.942
+        ],
+        [
+         -86.615,
+         45.607
+        ],
+        [
+         -86.719,
+         45.668
+        ],
+        [
+         -86.54,
+         45.89
+        ],
+        [
+         -86.784,
+         45.855
+        ],
+        [
+         -86.964,
+         45.673
+        ],
+        [
+         -87.017,
+         45.838
+        ],
+        [
+         -87.592,
+         45.095
+        ],
+        [
+         -87.742,
+         45.197
+        ],
+        [
+         -87.656,
+         45.369
+        ],
+        [
+         -87.875,
+         45.381
+        ],
+        [
+         -87.782,
+         45.674
+        ],
+        [
+         -88.137,
+         45.819
+        ],
+        [
+         -88.101,
+         45.922
+        ],
+        [
+         -90.122,
+         46.337
+        ],
+        [
+         -90.219,
+         46.503
+        ],
+        [
+         -90.395,
+         46.533
+        ],
+        [
+         -90.348,
+         46.6
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "≈9,000 sq mi",
+      "at": [
+       -86.9,
+       46.2
+      ],
+      "style": "measure",
+      "anchor": "c",
+      "cue": "9,000"
+     },
+     {
+      "text": "Lake Superior",
+      "at": [
+       -85.9,
+       47.5
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Upper Peninsula",
+      "at": [
+       -87.1,
+       46.75
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "lit": true
+     },
+     {
+      "text": "Wisconsin",
+      "at": [
+       -89.6,
+       45.4
+      ],
+      "style": "region",
+      "cue": "michigan"
+     }
+    ],
+    "source": "Michigan Legislature, Michigan Manual"
+   },
+   "pin": {
+    "expr": "happy",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "didn't",
+      "expr": "worried"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "So why is this piece of Michigan attached to Wisconsin? It started with a bad map, and a fight over one city: Toledo.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -90.7,
+      45.0,
+      -83.2,
+      47.7
+     ],
+     "pad": -0.04,
+     "t": 2.6,
+     "ease": "sine.inOut"
+    },
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": 0.0,
+     "t": 5.2,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -90.348,
+         46.6
+        ],
+        [
+         -88.959,
+         47.009
+        ],
+        [
+         -88.18,
+         47.458
+        ],
+        [
+         -87.8,
+         47.473
+        ],
+        [
+         -87.714,
+         47.401
+        ],
+        [
+         -87.958,
+         47.387
+        ],
+        [
+         -88.231,
+         47.199
+        ],
+        [
+         -88.442,
+         46.972
+        ],
+        [
+         -88.496,
+         46.757
+        ],
+        [
+         -88.144,
+         46.966
+        ],
+        [
+         -88.284,
+         46.832
+        ],
+        [
+         -88.083,
+         46.92
+        ],
+        [
+         -87.818,
+         46.891
+        ],
+        [
+         -87.595,
+         46.783
+        ],
+        [
+         -87.351,
+         46.501
+        ],
+        [
+         -87.017,
+         46.533
+        ],
+        [
+         -86.816,
+         46.438
+        ],
+        [
+         -86.698,
+         46.439
+        ],
+        [
+         -86.709,
+         46.544
+        ],
+        [
+         -86.587,
+         46.463
+        ],
+        [
+         -86.138,
+         46.673
+        ],
+        [
+         -84.95,
+         46.77
+        ],
+        [
+         -85.025,
+         46.483
+        ],
+        [
+         -84.63,
+         46.485
+        ],
+        [
+         -84.595,
+         46.415
+        ],
+        [
+         -84.128,
+         46.53
+        ],
+        [
+         -84.117,
+         46.234
+        ],
+        [
+         -84.25,
+         46.176
+        ],
+        [
+         -83.873,
+         45.993
+        ],
+        [
+         -83.765,
+         46.018
+        ],
+        [
+         -83.823,
+         46.104
+        ],
+        [
+         -83.625,
+         46.102
+        ],
+        [
+         -83.475,
+         45.985
+        ],
+        [
+         -83.561,
+         45.912
+        ],
+        [
+         -84.376,
+         45.932
+        ],
+        [
+         -84.656,
+         46.052
+        ],
+        [
+         -84.745,
+         45.836
+        ],
+        [
+         -85.015,
+         46.011
+        ],
+        [
+         -85.513,
+         46.094
+        ],
+        [
+         -85.696,
+         45.96
+        ],
+        [
+         -86.278,
+         45.942
+        ],
+        [
+         -86.615,
+         45.607
+        ],
+        [
+         -86.719,
+         45.668
+        ],
+        [
+         -86.54,
+         45.89
+        ],
+        [
+         -86.784,
+         45.855
+        ],
+        [
+         -86.964,
+         45.673
+        ],
+        [
+         -87.017,
+         45.838
+        ],
+        [
+         -87.592,
+         45.095
+        ],
+        [
+         -87.742,
+         45.197
+        ],
+        [
+         -87.656,
+         45.369
+        ],
+        [
+         -87.875,
+         45.381
+        ],
+        [
+         -87.782,
+         45.674
+        ],
+        [
+         -88.137,
+         45.819
+        ],
+        [
+         -88.101,
+         45.922
+        ],
+        [
+         -90.122,
+         46.337
+        ],
+        [
+         -90.219,
+         46.503
+        ],
+        [
+         -90.395,
+         46.533
+        ],
+        [
+         -90.348,
+         46.6
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Wisconsin",
+      "at": [
+       -89.6,
+       45.4
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Toledo",
+      "at": [
+       -83.54,
+       41.65
+      ],
+      "style": "city",
+      "cue": "toledo"
+     }
+    ]
+   },
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "toledo",
+      "point": [
+       -83.54,
+       41.65
+      ],
+      "hold": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "type": "pin",
+   "narration": "Both states called out their militias. And when Congress offered a deal, Michigan voted it down.",
+   "cam": [
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": 0.0,
+     "t": 0,
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    },
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut",
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    }
+   },
+   "pin": {
+    "expr": "worried",
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "militias",
+      "needle": "tremble"
+     },
+     {
+      "cue": "down",
+      "expr": "surprised"
+     }
+    ]
+   },
+   "blur": [
+    {
+     "t": 0,
+     "b": 9
+    }
+   ]
+  },
+  {
+   "type": "pin",
+   "narration": "By the end, you'll know how one bad line started a war, and why Michigan may have won by losing.",
+   "cam": [
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": 0.0,
+     "t": 0,
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    },
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut",
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    }
+   ],
+   "data": {},
+   "pin": {
+    "expr": "happy",
+    "acts": [
+     {
+      "t": 0.2,
+      "hop": true
+     },
+     {
+      "cue": "line",
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "losing",
+      "expr": "proud"
+     }
+    ]
+   },
+   "blur": [
+    {
+     "t": 0,
+     "b": 9
+    },
+    {
+     "cue": "losing",
+     "b": 0,
+     "dur": 0.9
+    }
+   ],
+   "rack": true
+  },
+  {
+   "type": "map",
+   "chapter": "A line from a bad map",
+   "narration": "In {1787|seventeen eighty-seven}, the Northwest Ordinance drew a line due east from the southern tip of Lake Michigan.",
+   "cam": [
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": 0.02,
+     "t": 0
+    },
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": -0.02,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -87.22,
+         41.62
+        ],
+        [
+         -83.14,
+         41.62
+        ]
+       ],
+       "cue": "east",
+       "dur": 2.4
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "1787",
+      "at": [
+       -84.6,
+       42.05
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "1787"
+     },
+     {
+      "text": "Lake Michigan",
+      "at": [
+       -87.05,
+       42.35
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Indiana",
+      "at": [
+       -86.3,
+       41.35
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Ohio",
+      "at": [
+       -83.6,
+       41.35
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Michigan",
+      "at": [
+       -85.2,
+       42.15
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Northwest Ordinance",
+      "at": [
+       -85.0,
+       41.5
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "northwest"
+     }
+    ],
+    "source": "Northwest Ordinance, 1787"
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -4
+      ]
+     },
+     {
+      "cue": "tip",
+      "point": [
+       -87.22,
+       41.62
+      ],
+      "hold": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "But the maps of the day put Lake Michigan too far north. On paper, the line met Lake Erie above the {Maumee|maw-mee} River.",
+   "cam": [
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": -0.02,
+     "t": 0
+    },
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -87.2,
+         41.95
+        ],
+        [
+         -83.36,
+         41.95
+        ]
+       ],
+       "cue": "paper",
+       "dur": 2.0
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Lake Michigan",
+      "at": [
+       -87.05,
+       42.35
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Old maps",
+      "at": [
+       -85.3,
+       42.1
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "maps"
+     },
+     {
+      "text": "Indiana",
+      "at": [
+       -86.3,
+       41.35
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Ohio",
+      "at": [
+       -83.6,
+       41.35
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Lake Erie",
+      "at": [
+       -82.75,
+       42.05
+      ],
+      "style": "region",
+      "cue": "erie"
+     },
+     {
+      "text": "Maumee River",
+      "at": [
+       -83.47,
+       41.69
+      ],
+      "style": "city",
+      "anchor": "s",
+      "cue": "maumee"
+     }
+    ]
+   },
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "north",
+      "needle": "waver"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "The real tip is farther south. Run the line due east from there, and the river's mouth, where Toledo stands, falls on Michigan's side.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -85.3,
+      41.42,
+      -82.9,
+      41.98
+     ],
+     "pad": 0.0,
+     "t": 2.4,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -85.3,
+      41.42,
+      -82.9,
+      41.98
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -87.22,
+         41.62
+        ],
+        [
+         -83.14,
+         41.62
+        ]
+       ],
+       "cue": "east",
+       "dur": 2.0
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Toledo",
+      "at": [
+       -83.54,
+       41.65
+      ],
+      "style": "city",
+      "anchor": "w",
+      "cue": "toledo"
+     },
+     {
+      "text": "Michigan",
+      "at": [
+       -84.3,
+       41.88
+      ],
+      "style": "region",
+      "cue": "michigan"
+     },
+     {
+      "text": "Ohio",
+      "at": [
+       -84.3,
+       41.5
+      ],
+      "style": "region",
+      "lit": true
+     }
+    ]
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "michigan",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "Ohio wanted that river mouth. In {1817|eighteen seventeen}, surveyor William Harris ran a line slanting north, to keep it in Ohio.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": 0.0,
+     "t": 1.8,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -87.22,
+         41.62
+        ],
+        [
+         -83.14,
+         41.62
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      },
+      {
+       "via": [
+        [
+         -87.22,
+         41.62
+        ],
+        [
+         -83.453,
+         41.733
+        ]
+       ],
+       "cue": "slanting",
+       "dur": 2.2
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Harris line, 1817",
+      "at": [
+       -85.4,
+       41.9
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "harris"
+     },
+     {
+      "text": "Michigan",
+      "at": [
+       -85.2,
+       42.15
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Indiana",
+      "at": [
+       -86.3,
+       41.35
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Ohio",
+      "at": [
+       -83.6,
+       41.35
+      ],
+      "style": "region",
+      "lit": true
+     }
+    ],
+    "source": "Michigan State University, Geography of Michigan"
+   },
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "ohio.",
+      "dt": 0.2,
+      "expr": "neutral"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "A year later, John Fulton ran it due east, the way the Ordinance said.",
+   "cam": [
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": -0.02,
+     "t": 0
+    },
+    {
+     "fit": [
+      -87.6,
+      41.2,
+      -82.6,
+      42.3
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -87.22,
+         41.62
+        ],
+        [
+         -83.453,
+         41.733
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      },
+      {
+       "via": [
+        [
+         -87.22,
+         41.62
+        ],
+        [
+         -83.14,
+         41.62
+        ]
+       ],
+       "cue": "fulton",
+       "dur": 2.0
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Harris line, 1817",
+      "at": [
+       -85.4,
+       41.9
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "lit": true
+     },
+     {
+      "text": "Fulton line",
+      "at": [
+       -85.4,
+       41.5
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "fulton"
+     },
+     {
+      "text": "Michigan",
+      "at": [
+       -85.2,
+       42.15
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Ohio",
+      "at": [
+       -83.6,
+       41.35
+      ],
+      "style": "region",
+      "lit": true
+     }
+    ]
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -4
+      ]
+     },
+     {
+      "cue": "east",
+      "point": [
+       -83.14,
+       41.62
+      ],
+      "hold": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "Between the two lines: the Toledo Strip. {468|Four hundred sixty-eight} square miles, with Toledo inside.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -85.3,
+      41.42,
+      -82.9,
+      41.98
+     ],
+     "pad": 0.0,
+     "t": 1.6,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -85.3,
+      41.42,
+      -82.9,
+      41.98
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "cue": "strip",
+       "dur": 2.2
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Toledo Strip",
+      "at": [
+       -84.25,
+       41.83
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "strip"
+     },
+     {
+      "text": "468 sq mi",
+      "at": [
+       -84.25,
+       41.52
+      ],
+      "style": "measure",
+      "anchor": "c",
+      "cue": "468"
+     },
+     {
+      "text": "Toledo",
+      "at": [
+       -83.54,
+       41.65
+      ],
+      "style": "city",
+      "anchor": "w",
+      "cue": "inside"
+     }
+    ],
+    "source": "Michigan DMVA; Michigan State University"
+   },
+   "pin": {
+    "expr": "surprised",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "468",
+      "expr": "happy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "pin",
+   "narration": "If you like maps that explain things, subscribe. There's a new map every other day.",
+   "cam": [
+    {
+     "fit": [
+      -85.3,
+      41.42,
+      -82.9,
+      41.98
+     ],
+     "pad": 0.0,
+     "t": 0,
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    },
+    {
+     "fit": [
+      -85.3,
+      41.42,
+      -82.9,
+      41.98
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut",
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    }
+   },
+   "pin": {
+    "expr": "happy",
+    "acts": [
+     {
+      "t": 0.2,
+      "hop": true
+     },
+     {
+      "cue": "every",
+      "point": {
+       "deg": 70
+      },
+      "hold": 1.2
+     }
+    ]
+   },
+   "blur": [
+    {
+     "t": 0,
+     "b": 9
+    }
+   ]
+  },
+  {
+   "type": "map",
+   "chapter": "A war with no deaths",
+   "narration": "Michigan wanted to become a state, strip and all. Its young governor, Stevens T. Mason, would not let it go.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -88.6,
+      39.6,
+      -80.4,
+      45.4
+     ],
+     "pad": 0.0,
+     "t": 2.0,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -88.6,
+      39.6,
+      -80.4,
+      45.4
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Michigan",
+      "at": [
+       -84.75,
+       44.1
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Gov. Mason",
+      "at": [
+       -84.5,
+       42.3
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "mason"
+     },
+     {
+      "text": "Ohio",
+      "at": [
+       -82.7,
+       40.3
+      ],
+      "style": "region",
+      "lit": true
+     }
+    ]
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "mason",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "Ohio's governor, Robert Lucas, made the strip a county, and named it after himself.",
+   "cam": [
+    {
+     "fit": [
+      -88.6,
+      39.6,
+      -80.4,
+      45.4
+     ],
+     "pad": -0.02,
+     "t": 0
+    },
+    {
+     "fit": [
+      -88.6,
+      39.6,
+      -80.4,
+      45.4
+     ],
+     "pad": -0.06,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Gov. Lucas",
+      "at": [
+       -82.7,
+       40.45
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "lucas"
+     },
+     {
+      "text": "Lucas County",
+      "at": [
+       -83.9,
+       41.75
+      ],
+      "style": "tag",
+      "anchor": "n",
+      "cue": "county"
+     },
+     {
+      "text": "Michigan",
+      "at": [
+       -84.75,
+       43.6
+      ],
+      "style": "region",
+      "lit": true
+     }
+    ]
+   },
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "himself",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "Ohio set aside {$300,000|three hundred thousand dollars} for the fight. Michigan: {$315,000|three hundred and fifteen thousand}.",
+   "cam": [
+    {
+     "fit": [
+      -88.6,
+      39.6,
+      -80.4,
+      45.4
+     ],
+     "pad": -0.04,
+     "t": 0
+    },
+    {
+     "fit": [
+      -88.6,
+      39.6,
+      -80.4,
+      45.4
+     ],
+     "pad": -0.07,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "$300,000",
+      "at": [
+       -82.7,
+       40.6
+      ],
+      "style": "measure",
+      "anchor": "c",
+      "cue": "300"
+     },
+     {
+      "text": "$315,000",
+      "at": [
+       -84.7,
+       43.3
+      ],
+      "style": "measure",
+      "anchor": "c",
+      "cue": "315"
+     },
+     {
+      "text": "Ohio",
+      "at": [
+       -82.7,
+       40.05
+      ],
+      "style": "region",
+      "lit": true
+     },
+     {
+      "text": "Michigan",
+      "at": [
+       -84.75,
+       43.85
+      ],
+      "style": "region",
+      "lit": true
+     }
+    ],
+    "source": "Michigan DMVA, The Toledo War"
+   },
+   "pin": {
+    "expr": "worried",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "315",
+      "needle": "spin"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "Michigan's militia even captured {nine|nine} surveyors.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -85.3,
+      41.42,
+      -82.9,
+      41.98
+     ],
+     "pad": 0.0,
+     "t": 1.4,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -85.3,
+      41.42,
+      -82.9,
+      41.98
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      },
+      {
+       "via": [
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -84.2,
+         41.711
+        ]
+       ],
+       "cue": "captured",
+       "dur": 1.0
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "9 surveyors",
+      "at": [
+       -84.2,
+       41.711
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "nine"
+     }
+    ]
+   },
+   "pin": {
+    "expr": "surprised",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "nine",
+      "hop": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "pin",
+   "narration": "And the death toll? Zero. No one was killed.",
+   "cam": [
+    {
+     "fit": [
+      -85.3,
+      41.42,
+      -82.9,
+      41.98
+     ],
+     "pad": 0.0,
+     "t": 0,
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    },
+    {
+     "fit": [
+      -85.3,
+      41.42,
+      -82.9,
+      41.98
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut",
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    }
+   },
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "zero",
+      "expr": "surprised"
+     },
+     {
+      "cue": "killed",
+      "expr": "happy"
+     }
+    ]
+   },
+   "blur": [
+    {
+     "t": 0,
+     "b": 9
+    }
+   ]
+  },
+  {
+   "type": "map",
+   "narration": "What did happen: in a tavern brawl, an Ohioan named Two Stickney stabbed a Michigan sheriff. Yes, his name was Two.",
+   "cam": [
+    {
+     "fit": [
+      -84.4,
+      41.35,
+      -82.9,
+      42.05
+     ],
+     "pad": 0.0,
+     "t": 0
+    },
+    {
+     "fit": [
+      -84.4,
+      41.35,
+      -82.9,
+      42.05
+     ],
+     "pad": -0.06,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Toledo",
+      "at": [
+       -83.54,
+       41.65
+      ],
+      "style": "city",
+      "anchor": "w",
+      "lit": true
+     },
+     {
+      "text": "Two Stickney",
+      "at": [
+       -83.75,
+       41.84
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "stickney"
+     },
+     {
+      "text": "Tavern brawl",
+      "at": [
+       -83.75,
+       41.5
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "tavern"
+     }
+    ]
+   },
+   "pin": {
+    "expr": "worried",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "stabbed",
+      "needle": "tremble"
+     },
+     {
+      "cue": "yes",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "chapter": "The deal Michigan hated",
+   "narration": "In Congress, it wasn't close. Ohio had {2|two} senators and {19|nineteen} representatives. Michigan, not yet a state, had one delegate, with no vote.",
+   "data": {
+    "kicker": "Votes in Congress",
+    "title": "Ohio had the *votes*",
+    "rows": [
+     {
+      "label": "OHIO: 2 SENATE + 19 HOUSE",
+      "value": 21,
+      "suffix": "",
+      "cue": "19",
+      "highlight": true
+     },
+     {
+      "label": "MICHIGAN: VOTING MEMBERS",
+      "value": 0,
+      "suffix": "",
+      "cue": "delegate"
+     }
+    ],
+    "source": "Michigan State University, Geography of Michigan"
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "vote",
+      "expr": "worried"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "On {June 15, 1836|June fifteenth, eighteen thirty-six}, President Jackson signed the deal. Ohio gets the strip. Michigan can be a state, if it agrees.",
+   "cam": [
+    {
+     "fit": [
+      -85.3,
+      41.42,
+      -82.9,
+      41.98
+     ],
+     "pad": 0.0,
+     "t": 0
+    },
+    {
+     "fit": [
+      -85.3,
+      41.42,
+      -82.9,
+      41.98
+     ],
+     "pad": -0.04,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "cue": "gets",
+       "dur": 1.6
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "June 15, 1836",
+      "at": [
+       -84.25,
+       41.9
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "june"
+     },
+     {
+      "text": "To Ohio",
+      "at": [
+       -84.25,
+       41.52
+      ],
+      "style": "measure",
+      "anchor": "c",
+      "cue": "gets"
+     },
+     {
+      "text": "Toledo",
+      "at": [
+       -83.54,
+       41.65
+      ],
+      "style": "city",
+      "anchor": "w",
+      "lit": true
+     }
+    ],
+    "source": "Act of June 15, 1836, ch. 99 (5 Stat. 49)"
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "agrees",
+      "expr": "thinking"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "And in exchange: about {9,000|nine thousand} square miles up north, most of the Upper Peninsula.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -90.7,
+      45.0,
+      -83.2,
+      47.7
+     ],
+     "pad": 0.0,
+     "t": 2.2,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -90.7,
+      45.0,
+      -83.2,
+      47.7
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -90.348,
+         46.6
+        ],
+        [
+         -88.959,
+         47.009
+        ],
+        [
+         -88.18,
+         47.458
+        ],
+        [
+         -87.8,
+         47.473
+        ],
+        [
+         -87.714,
+         47.401
+        ],
+        [
+         -87.958,
+         47.387
+        ],
+        [
+         -88.231,
+         47.199
+        ],
+        [
+         -88.442,
+         46.972
+        ],
+        [
+         -88.496,
+         46.757
+        ],
+        [
+         -88.144,
+         46.966
+        ],
+        [
+         -88.284,
+         46.832
+        ],
+        [
+         -88.083,
+         46.92
+        ],
+        [
+         -87.818,
+         46.891
+        ],
+        [
+         -87.595,
+         46.783
+        ],
+        [
+         -87.351,
+         46.501
+        ],
+        [
+         -87.017,
+         46.533
+        ],
+        [
+         -86.816,
+         46.438
+        ],
+        [
+         -86.698,
+         46.439
+        ],
+        [
+         -86.709,
+         46.544
+        ],
+        [
+         -86.587,
+         46.463
+        ],
+        [
+         -86.138,
+         46.673
+        ],
+        [
+         -84.95,
+         46.77
+        ],
+        [
+         -85.025,
+         46.483
+        ],
+        [
+         -84.63,
+         46.485
+        ],
+        [
+         -84.595,
+         46.415
+        ],
+        [
+         -84.128,
+         46.53
+        ],
+        [
+         -84.117,
+         46.234
+        ],
+        [
+         -84.25,
+         46.176
+        ],
+        [
+         -83.873,
+         45.993
+        ],
+        [
+         -83.765,
+         46.018
+        ],
+        [
+         -83.823,
+         46.104
+        ],
+        [
+         -83.625,
+         46.102
+        ],
+        [
+         -83.475,
+         45.985
+        ],
+        [
+         -83.561,
+         45.912
+        ],
+        [
+         -84.376,
+         45.932
+        ],
+        [
+         -84.656,
+         46.052
+        ],
+        [
+         -84.745,
+         45.836
+        ],
+        [
+         -85.015,
+         46.011
+        ],
+        [
+         -85.513,
+         46.094
+        ],
+        [
+         -85.696,
+         45.96
+        ],
+        [
+         -86.278,
+         45.942
+        ],
+        [
+         -86.615,
+         45.607
+        ],
+        [
+         -86.719,
+         45.668
+        ],
+        [
+         -86.54,
+         45.89
+        ],
+        [
+         -86.784,
+         45.855
+        ],
+        [
+         -86.964,
+         45.673
+        ],
+        [
+         -87.017,
+         45.838
+        ],
+        [
+         -87.592,
+         45.095
+        ],
+        [
+         -87.742,
+         45.197
+        ],
+        [
+         -87.656,
+         45.369
+        ],
+        [
+         -87.875,
+         45.381
+        ],
+        [
+         -87.782,
+         45.674
+        ],
+        [
+         -88.137,
+         45.819
+        ],
+        [
+         -88.101,
+         45.922
+        ],
+        [
+         -90.122,
+         46.337
+        ],
+        [
+         -90.219,
+         46.503
+        ],
+        [
+         -90.395,
+         46.533
+        ],
+        [
+         -90.348,
+         46.6
+        ]
+       ],
+       "cue": "9,000",
+       "dur": 2.6
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "≈9,000 sq mi",
+      "at": [
+       -86.9,
+       46.2
+      ],
+      "style": "measure",
+      "anchor": "c",
+      "cue": "9,000"
+     },
+     {
+      "text": "Upper Peninsula",
+      "at": [
+       -87.1,
+       46.75
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "upper"
+     }
+    ],
+    "source": "Michigan Legislature, Michigan Manual"
+   },
+   "pin": {
+    "expr": "happy",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "upper",
+      "point": [
+       -87.1,
+       46.4
+      ],
+      "hold": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "pin",
+   "narration": "Michigan was not grateful. One Detroit paper called it a region of perpetual snows.",
+   "cam": [
+    {
+     "fit": [
+      -90.7,
+      45.0,
+      -83.2,
+      47.7
+     ],
+     "pad": 0.0,
+     "t": 0,
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    },
+    {
+     "fit": [
+      -90.7,
+      45.0,
+      -83.2,
+      47.7
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut",
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -90.348,
+         46.6
+        ],
+        [
+         -88.959,
+         47.009
+        ],
+        [
+         -88.18,
+         47.458
+        ],
+        [
+         -87.8,
+         47.473
+        ],
+        [
+         -87.714,
+         47.401
+        ],
+        [
+         -87.958,
+         47.387
+        ],
+        [
+         -88.231,
+         47.199
+        ],
+        [
+         -88.442,
+         46.972
+        ],
+        [
+         -88.496,
+         46.757
+        ],
+        [
+         -88.144,
+         46.966
+        ],
+        [
+         -88.284,
+         46.832
+        ],
+        [
+         -88.083,
+         46.92
+        ],
+        [
+         -87.818,
+         46.891
+        ],
+        [
+         -87.595,
+         46.783
+        ],
+        [
+         -87.351,
+         46.501
+        ],
+        [
+         -87.017,
+         46.533
+        ],
+        [
+         -86.816,
+         46.438
+        ],
+        [
+         -86.698,
+         46.439
+        ],
+        [
+         -86.709,
+         46.544
+        ],
+        [
+         -86.587,
+         46.463
+        ],
+        [
+         -86.138,
+         46.673
+        ],
+        [
+         -84.95,
+         46.77
+        ],
+        [
+         -85.025,
+         46.483
+        ],
+        [
+         -84.63,
+         46.485
+        ],
+        [
+         -84.595,
+         46.415
+        ],
+        [
+         -84.128,
+         46.53
+        ],
+        [
+         -84.117,
+         46.234
+        ],
+        [
+         -84.25,
+         46.176
+        ],
+        [
+         -83.873,
+         45.993
+        ],
+        [
+         -83.765,
+         46.018
+        ],
+        [
+         -83.823,
+         46.104
+        ],
+        [
+         -83.625,
+         46.102
+        ],
+        [
+         -83.475,
+         45.985
+        ],
+        [
+         -83.561,
+         45.912
+        ],
+        [
+         -84.376,
+         45.932
+        ],
+        [
+         -84.656,
+         46.052
+        ],
+        [
+         -84.745,
+         45.836
+        ],
+        [
+         -85.015,
+         46.011
+        ],
+        [
+         -85.513,
+         46.094
+        ],
+        [
+         -85.696,
+         45.96
+        ],
+        [
+         -86.278,
+         45.942
+        ],
+        [
+         -86.615,
+         45.607
+        ],
+        [
+         -86.719,
+         45.668
+        ],
+        [
+         -86.54,
+         45.89
+        ],
+        [
+         -86.784,
+         45.855
+        ],
+        [
+         -86.964,
+         45.673
+        ],
+        [
+         -87.017,
+         45.838
+        ],
+        [
+         -87.592,
+         45.095
+        ],
+        [
+         -87.742,
+         45.197
+        ],
+        [
+         -87.656,
+         45.369
+        ],
+        [
+         -87.875,
+         45.381
+        ],
+        [
+         -87.782,
+         45.674
+        ],
+        [
+         -88.137,
+         45.819
+        ],
+        [
+         -88.101,
+         45.922
+        ],
+        [
+         -90.122,
+         46.337
+        ],
+        [
+         -90.219,
+         46.503
+        ],
+        [
+         -90.395,
+         46.533
+        ],
+        [
+         -90.348,
+         46.6
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    }
+   },
+   "pin": {
+    "expr": "worried",
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "snows",
+      "needle": "tremble"
+     }
+    ]
+   },
+   "blur": [
+    {
+     "t": 0,
+     "b": 9
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "narration": "In September {1836|eighteen thirty-six}, a Michigan convention voted the deal down, {28|twenty-eight} to {21|twenty-one}.",
+   "data": {
+    "kicker": "Ann Arbor, Sept. 1836",
+    "title": "Michigan says *no*",
+    "rows": [
+     {
+      "label": "REJECT",
+      "value": 28,
+      "suffix": "",
+      "cue": "28",
+      "highlight": true
+     },
+     {
+      "label": "ACCEPT",
+      "value": 21,
+      "suffix": "",
+      "cue": "21"
+     }
+    ],
+    "source": "Michigan Legislature, Michigan Manual 2021-2022"
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "down",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "So in December, a second convention met in Ann Arbor, and said yes. Opponents mocked it as the Frostbitten Convention.",
+   "cam": [
+    {
+     "fit": [
+      -87.6,
+      41.3,
+      -81.6,
+      45.0
+     ],
+     "pad": 0.0,
+     "t": 0
+    },
+    {
+     "fit": [
+      -87.6,
+      41.3,
+      -81.6,
+      45.0
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Ann Arbor",
+      "at": [
+       -83.743,
+       42.281
+      ],
+      "style": "city",
+      "anchor": "e",
+      "cue": "ann"
+     },
+     {
+      "text": "Frostbitten",
+      "at": [
+       -84.6,
+       43.3
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "frostbitten"
+     },
+     {
+      "text": "Dec. 1836",
+      "at": [
+       -84.6,
+       42.7
+      ],
+      "style": "tag",
+      "anchor": "c",
+      "cue": "december"
+     }
+    ]
+   },
+   "pin": {
+    "expr": "happy",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "yes",
+      "hop": true
+     },
+     {
+      "cue": "frostbitten",
+      "expr": "surprised",
+      "needle": "waver"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "narration": "In {1837|eighteen thirty-seven}, Michigan became the {26th|twenty-sixth} state: with the Upper Peninsula, and without Toledo.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -91.0,
+      41.0,
+      -81.6,
+      48.2
+     ],
+     "pad": 0.04,
+     "t": 2.0,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -91.0,
+      41.0,
+      -81.6,
+      48.2
+     ],
+     "pad": 0.0,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -90.348,
+         46.6
+        ],
+        [
+         -88.959,
+         47.009
+        ],
+        [
+         -88.18,
+         47.458
+        ],
+        [
+         -87.8,
+         47.473
+        ],
+        [
+         -87.714,
+         47.401
+        ],
+        [
+         -87.958,
+         47.387
+        ],
+        [
+         -88.231,
+         47.199
+        ],
+        [
+         -88.442,
+         46.972
+        ],
+        [
+         -88.496,
+         46.757
+        ],
+        [
+         -88.144,
+         46.966
+        ],
+        [
+         -88.284,
+         46.832
+        ],
+        [
+         -88.083,
+         46.92
+        ],
+        [
+         -87.818,
+         46.891
+        ],
+        [
+         -87.595,
+         46.783
+        ],
+        [
+         -87.351,
+         46.501
+        ],
+        [
+         -87.017,
+         46.533
+        ],
+        [
+         -86.816,
+         46.438
+        ],
+        [
+         -86.698,
+         46.439
+        ],
+        [
+         -86.709,
+         46.544
+        ],
+        [
+         -86.587,
+         46.463
+        ],
+        [
+         -86.138,
+         46.673
+        ],
+        [
+         -84.95,
+         46.77
+        ],
+        [
+         -85.025,
+         46.483
+        ],
+        [
+         -84.63,
+         46.485
+        ],
+        [
+         -84.595,
+         46.415
+        ],
+        [
+         -84.128,
+         46.53
+        ],
+        [
+         -84.117,
+         46.234
+        ],
+        [
+         -84.25,
+         46.176
+        ],
+        [
+         -83.873,
+         45.993
+        ],
+        [
+         -83.765,
+         46.018
+        ],
+        [
+         -83.823,
+         46.104
+        ],
+        [
+         -83.625,
+         46.102
+        ],
+        [
+         -83.475,
+         45.985
+        ],
+        [
+         -83.561,
+         45.912
+        ],
+        [
+         -84.376,
+         45.932
+        ],
+        [
+         -84.656,
+         46.052
+        ],
+        [
+         -84.745,
+         45.836
+        ],
+        [
+         -85.015,
+         46.011
+        ],
+        [
+         -85.513,
+         46.094
+        ],
+        [
+         -85.696,
+         45.96
+        ],
+        [
+         -86.278,
+         45.942
+        ],
+        [
+         -86.615,
+         45.607
+        ],
+        [
+         -86.719,
+         45.668
+        ],
+        [
+         -86.54,
+         45.89
+        ],
+        [
+         -86.784,
+         45.855
+        ],
+        [
+         -86.964,
+         45.673
+        ],
+        [
+         -87.017,
+         45.838
+        ],
+        [
+         -87.592,
+         45.095
+        ],
+        [
+         -87.742,
+         45.197
+        ],
+        [
+         -87.656,
+         45.369
+        ],
+        [
+         -87.875,
+         45.381
+        ],
+        [
+         -87.782,
+         45.674
+        ],
+        [
+         -88.137,
+         45.819
+        ],
+        [
+         -88.101,
+         45.922
+        ],
+        [
+         -90.122,
+         46.337
+        ],
+        [
+         -90.219,
+         46.503
+        ],
+        [
+         -90.395,
+         46.533
+        ],
+        [
+         -90.348,
+         46.6
+        ]
+       ],
+       "cue": "upper",
+       "dur": 1.8
+      },
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "cue": "without",
+       "dur": 1.2
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "26th state",
+      "at": [
+       -84.75,
+       43.9
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "26th"
+     },
+     {
+      "text": "Toledo",
+      "at": [
+       -83.54,
+       41.65
+      ],
+      "style": "city",
+      "anchor": "w",
+      "cue": "toledo"
+     }
+    ],
+    "source": "Act of Jan. 1837 (5 Stat. 144)"
+   },
+   "pin": {
+    "expr": "proud",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "without",
+      "expr": "thinking"
+     }
+    ]
+   }
+  },
+  {
+   "type": "map",
+   "chapter": "Who won?",
+   "narration": "And that region of perpetual snows? Michigan's own history pages call it the most valuable timber, iron and copper country in America.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -90.7,
+      45.0,
+      -83.2,
+      47.7
+     ],
+     "pad": 0.0,
+     "t": 1.8,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -90.7,
+      45.0,
+      -83.2,
+      47.7
+     ],
+     "pad": -0.03,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -90.348,
+         46.6
+        ],
+        [
+         -88.959,
+         47.009
+        ],
+        [
+         -88.18,
+         47.458
+        ],
+        [
+         -87.8,
+         47.473
+        ],
+        [
+         -87.714,
+         47.401
+        ],
+        [
+         -87.958,
+         47.387
+        ],
+        [
+         -88.231,
+         47.199
+        ],
+        [
+         -88.442,
+         46.972
+        ],
+        [
+         -88.496,
+         46.757
+        ],
+        [
+         -88.144,
+         46.966
+        ],
+        [
+         -88.284,
+         46.832
+        ],
+        [
+         -88.083,
+         46.92
+        ],
+        [
+         -87.818,
+         46.891
+        ],
+        [
+         -87.595,
+         46.783
+        ],
+        [
+         -87.351,
+         46.501
+        ],
+        [
+         -87.017,
+         46.533
+        ],
+        [
+         -86.816,
+         46.438
+        ],
+        [
+         -86.698,
+         46.439
+        ],
+        [
+         -86.709,
+         46.544
+        ],
+        [
+         -86.587,
+         46.463
+        ],
+        [
+         -86.138,
+         46.673
+        ],
+        [
+         -84.95,
+         46.77
+        ],
+        [
+         -85.025,
+         46.483
+        ],
+        [
+         -84.63,
+         46.485
+        ],
+        [
+         -84.595,
+         46.415
+        ],
+        [
+         -84.128,
+         46.53
+        ],
+        [
+         -84.117,
+         46.234
+        ],
+        [
+         -84.25,
+         46.176
+        ],
+        [
+         -83.873,
+         45.993
+        ],
+        [
+         -83.765,
+         46.018
+        ],
+        [
+         -83.823,
+         46.104
+        ],
+        [
+         -83.625,
+         46.102
+        ],
+        [
+         -83.475,
+         45.985
+        ],
+        [
+         -83.561,
+         45.912
+        ],
+        [
+         -84.376,
+         45.932
+        ],
+        [
+         -84.656,
+         46.052
+        ],
+        [
+         -84.745,
+         45.836
+        ],
+        [
+         -85.015,
+         46.011
+        ],
+        [
+         -85.513,
+         46.094
+        ],
+        [
+         -85.696,
+         45.96
+        ],
+        [
+         -86.278,
+         45.942
+        ],
+        [
+         -86.615,
+         45.607
+        ],
+        [
+         -86.719,
+         45.668
+        ],
+        [
+         -86.54,
+         45.89
+        ],
+        [
+         -86.784,
+         45.855
+        ],
+        [
+         -86.964,
+         45.673
+        ],
+        [
+         -87.017,
+         45.838
+        ],
+        [
+         -87.592,
+         45.095
+        ],
+        [
+         -87.742,
+         45.197
+        ],
+        [
+         -87.656,
+         45.369
+        ],
+        [
+         -87.875,
+         45.381
+        ],
+        [
+         -87.782,
+         45.674
+        ],
+        [
+         -88.137,
+         45.819
+        ],
+        [
+         -88.101,
+         45.922
+        ],
+        [
+         -90.122,
+         46.337
+        ],
+        [
+         -90.219,
+         46.503
+        ],
+        [
+         -90.395,
+         46.533
+        ],
+        [
+         -90.348,
+         46.6
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Timber",
+      "at": [
+       -85.6,
+       46.3
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "timber"
+     },
+     {
+      "text": "Iron",
+      "at": [
+       -87.7,
+       46.35
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "iron"
+     },
+     {
+      "text": "Copper",
+      "at": [
+       -88.55,
+       47.05
+      ],
+      "style": "callout",
+      "anchor": "c",
+      "cue": "copper"
+     }
+    ],
+    "source": "Michigan DMVA, The Toledo War"
+   },
+   "pin": {
+    "expr": "thinking",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "valuable",
+      "expr": "surprised"
+     },
+     {
+      "cue": "copper",
+      "expr": "happy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "pin",
+   "narration": "Ohio got Toledo. Michigan got about nineteen times the land, the prize it tried to turn down.",
+   "cam": [
+    {
+     "fit": [
+      -90.7,
+      45.0,
+      -83.2,
+      47.7
+     ],
+     "pad": 0.0,
+     "t": 0,
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    },
+    {
+     "fit": [
+      -90.7,
+      45.0,
+      -83.2,
+      47.7
+     ],
+     "pad": -0.05,
+     "t": "end",
+     "ease": "sine.inOut",
+     "nudge": [
+      -0.16,
+      0.06
+     ]
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -90.348,
+         46.6
+        ],
+        [
+         -88.959,
+         47.009
+        ],
+        [
+         -88.18,
+         47.458
+        ],
+        [
+         -87.8,
+         47.473
+        ],
+        [
+         -87.714,
+         47.401
+        ],
+        [
+         -87.958,
+         47.387
+        ],
+        [
+         -88.231,
+         47.199
+        ],
+        [
+         -88.442,
+         46.972
+        ],
+        [
+         -88.496,
+         46.757
+        ],
+        [
+         -88.144,
+         46.966
+        ],
+        [
+         -88.284,
+         46.832
+        ],
+        [
+         -88.083,
+         46.92
+        ],
+        [
+         -87.818,
+         46.891
+        ],
+        [
+         -87.595,
+         46.783
+        ],
+        [
+         -87.351,
+         46.501
+        ],
+        [
+         -87.017,
+         46.533
+        ],
+        [
+         -86.816,
+         46.438
+        ],
+        [
+         -86.698,
+         46.439
+        ],
+        [
+         -86.709,
+         46.544
+        ],
+        [
+         -86.587,
+         46.463
+        ],
+        [
+         -86.138,
+         46.673
+        ],
+        [
+         -84.95,
+         46.77
+        ],
+        [
+         -85.025,
+         46.483
+        ],
+        [
+         -84.63,
+         46.485
+        ],
+        [
+         -84.595,
+         46.415
+        ],
+        [
+         -84.128,
+         46.53
+        ],
+        [
+         -84.117,
+         46.234
+        ],
+        [
+         -84.25,
+         46.176
+        ],
+        [
+         -83.873,
+         45.993
+        ],
+        [
+         -83.765,
+         46.018
+        ],
+        [
+         -83.823,
+         46.104
+        ],
+        [
+         -83.625,
+         46.102
+        ],
+        [
+         -83.475,
+         45.985
+        ],
+        [
+         -83.561,
+         45.912
+        ],
+        [
+         -84.376,
+         45.932
+        ],
+        [
+         -84.656,
+         46.052
+        ],
+        [
+         -84.745,
+         45.836
+        ],
+        [
+         -85.015,
+         46.011
+        ],
+        [
+         -85.513,
+         46.094
+        ],
+        [
+         -85.696,
+         45.96
+        ],
+        [
+         -86.278,
+         45.942
+        ],
+        [
+         -86.615,
+         45.607
+        ],
+        [
+         -86.719,
+         45.668
+        ],
+        [
+         -86.54,
+         45.89
+        ],
+        [
+         -86.784,
+         45.855
+        ],
+        [
+         -86.964,
+         45.673
+        ],
+        [
+         -87.017,
+         45.838
+        ],
+        [
+         -87.592,
+         45.095
+        ],
+        [
+         -87.742,
+         45.197
+        ],
+        [
+         -87.656,
+         45.369
+        ],
+        [
+         -87.875,
+         45.381
+        ],
+        [
+         -87.782,
+         45.674
+        ],
+        [
+         -88.137,
+         45.819
+        ],
+        [
+         -88.101,
+         45.922
+        ],
+        [
+         -90.122,
+         46.337
+        ],
+        [
+         -90.219,
+         46.503
+        ],
+        [
+         -90.395,
+         46.533
+        ],
+        [
+         -90.348,
+         46.6
+        ]
+       ],
+       "t": 0.05,
+       "dur": 0.5
+      }
+     ]
+    }
+   },
+   "pin": {
+    "expr": "neutral",
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "nineteen",
+      "expr": "surprised"
+     },
+     {
+      "cue": "down",
+      "expr": "proud"
+     }
+    ]
+   },
+   "blur": [
+    {
+     "t": 0,
+     "b": 9
+    },
+    {
+     "cue": "prize",
+     "b": 0,
+     "dur": 0.9
+    }
+   ],
+   "rack": true
+  },
+  {
+   "type": "map",
+   "narration": "So yes: Michigan lost a war to Ohio. Its prize for losing is still on every map.",
+   "cam": [
+    {
+     "from": "prev",
+     "t": 0
+    },
+    {
+     "fit": [
+      -91.0,
+      41.0,
+      -81.6,
+      48.2
+     ],
+     "pad": 0.04,
+     "t": 1.6,
+     "ease": "power3.inOut"
+    },
+    {
+     "fit": [
+      -91.0,
+      41.0,
+      -81.6,
+      48.2
+     ],
+     "pad": -0.01,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "data": {
+    "layers": {
+     "routes": [
+      {
+       "via": [
+        [
+         -90.348,
+         46.6
+        ],
+        [
+         -88.959,
+         47.009
+        ],
+        [
+         -88.18,
+         47.458
+        ],
+        [
+         -87.8,
+         47.473
+        ],
+        [
+         -87.714,
+         47.401
+        ],
+        [
+         -87.958,
+         47.387
+        ],
+        [
+         -88.231,
+         47.199
+        ],
+        [
+         -88.442,
+         46.972
+        ],
+        [
+         -88.496,
+         46.757
+        ],
+        [
+         -88.144,
+         46.966
+        ],
+        [
+         -88.284,
+         46.832
+        ],
+        [
+         -88.083,
+         46.92
+        ],
+        [
+         -87.818,
+         46.891
+        ],
+        [
+         -87.595,
+         46.783
+        ],
+        [
+         -87.351,
+         46.501
+        ],
+        [
+         -87.017,
+         46.533
+        ],
+        [
+         -86.816,
+         46.438
+        ],
+        [
+         -86.698,
+         46.439
+        ],
+        [
+         -86.709,
+         46.544
+        ],
+        [
+         -86.587,
+         46.463
+        ],
+        [
+         -86.138,
+         46.673
+        ],
+        [
+         -84.95,
+         46.77
+        ],
+        [
+         -85.025,
+         46.483
+        ],
+        [
+         -84.63,
+         46.485
+        ],
+        [
+         -84.595,
+         46.415
+        ],
+        [
+         -84.128,
+         46.53
+        ],
+        [
+         -84.117,
+         46.234
+        ],
+        [
+         -84.25,
+         46.176
+        ],
+        [
+         -83.873,
+         45.993
+        ],
+        [
+         -83.765,
+         46.018
+        ],
+        [
+         -83.823,
+         46.104
+        ],
+        [
+         -83.625,
+         46.102
+        ],
+        [
+         -83.475,
+         45.985
+        ],
+        [
+         -83.561,
+         45.912
+        ],
+        [
+         -84.376,
+         45.932
+        ],
+        [
+         -84.656,
+         46.052
+        ],
+        [
+         -84.745,
+         45.836
+        ],
+        [
+         -85.015,
+         46.011
+        ],
+        [
+         -85.513,
+         46.094
+        ],
+        [
+         -85.696,
+         45.96
+        ],
+        [
+         -86.278,
+         45.942
+        ],
+        [
+         -86.615,
+         45.607
+        ],
+        [
+         -86.719,
+         45.668
+        ],
+        [
+         -86.54,
+         45.89
+        ],
+        [
+         -86.784,
+         45.855
+        ],
+        [
+         -86.964,
+         45.673
+        ],
+        [
+         -87.017,
+         45.838
+        ],
+        [
+         -87.592,
+         45.095
+        ],
+        [
+         -87.742,
+         45.197
+        ],
+        [
+         -87.656,
+         45.369
+        ],
+        [
+         -87.875,
+         45.381
+        ],
+        [
+         -87.782,
+         45.674
+        ],
+        [
+         -88.137,
+         45.819
+        ],
+        [
+         -88.101,
+         45.922
+        ],
+        [
+         -90.122,
+         46.337
+        ],
+        [
+         -90.219,
+         46.503
+        ],
+        [
+         -90.395,
+         46.533
+        ],
+        [
+         -90.348,
+         46.6
+        ]
+       ],
+       "cue": "prize",
+       "dur": 2.0
+      },
+      {
+       "via": [
+        [
+         -84.806,
+         41.62
+        ],
+        [
+         -84.806,
+         41.696
+        ],
+        [
+         -83.453,
+         41.733
+        ],
+        [
+         -83.45,
+         41.711
+        ],
+        [
+         -83.374,
+         41.687
+        ],
+        [
+         -83.328,
+         41.701
+        ],
+        [
+         -83.195,
+         41.631
+        ],
+        [
+         -83.14,
+         41.62
+        ],
+        [
+         -84.806,
+         41.62
+        ]
+       ],
+       "t": 0.3,
+       "dur": 1.0
+      }
+     ]
+    },
+    "labels": [
+     {
+      "text": "Upper Peninsula",
+      "at": [
+       -87.1,
+       46.75
+      ],
+      "style": "callout",
+      "anchor": "n",
+      "cue": "prize"
+     },
+     {
+      "text": "Toledo",
+      "at": [
+       -83.54,
+       41.65
+      ],
+      "style": "city",
+      "anchor": "w",
+      "lit": true
+     }
+    ]
+   },
+   "pin": {
+    "expr": "happy",
+    "acts": [
+     {
+      "t": 0.3,
+      "look": [
+       8,
+       -6
+      ]
+     },
+     {
+      "cue": "prize",
+      "point": [
+       -87.1,
+       46.4
+      ],
+      "hold": 0.8
+     },
+     {
+      "cue": "map",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "narration": "There's a new map every other day. Pick one, and I'll see you there.",
+   "min_duration": 7.0,
+   "cam": [
+    {
+     "fit": [
+      -91.0,
+      41.0,
+      -81.6,
+      48.2
+     ],
+     "pad": 0.3,
+     "t": 0
+    },
+    {
+     "fit": [
+      -91.0,
+      41.0,
+      -81.6,
+      48.2
+     ],
+     "pad": 0.24,
+     "t": "end",
+     "ease": "sine.inOut"
+    }
+   ],
+   "blur": [
+    {
+     "t": 0,
+     "b": 4
+    }
+   ],
+   "data": {
+    "tagline": "The US and Canada, explained on the map",
+    "slot": "WATCH NEXT",
+    "next": "A new map every other day"
+   },
+   "pin": {
+    "expr": "happy",
+    "acts": [
+     {
+      "t": 0.4,
+      "hop": true
+     },
+     {
+      "t": 2.2,
+      "point": {
+       "deg": 70
+      },
+      "hold": 1.6
+     }
+    ]
+   }
+  }
+ ]
+}
