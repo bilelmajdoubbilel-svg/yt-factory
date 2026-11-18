@@ -118,5 +118,50 @@
   "script": "content/history/alaska-purchase/mm-alaska-s7-check.json",
   "kind": "short",
   "date": "2026-12-06"
+ },
+ {
+  "script": "content/history/straight-border/mm-border-s1-370m.json",
+  "kind": "short",
+  "date": "2026-12-07"
+ },
+ {
+  "script": "content/history/straight-border/mm-border-s2-ruler.json",
+  "kind": "short",
+  "date": "2026-12-08"
+ },
+ {
+  "script": "content/history/straight-border/long.json",
+  "kind": "long",
+  "date": "2026-12-09"
+ },
+ {
+  "script": "content/history/straight-border/mm-border-s3-stars.json",
+  "kind": "short",
+  "date": "2026-12-09"
+ },
+ {
+  "script": "content/history/straight-border/mm-border-s4-vista.json",
+  "kind": "short",
+  "date": "2026-12-10"
+ },
+ {
+  "script": "content/history/straight-border/mm-border-s5-5440.json",
+  "kind": "short",
+  "date": "2026-12-11"
+ },
+ {
+  "script": "content/history/straight-border/mm-border-s6-lines.json",
+  "kind": "short",
+  "date": "2026-12-12"
+ },
+ {
+  "script": "content/history/straight-border/mm-border-s7-water.json",
+  "kind": "short",
+  "date": "2026-12-13"
+ },
+ {
+  "script": "content/history/straight-border/mm-border-s8-why49.json",
+  "kind": "short",
+  "date": "2026-12-14"
  }
 ]
