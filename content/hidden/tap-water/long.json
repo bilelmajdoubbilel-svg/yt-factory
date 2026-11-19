@@ -1,0 +1,800 @@
+{
+ "channel": "hidden",
+ "style": "hidden",
+ "system": "water",
+ "voice": "am_michael",
+ "format": "long",
+ "speed": 1.05,
+ "id": "hs-tap-water",
+ "title": "Where Your Tap Water Comes From (and Who Used It First)",
+ "summary": "Follow one drop from the river to your faucet: where US tap water comes from, why about half of larger river-fed water plants have treated wastewater flowing in from upstream (de facto reuse), the five treatment steps that clean it, and the 2 million miles of pipe that bring it home.",
+ "tags": [
+  "where does tap water come from",
+  "tap water",
+  "how water treatment works",
+  "drinking water",
+  "water treatment plant",
+  "de facto reuse",
+  "water main breaks",
+  "hidden systems"
+ ],
+ "intro_chapter": "Used before?",
+ "thumbnail": {
+  "big": "84%",
+  "small": "FLUSHED?",
+  "expr": "surprised"
+ },
+ "sources": [
+  "Roughly half of US surface-water drinking water plants serving more than 10,000 people are affected by at least one upstream treated wastewater discharge; modeled de facto reuse at 25 plants ranged from <0.1 to 13% of intake at average flow and >80% at low flow, highest 84% at one plant (Nguyen et al., Journal AWWA 110(4), 2018, modeled): https://par.nsf.gov/servlets/purl/10079854",
+  "De facto water reuse: a drinking water supply that contains a significant fraction of wastewater effluent; common across the US (US EPA research grant page): https://www.epa.gov/research-grants/national-priorities-occurrence-and-implications-de-facto-water-reuse-drinking-water",
+  "Public supply withdrew about 35,823 million gallons per day in the lower 48 in 2020: 18,586 Mgal/d (about 52%) surface water, 17,236 Mgal/d (about 48%) groundwater (USGS, modeled estimates): https://www.usgs.gov/mission-areas/water-resources/science/public-supply-water-use",
+  "Community water treatment steps: coagulation, flocculation, sedimentation, filtration (sand, gravel, charcoal), disinfection (CDC, How Water Treatment Works): https://www.cdc.gov/drinking-water/about/how-water-treatment-works.html",
+  "More than 2 million miles of drinking water pipe; approximately 240,000 water main breaks per year; 9.2 million lead service lines in operation (EPA 2023 figure) (ASCE 2025 Infrastructure Report Card, Drinking Water): https://infrastructurereportcard.org/wp-content/uploads/2025/03/Drinking-Water.pdf",
+  "Over 148,000 public water systems in the US provide drinking water to 90 percent of Americans (US EPA, Information about Public Water Systems): https://19january2025snapshot.epa.gov/dwreginfo/information-about-public-water-systems",
+  "One break about every 2 minutes: 525,600 minutes in a year / 240,000 breaks = about 2.2 minutes (our math from the ASCE figure)."
+ ],
+ "scenes": [
+  {
+   "type": "data",
+   "narration": "About half of America's larger river-fed water plants have treated sewage flowing in from upstream.",
+   "data": {
+    "big": "1 IN 2",
+    "label": "SEWAGE UPSTREAM",
+    "cue": "half",
+    "source": "J. AWWA 2018 · MODELED",
+    "source_cue": "about"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "sewage",
+      "dt": 0.2,
+      "take": "surprised"
+     },
+     {
+      "cue": "upstream",
+      "expr": "worried"
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "So the water in your glass may have been flushed before. Here's where it really comes from.",
+   "data": {
+    "stencil": "USED BEFORE?",
+    "stencil_cue": "flushed"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "glass",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "flushed",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.6
+     },
+     {
+      "cue": "really",
+      "expr": "thinking"
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "And in a dry spell, at one plant, a model found it could be most of the water coming in.",
+   "data": {
+    "big": "??%",
+    "label": "IN A DRY SPELL",
+    "cue": "dry",
+    "source": "J. AWWA 2018 · MODELED",
+    "source_cue": "model"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "model",
+      "take": "surprised",
+      "amp": 0.5
+     },
+     {
+      "cue": "most",
+      "expr": "worried"
+     }
+    ]
+   },
+   "transition_out": "whip"
+  },
+  {
+   "type": "host",
+   "narration": "In our sewer video, one drop ended in a river. Today we start there: where your tap water comes from, the five steps that clean it, and the pipes that bring it home.",
+   "data": {
+    "start_lit": true,
+    "stencil": "START HERE",
+    "stencil_cue": "start"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.15,
+      "take": "happy",
+      "amp": 0.6
+     },
+     {
+      "cue": "river",
+      "point": "R",
+      "angle": 10
+     },
+     {
+      "cue": "start",
+      "unpoint": "R",
+      "expr": "proud"
+     },
+     {
+      "cue": "five",
+      "take": "happy",
+      "amp": 0.5
+     },
+     {
+      "cue": "pipes",
+      "expr": "thinking"
+     },
+     {
+      "cue": "home",
+      "expr": "proud"
+     }
+    ]
+   },
+   "transition_in": "whip"
+  },
+  {
+   "type": "chapter",
+   "narration": "Part one: the source.",
+   "data": {
+    "num": "1",
+    "title": "THE SOURCE"
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Every day, public water supplies in the lower {48|forty-eight} states pull almost {36 billion|thirty-six billion} gallons.",
+   "data": {
+    "big": "36B",
+    "label": "GALLONS A DAY",
+    "cue": "36",
+    "source": "USGS · 2020 · MODELED",
+    "source_cue": "every"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ]
+     },
+     {
+      "cue": "36",
+      "dt": 0.3,
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "About half comes from rivers, lakes and reservoirs. The rest is pumped up from underground.",
+   "data": {
+    "big": "52%",
+    "label": "SURFACE WATER",
+    "cue": "half",
+    "source": "USGS · 2020 · MODELED",
+    "source_cue": "about",
+    "top": [
+     [
+      "52% RIVERS & LAKES",
+      "rivers"
+     ],
+     [
+      "48% UNDERGROUND",
+      "underground"
+     ]
+    ]
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "happy"
+     },
+     {
+      "cue": "rivers",
+      "expr": "thinking"
+     },
+     {
+      "cue": "underground",
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "If yours comes from a river, it has already passed every town upstream. And those towns send their treated wastewater back into it.",
+   "data": {
+    "stencil": "UPSTREAM",
+    "stencil_cue": "upstream"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "upstream",
+      "point": "L",
+      "angle": 30
+     },
+     {
+      "cue": "wastewater",
+      "unpoint": "L",
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Engineers call it de facto reuse. One model of {25|twenty-five} plants put it between almost nothing and {13%|thirteen percent} of the water coming in, on a normal day.",
+   "data": {
+    "big": "13%",
+    "label": "AT NORMAL FLOW",
+    "cue": "13%",
+    "source": "J. AWWA 2018 · MODELED",
+    "source_cue": "engineers"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "13%",
+      "dt": 0.3,
+      "take": "proud",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "But when the river runs low, there's less fresh water to dilute it. At one plant, the model's peak was {84%|eighty-four percent}.",
+   "data": {
+    "big": "84%",
+    "label": "LOW-FLOW PEAK",
+    "cue": "84%",
+    "source": "J. AWWA 2018 · ONE PLANT, MODELED",
+    "source_cue": "low"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "84%",
+      "dt": 0.3,
+      "take": "surprised"
+     }
+    ]
+   },
+   "transition_out": "whip"
+  },
+  {
+   "type": "host",
+   "narration": "That's not a scandal. It's exactly why the plant at the start of your pipes exists.",
+   "data": {
+    "stencil": "WHY PLANTS EXIST",
+    "stencil_cue": "plant"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "scandal",
+      "expr": "neutral"
+     },
+     {
+      "cue": "exactly",
+      "take": "proud",
+      "amp": 0.6
+     }
+    ]
+   },
+   "transition_in": "whip"
+  },
+  {
+   "type": "host",
+   "narration": "If you like seeing where things really come from, subscribe. There's a new system every other day.",
+   "data": {
+    "start_lit": true,
+    "stencil": "EVERY 2 DAYS",
+    "stencil_cue": "every"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.15,
+      "take": "happy",
+      "amp": 0.7
+     },
+     {
+      "cue": "subscribe",
+      "point": "R",
+      "angle": 30
+     },
+     {
+      "cue": "day",
+      "unpoint": "R",
+      "expr": "proud"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "narration": "Part two: the clean.",
+   "data": {
+    "num": "2",
+    "title": "THE CLEAN"
+   }
+  },
+  {
+   "type": "host",
+   "narration": "Follow one drop into the treatment plant. Step one, coagulation: chemicals make dirt and tiny particles stick together.",
+   "data": {
+    "stencil": "STICK",
+    "stencil_cue": "stick"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "happy"
+     },
+     {
+      "cue": "coagulation",
+      "point": "R",
+      "angle": 10
+     },
+     {
+      "cue": "stick",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Step two, flocculation: gentle mixing grows them into heavier clumps, called floc.",
+   "data": {
+    "big": "FLOC",
+    "label": "STEP 2 · MIXING",
+    "cue": "clumps",
+    "source": "CDC · WATER TREATMENT",
+    "source_cue": "step"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "clumps",
+      "take": "happy",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "Step three, sedimentation: the heavy floc sinks to the bottom, and the clearer water moves on.",
+   "data": {
+    "stencil": "SINK",
+    "stencil_cue": "sinks"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "neutral"
+     },
+     {
+      "cue": "sinks",
+      "point": "L",
+      "angle": -30
+     },
+     {
+      "cue": "clearer",
+      "unpoint": "L",
+      "expr": "happy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Step four, filtration: down through layers of sand, gravel or charcoal.",
+   "data": {
+    "big": "STEP 4",
+    "label": "FILTERS",
+    "cue": "four",
+    "source": "CDC · WATER TREATMENT",
+    "source_cue": "step",
+    "top": [
+     [
+      "SAND",
+      "sand"
+     ],
+     [
+      "GRAVEL",
+      "gravel"
+     ],
+     [
+      "CHARCOAL",
+      "charcoal"
+     ]
+    ]
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ]
+     },
+     {
+      "cue": "sand",
+      "expr": "thinking"
+     },
+     {
+      "cue": "charcoal",
+      "take": "happy",
+      "amp": 0.5
+     }
+    ]
+   },
+   "transition_out": "whip"
+  },
+  {
+   "type": "host",
+   "narration": "Step five, disinfection: a disinfectant kills the germs that are left. Then the clean water is pumped out to town.",
+   "data": {
+    "stencil": "NO GERMS",
+    "stencil_cue": "kills"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "kills",
+      "take": "proud",
+      "amp": 0.6
+     },
+     {
+      "cue": "pumped",
+      "point": "R",
+      "angle": 10
+     }
+    ]
+   },
+   "transition_in": "whip"
+  },
+  {
+   "type": "chapter",
+   "narration": "Part three: the pipes.",
+   "data": {
+    "num": "3",
+    "title": "THE PIPES"
+   }
+  },
+  {
+   "type": "data",
+   "narration": "From here, the drop rides through more than {2 million|two million} miles of underground pipe.",
+   "data": {
+    "big": "2M MI",
+    "label": "OF WATER PIPE",
+    "cue": "2",
+    "source": "ASCE · 2025 REPORT CARD",
+    "source_cue": "rides"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ]
+     },
+     {
+      "cue": "2",
+      "dt": 0.3,
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Those pipes break about {240,000|two hundred forty thousand} times a year. That's roughly one break every two minutes.",
+   "data": {
+    "big": "240K",
+    "label": "MAIN BREAKS A YEAR",
+    "cue": "240,000",
+    "source": "ASCE 2025 · 2 MIN: OUR MATH",
+    "source_cue": "pipes"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "240,000",
+      "dt": 0.3,
+      "take": "surprised"
+     },
+     {
+      "cue": "minutes",
+      "expr": "worried"
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "And {9.2 million|nine point two million} lead service lines are still in use, linking mains to buildings.",
+   "data": {
+    "big": "9.2M",
+    "label": "LEAD SERVICE LINES",
+    "cue": "9.2",
+    "source": "ASCE 2025 · EPA 2023 DATA",
+    "source_cue": "lead"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "9.2",
+      "dt": 0.3,
+      "take": "surprised",
+      "amp": 0.6
+     },
+     {
+      "cue": "buildings",
+      "expr": "worried"
+     }
+    ]
+   },
+   "transition_out": "whip"
+  },
+  {
+   "type": "data",
+   "narration": "Who runs all of it? More than {148,000|a hundred forty-eight thousand} public water systems, serving about {90%|ninety percent} of Americans.",
+   "data": {
+    "big": "148K",
+    "label": "WATER SYSTEMS",
+    "cue": "148,000",
+    "source": "US EPA",
+    "source_cue": "who"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "148,000",
+      "dt": 0.3,
+      "take": "surprised",
+      "amp": 0.5
+     },
+     {
+      "cue": "90%",
+      "expr": "happy"
+     }
+    ]
+   },
+   "transition_in": "whip"
+  },
+  {
+   "type": "host",
+   "narration": "So your tap water starts in a river, a lake or underground. It may share that river with towns upstream. Then it's stuck, mixed, settled, filtered and disinfected, before it rides home to your faucet.",
+   "data": {
+    "start_lit": true,
+    "stencil": "CLEAN NOW",
+    "stencil_cue": "disinfected"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.15,
+      "take": "happy",
+      "amp": 0.6
+     },
+     {
+      "cue": "upstream",
+      "expr": "thinking"
+     },
+     {
+      "cue": "stuck",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "disinfected",
+      "unpoint": "R",
+      "take": "proud",
+      "amp": 0.6
+     },
+     {
+      "cue": "faucet",
+      "expr": "happy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "endcard",
+   "narration": "Pick your next system down here. A new one every other day.",
+   "min_duration": 7.0,
+   "drip": {
+    "acts": [
+     {
+      "t": 0.3,
+      "take": "happy",
+      "amp": 0.6
+     },
+     {
+      "cue": "next",
+      "point": "R",
+      "angle": 10
+     },
+     {
+      "t": 1.6,
+      "take": "happy",
+      "amp": 0.45
+     },
+     {
+      "t": 2.8,
+      "unpoint": "R",
+      "take": "proud",
+      "amp": 0.5
+     },
+     {
+      "t": 4.0,
+      "point": "L",
+      "angle": 10,
+      "look": [
+       -12,
+       -6
+      ]
+     },
+     {
+      "t": 5.2,
+      "take": "happy",
+      "amp": 0.5
+     },
+     {
+      "t": 6.2,
+      "unpoint": "L"
+     }
+    ]
+   }
+  }
+ ]
+}

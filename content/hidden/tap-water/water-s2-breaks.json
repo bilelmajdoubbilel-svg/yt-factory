@@ -1,0 +1,179 @@
+{
+ "channel": "hidden",
+ "style": "hidden",
+ "system": "water",
+ "voice": "am_michael",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "tap-water",
+ "id": "water-s2-breaks",
+ "title": "A US Water Main Breaks About Every 2 Minutes #shorts",
+ "summary": "The US has about 240,000 water main breaks a year (ASCE 2025), roughly one every two minutes (our math), across more than 2 million miles of pipe, and 9.2 million lead service lines are still in use.",
+ "tags": [
+  "water main break",
+  "water pipes",
+  "tap water",
+  "lead pipes",
+  "infrastructure"
+ ],
+ "thumbnail": {
+  "big": "2 MIN",
+  "small": "BREAK",
+  "expr": "worried"
+ },
+ "sources": [
+  "Roughly half of US surface-water drinking water plants serving more than 10,000 people are affected by at least one upstream treated wastewater discharge; modeled de facto reuse at 25 plants ranged from <0.1 to 13% of intake at average flow and >80% at low flow, highest 84% at one plant (Nguyen et al., Journal AWWA 110(4), 2018, modeled): https://par.nsf.gov/servlets/purl/10079854",
+  "De facto water reuse: a drinking water supply that contains a significant fraction of wastewater effluent; common across the US (US EPA research grant page): https://www.epa.gov/research-grants/national-priorities-occurrence-and-implications-de-facto-water-reuse-drinking-water",
+  "Public supply withdrew about 35,823 million gallons per day in the lower 48 in 2020: 18,586 Mgal/d (about 52%) surface water, 17,236 Mgal/d (about 48%) groundwater (USGS, modeled estimates): https://www.usgs.gov/mission-areas/water-resources/science/public-supply-water-use",
+  "Community water treatment steps: coagulation, flocculation, sedimentation, filtration (sand, gravel, charcoal), disinfection (CDC, How Water Treatment Works): https://www.cdc.gov/drinking-water/about/how-water-treatment-works.html",
+  "More than 2 million miles of drinking water pipe; approximately 240,000 water main breaks per year; 9.2 million lead service lines in operation (EPA 2023 figure) (ASCE 2025 Infrastructure Report Card, Drinking Water): https://infrastructurereportcard.org/wp-content/uploads/2025/03/Drinking-Water.pdf",
+  "Over 148,000 public water systems in the US provide drinking water to 90 percent of Americans (US EPA, Information about Public Water Systems): https://19january2025snapshot.epa.gov/dwreginfo/information-about-public-water-systems",
+  "One break about every 2 minutes: 525,600 minutes in a year / 240,000 breaks = about 2.2 minutes (our math from the ASCE figure).",
+  "About 80 times around the Earth: 2,000,000 miles / about 24,901 miles around the equator (2 x pi x the 6,378 km equatorial radius in the NASA Earth fact sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html) = about 80 (our math)."
+ ],
+ "scenes": [
+  {
+   "type": "data",
+   "narration": "A US water main breaks about every two minutes.",
+   "data": {
+    "big": "2 MIN",
+    "label": "BETWEEN BREAKS",
+    "cue": "a",
+    "source": "ASCE 2025 · OUR MATH",
+    "source_cue": "water"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "breaks",
+      "dt": 0.2,
+      "take": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "That's about {240,000|two hundred forty thousand} breaks a year.",
+   "data": {
+    "big": "240K",
+    "label": "BREAKS A YEAR",
+    "cue": "240,000",
+    "source": "ASCE · 2025 REPORT CARD",
+    "source_cue": "that's"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ]
+     },
+     {
+      "cue": "240,000",
+      "dt": 0.3,
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Spread across more than {2 million|two million} miles of pipe under our streets. That's enough to circle the Earth about {80|eighty} times.",
+   "data": {
+    "big": "2M MI",
+    "label": "OF WATER PIPE",
+    "cue": "2",
+    "source": "ASCE 2025 · x80: OUR MATH",
+    "source_cue": "spread"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "streets",
+      "expr": "happy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "And {9.2 million|nine point two million} lead service lines are still in use, carrying water into homes and buildings.",
+   "data": {
+    "big": "9.2M",
+    "label": "LEAD LINES",
+    "cue": "9.2",
+    "source": "ASCE 2025 · EPA 2023 DATA",
+    "source_cue": "lead"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "9.2",
+      "dt": 0.3,
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "You only notice when a street floods. Every other break stays hidden underground. And somewhere, right about now,",
+   "data": {
+    "start_lit": true,
+    "stencil": "UNDERGROUND",
+    "stencil_cue": "hidden"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.15,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "floods",
+      "take": "surprised",
+      "amp": 0.5
+     },
+     {
+      "cue": "somewhere",
+      "point": "L",
+      "angle": -20
+     }
+    ]
+   }
+  }
+ ]
+}

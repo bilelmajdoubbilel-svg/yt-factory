@@ -28,6 +28,7 @@ import numpy as np
 import compose as C
 import cine
 import hs_art as A
+import hs_heroes
 import hs_sewer
 from brand_art import pipe_ring
 
@@ -456,7 +457,8 @@ def scene_data(S, ctx):
     big = d.get("big")
     if big:
         # landscape: left of Drip (he stands at W*.86), unless a gauge holds the left half
-        bx, by = (W / 2 + 60, 1180) if p else (W * (.72 if gauge else .58), H * .6)   # portrait: a step right of Drip
+        # portrait: a step right of Drip, high enough that a two-line caption (bottom 505 px) clears the label
+        bx, by = (W / 2 + 60, 1090) if p else (W * (.72 if gauge else .58), H * .6)
         # a Short that opens on a number shows it from frame 0, so the hook reads muted in the feed
         at = 0.0 if (S.first and p and d.get("hook", True)) else cue(S, d.get("cue"), .5)
         over.append(f'<g id="{sid}-big">{A.stencil(bx, by, C.esc(big), 168 if p else 190, PAL["hat"], ls=6)}</g>')
@@ -579,11 +581,12 @@ def captions_file(groups, W, H, total):
                 js.append(f'tl.to("#cap-g{g}-w{i}", {{color:"{PAL["cream"]}", duration:.05}}, {grp["words"][i + 1]["start"]:.3f});')
         js.append(f'tl.to("#cap-g{g}", {{opacity:0, duration:.07, ease:"power2.in"}}, {max(st + .1, en - .07):.3f});')
         js.append(f'tl.set("#cap-g{g}", {{opacity:0, visibility:"hidden"}}, {en:.3f});')
-    fs, bottom = (92, 505) if portrait else (62, 70)
+    # portrait: anchored from the top at y 1320 so a second line grows down, never up over Drip or a data label
+    fs, anchor = (92, "top:1320px") if portrait else (62, "bottom:70px")
     return f'''<template>
   <style>
     #root {{ position:absolute; inset:0; pointer-events:none; }}
-    #root .cg {{ position:absolute; left:0; right:0; bottom:{bottom}px; text-align:center; padding:0 {120 if portrait else 220}px;
+    #root .cg {{ position:absolute; left:0; right:0; {anchor}; text-align:center; padding:0 {120 if portrait else 220}px;
       font-family:'HS Display',sans-serif; font-weight:800; font-size:{fs}px; line-height:1.0; letter-spacing:.02em; color:{PAL["cream"]}; opacity:0;
       -webkit-text-stroke:{11 if portrait else 8}px {A.INK}; paint-order:stroke fill; }}
   </style>
@@ -786,6 +789,10 @@ def thumbnail_page(t, system="power"):
         world, spark_xy = hs_sewer.thumb_world()
         stops = ('<stop offset="0" stop-color="#FFF6E8" stop-opacity="1"/><stop offset=".25" stop-color="#7CCBEA" stop-opacity=".8"/>'
                  '<stop offset="1" stop-color="#2F7FA6" stop-opacity="0"/>')
+    elif system in hs_heroes.HEROES:   # one simple object per system (pipeline/hs_heroes.py)
+        world, spark_xy, (mid, edge) = hs_heroes.HEROES[system]()
+        stops = (f'<stop offset="0" stop-color="#FFF6E8" stop-opacity="1"/><stop offset=".25" stop-color="{mid}" stop-opacity=".8"/>'
+                 f'<stop offset="1" stop-color="{edge}" stop-opacity="0"/>')
     rig = A.drip_rig("th", expr)
     # hat mid-pop: lift + tilt (same as a take's peak), squash/stretch
     rig = rig.replace('<g id="th-hat">', '<g id="th-hat" transform="translate(-6 -30) rotate(-9 0 -52)">')

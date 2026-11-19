@@ -70,6 +70,11 @@
   "date": "2026-11-26"
  },
  {
+  "script": "content/hidden/911-call/long.json",
+  "kind": "long",
+  "date": "2026-11-27"
+ },
+ {
   "script": "content/hidden/sewer/sewer-s5-farms.json",
   "kind": "short",
   "date": "2026-11-27"
@@ -78,6 +83,11 @@
   "script": "content/hidden/sewer/sewer-s6-gravity.json",
   "kind": "short",
   "date": "2026-11-28"
+ },
+ {
+  "script": "content/hidden/tap-water/long.json",
+  "kind": "long",
+  "date": "2026-11-29"
  },
  {
   "script": "content/hidden/sewer/sewer-s7-hours.json",
@@ -150,11 +160,6 @@
   "date": "2026-12-12"
  },
  {
-  "script": "content/hidden/911-call/long.json",
-  "kind": "long",
-  "date": "2026-12-13"
- },
- {
   "script": "content/hidden/911-call/e911-s7-canada.json",
   "kind": "short",
   "date": "2026-12-13"
@@ -163,5 +168,15 @@
   "script": "content/hidden/911-call/e911-s8-nextgen.json",
   "kind": "short",
   "date": "2026-12-14"
+ },
+ {
+  "script": "content/hidden/tap-water/water-s1-upstream.json",
+  "kind": "short",
+  "date": "2026-12-15"
+ },
+ {
+  "script": "content/hidden/tap-water/water-s2-breaks.json",
+  "kind": "short",
+  "date": "2026-12-16"
  }
 ]

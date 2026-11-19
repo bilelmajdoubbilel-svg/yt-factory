@@ -1,0 +1,181 @@
+{
+ "channel": "hidden",
+ "style": "hidden",
+ "system": "water",
+ "voice": "am_michael",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "tap-water",
+ "id": "water-s1-upstream",
+ "title": "Your Tap Water May Have Been Flushed Before #shorts",
+ "summary": "About half of larger US river-fed drinking water plants have at least one treated wastewater discharge upstream (de facto reuse). A model of 25 plants put it at up to 13% of intake on a normal day and 84% at one plant in low flow (Journal AWWA 2018, modeled).",
+ "tags": [
+  "tap water",
+  "where does tap water come from",
+  "de facto reuse",
+  "drinking water",
+  "water treatment"
+ ],
+ "thumbnail": {
+  "big": "1 IN 2",
+  "small": "UPSTREAM",
+  "expr": "worried"
+ },
+ "sources": [
+  "Roughly half of US surface-water drinking water plants serving more than 10,000 people are affected by at least one upstream treated wastewater discharge; modeled de facto reuse at 25 plants ranged from <0.1 to 13% of intake at average flow and >80% at low flow, highest 84% at one plant (Nguyen et al., Journal AWWA 110(4), 2018, modeled): https://par.nsf.gov/servlets/purl/10079854",
+  "De facto water reuse: a drinking water supply that contains a significant fraction of wastewater effluent; common across the US (US EPA research grant page): https://www.epa.gov/research-grants/national-priorities-occurrence-and-implications-de-facto-water-reuse-drinking-water",
+  "Public supply withdrew about 35,823 million gallons per day in the lower 48 in 2020: 18,586 Mgal/d (about 52%) surface water, 17,236 Mgal/d (about 48%) groundwater (USGS, modeled estimates): https://www.usgs.gov/mission-areas/water-resources/science/public-supply-water-use",
+  "Community water treatment steps: coagulation, flocculation, sedimentation, filtration (sand, gravel, charcoal), disinfection (CDC, How Water Treatment Works): https://www.cdc.gov/drinking-water/about/how-water-treatment-works.html",
+  "More than 2 million miles of drinking water pipe; approximately 240,000 water main breaks per year; 9.2 million lead service lines in operation (EPA 2023 figure) (ASCE 2025 Infrastructure Report Card, Drinking Water): https://infrastructurereportcard.org/wp-content/uploads/2025/03/Drinking-Water.pdf",
+  "Over 148,000 public water systems in the US provide drinking water to 90 percent of Americans (US EPA, Information about Public Water Systems): https://19january2025snapshot.epa.gov/dwreginfo/information-about-public-water-systems",
+  "One break about every 2 minutes: 525,600 minutes in a year / 240,000 breaks = about 2.2 minutes (our math from the ASCE figure)."
+ ],
+ "scenes": [
+  {
+   "type": "data",
+   "narration": "About half of America's larger river-fed water plants have treated sewage flowing in from upstream.",
+   "data": {
+    "big": "1 IN 2",
+    "label": "SEWAGE UPSTREAM",
+    "cue": "about",
+    "source": "J. AWWA 2018 · MODELED",
+    "source_cue": "half"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "sewage",
+      "dt": 0.2,
+      "take": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "Towns on a river send their treated wastewater back into it. The next town downstream drinks from that same river.",
+   "data": {
+    "stencil": "DOWNSTREAM",
+    "stencil_cue": "downstream"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "wastewater",
+      "point": "L",
+      "angle": 30
+     },
+     {
+      "cue": "drinks",
+      "unpoint": "L",
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "On a normal day, a model of {25|twenty-five} plants put it at {13%|thirteen percent} of the intake, at most.",
+   "data": {
+    "big": "13%",
+    "label": "NORMAL FLOW",
+    "cue": "13%",
+    "source": "J. AWWA 2018 · MODELED",
+    "source_cue": "normal"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ]
+     },
+     {
+      "cue": "13%",
+      "dt": 0.3,
+      "take": "proud",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "In a dry spell, at one plant: {84%|eighty-four percent}.",
+   "data": {
+    "big": "84%",
+    "label": "LOW FLOW",
+    "cue": "84%",
+    "source": "J. AWWA 2018 · ONE PLANT",
+    "source_cue": "dry"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "84%",
+      "dt": 0.2,
+      "take": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "That's why every plant settles, filters and disinfects it before it reaches your tap. So next time you fill a glass, remember:",
+   "data": {
+    "start_lit": true,
+    "stencil": "CLEANED",
+    "stencil_cue": "settles"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.15,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "disinfects",
+      "take": "proud",
+      "amp": 0.6
+     },
+     {
+      "cue": "glass",
+      "point": "R",
+      "angle": 20
+     }
+    ]
+   }
+  }
+ ]
+}

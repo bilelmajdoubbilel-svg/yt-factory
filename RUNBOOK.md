@@ -162,7 +162,11 @@ better way, change this file in the bundle, but never weaken "Rules that protect
   Avatar and banner: `assets/hidden/art`. Video look (built 9 Nov, approved by the owner 9 Nov; live from 16 Nov):
   `pipeline/look_hidden.py`, `pipeline/hs_art.py` (rig + cutaway kit), `assets/hidden/drip.js`; scene types host /
   follow / data / chapter / endcard; examples `content/hidden/power-grid/long.json` and its Shorts; voice am_michael.
-  Data beats: keep `big` to about 6 characters in Shorts (wider words run off the left edge). **Worlds for `follow`
+  Data beats: keep `big` to about 6 characters in Shorts (wider words run off the left edge). **Thumbnails:** a system with no
+  world slice gets one simple hero object from `pipeline/hs_heroes.py` (water: faucet + glass, recycling: blue cart, 911: lit
+  floor + phone; a new system = one small function + one line in `HEROES`); try 2-3 number/word/expression options with
+  `python pipeline/thumb_sheet.py --channel hidden --opts <opts.json>` (every upcoming long, full size + 120 px copy) and keep
+  the one you would click. **Worlds for `follow`
   scenes** (the script's `"system"` picks one; an unknown name fails the build): `power` (`hs_art.power_strip`; marks
   gen, stepup, tower1-3, substation, t2, pole, house, bulb) and `sewer` (`hs_art.sewer_strip`, code in
   `pipeline/hs_sewer.py`, built 17 Nov; the traveller is a drop; marks toilet, drain, lateral, cleanout, main, manhole,
@@ -186,13 +190,11 @@ All three channels start together on **Mon 16 Nov 2026** (owner's decision, 9 No
   (~19.4K searches/month, competition 35), 25 Nov Northwest Angle and Point Roberts, 2 Dec why Russia sold Alaska,
   9 Dec why the border is (not quite) straight; Shorts queued daily to 14 Dec. Planned: 16 Dec why Washington, D.C.
   isn't a state; 23 Dec why part of Canada is south of Detroit (added 17 Nov without vidIQ: check demand first).
-- **Hidden Systems** (long Sun 3 pm ET): scripted 22 Nov power grid ("power grid" ~47.2K/month, competition 35),
-  29 Nov where your poop goes (sewer world, 7 follow beats), 6 Dec recycling and 13 Dec 911 (both host/data beats only:
-  no recycling or 911 world yet, and thumbnails of systems other than sewer still show the power tower; build a
-  recycling world + per-system thumbnails before 6 Dec, then upgrade those scripts); Shorts queued daily to 14 Dec.
-  Planned: 20 Dec where your tap water comes from (the sewer world's river/plant can be reused); 27 Dec how a letter
-  crosses the country in days (added 17 Nov without vidIQ: check demand first). Short ideas: septic tanks, what one
-  flush costs the city, why power lines hum.
+- **Hidden Systems** (long every other day from 21 Nov, 3 pm ET; owner's OK 17 Nov): scripted 21 Nov power grid, 23 Nov sewer
+  (sewer world), 25 Nov recycling, 27 Nov 911, 29 Nov tap water ("who used it first": de facto reuse); Shorts queued daily
+  to 16 Dec. Planned: 1 Dec how a letter crosses the country, 3 Dec septic tanks, 5 Dec how a traffic light knows you're
+  waiting, 7 Dec where garbage goes, 9 Dec how a dead grid restarts (black start, power world). Check demand and
+  saturation before writing each. Short ideas: what one flush costs the city, why power lines hum.
 
 ## Rules that protect the channels (do not break)
 
