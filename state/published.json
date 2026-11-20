@@ -150,5 +150,21 @@
   "video_id": "FsH_AAaJwcc",
   "date": "2026-11-20",
   "at": "2026-11-19T21:25:27+00:00"
+ },
+ {
+  "id": "starbucks-money",
+  "channel": "money",
+  "kind": "long",
+  "video_id": "_8FRTSUAIMU",
+  "date": "2026-11-21",
+  "at": "2026-11-20T20:43:53+00:00"
+ },
+ {
+  "id": "delta-s1-amex",
+  "channel": "money",
+  "kind": "short",
+  "video_id": "7oKjQ7j8KjI",
+  "date": "2026-11-21",
+  "at": "2026-11-20T20:45:59+00:00"
  }
 ]
