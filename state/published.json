@@ -174,5 +174,21 @@
   "video_id": "h657fp9hTJw",
   "date": "2026-11-21",
   "at": "2026-11-20T20:51:39+00:00"
+ },
+ {
+  "id": "hs-power-grid",
+  "channel": "hidden",
+  "kind": "long",
+  "video_id": "ufgMGNiv660",
+  "date": "2026-11-21",
+  "at": "2026-11-20T21:08:35+00:00"
+ },
+ {
+  "id": "grid-s6-canada",
+  "channel": "hidden",
+  "kind": "short",
+  "video_id": "9qKDFxtFwdk",
+  "date": "2026-11-21",
+  "at": "2026-11-20T21:10:53+00:00"
  }
 ]
