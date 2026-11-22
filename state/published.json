@@ -238,5 +238,21 @@
   "video_id": "ZH7tXz_sMds",
   "date": "2026-11-23",
   "at": "2026-11-22T20:08:41+00:00"
+ },
+ {
+  "id": "hs-sewer",
+  "channel": "hidden",
+  "kind": "long",
+  "video_id": "YpCBSWaO87U",
+  "date": "2026-11-23",
+  "at": "2026-11-22T20:26:36+00:00"
+ },
+ {
+  "id": "sewer-s1-rain",
+  "channel": "hidden",
+  "kind": "short",
+  "video_id": "8AVjhIK-neo",
+  "date": "2026-11-23",
+  "at": "2026-11-22T20:28:49+00:00"
  }
 ]
