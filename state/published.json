@@ -214,5 +214,21 @@
   "video_id": "qNsl4h5tKI0",
   "date": "2026-11-22",
   "at": "2026-11-21T19:30:07+00:00"
+ },
+ {
+  "id": "mcdonalds-landlord",
+  "channel": "money",
+  "kind": "long",
+  "video_id": "MmW5g8zO6Ho",
+  "date": "2026-11-23",
+  "at": "2026-11-22T20:00:58+00:00"
+ },
+ {
+  "id": "delta-s3-united",
+  "channel": "money",
+  "kind": "short",
+  "video_id": "1BVmEGRBC4g",
+  "date": "2026-11-23",
+  "at": "2026-11-22T20:03:30+00:00"
  }
 ]
