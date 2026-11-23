@@ -71,7 +71,7 @@ a channel without the field keeps the Price Logic path.
    find the cause in the code, fix it with a bundle, and tell the owner only if he must act.
 2. **Owner notes.** Read the Notes doc. Act on new notes (topic ideas, feedback, approvals). Never set a channel
    `"ready": true` unless the Notes doc has the owner's approval of that channel's look.
-3. **Learn from the numbers.** The `stats` workflow (Mondays 17:47 UTC) writes each channel's report to its
+3. **Learn from the numbers.** Start with the Learning loop below (`python pipeline/learn.py`). The `stats` workflow (Mondays 17:47 UTC) writes each channel's report to its
    private Drive file (ids in `config/stats.json`, folder `stats (robot writes)`): subscribers, views, per-video
    views/likes/comments, and, when the tokens have the analytics scope, watch time, average % viewed,
    subscribers gained, `hook_hold` (share still watching at 30 s, 3 s for Shorts) and the retention curve
@@ -88,13 +88,16 @@ a channel without the field keeps the Price Logic path.
    kept, every number sourced, one idea per beat, something to look at in every beat, pattern interrupt about
    every 30 s, title/thumbnail pair (no repeated words, title 40-60 characters), channel distinctness, and the
    channel's LESSONS. Queue it only with 36/45 or more and nothing under 3; otherwise fix and score again.
-5. **Buffer.** Each ready channel keeps at least 28 days of finished scripts in its queue. Fill the gap: pick
+5. **Buffer.** Each ready channel keeps at least 10 days of long videos and 14 days of Shorts in its queue. Fill the gap: pick
    topics from evidence (vidIQ outliers/keywords if connected, web search), never repeat a topic (see
    `content/<channel>/`), research every number from primary sources, write long + Shorts per the playbook,
    build and lint each script, render at least one Short and look at its frames, then send one bundle per channel.
    Work one channel at a time, the one whose queue runs out first, and upload its bundle before starting the next:
    the 16 Nov run stopped at the plan's usage limit after 43 minutes and had sent nothing.
-   Schedules: Price Logic long Tue + Fri, Map Minutes long Wed, Hidden Systems long Sun; one Short a day each.
+   Pace (owner's OK, 17 Nov 2026): every channel posts one Short a day and one long video every 2 days (long dates =
+   `schedule.long_anchor` in `channels/<id>.json` + 2n days). Writing is split: the Monday run writes Price Logic, the
+   Tuesday session Map Minutes, the Thursday session Hidden Systems; each keeps at least 10 days of longs and 14 days of
+   Shorts queued, and writes for another channel only if that one has under 4 days of longs left.
 6. **Report.** Create a Google Doc `Weekly report YYYY-MM-DD` in the Drive root: what published, what you
    queued (titles + dates), problems, anything the owner must do. Keep it short and plain.
 7. **Calendar (keep it exact, every run).** The owner's Google Calendar shows every long video as its own
@@ -107,6 +110,37 @@ a channel without the field keeps the Price Logic path.
 8. **Owner actions.** If the owner must do something, create a Google Calendar event on the day it is needed
    (30 minutes, title starting `YouTube:`, exact steps in the description, popup reminder) and list it in the report.
    Never ask for secrets or tokens in a doc, event or chat; they go only into GitHub Secrets.
+
+## Learning loop (every writing session; owner, 18 Nov 2026: "lets always keep learning to improve")
+
+1. **Measure.** `python pipeline/learn.py` prints every published video's PUBLIC views at 48 h and 7 days against
+   its own channel's median (Shorts with Shorts, longs with longs). The robot stores the snapshots it needs: after
+   each publish run `pipeline/views.py` appends the public views/likes/comments of the channel's videos from the last
+   30 days to `state/views-<channel>.json`. Until a video has snapshots around 48 h, learn.py judges current views
+   against the current-views median of videos older than 48 h (verdicts marked `*`). A session that pulls public
+   counts itself (vidIQ `vidiq_get_videos_by_ids`, 5 credits for up to 50 videos) passes them with
+   `--extra counts.json` (`[{"video_id", "at", "views", "published_at"}]`, kept outside the repo). Judge at 48 h,
+   never earlier: a new Short shows ~0 views for its first hours.
+2. **Explain every WIN (2x the median or more) and LOW (a quarter or less)** in one dated line at the top of that
+   channel's `LESSONS.md`: what in the title, the first second or the topic made the difference, written as a rule
+   for the next script. No cause without a title, a frame or a scene to point at.
+3. **Tests.** Each week judge last week's `TEST` lines (kept, dropped or extended, with the numbers) and start one
+   new TEST per channel: one change, the videos it applies to, the measure and the date to judge it. The Monday run
+   writes the TEST for every channel; the Tuesday and Thursday sessions apply them in their scripts.
+4. **Saturation check before every new topic.** Search YouTube (vidIQ only while more than 20 credits remain;
+   otherwise web search) for the topic; if it is crowded, find a fresh angle (a person, a conflict, a number nobody
+   leads with) or pick another topic. Write the check in the weekly report.
+5. **Shorts are 25-40 s** (about 65-100 spoken words at speed 1.1) with a loop line; under 25 s they lose to the
+   other channels' Shorts. The Monday run lengthens up to 7 queued Price Logic Shorts a week until none is under 25 s.
+6. **Price Logic watch** (18 Nov finding: Price Logic Shorts drew 1-55 views while the other two drew ~1,150 with the
+   same upload settings). After the 10 Price Logic Shorts of 19-28 Nov have 48 h numbers (the 30 Nov run), if their
+   48 h median is still under a tenth of the other two channels' Shorts median, add a calendar event for the owner
+   on the next day: "YouTube: Price Logic - keep going or start a fresh channel?" with the numbers and both options
+   (Claude's recommendation first). Never create the channel without the owner.
+7. **Strike safety.** Nothing that is not 100% ours on any channel: our own art and voice, the CC0 library, sourced
+   facts. Old strikes on another channel of the same Google account can affect every channel of that account.
+8. Private numbers (watch time, retention, subscribers gained) go only into the Drive stats files and the weekly
+   report doc; public view counts may go into LESSONS.md.
 
 ## Watchdog (Wednesday and Friday evenings)
 
@@ -181,11 +215,10 @@ better way, change this file in the bundle, but never weaken "Rules that protect
 ## Topic plan (check `content/<channel>/` first; never repeat)
 
 All three channels start together on **Mon 16 Nov 2026** (owner's decision, 9 Nov): Shorts every day from 16 Nov.
-- **Price Logic** (long Tue + Fri 3 pm ET), scripted: Costco (17 Nov), Delta (20 Nov), Black Friday (24 Nov, fixed:
-  Black Friday is 27 Nov), Starbucks (27 Nov), McDonald's (1 Dec), printer ink (4 Dec), casinos (8 Dec), car washes
-  (11 Dec), popcorn (15 Dec). Planned: Amazon delivery (18 Dec), hotels (22 Dec), Toys "R" Us (25 Dec), ticket fees
-  (29 Dec), gyms (1 Jan, New Year), Uber (5 Jan). Shorts are queued daily to 16 Dec. (`PLAN-2026-11-12.md` has the
-  old dates.)
+- **Price Logic** (long every 2 days from 19 Nov, 3 pm ET), scripted: Delta 19 Nov, Starbucks 21, McDonald's 23, Black Friday 25,
+  printer ink 27, casinos 29, car washes 1 Dec, popcorn 3 Dec, Amazon free shipping 5 Dec (seller fees angle). Planned:
+  hotels 7 Dec, ticket fees 9 Dec, Toys "R" Us 11 Dec, Uber 13 Dec, gyms 2 Jan (New Year). Shorts queued daily to 16 Dec.
+  Angles that work here (23 Nov numbers): who paid whom, a person in conflict, one big number.
 - **Map Minutes** (long Wed 3 pm ET), vidIQ search data of 6 Nov: scripted 18 Nov why most of Canada is empty
   (~19.4K searches/month, competition 35), 25 Nov Northwest Angle and Point Roberts, 2 Dec why Russia sold Alaska,
   9 Dec why the border is (not quite) straight; Shorts queued daily to 14 Dec. Planned: 16 Dec why Washington, D.C.
@@ -202,5 +235,5 @@ All three channels start together on **Mon 16 Nov 2026** (owner's decision, 9 No
 - Every number has a source URL in the script's `sources`; estimates are labelled on screen.
 - No clips from other creators; music and effects only from the CC0 library in the repo.
 - The description notes the synthetic voice (upload.py adds it); no realistic AI images of real people.
-- Keep the pace (4 long + 21 Shorts a week). Do not add channels or raise the pace without the owner.
+- Keep the pace (per channel: one Short a day, one long every 2 days). Do not add channels or raise the pace without the owner.
 - Evergreen topics first. If a channel's watch hours stall for 3 months, change format and packaging first.

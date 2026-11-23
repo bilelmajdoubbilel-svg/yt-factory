@@ -167,5 +167,24 @@ def main():
             print("logged", sid, vid)
 
 
+def snapshot_views(argv=None):
+    """After a real run, store this channel's public view counts for the learning loop (pipeline/learn.py).
+    Never fails the run: any error is printed and ignored."""
+    p = argparse.ArgumentParser(add_help=False)
+    p.add_argument("--channel")
+    for flag in ("--dry-run", "--check", "--test"):
+        p.add_argument(flag, action="store_true")
+    a, _ = p.parse_known_args(argv)
+    if not a.channel or a.dry_run or a.check or a.test:
+        return
+    try:
+        sys.path.insert(0, str(ROOT / "pipeline"))
+        import views
+        print("views snapshot:", views.snapshot(a.channel), "videos")
+    except Exception as e:  # noqa: BLE001
+        print("views snapshot skipped:", repr(e)[:200], file=sys.stderr)
+
+
 if __name__ == "__main__":
     main()
+    snapshot_views()
