@@ -48,6 +48,20 @@
   {
    "type": "counter",
    "world": "stage",
+   "narration": "In fiscal {2025,|twenty twenty-five,} customers put {$15.2 billion|fifteen point two billion dollars} onto Starbucks cards and rewards, before drinking a thing.",
+   "data": {
+    "value": 15.2,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "loaded in fiscal 2025",
+    "cue": "$15.2",
+    "source": "Starbucks FY2025 10-K"
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
    "narration": "At the end of its last fiscal year, Starbucks was holding about {$1.75 billion|one point seven five billion dollars} of it, not yet spent.",
    "data": {
     "value": 1.75,
@@ -57,6 +71,23 @@
     "label": "on cards & rewards, not yet spent",
     "cue": "$1.75",
     "source": "Starbucks FY2025 10-K"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "It only becomes a sale when you order.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not a sale…",
+      "cue": "only"
+     },
+     {
+      "text": "until you *order*",
+      "cue": "order"
+     }
+    ]
    }
   },
   {

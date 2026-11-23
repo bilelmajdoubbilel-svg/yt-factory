@@ -140,6 +140,11 @@
   "date": "2026-12-04"
  },
  {
+  "script": "content/money/amazon-shipping/long.json",
+  "kind": "long",
+  "date": "2026-12-05"
+ },
+ {
   "script": "content/money/printer-ink/ink-s1-ratio.json",
   "kind": "short",
   "date": "2026-12-05"

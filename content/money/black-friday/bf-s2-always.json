@@ -76,6 +76,34 @@
    }
   },
   {
+   "type": "quote",
+   "world": "stage",
+   "narration": "Its editor put it bluntly. Fifty or sixty percent off a regular price doesn't mean anything.",
+   "data": {
+    "quote": "...doesn't mean *anything*.",
+    "who": "Kevin Brasler, Consumers' Checkbook",
+    "note": "on '50 or 60% off', Nov 2025",
+    "cue": "fifty"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "J.C. Penney made the list too. Most items tracked there were always, or almost always, on sale.",
+   "data": {
+    "lines": [
+     {
+      "text": "J.C. Penney",
+      "cue": "j.c."
+     },
+     {
+      "text": "*almost always* on sale",
+      "cue": "almost"
+     }
+    ]
+   }
+  },
+  {
    "type": "end",
    "world": "street:SALE",
    "narration": "If it's always on sale, it's never on sale.",

@@ -77,6 +77,37 @@
    }
   },
   {
+   "type": "counter",
+   "world": "stage",
+   "narration": "At the end of fiscal {2025,|twenty twenty-five,} about {$5.8 billion|five point eight billion dollars} of it was still waiting to be counted.",
+   "data": {
+    "value": 5.8,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "still not counted, FY2025",
+    "cue": "$5.8",
+    "source": "Starbucks FY2025 10-K"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Your app balance works the same way. Paid first. Coffee later.",
+   "data": {
+    "lines": [
+     {
+      "text": "Your app balance",
+      "cue": "your"
+     },
+     {
+      "text": "works the *same*",
+      "cue": "same"
+     }
+    ]
+   }
+  },
+  {
    "type": "end",
    "world": "street:COFFEE",
    "narration": "Paid first. Counted for decades.",

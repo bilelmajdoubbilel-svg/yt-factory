@@ -27,7 +27,7 @@
      },
      {
       "text": "for no coffee",
-      "cue": "nobody"
+      "cue": "for"
      }
     ]
    },
@@ -77,18 +77,49 @@
    }
   },
   {
-   "type": "end",
-   "world": "street:COFFEE",
-   "narration": "Spend your gift cards.",
+   "type": "counter",
+   "world": "stage",
+   "narration": "That's more than {$600,000|six hundred thousand dollars} every single day.",
+   "data": {
+    "value": 609,
+    "decimals": 0,
+    "prefix": "$",
+    "suffix": "K",
+    "label": "a day (our math: $222M / 365)",
+    "cue": "$600,000",
+    "source": "Starbucks FY2025 10-K"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "No cup. No barista. No coffee. It still becomes revenue.",
    "data": {
     "lines": [
      {
-      "text": "Spend your",
+      "text": "No cup made",
+      "cue": "no"
+     },
+     {
+      "text": "Still *revenue*",
+      "cue": "revenue"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:COFFEE",
+   "narration": "So spend your gift cards. Or Starbucks keeps the change.",
+   "data": {
+    "lines": [
+     {
+      "text": "Spend your *cards*",
       "cue": "spend"
      },
      {
-      "text": "*gift cards*",
-      "cue": "cards"
+      "text": "or they keep it",
+      "cue": "keeps"
      }
     ],
     "foot": ""
@@ -98,7 +129,7 @@
     "pose": "hold",
     "acts": [
      {
-      "cue": "cards",
+      "cue": "keeps",
       "expr": "happy"
      }
     ]

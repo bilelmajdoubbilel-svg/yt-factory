@@ -75,6 +75,17 @@
    }
   },
   {
+   "type": "quote",
+   "world": "stage",
+   "narration": "In {2013,|twenty thirteen,} the boss admitted it. Their customer always wants a reference price. Weeks later, he was out.",
+   "data": {
+    "quote": "...she always wants a *reference price*.",
+    "who": "Ron Johnson, J.C. Penney CEO",
+    "note": "Feb 2013; out that April",
+    "cue": "their"
+   }
+  },
+  {
    "type": "end",
    "world": "street:SALE",
    "narration": "We don't shop for prices. We shop for wins.",

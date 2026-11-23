@@ -1,0 +1,527 @@
+{
+ "channel": "money",
+ "style": "cinematic",
+ "voice": "af_heart",
+ "id": "amazon-shipping",
+ "format": "long",
+ "speed": 1.0,
+ "title": "Amazon's Free Shipping: Who Really Pays?",
+ "summary": "Amazon spent $102.7 billion on shipping in 2025, more than twice what all its subscriptions brought in. Here's where the rest of the money comes from: $172.2 billion in seller fees, $68.6 billion in ads, and the prices you see.",
+ "intro_chapter": "The $102.7B bill",
+ "tags": [
+  "amazon",
+  "amazon prime",
+  "free shipping",
+  "how does amazon make money",
+  "amazon seller fees",
+  "business model"
+ ],
+ "thumbnail": {
+  "tag": "$102.7B",
+  "top": "THE REAL BILL",
+  "expr": "surprised",
+  "prop": "bag"
+ },
+ "open_mood": "curious",
+ "body_mood": "warm",
+ "end_mood": "payoff",
+ "hooks": [
+  {
+   "formula": "Statistic",
+   "hook": "Last year Amazon spent $102.7 billion just shipping packages, and for millions of shoppers the shipping was free.",
+   "score": 86,
+   "picked": true
+  },
+  {
+   "formula": "The Question",
+   "hook": "Who actually pays for Amazon's free shipping? Not your Prime fee.",
+   "score": 82
+  },
+  {
+   "formula": "Contrarian Flip",
+   "hook": "Free shipping is one of the most expensive things Amazon sells.",
+   "score": 78
+  }
+ ],
+ "sources": [
+  "Amazon.com 2025 Form 10-K (MD&A): \"Shipping costs were $95.8 billion and $102.7 billion in 2024 and 2025\"; service sales \"primarily represent third-party seller fees, which includes commissions and any related fulfillment and shipping fees\"; Item 1: Amazon Prime, \"a membership program that includes fast, free shipping on tens of millions of items\": https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+  "Amazon.com 2025 Form 10-K, Segment Information - Disaggregation of Revenue: 2025 third-party seller services $172,162M, advertising services $68,635M, subscription services $49,619M, total net sales $716,924M: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/R88.htm",
+  "Amazon press release, Feb 2, 2005 (SEC Exhibit 99.1): Amazon Prime introduced, $79 a year for unlimited express two-day shipping: https://www.sec.gov/Archives/edgar/data/1018724/000119312505017451/dex991.htm",
+  "FTC press release, Sept 26, 2023 (FTC v. Amazon): \"Combined, all of these fees force many sellers to pay close to 50% of their total revenues to Amazon\"; advertising fees \"have become virtually necessary for sellers to do business\"; Prime eligibility \"a virtual necessity\", conditioned \"on sellers using Amazon's costly fulfillment service\"; \"Anti-discounting measures that punish sellers ... offering prices lower than Amazon\": https://www.ftc.gov/news-events/news/press-releases/2023/09/ftc-sues-amazon-illegally-maintaining-monopoly-power",
+  "FTC and plaintiff states v. Amazon.com, No. 2:23-cv-01495 (W.D. Wash.), case pending (claims are allegations): https://www.naag.org/multistate-case/ftc-and-plaintiff-states-v-amazon-com-inc-no-223-cv-01495-w-d-wash-sept-26-2023/",
+  "Amazon to pay $2.5 billion to settle FTC allegations it duped customers into enrolling in Prime (AP via PBS, Sept 25, 2025): https://www.pbs.org/newshour/economy/amazon-to-pay-2-5-billion-to-settle-ftc-allegations-it-duped-customers-into-enrolling-in-prime",
+  "Our math: $49.6B subscriptions / $102.7B shipping = 48%; $172.2B seller fees - $102.7B shipping = $69.5B. Subscription services also include digital subscriptions, so Prime fees alone are less than $49.6B. Ads are bought by sellers, vendors and other businesses; \"mostly businesses\" is our wording."
+ ],
+ "scenes": [
+  {
+   "type": "shot",
+   "world": "street:DELIVERY",
+   "narration": "Last year, Amazon spent {$102.7 billion|one hundred two point seven billion dollars} just shipping packages. And for millions of shoppers, the shipping was free.",
+   "data": {
+    "elements": [
+     {
+      "kind": "hangtag",
+      "text": "$102.7B",
+      "x": 430,
+      "y": 250,
+      "scale": 1.4,
+      "layer": "mid",
+      "cue": "$102.7",
+      "cue2": "free"
+     }
+    ]
+   },
+   "host": {
+    "x": -820,
+    "pose": "hold",
+    "prop": "bag",
+    "enter": {
+     "dx": 700,
+     "t": 0,
+     "dur": 1.4
+    },
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 16
+     },
+     {
+      "cue": "$102.7",
+      "expr": "surprised",
+      "look": 20
+     }
+    ]
+   },
+   "cam": [
+    {
+     "t": 0,
+     "x": -200,
+     "y": 10,
+     "z": 1.0
+    },
+    {
+     "t": "end",
+     "x": 80,
+     "y": -10,
+     "z": 1.12,
+     "ease": "sine.inOut"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "So who actually paid that bill? Not your Prime fee. Not really. The money comes from somewhere most shoppers never look.",
+   "data": {
+    "lines": [
+     {
+      "text": "Who *paid*?",
+      "cue": "who"
+     },
+     {
+      "text": "not Prime, really",
+      "cue": "not"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking"
+     },
+     {
+      "cue": "somewhere",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "By the end, you'll know exactly who pays for the box on your doorstep. And it might be you.",
+   "data": {
+    "lines": [
+     {
+      "text": "Who pays",
+      "cue": "who"
+     },
+     {
+      "text": "for *the box*",
+      "cue": "box"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part one. The seventy-nine dollar promise.",
+   "data": {
+    "num": "01",
+    "title": "The *$79* promise"
+   }
+  },
+  {
+   "type": "pricetag",
+   "world": "street:DELIVERY",
+   "narration": "In {2005,|two thousand five,} Amazon launched Prime. {$79|Seventy-nine dollars} a year, for unlimited two-day shipping.",
+   "data": {
+    "price": "$79",
+    "kicker": "PRIME, 2005",
+    "label": "a year, *unlimited* shipping",
+    "cue": "$79",
+    "label_cue": "unlimited"
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking"
+     },
+     {
+      "cue": "$79",
+      "expr": "happy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "The idea was simple. Pay once, and every order after that feels free.",
+   "data": {
+    "lines": [
+     {
+      "text": "Pay *once*",
+      "cue": "pay"
+     },
+     {
+      "text": "every order feels free",
+      "cue": "every"
+     }
+    ]
+   }
+  },
+  {
+   "type": "compare",
+   "world": "stage",
+   "narration": "Now jump to {2025.|twenty twenty-five.} Shipping cost Amazon {$102.7 billion.|one hundred two point seven billion.} All its subscriptions together, Prime fees included, brought in {$49.6 billion.|forty-nine point six billion.}",
+   "data": {
+    "title": "Amazon, 2025",
+    "source": "Amazon 2025 10-K",
+    "items": [
+     {
+      "label": "Shipping costs",
+      "value": 102.7,
+      "display": "$102.7B",
+      "cue": "shipping"
+     },
+     {
+      "label": "All subscriptions",
+      "value": 49.6,
+      "display": "$49.6B",
+      "highlight": true,
+      "cue": "$49.6"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Even if every one of those dollars were a Prime fee, it would cover less than half the shipping bill.",
+   "data": {
+    "lines": [
+     {
+      "text": "Under *half*",
+      "cue": "less"
+     },
+     {
+      "text": "of the shipping bill",
+      "cue": "shipping"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "worried"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cta",
+   "world": "street:DELIVERY",
+   "narration": "If you like seeing the receipts behind everyday prices, subscribe. New ones every other day.",
+   "data": {
+    "cue": "subscribe"
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part two. The sellers' bill.",
+   "data": {
+    "num": "02",
+    "title": "The *sellers'* bill"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "Here's what most shoppers miss. A lot of what you buy on Amazon isn't sold by Amazon. It's sold by other businesses, renting space in Amazon's store.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not sold by *Amazon*",
+      "cue": "isn't"
+     },
+     {
+      "text": "sold by other businesses",
+      "cue": "other"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "In {2025,|twenty twenty-five,} those sellers paid Amazon {$172.2 billion|one hundred seventy-two point two billion dollars} in fees. Commissions on every sale, plus fees for storing and shipping their goods.",
+   "data": {
+    "value": 172.2,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "seller fees, 2025",
+    "cue": "$172.2",
+    "source": "Amazon 2025 10-K"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "That's more than the entire shipping bill, by about seventy billion dollars.",
+   "data": {
+    "lines": [
+     {
+      "text": "More than",
+      "cue": "more"
+     },
+     {
+      "text": "*all* the shipping",
+      "cue": "entire"
+     }
+    ]
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "And then there are ads. Another {$68.6 billion,|sixty-eight point six billion,} mostly from businesses paying to show up when you search.",
+   "data": {
+    "value": 68.6,
+    "decimals": 1,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "advertising, 2025",
+    "cue": "$68.6",
+    "source": "Amazon 2025 10-K"
+   }
+  },
+  {
+   "type": "quote",
+   "world": "stage",
+   "narration": "In {2023,|twenty twenty-three,} the US government sued Amazon, and put a number on it. Combined, all of these fees force many sellers to pay close to fifty percent of their total revenues to Amazon.",
+   "data": {
+    "quote": "...force many sellers to pay *close to 50%* of their total revenues to Amazon.",
+    "who": "U.S. Federal Trade Commission",
+    "note": "lawsuit, Sept 2023; Amazon is fighting it",
+    "cue": "combined"
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "The government also says the Prime badge is a virtual necessity for sellers, and that getting it is tied to using Amazon's own delivery service.",
+   "data": {
+    "lines": [
+     {
+      "text": "Prime badge",
+      "cue": "prime"
+     },
+     {
+      "text": "tied to *Amazon's* delivery",
+      "cue": "tied"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "world": "stage",
+   "narration": "Part three. Who really pays.",
+   "data": {
+    "num": "03",
+    "title": "Who *really* pays"
+   }
+  },
+  {
+   "type": "flow",
+   "world": "studio",
+   "narration": "So follow the money. You pay for Prime. Sellers pay commissions, delivery fees and ads. And a seller has to cover those costs somewhere. The obvious place is the price tag.",
+   "data": {
+    "steps": [
+     {
+      "label": "You pay Prime",
+      "cue": "you"
+     },
+     {
+      "label": "Sellers pay fees + ads",
+      "cue": "sellers"
+     },
+     {
+      "label": "Costs need covering",
+      "cue": "cover"
+     },
+     {
+      "label": "The price tag",
+      "cue": "obvious"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "aisle",
+   "narration": "The government even claims Amazon punishes sellers who offer lower prices somewhere else, by burying them in its search results. That claim hasn't been decided in court.",
+   "data": {
+    "lines": [
+     {
+      "text": "Cheaper elsewhere?",
+      "cue": "lower"
+     },
+     {
+      "text": "*buried* in search",
+      "cue": "burying"
+     }
+    ]
+   }
+  },
+  {
+   "type": "pricetag",
+   "world": "street:DELIVERY",
+   "narration": "And Prime itself has a price tag in court. In {2025,|twenty twenty-five,} Amazon agreed to pay {$2.5 billion|two and a half billion dollars} to settle claims that it signed people up for Prime without clear consent, and made quitting hard.",
+   "data": {
+    "price": "$2.5B",
+    "kicker": "FTC SETTLEMENT, 2025",
+    "label": "over Prime *sign-ups*",
+    "cue": "$2.5",
+    "label_cue": "signed"
+   },
+   "host": {
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "thinking"
+     },
+     {
+      "cue": "$2.5",
+      "expr": "surprised"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "studio",
+   "narration": "So free shipping was never free. The bill is just split up. A little in your Prime fee. A lot in what sellers pay. And some of that, in the prices you see.",
+   "data": {
+    "lines": [
+     {
+      "text": "Never *free*",
+      "cue": "never"
+     },
+     {
+      "text": "just split up",
+      "cue": "split"
+     }
+    ]
+   }
+  },
+  {
+   "type": "statement",
+   "world": "street:DELIVERY",
+   "narration": "Next time a box shows up with free shipping, ask who's on the receipt. Trust me. I'm a price tag.",
+   "data": {
+    "lines": [
+     {
+      "text": "Who's on",
+      "cue": "who's"
+     },
+     {
+      "text": "the *receipt*?",
+      "cue": "receipt"
+     }
+    ]
+   },
+   "host": {
+    "pose": "hold",
+    "prop": "bag",
+    "acts": [
+     {
+      "cue": "trust",
+      "expr": "happy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "end",
+   "world": "street:DELIVERY",
+   "narration": "Free shipping isn't free. It's paid by someone you don't see. Next time: another everyday price, taken apart.",
+   "data": {
+    "lines": [
+     {
+      "text": "Not *free*.",
+      "cue": "free"
+     },
+     {
+      "text": "Paid by someone else.",
+      "cue": "paid"
+     }
+    ],
+    "foot": "Sources in the description",
+    "foot_cue": "next"
+   },
+   "host": {
+    "prop": "bag",
+    "pose": "hold",
+    "acts": [
+     {
+      "t": 0.2,
+      "expr": "happy",
+      "look": 14
+     },
+     {
+      "cue": "next",
+      "expr": "proud",
+      "pose": "wave"
+     }
+    ]
+   }
+  }
+ ]
+}

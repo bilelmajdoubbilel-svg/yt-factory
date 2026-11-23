@@ -291,7 +291,7 @@
   {
    "type": "cta",
    "world": "street:CINEMA",
-   "narration": "If you like knowing where your money really goes, subscribe. There's a new breakdown every week.",
+   "narration": "If you like knowing where your money really goes, subscribe. New ones every other day.",
    "data": {
     "cue": "subscribe"
    }
@@ -784,7 +784,7 @@
   {
    "type": "end",
    "world": "cinema",
-   "narration": "Ninety years ago, popcorn helped cinemas survive the Depression. Today it's still doing the same job. So next time the popcorn feels expensive, remember: you're not just buying a snack. You're helping keep the lights on. Next: another everyday price, taken apart.",
+   "narration": "Ninety years ago, popcorn helped cinemas survive the Depression. Today it's still doing the same job. So next time the popcorn feels expensive, remember: you're not just buying a snack. You're helping keep the lights on. Next time: who really pays for Amazon's free shipping?",
    "data": {
     "lines": [
      {

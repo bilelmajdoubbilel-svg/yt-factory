@@ -50,7 +50,7 @@
   {
    "type": "bars",
    "world": "stage",
-   "narration": "A credit card company paid Delta {$8.2 billion.|eight point two billion.}",
+   "narration": "Then one company paid Delta {$8.2 billion.|eight point two billion.} Not an oil company. A credit card company.",
    "data": {
     "title": "Delta, 2025",
     "source": "Delta 2025 10-K",
@@ -59,7 +59,7 @@
       "label": "Jet fuel",
       "value": 9.819,
       "display": "$9.8B",
-      "cue": "credit"
+      "cue": "then"
      },
      {
       "label": "From Amex",
@@ -89,9 +89,40 @@
    }
   },
   {
+   "type": "statement",
+   "world": "studio",
+   "narration": "Every time you swipe a Delta Amex card, Amex buys SkyMiles from Delta, and hands them to you.",
+   "data": {
+    "lines": [
+     {
+      "text": "Amex *buys* miles",
+      "cue": "every"
+     },
+     {
+      "text": "you get them",
+      "cue": "hands"
+     }
+    ]
+   }
+  },
+  {
+   "type": "counter",
+   "world": "stage",
+   "narration": "And Delta expects that to reach {$10 billion|ten billion dollars} a year in the next few years.",
+   "data": {
+    "value": 10,
+    "decimals": 0,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "a year, Delta's own forecast",
+    "cue": "delta",
+    "source": "Delta 2025 10-K"
+   }
+  },
+  {
    "type": "end",
    "world": "airport",
-   "narration": "Your card swipes help fly the plane.",
+   "narration": "So your card swipes help pay for Delta's jet fuel.",
    "data": {
     "lines": [
      {
@@ -99,8 +130,8 @@
       "cue": "your"
      },
      {
-      "text": "fly the *plane*",
-      "cue": "plane"
+      "text": "buy the *fuel*",
+      "cue": "fuel"
      }
     ],
     "foot": ""
@@ -110,7 +141,7 @@
     "pose": "hold",
     "acts": [
      {
-      "cue": "plane",
+      "cue": "fuel",
       "expr": "happy"
      }
     ]

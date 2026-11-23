@@ -72,6 +72,18 @@
    }
   },
   {
+   "type": "pricetag",
+   "world": "aisle",
+   "narration": "In Canada, Amazon once paid a {$1 million|one million dollar} penalty, because it couldn't back up its crossed-out prices.",
+   "data": {
+    "price": "$1M",
+    "kicker": "AMAZON, CANADA, 2017",
+    "label": "for *unproven* list prices",
+    "cue": "$1",
+    "label_cue": "couldn't"
+   }
+  },
+  {
    "type": "end",
    "world": "aisle",
    "narration": "Check last month's price before you buy.",
