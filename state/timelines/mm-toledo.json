@@ -1,0 +1,179 @@
+{
+ "total": 207.653,
+ "scenes": [
+  {
+   "id": "s01",
+   "type": "map",
+   "start": 0.0,
+   "duration": 5.95
+  },
+  {
+   "id": "s02",
+   "type": "map",
+   "start": 5.95,
+   "duration": 6.044
+  },
+  {
+   "id": "s03",
+   "type": "map",
+   "start": 11.994,
+   "duration": 8.063
+  },
+  {
+   "id": "s04",
+   "type": "pin",
+   "start": 20.057,
+   "duration": 6.462
+  },
+  {
+   "id": "s05",
+   "type": "pin",
+   "start": 26.519,
+   "duration": 6.229
+  },
+  {
+   "id": "s06",
+   "type": "map",
+   "start": 32.748,
+   "duration": 7.532
+  },
+  {
+   "id": "s07",
+   "type": "map",
+   "start": 40.28,
+   "duration": 7.843
+  },
+  {
+   "id": "s08",
+   "type": "map",
+   "start": 48.123,
+   "duration": 9.033
+  },
+  {
+   "id": "s09",
+   "type": "map",
+   "start": 57.156,
+   "duration": 9.01
+  },
+  {
+   "id": "s10",
+   "type": "map",
+   "start": 66.166,
+   "duration": 4.917
+  },
+  {
+   "id": "s11",
+   "type": "map",
+   "start": 71.083,
+   "duration": 7.189
+  },
+  {
+   "id": "s12",
+   "type": "pin",
+   "start": 78.272,
+   "duration": 5.862
+  },
+  {
+   "id": "s13",
+   "type": "map",
+   "start": 84.134,
+   "duration": 8.071
+  },
+  {
+   "id": "s14",
+   "type": "map",
+   "start": 92.205,
+   "duration": 6.085
+  },
+  {
+   "id": "s15",
+   "type": "map",
+   "start": 98.291,
+   "duration": 7.38
+  },
+  {
+   "id": "s16",
+   "type": "map",
+   "start": 105.67,
+   "duration": 3.923
+  },
+  {
+   "id": "s17",
+   "type": "pin",
+   "start": 109.594,
+   "duration": 4.261
+  },
+  {
+   "id": "s18",
+   "type": "map",
+   "start": 113.854,
+   "duration": 8.105
+  },
+  {
+   "id": "s19",
+   "type": "data",
+   "start": 121.959,
+   "duration": 10.238
+  },
+  {
+   "id": "s20",
+   "type": "map",
+   "start": 132.198,
+   "duration": 9.658
+  },
+  {
+   "id": "s21",
+   "type": "map",
+   "start": 141.856,
+   "duration": 6.22
+  },
+  {
+   "id": "s22",
+   "type": "pin",
+   "start": 148.075,
+   "duration": 6.638
+  },
+  {
+   "id": "s23",
+   "type": "data",
+   "start": 154.714,
+   "duration": 6.886
+  },
+  {
+   "id": "s24",
+   "type": "map",
+   "start": 161.6,
+   "duration": 8.252
+  },
+  {
+   "id": "s25",
+   "type": "map",
+   "start": 169.852,
+   "duration": 7.508
+  },
+  {
+   "id": "s26",
+   "type": "map",
+   "start": 177.36,
+   "duration": 9.858
+  },
+  {
+   "id": "s27",
+   "type": "pin",
+   "start": 187.218,
+   "duration": 7.132
+  },
+  {
+   "id": "s28",
+   "type": "map",
+   "start": 194.35,
+   "duration": 6.303
+  },
+  {
+   "id": "s29",
+   "type": "end",
+   "start": 200.653,
+   "duration": 7.0
+  }
+ ]
+}

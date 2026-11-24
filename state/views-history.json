@@ -1,0 +1,170 @@
+{
+ "72ixEMRt13c": {
+  "id": "mm-toledo",
+  "kind": "long",
+  "date": "2026-11-24",
+  "snaps": [
+   [
+    "2026-11-24T00:34+00:00",
+    0,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-24T00:28:56Z"
+ },
+ "HycW4ULt_kM": {
+  "id": "mm-canada-s7-permafrost",
+  "kind": "short",
+  "date": "2026-11-22",
+  "snaps": [
+   [
+    "2026-11-24T00:34+00:00",
+    1116,
+    7,
+    0
+   ]
+  ],
+  "published_at": "2026-11-22T15:00:11Z"
+ },
+ "JMuc1LBubXE": {
+  "id": "mm-canada-empty",
+  "kind": "long",
+  "date": "2026-11-18",
+  "snaps": [
+   [
+    "2026-11-24T00:34+00:00",
+    0,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-18T20:00:40Z"
+ },
+ "N2OyO8BltN8": {
+  "id": "mm-canada-s3-nunavut",
+  "kind": "short",
+  "date": "2026-11-18",
+  "snaps": [
+   [
+    "2026-11-24T00:34+00:00",
+    1122,
+    3,
+    1
+   ]
+  ],
+  "published_at": "2026-11-18T15:00:30Z"
+ },
+ "ZH7tXz_sMds": {
+  "id": "mm-nwangle-s1-drive",
+  "kind": "short",
+  "date": "2026-11-23",
+  "snaps": [
+   [
+    "2026-11-24T00:34+00:00",
+    728,
+    4,
+    0
+   ]
+  ],
+  "published_at": "2026-11-23T15:00:27Z"
+ },
+ "_y_7pisDRwM": {
+  "id": "mm-canada-s2-toronto",
+  "kind": "short",
+  "date": "2026-11-17",
+  "snaps": [
+   [
+    "2026-11-24T00:34+00:00",
+    1210,
+    4,
+    0
+   ]
+  ],
+  "published_at": "2026-11-17T15:00:23Z"
+ },
+ "h657fp9hTJw": {
+  "id": "mm-canada-s6-density",
+  "kind": "short",
+  "date": "2026-11-21",
+  "snaps": [
+   [
+    "2026-11-24T00:34+00:00",
+    1187,
+    10,
+    0
+   ]
+  ],
+  "published_at": "2026-11-21T15:00:16Z"
+ },
+ "lKS48xpnHf4": {
+  "id": "mm-canada-s4-shield",
+  "kind": "short",
+  "date": "2026-11-19",
+  "snaps": [
+   [
+    "2026-11-24T00:34+00:00",
+    1215,
+    4,
+    0
+   ]
+  ],
+  "published_at": "2026-11-19T15:00:17Z"
+ },
+ "mRTAldL6TJ8": {
+  "id": "mm-canada-s1-strip",
+  "kind": "short",
+  "date": "2026-11-16",
+  "snaps": [
+   [
+    "2026-11-24T00:34+00:00",
+    1159,
+    14,
+    1
+   ]
+  ],
+  "published_at": "2026-11-16T15:00:32Z"
+ },
+ "mqdtPzSt09A": {
+  "id": "mm-nwangle-s2-pointroberts",
+  "kind": "short",
+  "date": "2026-11-24",
+  "snaps": [
+   [
+    "2026-11-24T00:34+00:00",
+    0,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-24T00:34:04Z"
+ },
+ "wVT9YTrc1Z0": {
+  "id": "mm-nwangle",
+  "kind": "long",
+  "date": "2026-11-20",
+  "snaps": [
+   [
+    "2026-11-24T00:34+00:00",
+    0,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-20T20:00:12Z"
+ },
+ "zxak6QMhHWU": {
+  "id": "mm-canada-s5-farmland",
+  "kind": "short",
+  "date": "2026-11-20",
+  "snaps": [
+   [
+    "2026-11-24T00:34+00:00",
+    1308,
+    10,
+    0
+   ]
+  ],
+  "published_at": "2026-11-20T15:00:25Z"
+ }
+}
