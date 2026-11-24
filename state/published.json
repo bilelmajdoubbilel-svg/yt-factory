@@ -278,5 +278,21 @@
   "video_id": "mqdtPzSt09A",
   "date": "2026-11-24",
   "at": "2026-11-24T00:34:11+00:00"
+ },
+ {
+  "id": "sewer-s2-wipes",
+  "channel": "hidden",
+  "kind": "short",
+  "video_id": "G6isX03mTp4",
+  "date": "2026-11-24",
+  "at": "2026-11-24T00:38:19+00:00"
+ },
+ {
+  "id": "hs-recycling",
+  "channel": "hidden",
+  "kind": "long",
+  "video_id": "duOyZ5pEpw0",
+  "date": "2026-11-25",
+  "at": "2026-11-24T00:57:42+00:00"
  }
 ]

@@ -1,0 +1,156 @@
+{
+ "8AVjhIK-neo": {
+  "id": "sewer-s1-rain",
+  "kind": "short",
+  "date": "2026-11-23",
+  "snaps": [
+   [
+    "2026-11-24T00:57+00:00",
+    0,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-22T20:28:47Z"
+ },
+ "9qKDFxtFwdk": {
+  "id": "grid-s6-canada",
+  "kind": "short",
+  "date": "2026-11-21",
+  "snaps": [
+   [
+    "2026-11-24T00:57+00:00",
+    37,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-22T01:00:19Z"
+ },
+ "DgWQlSAPsU0": {
+  "id": "grid-s1-switch",
+  "kind": "short",
+  "date": "2026-11-16",
+  "snaps": [
+   [
+    "2026-11-24T00:57+00:00",
+    1181,
+    13,
+    0
+   ]
+  ],
+  "published_at": "2026-11-17T01:00:23Z"
+ },
+ "FsH_AAaJwcc": {
+  "id": "grid-s5-mix",
+  "kind": "short",
+  "date": "2026-11-20",
+  "snaps": [
+   [
+    "2026-11-24T00:57+00:00",
+    59,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-21T01:00:02Z"
+ },
+ "G6isX03mTp4": {
+  "id": "sewer-s2-wipes",
+  "kind": "short",
+  "date": "2026-11-24",
+  "snaps": [
+   [
+    "2026-11-24T00:57+00:00",
+    0,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-24T00:38:16Z"
+ },
+ "YpCBSWaO87U": {
+  "id": "hs-sewer",
+  "kind": "long",
+  "date": "2026-11-23",
+  "snaps": [
+   [
+    "2026-11-24T00:57+00:00",
+    0,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-23T20:00:26Z"
+ },
+ "lLUH0ICE3Zw": {
+  "id": "grid-s2-three",
+  "kind": "short",
+  "date": "2026-11-17",
+  "snaps": [
+   [
+    "2026-11-24T00:57+00:00",
+    191,
+    1,
+    0
+   ]
+  ],
+  "published_at": "2026-11-18T01:00:28Z"
+ },
+ "n8svfFNV_as": {
+  "id": "grid-s4-loss",
+  "kind": "short",
+  "date": "2026-11-19",
+  "snaps": [
+   [
+    "2026-11-24T00:57+00:00",
+    282,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-20T01:00:21Z"
+ },
+ "pXH3Z7-jWhE": {
+  "id": "grid-s3-texas",
+  "kind": "short",
+  "date": "2026-11-18",
+  "snaps": [
+   [
+    "2026-11-24T00:57+00:00",
+    36,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-19T01:00:04Z"
+ },
+ "qNsl4h5tKI0": {
+  "id": "grid-s7-trees",
+  "kind": "short",
+  "date": "2026-11-22",
+  "snaps": [
+   [
+    "2026-11-24T00:57+00:00",
+    211,
+    1,
+    0
+   ]
+  ],
+  "published_at": "2026-11-23T01:00:30Z"
+ },
+ "ufgMGNiv660": {
+  "id": "hs-power-grid",
+  "kind": "long",
+  "date": "2026-11-21",
+  "snaps": [
+   [
+    "2026-11-24T00:57+00:00",
+    2,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-21T20:00:26Z"
+ }
+}
