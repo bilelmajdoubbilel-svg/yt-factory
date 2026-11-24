@@ -65,6 +65,11 @@
   "date": "2026-11-25"
  },
  {
+  "script": "content/history/dc-statehood/long.json",
+  "kind": "long",
+  "date": "2026-11-26"
+ },
+ {
   "script": "content/history/northwest-angle/mm-nwangle-s4-report.json",
   "kind": "short",
   "date": "2026-11-26"
@@ -75,7 +80,7 @@
   "date": "2026-11-27"
  },
  {
-  "script": "content/history/dc-statehood/long.json",
+  "script": "content/history/alaska-purchase/long.json",
   "kind": "long",
   "date": "2026-11-28"
  },
@@ -90,6 +95,11 @@
   "date": "2026-11-29"
  },
  {
+  "script": "content/history/straight-border/long.json",
+  "kind": "long",
+  "date": "2026-11-30"
+ },
+ {
   "script": "content/history/alaska-purchase/mm-alaska-s1-cents.json",
   "kind": "short",
   "date": "2026-11-30"
@@ -100,7 +110,7 @@
   "date": "2026-12-01"
  },
  {
-  "script": "content/history/alaska-purchase/long.json",
+  "script": "content/history/ottawa-capital/long.json",
   "kind": "long",
   "date": "2026-12-02"
  },
@@ -113,6 +123,11 @@
   "script": "content/history/alaska-purchase/mm-alaska-s4-size.json",
   "kind": "short",
   "date": "2026-12-03"
+ },
+ {
+  "script": "content/history/newfoundland-joins/long.json",
+  "kind": "long",
+  "date": "2026-12-04"
  },
  {
   "script": "content/history/alaska-purchase/mm-alaska-s5-sitka.json",
@@ -138,11 +153,6 @@
   "script": "content/history/straight-border/mm-border-s2-ruler.json",
   "kind": "short",
   "date": "2026-12-08"
- },
- {
-  "script": "content/history/straight-border/long.json",
-  "kind": "long",
-  "date": "2026-12-09"
  },
  {
   "script": "content/history/straight-border/mm-border-s3-stars.json",

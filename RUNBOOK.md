@@ -219,10 +219,11 @@ All three channels start together on **Mon 16 Nov 2026** (owner's decision, 9 No
   printer ink 27, casinos 29, car washes 1 Dec, popcorn 3 Dec, Amazon free shipping 5 Dec (seller fees angle). Planned:
   hotels 7 Dec, ticket fees 9 Dec, Toys "R" Us 11 Dec, Uber 13 Dec, gyms 2 Jan (New Year). Shorts queued daily to 16 Dec.
   Angles that work here (23 Nov numbers): who paid whom, a person in conflict, one big number.
-- **Map Minutes** (long Wed 3 pm ET), vidIQ search data of 6 Nov: scripted 18 Nov why most of Canada is empty
-  (~19.4K searches/month, competition 35), 25 Nov Northwest Angle and Point Roberts, 2 Dec why Russia sold Alaska,
-  9 Dec why the border is (not quite) straight; Shorts queued daily to 14 Dec. Planned: 16 Dec why Washington, D.C.
-  isn't a state; 23 Dec why part of Canada is south of Detroit (added 17 Nov without vidIQ: check demand first).
+- **Map Minutes** (long every 2 days from 20 Nov, 3 pm ET; Shorts 10 am ET): published Canada empty 18 Nov, Northwest Angle 20 Nov,
+  Toledo War 24 Nov; scripted D.C. statehood 26 Nov, Alaska 28 Nov, the (not quite) straight border 30 Nov, Ottawa as capital 2 Dec,
+  Newfoundland's split 1948 vote 4 Dec; Shorts queued daily to 14 Dec. Planned: why part of Canada is south of Detroit (check
+  demand first), Rupert's Land (when a fur company owned a third of Canada), the Aroostook War (Maine vs New Brunswick).
+  When a long date is empty, slide the next written long forward before writing a new one.
 - **Hidden Systems** (long every other day from 21 Nov, 3 pm ET; owner's OK 17 Nov): scripted 21 Nov power grid, 23 Nov sewer
   (sewer world), 25 Nov recycling, 27 Nov 911, 29 Nov tap water ("who used it first": de facto reuse); Shorts queued daily
   to 16 Dec. Planned: 1 Dec how a letter crosses the country, 3 Dec septic tanks, 5 Dec how a traffic light knows you're
