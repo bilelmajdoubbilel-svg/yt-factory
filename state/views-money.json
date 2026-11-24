@@ -1,0 +1,184 @@
+{
+ "1BVmEGRBC4g": {
+  "id": "delta-s3-united",
+  "kind": "short",
+  "date": "2026-11-23",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    148,
+    1,
+    0
+   ]
+  ],
+  "published_at": "2026-11-23T18:00:16Z"
+ },
+ "7oKjQ7j8KjI": {
+  "id": "delta-s1-amex",
+  "kind": "short",
+  "date": "2026-11-21",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    78,
+    2,
+    0
+   ]
+  ],
+  "published_at": "2026-11-21T18:00:17Z"
+ },
+ "FW_mXCL0WNk": {
+  "id": "costco-s3-renewal",
+  "kind": "short",
+  "date": "2026-11-19",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    29,
+    1,
+    0
+   ]
+  ],
+  "published_at": "2026-11-19T18:00:39Z"
+ },
+ "Fxj2YOWkm-M": {
+  "id": "costco-s2-card",
+  "kind": "short",
+  "date": "2026-11-18",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    34,
+    1,
+    0
+   ]
+  ],
+  "published_at": "2026-11-18T18:00:14Z"
+ },
+ "ItuJNmR04j0": {
+  "id": "costco-s1-hotdog",
+  "kind": "short",
+  "date": "2026-11-16",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    6,
+    4,
+    0
+   ]
+  ],
+  "published_at": "2026-11-16T18:00:20Z"
+ },
+ "MmW5g8zO6Ho": {
+  "id": "mcdonalds-landlord",
+  "kind": "long",
+  "date": "2026-11-23",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    0,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-23T20:00:22Z"
+ },
+ "Xtz_cAFIog8": {
+  "id": "costco-s5-chicken",
+  "kind": "short",
+  "date": "2026-11-20",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    23,
+    1,
+    0
+   ]
+  ],
+  "published_at": "2026-11-20T18:00:00Z"
+ },
+ "_8FRTSUAIMU": {
+  "id": "starbucks-money",
+  "kind": "long",
+  "date": "2026-11-21",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    2,
+    1,
+    1
+   ]
+  ],
+  "published_at": "2026-11-21T20:00:30Z"
+ },
+ "aM_dQQgfRFo": {
+  "id": "costco-s4-rule",
+  "kind": "short",
+  "date": "2026-11-17",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    64,
+    4,
+    0
+   ]
+  ],
+  "published_at": "2026-11-17T18:00:07Z"
+ },
+ "hDkl2ShOcTw": {
+  "id": "delta-s2-skymiles",
+  "kind": "short",
+  "date": "2026-11-22",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    48,
+    1,
+    0
+   ]
+  ],
+  "published_at": "2026-11-22T18:00:06Z"
+ },
+ "lE2-TwQ7vfM": {
+  "id": "delta-amex",
+  "kind": "long",
+  "date": "2026-11-19",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    2,
+    1,
+    1
+   ]
+  ],
+  "published_at": "2026-11-19T20:00:06Z"
+ },
+ "qRIa4QIOcNI": {
+  "id": "costco-hotdog-v3",
+  "kind": "long",
+  "date": "2026-11-17",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    19,
+    3,
+    1
+   ]
+  ],
+  "published_at": "2026-11-17T20:00:37Z"
+ },
+ "rXNvnAsksTY": {
+  "id": "delta-s4-fuel",
+  "kind": "short",
+  "date": "2026-11-24",
+  "snaps": [
+   [
+    "2026-11-24T00:01+00:00",
+    0,
+    0,
+    0
+   ]
+  ],
+  "published_at": "2026-11-24T00:01:55Z"
+ }
+}
