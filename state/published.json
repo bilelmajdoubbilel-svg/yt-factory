@@ -294,5 +294,21 @@
   "video_id": "duOyZ5pEpw0",
   "date": "2026-11-25",
   "at": "2026-11-24T00:57:42+00:00"
+ },
+ {
+  "id": "black-friday",
+  "channel": "money",
+  "kind": "long",
+  "video_id": "19x_zKWtu-0",
+  "date": "2026-11-25",
+  "at": "2026-11-24T22:53:25+00:00"
+ },
+ {
+  "id": "bf-s1-honesty",
+  "channel": "money",
+  "kind": "short",
+  "video_id": "FGQ_j79oIDA",
+  "date": "2026-11-25",
+  "at": "2026-11-24T22:57:52+00:00"
  }
 ]

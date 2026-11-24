@@ -1,0 +1,155 @@
+{
+ "total": 177.214,
+ "scenes": [
+  {
+   "id": "s01",
+   "type": "shot",
+   "start": 0.0,
+   "duration": 9.194
+  },
+  {
+   "id": "s02",
+   "type": "statement",
+   "start": 9.194,
+   "duration": 8.418
+  },
+  {
+   "id": "s03",
+   "type": "statement",
+   "start": 17.612,
+   "duration": 6.928
+  },
+  {
+   "id": "s04",
+   "type": "chapter",
+   "start": 24.54,
+   "duration": 2.651
+  },
+  {
+   "id": "s05",
+   "type": "counter",
+   "start": 27.191,
+   "duration": 5.898
+  },
+  {
+   "id": "s06",
+   "type": "statement",
+   "start": 33.089,
+   "duration": 3.428
+  },
+  {
+   "id": "s07",
+   "type": "pricetag",
+   "start": 36.517,
+   "duration": 7.597
+  },
+  {
+   "id": "s08",
+   "type": "statement",
+   "start": 44.115,
+   "duration": 6.448
+  },
+  {
+   "id": "s09",
+   "type": "quote",
+   "start": 50.562,
+   "duration": 8.051
+  },
+  {
+   "id": "s10",
+   "type": "statement",
+   "start": 58.613,
+   "duration": 9.688
+  },
+  {
+   "id": "s11",
+   "type": "cta",
+   "start": 68.301,
+   "duration": 5.593
+  },
+  {
+   "id": "s12",
+   "type": "chapter",
+   "start": 73.895,
+   "duration": 2.443
+  },
+  {
+   "id": "s13",
+   "type": "flow",
+   "start": 76.337,
+   "duration": 10.237
+  },
+  {
+   "id": "s14",
+   "type": "counter",
+   "start": 86.574,
+   "duration": 4.945
+  },
+  {
+   "id": "s15",
+   "type": "statement",
+   "start": 91.52,
+   "duration": 4.328
+  },
+  {
+   "id": "s16",
+   "type": "quote",
+   "start": 95.848,
+   "duration": 6.529
+  },
+  {
+   "id": "s17",
+   "type": "chapter",
+   "start": 102.377,
+   "duration": 2.752
+  },
+  {
+   "id": "s18",
+   "type": "statement",
+   "start": 105.129,
+   "duration": 11.058
+  },
+  {
+   "id": "s19",
+   "type": "counter",
+   "start": 116.186,
+   "duration": 5.013
+  },
+  {
+   "id": "s20",
+   "type": "quote",
+   "start": 121.2,
+   "duration": 14.05
+  },
+  {
+   "id": "s21",
+   "type": "pricetag",
+   "start": 135.25,
+   "duration": 9.719
+  },
+  {
+   "id": "s22",
+   "type": "statement",
+   "start": 144.969,
+   "duration": 7.571
+  },
+  {
+   "id": "s23",
+   "type": "statement",
+   "start": 152.54,
+   "duration": 8.858
+  },
+  {
+   "id": "s24",
+   "type": "statement",
+   "start": 161.398,
+   "duration": 9.027
+  },
+  {
+   "id": "s25",
+   "type": "end",
+   "start": 170.425,
+   "duration": 6.789
+  }
+ ]
+}
