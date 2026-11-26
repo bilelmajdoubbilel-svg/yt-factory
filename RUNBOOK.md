@@ -198,7 +198,8 @@ better way, change this file in the bundle, but never weaken "Rules that protect
   follow / data / chapter / endcard; examples `content/hidden/power-grid/long.json` and its Shorts; voice am_michael.
   Data beats: keep `big` to about 6 characters in Shorts (wider words run off the left edge). **Thumbnails:** a system with no
   world slice gets one simple hero object from `pipeline/hs_heroes.py` (water: faucet + glass, recycling: blue cart, 911: lit
-  floor + phone; a new system = one small function + one line in `HEROES`); try 2-3 number/word/expression options with
+  floor + phone, mail: envelope + stamp + barcode, septic: buried tank with its three layers, traffic: signal head + wire
+  loop; a new system = one small function + one line in `HEROES`); try 2-3 number/word/expression options with
   `python pipeline/thumb_sheet.py --channel hidden --opts <opts.json>` (every upcoming long, full size + 120 px copy) and keep
   the one you would click. **Worlds for `follow`
   scenes** (the script's `"system"` picks one; an unknown name fails the build): `power` (`hs_art.power_strip`; marks
@@ -224,11 +225,14 @@ All three channels start together on **Mon 16 Nov 2026** (owner's decision, 9 No
   Newfoundland's split 1948 vote 4 Dec; Shorts queued daily to 14 Dec. Planned: why part of Canada is south of Detroit (check
   demand first), Rupert's Land (when a fur company owned a third of Canada), the Aroostook War (Maine vs New Brunswick).
   When a long date is empty, slide the next written long forward before writing a new one.
-- **Hidden Systems** (long every other day from 21 Nov, 3 pm ET; owner's OK 17 Nov): scripted 21 Nov power grid, 23 Nov sewer
-  (sewer world), 25 Nov recycling, 27 Nov 911, 29 Nov tap water ("who used it first": de facto reuse); Shorts queued daily
-  to 16 Dec. Planned: 1 Dec how a letter crosses the country, 3 Dec septic tanks, 5 Dec how a traffic light knows you're
-  waiting, 7 Dec where garbage goes, 9 Dec how a dead grid restarts (black start, power world). Check demand and
-  saturation before writing each. Short ideas: what one flush costs the city, why power lines hum.
+- **Hidden Systems** (long every other day from 21 Nov, 3 pm ET; owner's OK 17 Nov): published 21 Nov power grid, 23 Nov sewer,
+  25 Nov recycling; scripted 27 Nov 911, 29 Nov tap water, 1 Dec the letter (South Dakota mail through up to 7 states,
+  USPS OIG Sept 2026), 3 Dec septic ("the dirt is the treatment plant"), 5 Dec traffic light (wire loop, dead red laws);
+  Shorts queued daily to 19 Dec. Planned: 7 Dec where garbage goes, 9 Dec how a dead grid restarts (black start, power
+  world), 11 Dec how gas reaches your stove, 13 Dec snowplows and road salt, 15 Dec how the internet reaches your home,
+  17 Dec where your package goes. Check demand and saturation before writing each. Short ideas: what one flush costs
+  the city, why power lines hum. A Short's `long_video` is the long's script `id` (`hs-sewer`), not its folder: upload.py
+  looks it up in published.json to add "Full video" (26 Nov: every Hidden Systems Short had the folder name, so none linked).
 
 ## Rules that protect the channels (do not break)
 

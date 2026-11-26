@@ -100,6 +100,11 @@
   "date": "2026-11-30"
  },
  {
+  "script": "content/hidden/mail-letter/long.json",
+  "kind": "long",
+  "date": "2026-12-01"
+ },
+ {
   "script": "content/hidden/recycling/recy-s2-china.json",
   "kind": "short",
   "date": "2026-12-01"
@@ -110,6 +115,11 @@
   "date": "2026-12-02"
  },
  {
+  "script": "content/hidden/septic/long.json",
+  "kind": "long",
+  "date": "2026-12-03"
+ },
+ {
   "script": "content/hidden/recycling/recy-s4-bag.json",
   "kind": "short",
   "date": "2026-12-03"
@@ -118,6 +128,11 @@
   "script": "content/hidden/recycling/recy-s5-glass.json",
   "kind": "short",
   "date": "2026-12-04"
+ },
+ {
+  "script": "content/hidden/traffic-light/long.json",
+  "kind": "long",
+  "date": "2026-12-05"
  },
  {
   "script": "content/hidden/recycling/recy-s6-canada.json",
@@ -178,5 +193,20 @@
   "script": "content/hidden/tap-water/water-s2-breaks.json",
   "kind": "short",
   "date": "2026-12-16"
+ },
+ {
+  "script": "content/hidden/mail-letter/mail-s1-handwriting.json",
+  "kind": "short",
+  "date": "2026-12-17"
+ },
+ {
+  "script": "content/hidden/septic/septic-s1-yard.json",
+  "kind": "short",
+  "date": "2026-12-18"
+ },
+ {
+  "script": "content/hidden/traffic-light/traffic-s1-loop.json",
+  "kind": "short",
+  "date": "2026-12-19"
  }
 ]

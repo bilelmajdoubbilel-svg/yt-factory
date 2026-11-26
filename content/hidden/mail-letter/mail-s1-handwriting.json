@@ -1,0 +1,180 @@
+{
+ "channel": "hidden",
+ "style": "hidden",
+ "voice": "am_michael",
+ "system": "mail",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "hs-mail-letter",
+ "id": "mail-s1-handwriting",
+ "title": "When the Post Office Can't Read Your Handwriting #shorts",
+ "summary": "USPS machines read about 98% of handwritten addresses. The rest go as photos to the last Remote Encoding Center in Salt Lake City, where 730+ people key about 2.3 million addresses a day, around the clock.",
+ "tags": [
+  "usps",
+  "handwriting",
+  "how mail is sorted",
+  "remote encoding center",
+  "post office"
+ ],
+ "thumbnail": {
+  "big": "98%",
+  "small": "READ",
+  "expr": "surprised"
+ },
+ "sources": [
+  "The Advanced Facer Canceller System positions letters and postmarks stamps at 36,000 pieces an hour; machines read nearly 98 percent of hand-addressed letters and 99.5 percent of machine-printed mail; the Intelligent Mail barcode identifies individual pieces so they can be tracked (USPS Postal Facts, Innovation): https://facts.usps.com/innovation/",
+  "Remote Encoding Center, Salt Lake City: about 2.3 million address images a day, more than 730 employees, open 24/7; 55 centers at the late-1990s peak, the only one since 2014 (USPS Link, 23 Apr 2024): https://news.usps.com/2024/04/23/the-postal-services-digital-detectives-are-marking-a-milestone/"
+ ],
+ "scenes": [
+  {
+   "type": "data",
+   "narration": "Machines read about {98%|ninety-eight percent} of handwritten addresses. If yours is in the other two percent, a photo of your envelope goes to Salt Lake City.",
+   "data": {
+    "big": "98%",
+    "label": "READ BY MACHINE",
+    "cue": "98%",
+    "source": "USPS",
+    "source_cue": "Machines"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "98%",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "There, more than {730|seven hundred thirty} people type in about {2.3 million|two point three million} addresses a day.",
+   "data": {
+    "big": "2.3M",
+    "label": "TYPED A DAY",
+    "cue": "2.3 million",
+    "source": "USPS · 2024",
+    "source_cue": "There"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "2.3 million",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "They work around the clock, so your letter barely stops moving.",
+   "data": {
+    "stencil": "24/7",
+    "stencil_cue": "clock"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "clock",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "moving",
+      "unpoint": "R",
+      "take": "proud",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "In the late {1990s|nineties} there were {55|fifty-five} centers like this. Now it's the last one.",
+   "data": {
+    "big": "1 LEFT",
+    "label": "OF 55",
+    "cue": "last",
+    "source": "USPS · 2024",
+    "source_cue": "late"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "last",
+      "dt": 0.25,
+      "take": "thinking",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "So if your handwriting is messy, a stranger in Utah has probably read it. Because the machines only read about",
+   "data": {
+    "start_lit": true,
+    "stencil": "MESSY?",
+    "stencil_cue": "messy"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "stranger",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "about",
+      "unpoint": "R",
+      "take": "happy",
+      "amp": 0.6
+     }
+    ]
+   }
+  }
+ ]
+}

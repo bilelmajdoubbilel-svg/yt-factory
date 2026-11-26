@@ -1,0 +1,180 @@
+{
+ "channel": "hidden",
+ "style": "hidden",
+ "voice": "am_michael",
+ "system": "septic",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "hs-septic",
+ "id": "septic-s1-yard",
+ "title": "No Sewer? Your Yard Is the Treatment Plant #shorts",
+ "summary": "More than 1 in 5 US households use septic or small cluster systems. Solids sink, grease floats, the liquid flows to a drain field and the soil removes bacteria and viruses; tanks are pumped every 3-5 years (US EPA).",
+ "tags": [
+  "septic tank",
+  "how does a septic system work",
+  "septic system",
+  "drain field"
+ ],
+ "thumbnail": {
+  "big": "1 IN 5",
+  "small": "YARD",
+  "expr": "surprised"
+ },
+ "sources": [
+  "More than one in five households in the US depend on individual septic (decentralized) systems or small community cluster systems; solids settle to the bottom as sludge, oil and grease float to the top as scum, the liquid wastewater (effluent) exits to the drainfield; the tank is a buried, water-tight container of concrete, fiberglass or polyethylene (US EPA, Learn About Septic Systems / How Septic Systems Work, 2026): https://www.epa.gov/septic/how-septic-systems-work",
+  "In the drainfield the wastewater percolates into the soil, which naturally removes harmful coliform bacteria, viruses and nutrients (US EPA, How Septic Systems Work): https://www.epa.gov/septic/how-septic-systems-work",
+  "Inspect at least every three years; tanks are typically pumped every three to five years; only flush human waste and toilet paper; keep out grease, wipes, diapers, coffee grounds and household chemicals (US EPA, How to Care for Your Septic System, 2026): https://www.epa.gov/septic/how-care-your-septic-system",
+  "Maintenance about $250 to $500 every three to five years; replacing a failed conventional system costs between $5,000 and $15,000 (alternative systems more); more than four billion gallons of wastewater are dispersed below the ground every day; a malfunctioning system can cause groundwater contamination that can spread disease (US EPA, Why Maintain Your Septic System, 2026): https://www.epa.gov/septic/why-maintain-your-septic-system"
+ ],
+ "scenes": [
+  {
+   "type": "data",
+   "narration": "More than one in five US homes flush into their own yard.",
+   "data": {
+    "big": "1 IN 5",
+    "label": "NO SEWER",
+    "cue": "More",
+    "source": "US EPA · 2026",
+    "source_cue": "homes"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "More",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "The flush goes into a buried tank. Solids sink, grease floats, and the water in the middle flows out under the lawn.",
+   "data": {
+    "stencil": "SINK, FLOAT",
+    "stencil_cue": "sink"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "tank",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "lawn",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Then the soil does the cleaning. It filters out bacteria and viruses as the water soaks down.",
+   "data": {
+    "big": "SOIL",
+    "label": "THE FILTER",
+    "cue": "soil",
+    "source": "US EPA",
+    "source_cue": "cleaning"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "soil",
+      "dt": 0.25,
+      "take": "proud",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "The catch: the sludge stays. It has to be pumped out every {3|three} to {5|five} years.",
+   "data": {
+    "big": "3-5 YRS",
+    "label": "PUMP IT",
+    "cue": "3",
+    "source": "US EPA · 2026",
+    "source_cue": "catch"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "3",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "Skip that, and a new system can cost up to {$15,000|fifteen thousand dollars}. That's the deal for",
+   "data": {
+    "stencil": "$15K",
+    "stencil_cue": "$15,000"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "Skip",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "deal",
+      "unpoint": "R",
+      "take": "worried",
+      "amp": 0.6
+     }
+    ]
+   }
+  }
+ ]
+}

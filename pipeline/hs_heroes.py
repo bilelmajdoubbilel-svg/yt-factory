@@ -94,4 +94,58 @@ def nine11():
     return "".join(o), (633, py), ORANGE_GLOW
 
 
-HEROES = {"water": water, "recycling": recycling, "911": nine11}
+def mail():
+    """Mail: a big envelope with an orange stamp and a barcode strip, flying right with two speed lines."""
+    o = [
+        f'<line x1="470" y1="330" x2="540" y2="330" stroke="{CREAM}" stroke-width="10" stroke-linecap="round" opacity=".7"/>',
+        f'<line x1="490" y1="420" x2="540" y2="420" stroke="{CREAM}" stroke-width="10" stroke-linecap="round" opacity=".7"/>',
+        f'<g transform="rotate(-8 650 380)">',
+        f'<rect x="548" y="282" width="210" height="148" rx="8" fill="{CREAM}" stroke="{INK}" stroke-width="9"/>',
+        f'<path d="M552 288 L653 368 L754 288" fill="none" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>',
+        f'<rect x="700" y="296" width="44" height="52" fill="{ORANGE}" stroke="{INK}" stroke-width="5"/>',
+        f'<circle cx="722" cy="322" r="12" fill="none" stroke="{CREAM}" stroke-width="4"/>',
+    ]
+    for k, h in enumerate([18, 10, 18, 18, 10, 10, 18, 10, 18, 10, 18, 18, 10, 18]):  # the barcode strip
+        x = 566 + k * 9
+        o.append(f'<rect x="{x}" y="{412 - h}" width="5" height="{h}" fill="{BLUE}"/>')
+    o.append('</g>')
+    return "".join(o), (653, 368), ORANGE_GLOW
+
+
+def septic():
+    """Septic: a buried tank cut open under a strip of lawn, the three layers (scum, liquid, sludge), pipe in."""
+    o = [
+        f'<rect x="500" y="300" width="290" height="300" fill="{C["soil"]}"/>',
+        f'<rect x="500" y="282" width="290" height="22" fill="{PIPE}" stroke="{INK}" stroke-width="6"/>',
+        # inlet pipe from the house side (behind Drip) into the tank
+        f'<path d="M500 352 L560 352" stroke="{INK}" stroke-width="30"/><path d="M500 352 L566 352" stroke="{STEEL}" stroke-width="18"/>',
+        f'<rect x="554" y="330" width="190" height="250" rx="22" fill="{C["deep"]}" stroke="{INK}" stroke-width="10"/>',
+        f'<rect x="564" y="384" width="170" height="104" fill="{WATER}" opacity=".9"/>',     # liquid
+        f'<rect x="564" y="362" width="170" height="24" fill="{C["wood"]}"/>',                 # scum floats
+        f'<path d="M564 520 Q610 500 650 516 Q690 532 734 512 L734 570 L564 570 Z" fill="{C["wood2"]}"/>',  # sludge
+        f'<rect x="554" y="330" width="190" height="250" rx="22" fill="none" stroke="{INK}" stroke-width="10"/>',
+        # outlet to the drain field
+        f'<path d="M740 430 L790 430" stroke="{INK}" stroke-width="30"/><path d="M736 430 L790 430" stroke="{STEEL}" stroke-width="18"/>',
+        f'<rect x="618" y="300" width="60" height="34" fill="{STEEL2}" stroke="{INK}" stroke-width="6"/>',   # lid riser
+    ]
+    return "".join(o), (648, 304), WATER_GLOW   # the hand lands on the lid, so the three layers stay in view
+
+
+def traffic():
+    """Traffic light: a signal head on a pole, red lit, and the wire loop cut in the road at its foot."""
+    o = [
+        f'<path d="M520 600 L780 600 L760 540 L540 540 Z" fill="{C["wall"]}" stroke="{INK}" stroke-width="6"/>',
+        f'<path d="M574 590 L726 590 L714 552 L586 552 Z" fill="none" stroke="{ORANGE}" stroke-width="7" stroke-linejoin="round"/>',
+        f'<rect x="742" y="250" width="22" height="300" fill="{STEEL2}" stroke="{INK}" stroke-width="6"/>',
+        f'<path d="M752 262 L680 262" stroke="{INK}" stroke-width="16"/>',
+        f'<rect x="606" y="192" width="96" height="262" rx="18" fill="{INK}"/>',
+        f'<rect x="616" y="202" width="76" height="242" rx="12" fill="{C["deep"]}"/>',
+        f'<circle cx="654" cy="246" r="32" fill="#E5402F" stroke="{INK}" stroke-width="6"/>',
+        f'<circle cx="644" cy="236" r="9" fill="#FFB3A6" opacity=".8"/>',
+        f'<circle cx="654" cy="323" r="30" fill="#4A3A22" stroke="{INK}" stroke-width="6"/>',
+        f'<circle cx="654" cy="400" r="30" fill="#1F3A2A" stroke="{INK}" stroke-width="6"/>',
+    ]
+    return "".join(o), (654, 246), ("#FFB3A6", "#E5402F")
+
+
+HEROES = {"water": water, "recycling": recycling, "911": nine11, "mail": mail, "septic": septic, "traffic": traffic}

@@ -1,0 +1,659 @@
+{
+ "channel": "hidden",
+ "style": "hidden",
+ "voice": "am_michael",
+ "system": "traffic",
+ "format": "long",
+ "speed": 1.05,
+ "id": "hs-traffic-light",
+ "title": "How a Red Light Knows You're Waiting (and When It Can't)",
+ "summary": "The wire loop cut into the road that senses your car's metal, the cameras and radar that do the same job, why bikes and small motorcycles can sit through red after red, the states that changed the law for them, and New York's placebo walk buttons. Sources: FHWA, NTOC, state statutes.",
+ "tags": [
+  "how do traffic lights know you're there",
+  "traffic light sensor",
+  "inductive loop",
+  "how traffic lights work",
+  "dead red law",
+  "crosswalk button",
+  "hidden systems"
+ ],
+ "intro_chapter": "The wire under you",
+ "thumbnail": {
+  "big": "WIRE",
+  "small": "UNDER YOU",
+  "expr": "surprised"
+ },
+ "sources": [
+  "311,000 traffic signals in the US; overall grade D+; Traffic Monitoring section graded F (National Transportation Operations Coalition, 2012 National Traffic Signal Report Card): https://transops.s3.amazonaws.com/uploaded_files/NTOC-2012-Traffic-Signal-Report-Card-Executive-Summary.pdf",
+  "Inductive loop: a slot is cut in the pavement and one or more turns of wire placed in it; the detector drives energy through the loop at 10 kHz to 200 kHz; a vehicle over or stopped within the loop decreases its inductance; the 6 x 6 ft square loop is the most commonly used for actuated signal control (FHWA Traffic Detector Handbook, FHWA-IP-90-002): https://www.fhwa.dot.gov/publications/research/safety/Ip90002/ip90002.pdf",
+  "Video image processors and microwave radar as above-ground detectors (FHWA Traffic Detector Handbook, 3rd ed., FHWA-HRT-06-108): https://www.fhwa.dot.gov/publications/research/operations/its/06108/",
+  "Downtown grids are frequently timed with fixed settings and no detection; actuated control uses detectors on the approaches; high bicycle use may benefit from special bicycle detection (FHWA Signal Timing Manual, ch. 3): https://ops.fhwa.dot.gov/publications/fhwahop08024/chapter3.htm",
+  "Minnesota: affirmative defense for a bicycle or motorcycle that stops and faces a red light for an unreasonable time when the signal apparently failed to detect it and no vehicle or person is approaching (Minn. Stat. 169.06 subd. 9): https://www.revisor.mn.gov/statutes/?id=169.06",
+  "Missouri: same affirmative defense for motorcycles and bicycles (RSMo 304.285): http://revisor.mo.gov/main/OneSection.aspx?section=304.285&bid=16255&hl=",
+  "Idaho: a motorcycle facing a signal whose detector is inoperative due to the motorcycle's size may proceed with due caution after a full stop if the signal fails to operate after one cycle (Idaho Code 49-802(3)(e)): http://legislature.idaho.gov/statutesrules/idstat/Title49/T49CH8/SECT49-802/",
+  "New York City: of 3,250 walk buttons, more than 2,500 function as mechanical placebos (city figures); 'The public is going to get the walk signal regardless' (Michael Luo, The New York Times, 27 Feb 2004, reprint): https://media.alexandriava.gov/docs-archives/localmotion/info/pushbuttonarticle.pdf",
+  "Loops can miss vehicles not stopped over them; smaller vehicles like motorcycles may go undetected (Jalopnik, 28 Feb 2026, context): https://jalopnik.com/2108989/how-traffic-light-sensors-detect-cars/"
+ ],
+ "scenes": [
+  {
+   "type": "data",
+   "narration": "At a lot of red lights, there's a loop of wire cut into the road, right under your car. It's sensing your car's metal.",
+   "data": {
+    "big": "6 FT",
+    "label": "WIRE LOOP",
+    "cue": "loop",
+    "source": "FHWA",
+    "source_cue": "red"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "loop",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "That's how the light knows you're waiting. And it's also why, sometimes, it doesn't.",
+   "data": {
+    "stencil": "SOMETIMES NOT",
+    "stencil_cue": "sometimes"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "waiting",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "doesn't",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "The US has more than {311,000|three hundred eleven thousand} traffic signals. A national report card in {2012|twenty twelve} graded them a {D+|D plus}.",
+   "data": {
+    "big": "D+",
+    "label": "SIGNAL GRADE",
+    "cue": "graded",
+    "source": "NTOC · 2012",
+    "source_cue": "report"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "graded",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   },
+   "transition_out": "whip"
+  },
+  {
+   "type": "host",
+   "narration": "Today: how the light sees you, the other ways it can, and why a bike or a motorcycle can sit there through red after red.",
+   "data": {
+    "start_lit": true,
+    "stencil": "THE WAIT",
+    "stencil_cue": "sees"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "bike",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "red",
+      "unpoint": "R",
+      "take": "happy",
+      "amp": 0.6
+     }
+    ]
+   },
+   "transition_in": "whip"
+  },
+  {
+   "type": "chapter",
+   "narration": "Part one: the loop.",
+   "data": {
+    "num": "1",
+    "title": "THE LOOP"
+   }
+  },
+  {
+   "type": "host",
+   "narration": "Crews saw a slot into the pavement, lay a few turns of wire in it, and seal it. The most common shape is a square, about {6|six} feet on each side.",
+   "data": {
+    "stencil": "SAW CUT",
+    "stencil_cue": "saw"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "wire",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "side",
+      "unpoint": "R",
+      "take": "proud",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "A detector box drives a current through that wire, back and forth, {10,000|ten thousand} to {200,000|two hundred thousand} times a second.",
+   "data": {
+    "big": "200K",
+    "label": "FLIPS A SECOND",
+    "cue": "200,000",
+    "source": "FHWA",
+    "source_cue": "detector"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "200,000",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "When a car stops on top, its metal lowers the loop's inductance. The box sees the shift, and sends one message: someone's here.",
+   "data": {
+    "stencil": "SOMEONE'S HERE",
+    "stencil_cue": "someone's"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "metal",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "here",
+      "unpoint": "R",
+      "take": "happy",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "On an actuated signal, that call tells the controller your direction is waiting for a green. Many downtown grids skip it, and just run on fixed timers.",
+   "data": {
+    "big": "TIMERS",
+    "label": "DOWNTOWN GRIDS",
+    "cue": "timers",
+    "source": "FHWA",
+    "source_cue": "actuated"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "timers",
+      "dt": 0.25,
+      "take": "thinking",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "If you like seeing how everyday things really work, subscribe. There's a new system every other day.",
+   "data": {
+    "start_lit": true,
+    "stencil": "EVERY 2 DAYS",
+    "stencil_cue": "every"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "subscribe",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "day",
+      "unpoint": "R",
+      "take": "proud",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "narration": "Part two: the other eyes.",
+   "data": {
+    "num": "2",
+    "title": "OTHER EYES"
+   }
+  },
+  {
+   "type": "host",
+   "narration": "Newer intersections also watch from above, with video cameras or radar on the poles. They look at a patch of road, not for metal.",
+   "data": {
+    "stencil": "CAMERA, RADAR",
+    "stencil_cue": "cameras"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "above",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "metal",
+      "unpoint": "R",
+      "take": "thinking",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Keeping all of it working is the weak spot. In that same report card, traffic monitoring got the lowest grade: an {F|F}.",
+   "data": {
+    "big": "F",
+    "label": "MONITORING GRADE",
+    "cue": "lowest",
+    "source": "NTOC · 2012",
+    "source_cue": "weak"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "lowest",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "narration": "Part three: when it can't.",
+   "data": {
+    "num": "3",
+    "title": "WHEN IT CAN'T"
+   }
+  },
+  {
+   "type": "host",
+   "narration": "Here's the catch. A loop senses metal, and a bicycle or a small motorcycle may not carry enough of it to register.",
+   "data": {
+    "stencil": "TOO LITTLE METAL",
+    "stencil_cue": "metal"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "bicycle",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "register",
+      "unpoint": "R",
+      "take": "worried",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "So riders sit through red after red. Enough of them did that some states changed the law.",
+   "data": {
+    "stencil": "DEAD RED",
+    "stencil_cue": "law"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "riders",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "law",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "In Minnesota and Missouri, a rider who stops and waits an unreasonable time at a red that never sees them has a defense in court for going when it's clear.",
+   "data": {
+    "big": "MN, MO",
+    "label": "DEAD RED LAWS",
+    "cue": "Minnesota",
+    "source": "STATE STATUTES",
+    "source_cue": "court"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "Minnesota",
+      "dt": 0.25,
+      "take": "thinking",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Idaho lets a motorcycle go, carefully, after one full cycle that didn't change.",
+   "data": {
+    "big": "1 CYCLE",
+    "label": "IDAHO",
+    "cue": "Idaho",
+    "source": "IDAHO CODE 49-802",
+    "source_cue": "cycle"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "Idaho",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Pedestrians have their own version. In {2004|two thousand four}, New York said more than {2,500|twenty-five hundred} of its {3,250|thirty-two fifty} walk buttons did nothing.",
+   "data": {
+    "big": "2,500",
+    "label": "PLACEBO BUTTONS",
+    "cue": "2,500",
+    "source": "NYT 2004 · CITY FIGURES",
+    "source_cue": "Pedestrians"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "2,500",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   },
+   "transition_in": "whip"
+  },
+  {
+   "type": "host",
+   "narration": "The city's answer: you'd get the walk signal anyway.",
+   "data": {
+    "stencil": "ANYWAY",
+    "stencil_cue": "anyway"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "answer",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "anyway",
+      "unpoint": "R",
+      "take": "happy",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "So next time you're waiting at a red: there's a wire loop under you, or a camera above, looking for you. See the cut lines in the pavement? Stop over them, and the loop can feel you.",
+   "data": {
+    "start_lit": true,
+    "stencil": "STOP ON IT",
+    "stencil_cue": "cut"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "loop",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "you",
+      "unpoint": "R",
+      "take": "happy",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "endcard",
+   "narration": "Pick your next system down here. A new one every other day.",
+   "min_duration": 7.0,
+   "drip": {
+    "acts": [
+     {
+      "t": 0.3,
+      "take": "happy",
+      "amp": 0.6
+     },
+     {
+      "cue": "next",
+      "point": "R",
+      "angle": 10
+     },
+     {
+      "t": 1.6,
+      "take": "happy",
+      "amp": 0.45
+     },
+     {
+      "t": 2.8,
+      "unpoint": "R",
+      "take": "proud",
+      "amp": 0.5
+     },
+     {
+      "t": 4.0,
+      "point": "L",
+      "angle": 10,
+      "look": [
+       -12,
+       -6
+      ]
+     },
+     {
+      "t": 5.2,
+      "take": "happy",
+      "amp": 0.5
+     },
+     {
+      "t": 6.2,
+      "unpoint": "L"
+     }
+    ]
+   }
+  }
+ ]
+}

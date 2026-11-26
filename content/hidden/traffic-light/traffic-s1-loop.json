@@ -1,0 +1,183 @@
+{
+ "channel": "hidden",
+ "style": "hidden",
+ "voice": "am_michael",
+ "system": "traffic",
+ "format": "short",
+ "speed": 1.1,
+ "long_video": "hs-traffic-light",
+ "id": "traffic-s1-loop",
+ "title": "That Red Light Is Sensing Your Car's Metal #shorts",
+ "summary": "Many actuated traffic signals use an inductive loop: wire in a saw cut, driven at 10-200 kHz; a vehicle stopped over it lowers the loop's inductance. Bikes and small motorcycles may not register, so Minnesota and Missouri give riders an affirmative defense (FHWA, state statutes).",
+ "tags": [
+  "traffic light sensor",
+  "inductive loop",
+  "how do traffic lights know you're there",
+  "dead red"
+ ],
+ "thumbnail": {
+  "big": "6 FT",
+  "small": "LOOP",
+  "expr": "surprised"
+ },
+ "sources": [
+  "Inductive loop: a slot is cut in the pavement and one or more turns of wire placed in it; the detector drives energy through the loop at 10 kHz to 200 kHz; a vehicle over or stopped within the loop decreases its inductance; the 6 x 6 ft square loop is the most commonly used for actuated signal control (FHWA Traffic Detector Handbook, FHWA-IP-90-002): https://www.fhwa.dot.gov/publications/research/safety/Ip90002/ip90002.pdf",
+  "Minnesota: affirmative defense for a bicycle or motorcycle that stops and faces a red light for an unreasonable time when the signal apparently failed to detect it and no vehicle or person is approaching (Minn. Stat. 169.06 subd. 9): https://www.revisor.mn.gov/statutes/?id=169.06",
+  "Missouri: same affirmative defense for motorcycles and bicycles (RSMo 304.285): http://revisor.mo.gov/main/OneSection.aspx?section=304.285&bid=16255&hl=",
+  "Loops can miss vehicles not stopped over them; smaller vehicles like motorcycles may go undetected (Jalopnik, 28 Feb 2026, context): https://jalopnik.com/2108989/how-traffic-light-sensors-detect-cars/"
+ ],
+ "scenes": [
+  {
+   "type": "data",
+   "narration": "That red light knows you're there. There's a loop of wire cut into the road, right under your car.",
+   "data": {
+    "big": "6 FT",
+    "label": "WIRE LOOP",
+    "cue": "That",
+    "source": "FHWA",
+    "source_cue": "loop"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "That",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "A box drives a current through it, flipping up to {200,000|two hundred thousand} times a second.",
+   "data": {
+    "big": "200K",
+    "label": "PER SECOND",
+    "cue": "200,000",
+    "source": "FHWA",
+    "source_cue": "box"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "200,000",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "Your car's metal changes the loop's field, and the box tells the controller: someone's waiting.",
+   "data": {
+    "stencil": "SOMEONE'S HERE",
+    "stencil_cue": "waiting"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "metal",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "waiting",
+      "unpoint": "R",
+      "take": "happy",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "A bike or a small motorcycle may not have enough metal. So Minnesota and Missouri give riders a legal defense when a red never changes.",
+   "data": {
+    "stencil": "DEAD RED",
+    "stencil_cue": "Minnesota"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "bike",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "changes",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "Look for the cut lines in the pavement, and stop right over them. Because that's how",
+   "data": {
+    "start_lit": true,
+    "stencil": "STOP ON IT",
+    "stencil_cue": "cut"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "Look",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "how",
+      "unpoint": "R",
+      "take": "happy",
+      "amp": 0.6
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,711 @@
+{
+ "channel": "hidden",
+ "style": "hidden",
+ "voice": "am_michael",
+ "system": "septic",
+ "format": "long",
+ "speed": 1.05,
+ "id": "hs-septic",
+ "title": "Where Your Flush Goes When There's No Sewer",
+ "summary": "More than 1 in 5 US households aren't on a city sewer. Follow one flush through a septic system: the buried tank where solids sink and grease floats, the drain field, and the soil that does the real cleaning, plus what pumping and a failed system cost (US EPA).",
+ "tags": [
+  "how does a septic system work",
+  "septic tank",
+  "septic system",
+  "septic tank explained",
+  "drain field",
+  "hidden systems"
+ ],
+ "intro_chapter": "No sewer",
+ "thumbnail": {
+  "big": "4B GAL",
+  "small": "UNDERGROUND",
+  "expr": "worried"
+ },
+ "sources": [
+  "More than one in five households in the US depend on individual septic (decentralized) systems or small community cluster systems; solids settle to the bottom as sludge, oil and grease float to the top as scum, the liquid wastewater (effluent) exits to the drainfield; the tank is a buried, water-tight container of concrete, fiberglass or polyethylene (US EPA, Learn About Septic Systems / How Septic Systems Work, 2026): https://www.epa.gov/septic/how-septic-systems-work",
+  "In the drainfield the wastewater percolates into the soil, which naturally removes harmful coliform bacteria, viruses and nutrients (US EPA, How Septic Systems Work): https://www.epa.gov/septic/how-septic-systems-work",
+  "Inspect at least every three years; tanks are typically pumped every three to five years; only flush human waste and toilet paper; keep out grease, wipes, diapers, coffee grounds and household chemicals (US EPA, How to Care for Your Septic System, 2026): https://www.epa.gov/septic/how-care-your-septic-system",
+  "Maintenance about $250 to $500 every three to five years; replacing a failed conventional system costs between $5,000 and $15,000 (alternative systems more); more than four billion gallons of wastewater are dispersed below the ground every day; a malfunctioning system can cause groundwater contamination that can spread disease (US EPA, Why Maintain Your Septic System, 2026): https://www.epa.gov/septic/why-maintain-your-septic-system",
+  "Indoor water use as much as 70 gallons per individual, per day (US EPA, How to Care for Your Septic System, 2026): https://www.epa.gov/septic/how-care-your-septic-system",
+  "Pump when the bottom of the scum layer is within 6 inches of the outlet or the top of the sludge layer is within 12 inches of the outlet (US EPA, SepticSmart homeowner guide, 2012): https://www.epa.gov/sites/default/files/2015-06/documents/septicsmart_longhomeownerguide_english-print-ready.pdf",
+  "About one-third of new development is served by septic or other decentralized systems (US EPA Septic Systems Overview, last updated 2018, archived): https://19january2021snapshot.epa.gov/septic/septic-systems-overview_.html"
+ ],
+ "scenes": [
+  {
+   "type": "data",
+   "narration": "More than one in five American households don't flush into a city sewer at all.",
+   "data": {
+    "big": "1 IN 5",
+    "label": "NO CITY SEWER",
+    "cue": "one",
+    "source": "US EPA · 2026",
+    "source_cue": "households"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "one",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "In our sewer video, one drop rode the pipes to a treatment plant. For these homes, the treatment plant is under the lawn.",
+   "data": {
+    "stencil": "NO PIPES OUT",
+    "stencil_cue": "lawn"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "sewer",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "lawn",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Every day, more than {4 billion|four billion} gallons of wastewater soak into the ground this way.",
+   "data": {
+    "big": "4B GAL",
+    "label": "A DAY, UNDERGROUND",
+    "cue": "4 billion",
+    "source": "US EPA",
+    "source_cue": "Every"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "4 billion",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   },
+   "transition_out": "whip"
+  },
+  {
+   "type": "host",
+   "narration": "Today we follow one flush through a septic system: the tank, the field, the dirt that does the real cleaning, and why skipping one chore can cost thousands.",
+   "data": {
+    "start_lit": true,
+    "stencil": "ONE FLUSH",
+    "stencil_cue": "follow"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "tank",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "thousands",
+      "unpoint": "R",
+      "take": "happy",
+      "amp": 0.6
+     }
+    ]
+   },
+   "transition_in": "whip"
+  },
+  {
+   "type": "chapter",
+   "narration": "Part one: the tank.",
+   "data": {
+    "num": "1",
+    "title": "THE TANK"
+   }
+  },
+  {
+   "type": "host",
+   "narration": "The flush runs down one pipe into a buried, watertight tank made of concrete, fiberglass or plastic.",
+   "data": {
+    "stencil": "BURIED TANK",
+    "stencil_cue": "buried"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "pipe",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "plastic",
+      "unpoint": "R",
+      "take": "proud",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Inside, it sorts itself out. The heavy solids sink to the bottom and become sludge.",
+   "data": {
+    "big": "SLUDGE",
+    "label": "SINKS",
+    "cue": "sludge",
+    "source": "US EPA",
+    "source_cue": "Inside"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "sludge",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Grease and oil float to the top as scum. The liquid in the middle, called effluent, moves on.",
+   "data": {
+    "big": "SCUM",
+    "label": "FLOATS",
+    "cue": "scum",
+    "source": "US EPA",
+    "source_cue": "Grease"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "scum",
+      "dt": 0.25,
+      "take": "thinking",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "That's why only toilet paper should go down. Wipes, grease and coffee grounds don't break down. They just pile up in here.",
+   "data": {
+    "stencil": "PAPER ONLY",
+    "stencil_cue": "paper"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "Wipes",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "here",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "If you like seeing how everyday things really work, subscribe. There's a new system every other day.",
+   "data": {
+    "start_lit": true,
+    "stencil": "EVERY 2 DAYS",
+    "stencil_cue": "every"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "subscribe",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "day",
+      "unpoint": "R",
+      "take": "proud",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "narration": "Part two: the field.",
+   "data": {
+    "num": "2",
+    "title": "THE FIELD"
+   }
+  },
+  {
+   "type": "host",
+   "narration": "Each new flush pushes older water out of the tank, into a drain field: a shallow, covered trench in the yard.",
+   "data": {
+    "stencil": "DRAIN FIELD",
+    "stencil_cue": "drain"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "pushes",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "yard",
+      "unpoint": "R",
+      "take": "thinking",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "And here's the hidden plant: as the water soaks down, the soil itself removes bacteria, viruses and nutrients.",
+   "data": {
+    "big": "SOIL",
+    "label": "THE REAL FILTER",
+    "cue": "soil",
+    "source": "US EPA",
+    "source_cue": "hidden"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "soil",
+      "dt": 0.25,
+      "take": "proud",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "And the tank sees a lot of water. Indoor use can run as much as {70|seventy} gallons per person, per day, and all of it comes through here.",
+   "data": {
+    "big": "70 GAL",
+    "label": "PER PERSON, DAILY",
+    "cue": "70",
+    "source": "US EPA · 2026",
+    "source_cue": "Indoor"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "70",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "No big pipes, no plant down the road. A tank, a trench, and dirt.",
+   "data": {
+    "stencil": "JUST DIRT",
+    "stencil_cue": "dirt"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "tank",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "dirt",
+      "unpoint": "R",
+      "take": "happy",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "narration": "Part three: the bill.",
+   "data": {
+    "num": "3",
+    "title": "THE BILL"
+   }
+  },
+  {
+   "type": "data",
+   "narration": "But the sludge never leaves on its own. The EPA says inspect every {3|three} years, and pump it out every {3|three} to {5|five}.",
+   "data": {
+    "big": "3-5 YRS",
+    "label": "PUMP IT OUT",
+    "cue": "pump",
+    "source": "US EPA · 2026",
+    "source_cue": "sludge"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "pump",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "The signal: when the bottom of the scum gets within {6|six} inches of the outlet, or the top of the sludge within {12|twelve}.",
+   "data": {
+    "big": "12 IN",
+    "label": "SLUDGE LIMIT",
+    "cue": "12",
+    "source": "US EPA SEPTICSMART",
+    "source_cue": "signal"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "12",
+      "dt": 0.25,
+      "take": "thinking",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "A pumping costs about {$250|two hundred fifty} to {$500|five hundred dollars}.",
+   "data": {
+    "big": "$250",
+    "label": "TO $500",
+    "cue": "$250",
+    "source": "US EPA · 2026",
+    "source_cue": "pumping"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "$250",
+      "dt": 0.25,
+      "take": "thinking",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Skip it, and solids can clog the field. Replacing a failed system runs {$5,000|five thousand} to {$15,000|fifteen thousand dollars}, or more.",
+   "data": {
+    "big": "$15K",
+    "label": "FAILED SYSTEM",
+    "cue": "$15,000",
+    "source": "US EPA · 2026",
+    "source_cue": "Skip"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "$15,000",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "And a failing system can leak sewage into the groundwater, where it can spread disease.",
+   "data": {
+    "stencil": "GROUNDWATER",
+    "stencil_cue": "groundwater"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "failing",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "disease",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "It isn't going away, either. The EPA has said about a third of new development is built on septic or systems like it.",
+   "data": {
+    "big": "1 IN 3",
+    "label": "NEW DEVELOPMENT",
+    "cue": "third",
+    "source": "US EPA (2018 PAGE)",
+    "source_cue": "away"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "third",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "So no sewer doesn't mean nowhere. Your flush sinks, floats or soaks into the dirt, and the dirt cleans it. As long as someone pumps the tank.",
+   "data": {
+    "start_lit": true,
+    "stencil": "THE DIRT CLEANS",
+    "stencil_cue": "dirt"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "sinks",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "tank",
+      "unpoint": "R",
+      "take": "happy",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "endcard",
+   "narration": "Pick your next system down here. A new one every other day.",
+   "min_duration": 7.0,
+   "drip": {
+    "acts": [
+     {
+      "t": 0.3,
+      "take": "happy",
+      "amp": 0.6
+     },
+     {
+      "cue": "next",
+      "point": "R",
+      "angle": 10
+     },
+     {
+      "t": 1.6,
+      "take": "happy",
+      "amp": 0.45
+     },
+     {
+      "t": 2.8,
+      "unpoint": "R",
+      "take": "proud",
+      "amp": 0.5
+     },
+     {
+      "t": 4.0,
+      "point": "L",
+      "angle": 10,
+      "look": [
+       -12,
+       -6
+      ]
+     },
+     {
+      "t": 5.2,
+      "take": "happy",
+      "amp": 0.5
+     },
+     {
+      "t": 6.2,
+      "unpoint": "L"
+     }
+    ]
+   }
+  }
+ ]
+}

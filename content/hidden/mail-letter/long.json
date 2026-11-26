@@ -1,0 +1,742 @@
+{
+ "channel": "hidden",
+ "style": "hidden",
+ "voice": "am_michael",
+ "system": "mail",
+ "format": "long",
+ "speed": 1.05,
+ "id": "hs-mail-letter",
+ "title": "Why Some Letters Cross 7 States to Stay in One",
+ "summary": "Follow one first-class letter from the blue box to a door: the plant that sorts it, the camera that reads the address, the people in Salt Lake City who read what machines can't, and why, after the 2025 network changes, some South Dakota letters leave the state and pass through up to seven states before coming back (USPS OIG, Sept 2026).",
+ "tags": [
+  "how does mail get delivered",
+  "how mail is sorted",
+  "usps",
+  "how a letter travels",
+  "post office",
+  "remote encoding center",
+  "hidden systems"
+ ],
+ "intro_chapter": "Out and back",
+ "thumbnail": {
+  "big": "387 MI",
+  "small": "WRONG WAY?",
+  "expr": "worried"
+ },
+ "sources": [
+  "FY2025: total mail volume 108,695 million pieces (112,456 million in FY2024); 170,389,351 delivery points; more than 300 processing and logistics facilities; 234,004 delivery and collection vehicles in a 262,740-vehicle fleet (USPS 2025 Annual Report to Congress): https://about.usps.com/what/financials/annual-reports/fy2025.pdf",
+  "About 300 million pieces a day: 108,695 million / 365 = 297.8 million (our math from the USPS FY2025 total).",
+  "The Advanced Facer Canceller System positions letters and postmarks stamps at 36,000 pieces an hour; machines read nearly 98 percent of hand-addressed letters and 99.5 percent of machine-printed mail; the Intelligent Mail barcode identifies individual pieces so they can be tracked (USPS Postal Facts, Innovation): https://facts.usps.com/innovation/",
+  "Remote Encoding Center, Salt Lake City: about 2.3 million address images a day, more than 730 employees, open 24/7; 55 centers at the late-1990s peak, the only one since 2014 (USPS Link, 23 Apr 2024): https://news.usps.com/2024/04/23/the-postal-services-digital-detectives-are-marking-a-milestone/",
+  "South Dakota: Sioux Falls mail processed in Omaha (186 miles), Dakota Central in Fargo (235 miles), Rapid City in Denver (387 miles); intrastate mail can travel hundreds of miles through up to seven states before returning; no direct transportation between some South Dakota facilities; 50% of intrastate First-Class Mail pairs became 1-2 days slower (USPS OIG audit 26-038-R26, Network Changes Impacts South Dakota, 23 Sep 2026): https://www.uspsoig.gov/sites/default/files/reports/2026-09/26-038-R26.pdf",
+  "Standard First-Class Mail delivery time will not exceed 5 days; refinements effective 1 Apr and 1 Jul 2025 (USPS, 20 Mar 2025): https://about.usps.com/newsroom/national-releases/2025/0320-usps-is-enhancing-service-standards.htm"
+ ],
+ "scenes": [
+  {
+   "type": "data",
+   "narration": "In South Dakota, a letter headed to another town in the same state can leave it first, and pass through as many as {7|seven} states before it comes back.",
+   "data": {
+    "big": "7",
+    "label": "STATES AWAY",
+    "cue": "7",
+    "source": "USPS OIG · SEP 2026",
+    "source_cue": "South"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "7",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "That's not a mistake. It's how the mail is built now, and it says a lot about how your own letter travels.",
+   "data": {
+    "stencil": "BY DESIGN",
+    "stencil_cue": "mistake"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "your",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "travels",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Mail from Rapid City, for example, is now sorted in Denver: {387|three hundred eighty-seven} miles away.",
+   "data": {
+    "big": "387 MI",
+    "label": "TO DENVER",
+    "cue": "387",
+    "source": "USPS OIG · SEP 2026",
+    "source_cue": "Rapid"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "387",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   },
+   "transition_out": "whip"
+  },
+  {
+   "type": "host",
+   "narration": "Today we follow one letter from the blue box to a door: the machines that read it, the people who read what machines can't, and why it takes the long way.",
+   "data": {
+    "start_lit": true,
+    "stencil": "ONE LETTER",
+    "stencil_cue": "follow"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "machines",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "way",
+      "unpoint": "R",
+      "take": "happy",
+      "amp": 0.6
+     }
+    ]
+   },
+   "transition_in": "whip"
+  },
+  {
+   "type": "chapter",
+   "narration": "Part one: the pickup.",
+   "data": {
+    "num": "1",
+    "title": "THE PICKUP"
+   }
+  },
+  {
+   "type": "data",
+   "narration": "In {2025|twenty twenty-five}, the Postal Service handled almost {109 billion|a hundred nine billion} pieces of mail.",
+   "data": {
+    "big": "109B",
+    "label": "PIECES IN 2025",
+    "cue": "109 billion",
+    "source": "USPS FY2025",
+    "source_cue": "Postal"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "109 billion",
+      "dt": 0.25,
+      "take": "proud",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "That's about {300 million|three hundred million} a day, going to more than {170 million|a hundred seventy million} addresses.",
+   "data": {
+    "big": "170M",
+    "label": "ADDRESSES",
+    "cue": "170 million",
+    "source": "USPS FY2025 · OUR MATH",
+    "source_cue": "day"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "170 million",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "A carrier picks your letter up and trucks it to a processing plant. There are only a little over {300|three hundred} of them in the whole country.",
+   "data": {
+    "stencil": "~300 PLANTS",
+    "stencil_cue": "300"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "carrier",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "country",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "If you like seeing how everyday things really work, subscribe. There's a new system every other day.",
+   "data": {
+    "start_lit": true,
+    "stencil": "EVERY 2 DAYS",
+    "stencil_cue": "every"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "subscribe",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "day",
+      "unpoint": "R",
+      "take": "proud",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "narration": "Part two: the reading.",
+   "data": {
+    "num": "2",
+    "title": "THE READING"
+   }
+  },
+  {
+   "type": "data",
+   "narration": "First, a machine turns every letter the same way up and cancels the stamp: up to {36,000|thirty-six thousand} letters an hour.",
+   "data": {
+    "big": "36K",
+    "label": "AN HOUR",
+    "cue": "36,000",
+    "source": "USPS",
+    "source_cue": "machine"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "36,000",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Then a camera reads the address. It gets about {98%|ninety-eight percent} of handwritten ones, and {99.5%|ninety-nine and a half percent} of printed ones.",
+   "data": {
+    "big": "98%",
+    "label": "HANDWRITING READ",
+    "cue": "98%",
+    "source": "USPS",
+    "source_cue": "camera"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "98%",
+      "dt": 0.25,
+      "take": "proud",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "The machine sprays a barcode on your letter: a row of tiny bars that tells every machine after it exactly where it's going.",
+   "data": {
+    "stencil": "BARCODE",
+    "stencil_cue": "barcode"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "sprays",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "going",
+      "unpoint": "R",
+      "take": "proud",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "And the two percent it can't read? A photo of the envelope flies to Salt Lake City.",
+   "data": {
+    "stencil": "SALT LAKE CITY",
+    "stencil_cue": "photo"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "photo",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "City",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   },
+   "transition_out": "whip"
+  },
+  {
+   "type": "data",
+   "narration": "There, more than {730|seven hundred thirty} people type in about {2.3 million|two point three million} addresses a day, around the clock.",
+   "data": {
+    "big": "2.3M",
+    "label": "TYPED A DAY",
+    "cue": "2.3 million",
+    "source": "USPS · 2024",
+    "source_cue": "There"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "2.3 million",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   },
+   "transition_in": "whip"
+  },
+  {
+   "type": "data",
+   "narration": "In the late {1990s|nineties} there were {55|fifty-five} centers like it. Machines got so good that this is the last one.",
+   "data": {
+    "big": "1 OF 55",
+    "label": "STILL OPEN",
+    "cue": "last",
+    "source": "USPS · 2024",
+    "source_cue": "late"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "last",
+      "dt": 0.25,
+      "take": "thinking",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "chapter",
+   "narration": "Part three: the long way.",
+   "data": {
+    "num": "3",
+    "title": "THE LONG WAY"
+   }
+  },
+  {
+   "type": "host",
+   "narration": "Now, the long way. In {2025|twenty twenty-five}, the Postal Service moved more sorting into fewer, bigger regional plants.",
+   "data": {
+    "stencil": "FEWER, BIGGER",
+    "stencil_cue": "fewer"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "sorting",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "plants",
+      "unpoint": "R",
+      "take": "thinking",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "In South Dakota, mail from Sioux Falls now goes to Omaha, {186|a hundred eighty-six} miles away. Mail from the middle of the state goes to Fargo: {235|two hundred thirty-five}.",
+   "data": {
+    "big": "235 MI",
+    "label": "TO FARGO",
+    "cue": "235",
+    "source": "USPS OIG · SEP 2026",
+    "source_cue": "Sioux"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "235",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "Some of those plants have no direct truck between them. So a letter for the same state goes out, gets sorted, and rides back in.",
+   "data": {
+    "stencil": "OUT AND BACK",
+    "stencil_cue": "back"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "truck",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "back",
+      "unpoint": "R",
+      "take": "surprised",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "The inspector general found that half of the state's in-state First-Class routes became one or two days slower.",
+   "data": {
+    "big": "1 IN 2",
+    "label": "ROUTES SLOWER",
+    "cue": "half",
+    "source": "USPS OIG · SEP 2026",
+    "source_cue": "inspector"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "worried"
+     },
+     {
+      "cue": "half",
+      "dt": 0.25,
+      "take": "surprised",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "The rule the mail still has to meet: First-Class Mail should arrive within {5|five} days.",
+   "data": {
+    "big": "5 DAYS",
+    "label": "FIRST-CLASS MAX",
+    "cue": "5",
+    "source": "USPS · 2025",
+    "source_cue": "rule"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "5",
+      "dt": 0.25,
+      "take": "proud",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "narration": "Then it rides the last miles on one of about {234,000|two hundred thirty-four thousand} delivery vehicles, to your door.",
+   "data": {
+    "big": "234K",
+    "label": "DELIVERY VEHICLES",
+    "cue": "234,000",
+    "source": "USPS FY2025",
+    "source_cue": "last"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.1,
+      "look": [
+       14,
+       -8
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "234,000",
+      "dt": 0.25,
+      "take": "happy",
+      "amp": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "type": "host",
+   "narration": "So that's the trip: a box, a plant, a camera, maybe a typist in Salt Lake City, maybe seven states, and back to a door a few miles from where it started.",
+   "data": {
+    "start_lit": true,
+    "stencil": "FULL CIRCLE",
+    "stencil_cue": "trip"
+   },
+   "drip": {
+    "acts": [
+     {
+      "t": 0.2,
+      "look": [
+       10,
+       -6
+      ],
+      "expr": "thinking"
+     },
+     {
+      "cue": "camera",
+      "point": "R",
+      "angle": 20
+     },
+     {
+      "cue": "started",
+      "unpoint": "R",
+      "take": "happy",
+      "amp": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "type": "endcard",
+   "narration": "Pick your next system down here. A new one every other day.",
+   "min_duration": 7.0,
+   "drip": {
+    "acts": [
+     {
+      "t": 0.3,
+      "take": "happy",
+      "amp": 0.6
+     },
+     {
+      "cue": "next",
+      "point": "R",
+      "angle": 10
+     },
+     {
+      "t": 1.6,
+      "take": "happy",
+      "amp": 0.45
+     },
+     {
+      "t": 2.8,
+      "unpoint": "R",
+      "take": "proud",
+      "amp": 0.5
+     },
+     {
+      "t": 4.0,
+      "point": "L",
+      "angle": 10,
+      "look": [
+       -12,
+       -6
+      ]
+     },
+     {
+      "t": 5.2,
+      "take": "happy",
+      "amp": 0.5
+     },
+     {
+      "t": 6.2,
+      "unpoint": "L"
+     }
+    ]
+   }
+  }
+ ]
+}
