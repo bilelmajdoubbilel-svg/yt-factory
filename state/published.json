@@ -358,5 +358,21 @@
   "video_id": "mTRuLVCcKb0",
   "date": "2026-11-26",
   "at": "2026-11-25T22:25:38+00:00"
+ },
+ {
+  "id": "printer-ink",
+  "channel": "money",
+  "kind": "long",
+  "video_id": "l8OwSEG_VyA",
+  "date": "2026-11-27",
+  "at": "2026-11-26T21:53:22+00:00"
+ },
+ {
+  "id": "bf-s3-today",
+  "channel": "money",
+  "kind": "short",
+  "video_id": "Mo-VFVRDjtU",
+  "date": "2026-11-27",
+  "at": "2026-11-26T21:56:40+00:00"
  }
 ]

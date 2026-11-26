@@ -1,0 +1,137 @@
+{
+ "total": 136.989,
+ "scenes": [
+  {
+   "id": "s01",
+   "type": "shot",
+   "start": 0.0,
+   "duration": 7.225
+  },
+  {
+   "id": "s02",
+   "type": "compare",
+   "start": 7.225,
+   "duration": 4.881
+  },
+  {
+   "id": "s03",
+   "type": "statement",
+   "start": 12.107,
+   "duration": 5.792
+  },
+  {
+   "id": "s04",
+   "type": "chapter",
+   "start": 17.899,
+   "duration": 2.452
+  },
+  {
+   "id": "s05",
+   "type": "flow",
+   "start": 20.351,
+   "duration": 7.64
+  },
+  {
+   "id": "s06",
+   "type": "counter",
+   "start": 27.991,
+   "duration": 7.493
+  },
+  {
+   "id": "s07",
+   "type": "share",
+   "start": 35.484,
+   "duration": 5.846
+  },
+  {
+   "id": "s08",
+   "type": "statement",
+   "start": 41.33,
+   "duration": 6.443
+  },
+  {
+   "id": "s09",
+   "type": "bars",
+   "start": 47.773,
+   "duration": 11.035
+  },
+  {
+   "id": "s10",
+   "type": "statement",
+   "start": 58.808,
+   "duration": 4.346
+  },
+  {
+   "id": "s11",
+   "type": "cta",
+   "start": 63.154,
+   "duration": 5.593
+  },
+  {
+   "id": "s12",
+   "type": "chapter",
+   "start": 68.748,
+   "duration": 2.75
+  },
+  {
+   "id": "s13",
+   "type": "statement",
+   "start": 71.498,
+   "duration": 7.391
+  },
+  {
+   "id": "s14",
+   "type": "quote",
+   "start": 78.889,
+   "duration": 5.857
+  },
+  {
+   "id": "s15",
+   "type": "statement",
+   "start": 84.746,
+   "duration": 5.537
+  },
+  {
+   "id": "s16",
+   "type": "statement",
+   "start": 90.284,
+   "duration": 7.16
+  },
+  {
+   "id": "s17",
+   "type": "counter",
+   "start": 97.444,
+   "duration": 6.068
+  },
+  {
+   "id": "s18",
+   "type": "statement",
+   "start": 103.512,
+   "duration": 8.842
+  },
+  {
+   "id": "s19",
+   "type": "chapter",
+   "start": 112.354,
+   "duration": 2.417
+  },
+  {
+   "id": "s20",
+   "type": "statement",
+   "start": 114.771,
+   "duration": 6.005
+  },
+  {
+   "id": "s21",
+   "type": "flow",
+   "start": 120.776,
+   "duration": 8.574
+  },
+  {
+   "id": "s22",
+   "type": "end",
+   "start": 129.35,
+   "duration": 7.639
+  }
+ ]
+}
