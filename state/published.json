@@ -430,5 +430,21 @@
   "video_id": "BkhYlS_uaMo",
   "date": "2026-11-28",
   "at": "2026-11-27T21:57:18+00:00"
+ },
+ {
+  "id": "casino-house",
+  "channel": "money",
+  "kind": "long",
+  "video_id": "rWi_XyeoAPc",
+  "date": "2026-11-29",
+  "at": "2026-11-28T20:27:47+00:00"
+ },
+ {
+  "id": "sb-s2-breakage",
+  "channel": "money",
+  "kind": "short",
+  "video_id": "bcbtlU6Cdys",
+  "date": "2026-11-29",
+  "at": "2026-11-28T20:30:46+00:00"
  }
 ]

@@ -1,0 +1,41 @@
+{
+ "total": 27.277,
+ "scenes": [
+  {
+   "id": "s01",
+   "type": "statement",
+   "start": 0.0,
+   "duration": 5.173
+  },
+  {
+   "id": "s02",
+   "type": "counter",
+   "start": 5.173,
+   "duration": 4.803
+  },
+  {
+   "id": "s03",
+   "type": "statement",
+   "start": 9.976,
+   "duration": 4.698
+  },
+  {
+   "id": "s04",
+   "type": "counter",
+   "start": 14.674,
+   "duration": 3.494
+  },
+  {
+   "id": "s05",
+   "type": "statement",
+   "start": 18.168,
+   "duration": 4.807
+  },
+  {
+   "id": "s06",
+   "type": "end",
+   "start": 22.975,
+   "duration": 4.303
+  }
+ ]
+}
